@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  background-color: #fafafa;
+  color: #666;
+  font-size: 16px;
+}
+
+body{
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.loader{
+  position: relative;
+  margin-top: 25px;
+}
+
+.loader__circle{
+  position: absolute;
+  left: -25px;
+  width: 25px;
+  height: 25px;
+  background: #666;
+  border-radius: 50%;
+}
