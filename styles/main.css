@@ -36,13 +36,13 @@ h1 {
 
 .loader{
   position: relative;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
 .loader__circle{
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   background: #666;
   border-radius: 50%;
 }
@@ -51,11 +51,23 @@ h1 {
   animation: loading 4s infinite cubic-bezier(0.455, 0.030, 0.515, 0.955);
 }
 
+.loading:nth-of-type(2){
+  animation-delay: 0.33s;
+}
+
+.loading:nth-of-type(3){
+  animation-delay: 0.66s;
+}
+
 @keyframes loading{
-  0%{
-    transform: translate3d(-25px, 0, 0);
+  0%, 100%{
+    transform: translate3d(40vw, 0, 0);
   }
-  100%{
-    transform: translate3d(100vw, 0, 0);
+  25%{
+  }
+  50%{
+    transform: translate3d(60vw, 0, 0);
+  }
+  75%{
   }
 }
