@@ -49,7 +49,7 @@ h1 {
 }
 
 .loading{
-  animation: loading 3s infinite cubic-bezier(0,.9,1,0);
+  animation: loading 3s infinite cubic-bezier(.2,.92,.88,.04);
   left: 10px;
 }
 
