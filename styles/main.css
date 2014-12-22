@@ -28,7 +28,7 @@ h1 {
 
 .container{
   position: absolute;
-  top: 50%;
+  top: 33.33%;
   left: 0;
   right: 0;
   text-align: center;
@@ -106,12 +106,10 @@ h1 {
 }
 
 @media screen and (max-width: 685px){
-  .container{
-    top: 33%;
-  }
   .headline span{
     display: block;
   }
+
   .headline span:first-of-type{
     font-size: 3em;
     font-weight: 400;
