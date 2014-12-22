@@ -176,3 +176,51 @@ h1 {
     margin-bottom: 30px;
   }
 }
+
+@-webkit-media screen and (max-width: 685px){
+  .headline span{
+    display: block;
+  }
+
+  .headline span:first-of-type{
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}
+
+@-moz-media screen and (max-width: 685px){
+  .headline span{
+    display: block;
+  }
+
+  .headline span:first-of-type{
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}
+
+@-ms-media screen and (max-width: 685px){
+  .headline span{
+    display: block;
+  }
+
+  .headline span:first-of-type{
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}
+
+@-o-media screen and (max-width: 685px){
+  .headline span{
+    display: block;
+  }
+
+  .headline span:first-of-type{
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}
