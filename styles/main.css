@@ -41,33 +41,49 @@ h1 {
 
 .loader__circle{
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background: #666;
   border-radius: 50%;
+  opacity: 1;
 }
 
 .loading{
-  animation: loading 4s infinite cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  animation: loading 3s infinite cubic-bezier(0,.9,1,0);
+  left: 10px;
 }
 
 .loading:nth-of-type(2){
-  animation-delay: 0.33s;
+  animation-delay: 0.3s;
+  left: 0;
 }
 
 .loading:nth-of-type(3){
-  animation-delay: 0.66s;
+  animation-delay: .6s;
+  left: -10px;
+}
+
+.loading:nth-of-type(4){
+  animation-delay: 2s;
+}
+
+.loading:nth-of-type(5){
+  animation-delay: 2.666s;
 }
 
 @keyframes loading{
-  0%, 100%{
-    transform: translate3d(40vw, 0, 0);
+  0%{
+    transform: translate3d(0vw, 0, 0);
+    opacity: 0;
   }
   25%{
-  }
-  50%{
-    transform: translate3d(60vw, 0, 0);
+    opacity: 1;
   }
   75%{
+    opacity: 1;
+  }
+  100%{
+    transform: translate3d(100vw, 0, 0);
+    background: transparent;
   }
 }
