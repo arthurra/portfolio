@@ -87,3 +87,9 @@ h1 {
     background: transparent;
   }
 }
+
+@media screen and (max-width: 685px){
+  .headline span{
+    display: block;
+  }
+}
