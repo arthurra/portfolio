@@ -135,8 +135,32 @@ h1 {
   }
 }
 
-@media screen and (max-width: 685px){
+@media only screen and (max-width : 600px){
   .headline span{
+    display: block;
+  }
+
+  .headline span:first-of-type{
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-device-width : 600px){
+  .headline span{
+    display: block;
+  }
+
+  .headline span:first-of-type{
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+.headline span{
     display: block;
   }
 
