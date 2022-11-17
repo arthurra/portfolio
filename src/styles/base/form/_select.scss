@@ -1,0 +1,62 @@
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+
+/*
+<div class="form-group form-group--select">
+    <label for="select-input" class="form-group__label">Select Box</label>
+    <select name="select-input" id="select-input" class="form-group__input">
+        <option value="">Select an option</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+</div>
+*/
+
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+
+.form-group--select::before,
+.form-group--select::after {
+  grid-area: right-icon;
+  align-self: center;
+  justify-self: center;
+  content: "";
+  position: relative;
+  border-style: solid;
+  border-width: 0.4rem 0.25rem;
+  border-radius: 2px;
+  pointer-events: none;
+  transition: border-color $transition-duration $transition-timing-function;
+}
+
+.form-group--select::before {
+  top: 0.5rem;
+  border-color: $text-color-light transparent transparent transparent;
+}
+
+.form-group--select::after {
+  top: -0.5rem;
+  border-color: transparent transparent $text-color-light transparent;
+}
+
+.form-group--select .form-group__input {
+  padding-right: $input-height;
+}
+
+/* MULTIPLE */
+
+.form-group--select-multiple {
+  grid-template-rows: auto max-content auto;
+}
+
+.form-group--select-multiple .form-group__input {
+  padding-right: $spacing-sm;
+}
+
+.form-group--select-multiple::before,
+.form-group--select-multiple::after {
+  display: none;
+}

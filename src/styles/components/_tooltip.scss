@@ -1,0 +1,63 @@
+%tooltip {
+  position: relative;
+
+  &:before {
+    @extend %p;
+    content: attr(aria-label);
+    display: block;
+    position: absolute;
+    top: calc($spacing-xs) * -1;
+    left: 50%;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    white-space: nowrap;
+    color: #fff;
+    padding: $spacing-sm;
+    background-color: $color-secondary;
+    border-radius: $border-radius;
+    transform: translate(-50%, calc(-100% + 0.5rem));
+    opacity: 0;
+    z-index: 100;
+    pointer-events: none;
+    transition: all calc($transition-duration / 2) $transition-timing-function;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: $spacing-xs;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-width: $spacing-xs;
+    border-style: solid;
+    border-color: $color-secondary transparent transparent transparent;
+    transform: translate(-50%, calc(-100% + 0.5rem));
+    opacity: 0;
+    z-index: 100;
+    pointer-events: none;
+    transition: all calc($transition-duration / 2) $transition-timing-function;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:hover,
+  &:focus,
+  &:focus-within {
+    &:before,
+    &:after {
+      opacity: 1;
+      transform: translate(-50%, -100%);
+      transition: all $transition-duration $transition-timing-function;
+    }
+  }
+
+  &[disabled]::before {
+    content: attr(aria-label) " Disabled";
+  }
+}
+
+.has-tooltip {
+  @extend %tooltip;
+}

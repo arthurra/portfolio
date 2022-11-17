@@ -1,0 +1,28 @@
+body {
+  display: grid;
+  grid-template-columns: minmax(12em, 1fr) 4fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: $spacing-md * 2;
+  grid-template-areas:
+    "header   header"
+    "sidebar  main"
+    "footer   footer";
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+main {
+  grid-area: main;
+  justify-self: center;
+  max-width: 50em;
+}
+
+footer {
+  grid-area: footer;
+}
