@@ -1,0 +1,8 @@
+$footer-height: $spacing-md * 3;
+
+footer {
+  height: $footer-height;
+  background-color: $gray-600;
+  color: $text-color-light;
+  text-align: center;
+}

@@ -1,0 +1,118 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $title-color;
+}
+
+%h1 {
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  font-family: $font-family-title;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  @extend %h1;
+  padding-top: ($spacing-base * 3);
+  padding-bottom: $spacing-base;
+}
+
+%h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: $font-family-title;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  @extend %h2;
+  padding-top: ($spacing-base * 3.5);
+  padding-bottom: $spacing-base;
+}
+
+%h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: $font-family-title;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h3 {
+  @extend %h3;
+  padding-top: ($spacing-base * 3.5);
+  padding-bottom: $spacing-base;
+}
+
+%h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-family: $font-family-text;
+}
+
+h4 {
+  @extend %h4;
+  padding-top: ($spacing-base * 2);
+  padding-bottom: ($spacing-base * 1);
+}
+
+%h5 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-family: $font-family-text;
+  letter-spacing: 0.01em;
+}
+
+h5 {
+  @extend %h5;
+  padding-top: ($spacing-base * 1.5);
+  padding-bottom: $spacing-base;
+}
+
+%h6 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: $font-family-text;
+  letter-spacing: 0.01em;
+}
+
+h6 {
+  @extend %h6;
+  padding-top: ($spacing-base * 1.5);
+  padding-bottom: $spacing-base;
+}
+
+%p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: $font-family-text;
+}
+
+p {
+  @extend %p;
+  padding-bottom: $spacing-base;
+}
+
+%label {
+  @extend %h5;
+  color: $text-color-dark;
+}
+
+label {
+  @extend %label;
+}
+
+small {
+  font-size: 87.5%;
+}

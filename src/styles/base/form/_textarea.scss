@@ -1,0 +1,37 @@
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+
+/*
+<div class="form-group form-group--textarea">
+    <label for="textarea-input" class="form-group__label">Text Area</label>
+    <textarea name="textarea-input" id="textarea-input" class="form-group__input" placeholder="Add some text...">
+    </textarea>
+</div>
+*/
+
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+
+.form-group--textarea {
+  grid-template-rows:
+    auto
+    $input-height
+    minmax(calc(calc($input-height * 2) + $spacing-sm), auto)
+    auto;
+  grid-template-areas:
+    "label          label           label"
+    "left-icon      .               right-icon"
+    "input          input           input"
+    "help-text      help-text       help-text";
+  resize: none;
+}
+
+.form-group--textarea .form-group__input {
+  grid-row: 2 / -2;
+  grid-column: 1 / -1;
+  padding-top: $spacing-xs;
+  padding-bottom: $spacing-xs;
+  line-height: 1.5rem;
+}

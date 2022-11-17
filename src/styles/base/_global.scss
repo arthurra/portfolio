@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  @extend %p;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant-ligatures: common-ligatures contextual;
+  font-variant-alternates: styleset(ss01) character-variant(cv08);
+  font-variant-numeric: diagonal-fractions;
+  font-kerning: normal;
+  -moz-font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1,
+    "cv08" 1, "kern" 1, "liga" 1;
+  font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1,
+    "cv08" 1, "kern" 1, "liga" 1;
+  color: $text-color;
+}
+
+header,
+aside,
+main,
+footer {
+  padding: $spacing-md;
+}
+
+header {
+  border-bottom: $border;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  position: relative;
+  transition: color $transition-duration $transition-timing-function;
+
+  &:hover {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+}
+
+label {
+  display: inline-block;
+  @extend %label;
+  letter-spacing: 0.01em;
+}
+
+ol,
+ul {
+  padding-left: $spacing-md;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+li {
+  @extend %p;
+}
+
+section {
+  padding-bottom: $spacing-md;
+
+  & + & {
+    border-top: $border;
+    margin-top: -1px;
+  }
+}
+
+code {
+  border: $border;
+  background-color: $gray-100;
+  padding: 0 $spacing-xs;
+  border-radius: $border-radius;
+  font-family: $font-family-mono;
+  font-feature-settings: normal;
+  font-size: 87.5%;
+  font-weight: 700;
+  line-height: 1;
+  white-space: pre;
+  vertical-align: middle;
+}
