@@ -1,20 +1,17 @@
 body {
   display: grid;
-  grid-template-columns: minmax(12em, 1fr) 4fr;
-  grid-template-rows: auto 1fr;
-  grid-gap: $spacing-md * 2;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: calc($spacing-xl);
   grid-template-areas:
-    "header   header"
-    "sidebar  main"
-    "footer   footer";
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh;
 }
 
 header {
   grid-area: header;
-}
-
-aside {
-  grid-area: sidebar;
 }
 
 main {
