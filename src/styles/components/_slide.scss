@@ -1,0 +1,23 @@
+.slide {
+  display: grid;
+  grid-auto-flow: column;
+  gap: $spacing-xl;
+  padding: $spacing-md;
+}
+
+.slide__image-container {
+  height: 400px;
+  width: 500px;
+  background-color: $gray-200;
+  border: 2rem solid #fff;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-dark;
+}
+
+.slide__title {
+  position: relative;
+  left: calc($spacing-xxl * -1);
+}
+
+.slide__description {
+}
