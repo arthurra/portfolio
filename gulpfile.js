@@ -7,6 +7,7 @@ const sourcemaps = require("gulp-sourcemaps");
 function scssTask() {
   return src("src/styles/main.scss", { sourcemaps: true })
     .pipe(sass())
+    .pipe(autoprefixer())
     .pipe(dest("build/stylesheets", { sourcemaps: "./maps" }));
 }
 

@@ -626,7 +626,6 @@ body {
   font-variant-alternates: styleset(ss01) character-variant(cv08);
   font-variant-numeric: diagonal-fractions;
   font-kerning: normal;
-  -moz-font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
   font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
   color: #6f7281;
 }
@@ -1165,7 +1164,9 @@ code {
 
 .form-group__input {
   grid-area: left-icon/left-icon/right-icon/right-icon;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: block;
   max-width: 100%;
   padding: 0 0.5rem;
@@ -1175,6 +1176,10 @@ code {
   border: 2px solid #c4c9cb;
   border-radius: 0.25rem;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.form-group__input::-moz-placeholder {
+  color: #9aa2a9;
+  opacity: 1;
 }
 .form-group__input::placeholder {
   color: #9aa2a9;
@@ -1195,6 +1200,10 @@ code {
   border: 2px solid #c4c9cb !important;
   cursor: not-allowed !important;
   box-shadow: none !important;
+  opacity: 0.5;
+}
+.form-group__input.disabled::-moz-placeholder, .form-group__input[disabled]::-moz-placeholder {
+  color: #363639;
   opacity: 0.5;
 }
 .form-group__input.disabled::placeholder, .form-group__input[disabled]::placeholder {
