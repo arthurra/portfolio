@@ -1,4 +1,7 @@
 nav {
-  position: sticky;
-  top: $spacing-md;
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  gap: 2rem;
+  margin-top: 3rem;
 }

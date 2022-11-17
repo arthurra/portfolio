@@ -34,12 +34,6 @@ body > header {
   border-bottom: $border;
 }
 
-nav {
-  display: flex;
-  gap: $spacing-xl;
-  margin-top: $spacing-md;
-}
-
 a {
   color: $link-color;
   text-decoration: none;

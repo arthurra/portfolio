@@ -4,7 +4,9 @@
 
 $button-height: $input-height;
 $small-button-height: $button-height * 0.75;
-$button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
+$button-box-shadow-inset: 0 0 0 $border-width #fff inset;
+$button-box-shadow-elevation: $box-shadow;
+$button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
 
 // ---------------------------------- \\
 //              DISPLAY               \\
@@ -35,6 +37,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
 
   &--hover,
   &:hover {
+    text-decoration: none;
     color: $color-primary-dark;
     background-color: $color-primary-light;
     box-shadow: $button-box-shadow-base;
@@ -51,7 +54,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     color: #fff;
     background-color: $color-primary;
     border-color: $color-primary;
-    box-shadow: $button-box-shadow-base;
+    box-shadow: $button-box-shadow-inset;
     translate: 0 2px;
   }
 
@@ -90,7 +93,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     }
 
     &:active {
-      box-shadow: $button-box-shadow-base;
+      box-shadow: $button-box-shadow-inset;
     }
   }
 
@@ -114,7 +117,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     }
 
     &:active {
-      box-shadow: $button-box-shadow-base;
+      box-shadow: $button-box-shadow-inset;
     }
   }
 
@@ -139,7 +142,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     }
 
     &:active {
-      box-shadow: $button-box-shadow-base;
+      box-shadow: $button-box-shadow-inset;
     }
   }
 
@@ -163,7 +166,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     }
 
     &:active {
-      box-shadow: $button-box-shadow-base;
+      box-shadow: $button-box-shadow-inset;
     }
   }
 
@@ -187,7 +190,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     }
 
     &:active {
-      box-shadow: $button-box-shadow-base;
+      box-shadow: $button-box-shadow-inset;
     }
   }
 
@@ -211,7 +214,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     }
 
     &:active {
-      box-shadow: $button-box-shadow-base;
+      box-shadow: $button-box-shadow-inset;
     }
   }
 
