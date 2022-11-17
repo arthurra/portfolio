@@ -28,11 +28,17 @@ header,
 aside,
 main,
 footer {
-  padding: $spacing-md;
+  padding: $spacing-xl;
 }
 
-header {
+body > header {
   border-bottom: $border;
+}
+
+nav {
+  display: flex;
+  gap: $spacing-xl;
+  margin-top: $spacing-md;
 }
 
 a {
@@ -70,15 +76,6 @@ ul {
 
 li {
   @extend %p;
-}
-
-section {
-  padding-bottom: $spacing-md;
-
-  & + & {
-    border-top: $border;
-    margin-top: -1px;
-  }
 }
 
 code {

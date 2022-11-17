@@ -1,8 +1,7 @@
 /* ---------------------------------------- */
 /*                 DISPLAY                  */
 /* ---------------------------------------- */
-@import url("https://rsms.me/inter/inter.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto+Mono&family=Rubik:ital,wght@0,500;0,700;1,500&display=swap");
 .u-hidden {
   display: none !important;
 }
@@ -602,12 +601,6 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/gilroy-extrabold-webfont.woff2") format("woff2"), url("../fonts/gilroy-extrabold-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
 *,
 *::before,
 *::after {
@@ -634,11 +627,17 @@ header,
 aside,
 main,
 footer {
-  padding: 1rem;
+  padding: 2rem;
 }
 
-header {
+body > header {
   border-bottom: 2px solid #c4c9cb;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
 a {
@@ -670,14 +669,6 @@ ol {
 ul {
   list-style-type: disc;
   margin-bottom: 1rem;
-}
-
-section {
-  padding-bottom: 1rem;
-}
-section + section {
-  border-top: 2px solid #c4c9cb;
-  margin-top: -1px;
 }
 
 code {
@@ -1736,7 +1727,7 @@ h1 {
   font-weight: 700;
   font-size: 2.75rem;
   line-height: 3rem;
-  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Rubik", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.02em;
 }
 
@@ -1749,7 +1740,7 @@ h2, .u-font-h2 {
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.5rem;
-  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Rubik", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.02em;
 }
 
@@ -1762,7 +1753,7 @@ h3, .u-font-h3 {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Rubik", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
