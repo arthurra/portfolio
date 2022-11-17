@@ -6,15 +6,28 @@
   padding: 5rem $spacing-md;
   background-color: $gray-100;
   border-radius: $border-radius;
+  translate: 10% 0;
 }
 
 .slide__image-container {
+  position: relative;
   height: 400px;
   width: 600px;
   background-color: $gray-200;
   border: 2rem solid #fff;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
+  transition: all $transition-duration $transition-timing-function;
+
+  &:hover {
+    z-index: 5;
+    box-shadow: $box-shadow-dark;
+    scale: 1.025;
+
+    & + .slide__description-container {
+      box-shadow: $box-shadow;
+    }
+  }
 }
 
 .slide__title {
@@ -27,4 +40,5 @@
   border-radius: $border-radius;
   box-shadow: $box-shadow-dark;
   translate: -50% 33%;
+  transition: all $transition-duration $transition-timing-function;
 }
