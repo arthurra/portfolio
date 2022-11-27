@@ -1770,7 +1770,7 @@ h4 {
   padding-bottom: 1rem;
 }
 
-.u-font-label, label, .fieldset__label, h5, .u-font-h5, a, .button {
+nav .link, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -2090,7 +2090,6 @@ nav {
   margin-top: 3rem;
   z-index: 1;
 }
-
 footer {
   height: 3rem;
   background-color: #35247c;
