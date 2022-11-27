@@ -13,7 +13,8 @@ body {
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures contextual;
   font-kerning: normal;
-  color: $text-color-dark;
+  color: $gray-200;
+  background-color: $gray-700;
 }
 
 header,
