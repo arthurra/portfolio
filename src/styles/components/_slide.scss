@@ -43,7 +43,7 @@
     translate: -500px -500px;
     transform-origin: top left;
     transform: rotate3d(1, 0.2, 1, -30deg);
-    transition: scale calc($transition-duration * 2) $transition-timing-function,
+    transition: scale 5s $transition-timing-function,
       translate 5s 0.5s $transition-timing-function,
       transform-origin 5s 0.5s $transition-timing-function,
       transform 5s 0.5s $transition-timing-function;
