@@ -15,7 +15,7 @@
 
 .slide__image-container {
   position: relative;
-  height: 400px;
+  height: 500px;
   background-color: $color-primary-light;
   border-radius: $border-radius 0 0 $border-radius;
   overflow: hidden;
@@ -52,9 +52,13 @@
 
 .slide__title {
   padding-top: $spacing-lg;
+  color: $title-color;
+  border-bottom: $border-dotted;
 }
 
 .slide__description-container {
+  display: grid;
+  gap: $spacing-md;
   background-color: #fff;
   padding: $spacing-xl;
   border-radius: 0 $border-radius $border-radius 0;

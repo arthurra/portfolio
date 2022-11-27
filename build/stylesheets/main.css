@@ -1,7 +1,7 @@
 /* ---------------------------------------- */
 /*                 DISPLAY                  */
 /* ---------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Zilla+Slab:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Zilla+Slab:wght@500;600&display=swap");
 .u-hidden {
   display: none !important;
 }
@@ -627,7 +627,7 @@ body {
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures contextual;
   font-kerning: normal;
-  color: #6f7281;
+  color: #53555c;
 }
 
 header,
@@ -1771,8 +1771,8 @@ h4 {
 }
 
 nav .link, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
-  font-weight: 700;
-  font-size: 0.875rem;
+  font-weight: 800;
+  font-size: 0.8rem;
   line-height: 1.5rem;
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.125em;
@@ -1821,10 +1821,6 @@ p {
 
 .lead-text {
   color: #363639;
-}
-
-.u-font-label, label, .fieldset__label {
-  color: #53555c;
 }
 
 small {
@@ -1994,7 +1990,7 @@ small {
 
 .slide__image-container {
   position: relative;
-  height: 400px;
+  height: 500px;
   background-color: #e1ddf4;
   border-radius: 0.25rem 0 0 0.25rem;
   overflow: hidden;
@@ -2022,9 +2018,13 @@ small {
 
 .slide__title {
   padding-top: 1.5rem;
+  color: #363639;
+  border-bottom: 2px dotted #9aa2a9;
 }
 
 .slide__description-container {
+  display: grid;
+  gap: 1rem;
   background-color: #fff;
   padding: 2rem;
   border-radius: 0 0.25rem 0.25rem 0;
