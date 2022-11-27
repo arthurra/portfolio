@@ -10,7 +10,7 @@
 
   &:hover {
     scale: 1.025;
-    transition: all 1s 0.25s $transition-timing-function;
+    transition: all 0.5s $transition-timing-function;
   }
 }
 
@@ -44,10 +44,10 @@
     translate: -500px -500px;
     transform-origin: top left;
     transform: rotate3d(1, 0.2, 1, -30deg);
-    transition: scale 5s $transition-timing-function,
-      translate 5s 0.5s $transition-timing-function,
-      transform-origin 5s 0.5s $transition-timing-function,
-      transform 5s 0.5s $transition-timing-function;
+    transition: scale 10s $transition-timing-function,
+      translate 10s 0.5s $transition-timing-function,
+      transform-origin 10s 0.5s $transition-timing-function,
+      transform 10s 0.5s $transition-timing-function;
   }
 }
 
