@@ -6,4 +6,8 @@ nav {
   position: relative;
   margin-top: 3rem;
   z-index: 1;
+
+  .link {
+    @extend %h5;
+  }
 }

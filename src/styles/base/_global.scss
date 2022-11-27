@@ -27,7 +27,6 @@ body > header {
 }
 
 a {
-  @extend %h5;
   color: $link-color;
   text-decoration: none;
   position: relative;
