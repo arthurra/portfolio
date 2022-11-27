@@ -68,8 +68,8 @@ h4 {
 }
 
 %h5 {
-  font-weight: 700;
-  font-size: 0.875rem;
+  font-weight: 800;
+  font-size: 0.8rem;
   line-height: 1.5rem;
   font-family: $font-family-title;
   letter-spacing: 0.125em;
@@ -124,7 +124,6 @@ p {
 
 %label {
   @extend %h5;
-  color: $text-color-dark;
 }
 
 label {
