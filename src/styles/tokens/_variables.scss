@@ -73,12 +73,18 @@ $link-color-light: $color-info-light;
 
 $base-font-size: 18px;
 
-$font-family-title: "Rubik", "Inter", system-ui, -apple-system, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-text: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-title: "Barlow Semi Condensed", "Inter", system-ui, -apple-system,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji";
+$font-family-title-alt: "Zilla Slab", "Inter", system-ui, -apple-system,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji";
+$font-family-text: "Calendas Plus", "Inter", system-ui, -apple-system,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji";
 $font-family-mono: "Roboto Mono", monospace;
 
 // ---------------------------------- \\
