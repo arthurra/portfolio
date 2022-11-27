@@ -16,7 +16,7 @@
 .slide__image-container {
   position: relative;
   height: 400px;
-  background-color: $gray-200;
+  background-color: $color-primary-light;
   border-radius: $border-radius 0 0 $border-radius;
   overflow: hidden;
   transition: all $transition-duration $transition-timing-function;
@@ -26,15 +26,27 @@
   width: 100%;
   object-fit: contain;
   border-radius: 1rem;
-  box-shadow: $box-shadow, -1px 0 0 $gray-100, -2px 1px 0 $gray-100,
+  box-shadow: $box-shadow-dark, -1px 0 0 $gray-100, -2px 1px 0 $gray-100,
     -2px 2px 0 $gray-100, -3px 2px 0 $gray-100, -3px 3px 0 $gray-100,
-    $box-shadow-dark;
+    $box-shadow-dark, $box-shadow-dark;
+  scale: 1;
+  translate: 0 0;
   transform-origin: top;
   transform: rotate3d(1, 1, 1, -45deg);
-  transition: all calc($transition-duration * 2) $transition-timing-function;
+  transition: scale 2s $transition-timing-function,
+    translate 2s $transition-timing-function,
+    transform-origin 2s $transition-timing-function,
+    transform 2s $transition-timing-function;
 
   .slide:hover & {
     scale: 1.15;
+    translate: -500px -500px;
+    transform-origin: top left;
+    transform: rotate3d(1, 0.2, 1, -30deg);
+    transition: scale calc($transition-duration * 2) $transition-timing-function,
+      translate 5s 0.5s $transition-timing-function,
+      transform-origin 5s 0.5s $transition-timing-function,
+      transform 5s 0.5s $transition-timing-function;
   }
 }
 
