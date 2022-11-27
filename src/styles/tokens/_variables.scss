@@ -9,6 +9,7 @@ $gray-400: #6f7281;
 $gray-500: #53555c;
 $gray-600: #363639;
 $gray-700: #23272e;
+$gray-800: #15171c;
 
 $navy-100: #e4e9ed;
 $navy-400: #1451a5;
@@ -38,31 +39,31 @@ $red-100: #f8d8d9;
 $red-400: #da3e42;
 $red-700: #881315;
 
-$color-primary: $purple-400;
+$color-primary: #3bb2b1;
 $color-primary-light: $purple-100;
 $color-primary-dark: $purple-700;
-$color-secondary: $purple-700;
+$color-secondary: #f3b4ee;
 $color-secondary-light: $purple-100;
 $color-secondary-dark: $purple-700;
 
-$color-danger: $red-400;
+$color-danger: #ec7a82;
 $color-danger-light: $red-100;
 $color-danger-dark: $red-700;
-$color-warning: $yellow-400;
+$color-warning: #ffc45b;
 $color-warning-light: $yellow-100;
 $color-warning-dark: $yellow-700;
-$color-success: $green-400;
+$color-success: #a7e5a9;
 $color-success-light: $green-100;
 $color-success-dark: $green-700;
-$color-info: $blue-400;
+$color-info: #84c4fd;
 $color-info-light: $blue-100;
 $color-info-dark: $blue-700;
 
-$title-color: $gray-600;
+$title-color: $gray-100;
 
-$text-color: $gray-400;
-$text-color-light: $gray-300;
-$text-color-dark: $gray-500;
+$text-color: $gray-300;
+$text-color-light: $gray-400;
+$text-color-dark: $gray-200;
 
 $link-color: $color-info;
 $link-color-light: $color-info-light;
@@ -106,8 +107,8 @@ $spacing-xxl: calc($spacing-base * 2.5);
 
 $border-width: 2px;
 $border-style: solid;
-$border-color: $gray-200;
-$border-color-dark: $gray-300;
+$border-color: $gray-400;
+$border-color-dark: $gray-200;
 $border-color-alt: $color-secondary;
 $border: $border-width $border-style $border-color;
 $border-dotted: $border-width dotted $border-color-dark;
