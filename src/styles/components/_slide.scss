@@ -6,10 +6,11 @@
   background-color: $gray-100;
   border-radius: $border-radius;
   box-shadow: $box-shadow-dark;
-  transition: all calc($transition-duration * 2) $transition-timing-function;
+  transition: all $transition-duration $transition-timing-function;
 
   &:hover {
     scale: 1.025;
+    transition: all 1s 0.25s $transition-timing-function;
   }
 }
 
