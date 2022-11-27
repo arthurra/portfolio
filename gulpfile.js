@@ -1,8 +1,8 @@
-const { src, dest, watch, series } = require("gulp");
-const browserSync = require("browser-sync").create();
-const sass = require("gulp-sass")(require("sass"));
-const autoprefixer = require("gulp-autoprefixer");
-const sourcemaps = require("gulp-sourcemaps");
+let { src, dest, watch, series } = require("gulp"),
+  browserSync = require("browser-sync").create(),
+  sass = require("gulp-sass")(require("sass")),
+  autoprefixer = require("gulp-autoprefixer"),
+  sourcemaps = require("gulp-sourcemaps");
 
 function scssTask() {
   return src("src/styles/main.scss", { sourcemaps: true })
@@ -17,6 +17,10 @@ function htmlTask() {
 
 function fontTask() {
   return src("src/fonts/*").pipe(dest("build/fonts/"));
+}
+
+function imageTask() {
+  return src("src/images/*").pipe(dest("build/images/"));
 }
 
 // Static server
@@ -39,4 +43,11 @@ function watchTask() {
   watch("src/*.html", series(htmlTask, browserSyncReload));
 }
 
-exports.default = series(htmlTask, fontTask, scssTask, serve, watchTask);
+exports.default = series(
+  htmlTask,
+  fontTask,
+  imageTask,
+  scssTask,
+  serve,
+  watchTask
+);

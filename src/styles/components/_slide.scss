@@ -6,6 +6,11 @@
   background-color: $gray-100;
   border-radius: $border-radius;
   box-shadow: $box-shadow-dark;
+  transition: all calc($transition-duration * 2) $transition-timing-function;
+
+  &:hover {
+    scale: 1.025;
+  }
 }
 
 .slide__image-container {
@@ -13,7 +18,18 @@
   height: 400px;
   background-color: $gray-200;
   border-radius: $border-radius 0 0 $border-radius;
+  overflow: hidden;
   transition: all $transition-duration $transition-timing-function;
+}
+
+.slide__image-container img {
+  width: 100%;
+  object-fit: contain;
+  transition: all calc($transition-duration * 2) $transition-timing-function;
+
+  .slide:hover & {
+    scale: 1.025;
+  }
 }
 
 .slide__title {
