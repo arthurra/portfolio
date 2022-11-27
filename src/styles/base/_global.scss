@@ -11,16 +11,8 @@ html {
 body {
   @extend %p;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-variant-ligatures: common-ligatures contextual;
-  font-variant-alternates: styleset(ss01) character-variant(cv08);
-  font-variant-numeric: diagonal-fractions;
   font-kerning: normal;
-  -moz-font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1,
-    "cv08" 1, "kern" 1, "liga" 1;
-  font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1,
-    "cv08" 1, "kern" 1, "liga" 1;
   color: $text-color;
 }
 
@@ -35,6 +27,7 @@ body > header {
 }
 
 a {
+  @extend %h5;
   color: $link-color;
   text-decoration: none;
   position: relative;

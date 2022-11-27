@@ -1,7 +1,7 @@
 /* ---------------------------------------- */
 /*                 DISPLAY                  */
 /* ---------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto+Mono&family=Rubik:ital,wght@0,500;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Zilla+Slab:wght@500;600&display=swap");
 .u-hidden {
   display: none !important;
 }
@@ -601,6 +601,18 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Calendas Plus";
+  src: url("/fonts/calendas_plus-webfont.woff2") format("woff2"), url("/fonts/calendas_plus-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Calendas Plus";
+  src: url("/fonts/calendas_plus_italic-webfont.woff2") format("woff2"), url("/fonts/calendas_plus_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
 *,
 *::before,
 *::after {
@@ -613,14 +625,8 @@ html {
 
 body {
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-variant-ligatures: common-ligatures contextual;
-  font-variant-alternates: styleset(ss01) character-variant(cv08);
-  font-variant-numeric: diagonal-fractions;
   font-kerning: normal;
-  -moz-font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
-  font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
   color: #6f7281;
 }
 
@@ -1712,8 +1718,9 @@ h1 {
   font-weight: 700;
   font-size: 2.75rem;
   line-height: 3rem;
-  font-family: "Rubik", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.02em;
+  font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 h1 {
@@ -1722,11 +1729,12 @@ h1 {
 }
 
 h2, .u-font-h2 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2rem;
   line-height: 2.5rem;
-  font-family: "Rubik", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.02em;
+  font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 h2 {
@@ -1735,11 +1743,11 @@ h2 {
 }
 
 h3, .u-font-h3 {
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.125rem;
   line-height: 1.5rem;
-  font-family: "Rubik", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.04em;
+  font-family: "Zilla Slab", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
@@ -1749,10 +1757,12 @@ h3 {
 }
 
 h4, .u-font-h4 {
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
   line-height: 2.25rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -1760,25 +1770,26 @@ h4 {
   padding-bottom: 1rem;
 }
 
-.u-font-label, label, .fieldset__label, h5, .u-font-h5 {
+.u-font-label, label, .fieldset__label, h5, .u-font-h5, a, .button {
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.5rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.01em;
+  font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
 }
 
 h5 {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+  color: #35247c;
 }
 
 h6, .form-group__help-text {
-  font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Zilla Slab", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.01em;
 }
 
@@ -1789,15 +1800,27 @@ h6 {
 
 .has-tooltip:before, .button.disabled:before,
 .button [disabled]:before, .button--icon:before, .table th,
-.table td, p, .u-font-p, body, li, .button, .form-group__input, .form-group__file-label {
+.table td, p, .u-font-p, body, li, .form-group__input, .form-group__file-label {
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 p {
   padding-bottom: 1rem;
+}
+
+.lead-text {
+  font-weight: 500;
+  font-size: 2.5rem;
+  font-style: italic;
+  line-height: 3rem;
+  font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.lead-text {
+  color: #363639;
 }
 
 .u-font-label, label, .fieldset__label {
