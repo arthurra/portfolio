@@ -661,6 +661,11 @@ ol,
 ul {
   padding-left: 1rem;
 }
+ol.flex,
+ul.flex {
+  padding-left: 0;
+  gap: 4rem;
+}
 
 ol {
   list-style-type: decimal;
@@ -670,6 +675,10 @@ ol {
 ul {
   list-style-type: disc;
   margin-bottom: 1rem;
+}
+
+li::marker {
+  color: #ec7a82;
 }
 
 code {
@@ -1743,7 +1752,7 @@ h2 {
   padding-bottom: 1rem;
 }
 
-h3, .u-font-h3 {
+h3, .u-font-h3, li {
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.5rem;
@@ -1801,7 +1810,7 @@ h6 {
 
 .has-tooltip:before, .button.disabled:before,
 .button [disabled]:before, .button--icon:before, .table th,
-.table td, p, .u-font-p, body, li, .form-group__input, .form-group__file-label {
+.table td, p, .u-font-p, body, .form-group__input, .form-group__file-label {
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.75rem;
