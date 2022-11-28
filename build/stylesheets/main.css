@@ -123,7 +123,7 @@
   display: block;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #ec7a82;
+  color: #ffc45b;
 }
 
 .u-font-p {
@@ -636,10 +636,6 @@ header,
 main,
 footer {
   padding: 2rem;
-}
-
-body > header {
-  border-bottom: 2px solid #6f7281;
 }
 
 a {
