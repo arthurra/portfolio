@@ -731,12 +731,12 @@ hr::after {
 }
 .button--hover, .button:hover {
   text-decoration: none;
-  color: #35247c;
-  background-color: #e1ddf4;
+  color: #881315;
+  background-color: #f8d8d9;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
 }
 .button:focus {
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #f8d8d9, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
   outline: none;
 }
 .button--pressed, .button:active {
@@ -756,34 +756,34 @@ hr::after {
   opacity: 0.65;
 }
 .button--primary {
-  color: #35247c;
-  background-color: #e1ddf4;
+  color: #881315;
+  background-color: #f8d8d9;
   border-color: #ec7a82;
 }
 .button--primary:focus {
   color: #ec7a82;
   background-color: #fff;
   border-color: #ec7a82;
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #f8d8d9, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
 }
 .button--primary:hover {
   color: #fff;
-  border-color: #35247c;
+  border-color: #881315;
   background-color: #ec7a82;
 }
 .button--primary:active {
   box-shadow: 0 0 0 2px #fff inset;
 }
 .button--secondary {
-  color: #35247c;
-  background-color: #e1ddf4;
+  color: #865c18;
+  background-color: #fee9b4;
   border-color: #ffc45b;
 }
 .button--secondary:focus {
   color: #ffc45b;
   background-color: #fff;
   border-color: #ffc45b;
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #fee9b4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
 }
 .button--secondary:hover {
   color: #fff;
@@ -878,8 +878,8 @@ hr::after {
   border-color: #ec7a82;
 }
 .button--outline.button--hover, .button--outline:hover {
-  color: #35247c;
-  background-color: #e1ddf4;
+  color: #881315;
+  background-color: #f8d8d9;
   border-color: #ec7a82;
 }
 .button--outline.button--pressed, .button--outline:active {
@@ -992,16 +992,16 @@ hr::after {
   color: #ec7a82;
   background-color: #fff;
   border-color: #ec7a82;
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #f8d8d9, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
 }
 .button--link.button--hover, .button--link:hover {
-  color: #35247c;
-  background-color: #e1ddf4;
+  color: #881315;
+  background-color: #f8d8d9;
   border-color: #ec7a82;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
 }
 .button--link:focus:hover {
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #f8d8d9, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
 }
 .button--link.button--pressed, .button--link:active {
   color: #fff;
@@ -1014,7 +1014,7 @@ hr::after {
 .button--link.button--primary:focus {
   color: #ec7a82;
   background-color: #fff;
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #f8d8d9, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
 }
 .button--link.button--primary:hover {
   color: #fff;
@@ -1030,7 +1030,7 @@ hr::after {
 .button--link.button--secondary:focus {
   color: #ffc45b;
   background-color: #fff;
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #fee9b4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
 }
 .button--link.button--secondary:hover {
   color: #fff;
@@ -1202,7 +1202,7 @@ hr::after {
 .form-group__input:focus {
   background-color: #fff;
   border-color: #ec7a82;
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #f8d8d9, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
   outline: none;
 }
 .form-group__input.disabled, .form-group__input[disabled] {
@@ -1261,7 +1261,7 @@ hr::after {
 }
 .form-group--info .form-group__input:focus, .form-group--success .form-group__input:focus, .form-group--warning .form-group__input:focus, .form-group--error .form-group__input:focus, .form-group--danger .form-group__input:focus {
   border-color: #ec7a82;
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #f8d8d9, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
 }
 
 .form-group__input-icon {
@@ -1386,7 +1386,7 @@ hr::after {
 .form-group--radio .form-group__input:focus-within {
   background-color: white;
   border-color: #ec7a82;
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #f8d8d9, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
   outline: none;
 }
 
@@ -1535,7 +1535,7 @@ hr::after {
 .form-group--file .form-group__input:focus-within {
   border-color: #ec7a82;
   background-color: #fff;
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #f8d8d9, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
 }
 
 /* ---------------------------------------- */
@@ -1726,7 +1726,7 @@ hr::after {
 .form-group--toggle .form-group__toggle-checkbox:focus + .form-group__toggle {
   background-color: white;
   border-color: #ec7a82;
-  box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 4px #f8d8d9, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
   outline: none;
 }
 
@@ -2017,7 +2017,7 @@ small {
 .slide__image-container {
   position: relative;
   height: 500px;
-  background-color: #e1ddf4;
+  background-color: #f8d8d9;
   border-radius: 0.25rem 0 0 0.25rem;
   overflow: hidden;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);

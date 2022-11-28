@@ -24,31 +24,38 @@ $purple-400: #6b52c7;
 $purple-700: #35247c;
 
 $blue-100: #c8e4fe;
+$blue-300: #84c4fd;
 $blue-400: #1861c8;
 $blue-700: #0f3f81;
 
 $green-100: #d2ece3;
+$green-300: #a7e5a9;
 $green-400: #1a8a60;
 $green-700: #0d5038;
 
 $yellow-100: #fee9b4;
+$yellow-300: #ffc45b;
 $yellow-400: #d28a25;
 $yellow-700: #865c18;
 
 $red-100: #f8d8d9;
+$red-300: #ec7a82;
 $red-400: #da3e42;
 $red-700: #881315;
 
-$color-danger: #ec7a82;
+$teal-300: #3bb2b1;
+$pink-300: #f3b4ee;
+
+$color-danger: $red-300;
 $color-danger-light: $red-100;
 $color-danger-dark: $red-700;
-$color-warning: #ffc45b;
+$color-warning: $yellow-300;
 $color-warning-light: $yellow-100;
 $color-warning-dark: $yellow-700;
-$color-success: #a7e5a9;
+$color-success: $green-300;
 $color-success-light: $green-100;
 $color-success-dark: $green-700;
-$color-info: #84c4fd;
+$color-info: $blue-300;
 $color-info-light: $blue-100;
 $color-info-dark: $blue-700;
 
@@ -61,15 +68,12 @@ $text-color-dark: $gray-200;
 $link-color: $color-info;
 $link-color-light: $color-info-light;
 
-// $color-primary: #3bb2b1;
-$color-primary: $color-danger;
-$color-primary-light: $purple-100;
-$color-primary-dark: $purple-700;
-// $color-secondary: #f3b4ee;
-// $color-secondary: #3bb2b1;
-$color-secondary: $color-warning;
-$color-secondary-light: $purple-100;
-$color-secondary-dark: $purple-700;
+$color-primary: $red-300;
+$color-primary-light: $red-100;
+$color-primary-dark: $red-700;
+$color-secondary: $yellow-300;
+$color-secondary-light: $yellow-100;
+$color-secondary-dark: $yellow-700;
 
 // ---------------------------------- \\
 //             TYPOGRAPHY             \\
