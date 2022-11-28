@@ -65,6 +65,7 @@ li {
   @extend %h3;
 
   &::marker {
+    font-weight: 600;
     color: $color-primary;
   }
 }

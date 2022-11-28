@@ -675,6 +675,7 @@ ul {
 }
 
 li::marker {
+  font-weight: 600;
   color: #ec7a82;
 }
 
@@ -1768,7 +1769,7 @@ h2 {
 }
 
 h3, .u-font-h3, li {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.5rem;
   font-family: "Zilla Slab", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
