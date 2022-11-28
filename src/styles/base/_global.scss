@@ -86,3 +86,22 @@ code {
   white-space: pre;
   vertical-align: middle;
 }
+
+hr {
+  border: none;
+  border-top: $border;
+  width: 100%;
+  overflow: visible;
+  text-align: center;
+  font-family: $font-family-title;
+  color: $border-color-dark;
+  font-size: 1.5rem;
+
+  &::after {
+    background: $gray-700;
+    content: "§";
+    padding: 0 $spacing-sm;
+    position: relative;
+    top: calc($spacing-md * -1);
+  }
+}

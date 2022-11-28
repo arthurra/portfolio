@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ---------------------------------------- */
 /*                 DISPLAY                  */
 /* ---------------------------------------- */
@@ -693,6 +694,24 @@ code {
   line-height: 1;
   white-space: pre;
   vertical-align: middle;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #6f7281;
+  width: 100%;
+  overflow: visible;
+  text-align: center;
+  font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #c4c9cb;
+  font-size: 1.5rem;
+}
+hr::after {
+  background: #23272e;
+  content: "§";
+  padding: 0 0.5rem;
+  position: relative;
+  top: -1rem;
 }
 
 .button {
@@ -2096,7 +2115,7 @@ nav {
   justify-content: end;
   gap: 2rem;
   position: relative;
-  margin-top: 3rem;
+  margin-top: 1rem;
   z-index: 1;
 }
 footer {
