@@ -1,0 +1,12 @@
+.logo {
+  @extend %link;
+
+  fill: $title-color;
+  width: 3rem;
+  height: 3rem;
+  transition: all $transition-duration $transition-timing-function;
+
+  &:hover {
+    fill: $color-primary;
+  }
+}
