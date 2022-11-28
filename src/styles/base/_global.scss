@@ -48,6 +48,11 @@ label {
 ol,
 ul {
   padding-left: $spacing-md;
+
+  &.flex {
+    padding-left: 0;
+    gap: 4rem;
+  }
 }
 
 ol {
@@ -61,7 +66,11 @@ ul {
 }
 
 li {
-  @extend %p;
+  @extend %h3;
+
+  &::marker {
+    color: $color-primary;
+  }
 }
 
 code {
