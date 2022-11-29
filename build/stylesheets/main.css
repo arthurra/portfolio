@@ -2052,13 +2052,15 @@ small {
 }
 
 .slide__title {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   color: #fafafa;
   border-bottom: 2px dotted #c4c9cb;
 }
 
 .slide__description-container {
   display: grid;
+  grid-template-rows: auto 1fr auto;
   gap: 1rem;
   background-color: #13161e;
   padding: 2rem;
