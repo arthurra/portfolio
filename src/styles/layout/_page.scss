@@ -2,18 +2,15 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-gap: calc($spacing-xl);
   grid-template-areas:
     "header"
     "main"
     "footer";
   min-height: 100vh;
-  // background-color: $gray-100;
 }
 
 header {
   grid-area: header;
-  // background-color: #fff;
 }
 
 main {
