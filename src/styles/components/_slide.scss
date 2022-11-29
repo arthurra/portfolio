@@ -6,6 +6,7 @@
   background-color: $gray-100;
   border-radius: $border-radius;
   box-shadow: $box-shadow-dark;
+  scroll-snap-align: center;
   transition: all $transition-duration $transition-timing-function;
 
   &:hover {

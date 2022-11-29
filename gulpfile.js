@@ -20,7 +20,7 @@ function fontTask() {
 }
 
 function imageTask() {
-  return src("src/images/*").pipe(dest("build/images/"));
+  return src("src/images/**/*").pipe(dest("build/images/"));
 }
 
 // Static server
