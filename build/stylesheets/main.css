@@ -624,6 +624,11 @@ html {
   font-size: 18px;
 }
 
+hr::after, body {
+  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  background-blend-mode: overlay;
+}
+
 body {
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures contextual;
@@ -704,11 +709,11 @@ hr {
   font-size: 1.5rem;
 }
 hr::after {
-  background: #23272e;
   content: "§";
   padding: 0 0.5rem;
   position: relative;
   top: -1rem;
+  background-color: #23272e;
 }
 
 .button {
