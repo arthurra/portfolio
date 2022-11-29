@@ -6,6 +6,8 @@
 
 html {
   font-size: $base-font-size;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
 }
 
 %background-texture {
