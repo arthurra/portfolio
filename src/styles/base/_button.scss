@@ -229,7 +229,7 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
 
     &.button--hover,
     &:hover {
-      color: $color-primary-dark;
+      color: $gray-700;
       background-color: $color-primary-light;
       border-color: $color-primary;
     }
@@ -250,7 +250,7 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
       }
 
       &:hover {
-        color: #fff;
+        color: $gray-700;
         background-color: $color-primary;
         border-color: $color-primary;
       }

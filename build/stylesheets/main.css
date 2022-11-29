@@ -645,7 +645,7 @@ a {
   transition: color 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 a:hover {
-  color: #ec7a82;
+  color: #84c4fd;
   text-decoration: underline;
 }
 
@@ -879,7 +879,7 @@ hr::after {
   border-color: #ec7a82;
 }
 .button--outline.button--hover, .button--outline:hover {
-  color: #881315;
+  color: #23272e;
   background-color: #f8d8d9;
   border-color: #ec7a82;
 }
@@ -896,7 +896,7 @@ hr::after {
   border-color: #ec7a82;
 }
 .button--outline.button--primary:hover {
-  color: #fff;
+  color: #23272e;
   background-color: #ec7a82;
   border-color: #ec7a82;
 }
@@ -2061,11 +2061,13 @@ small {
 .logo, .link {
   display: inline-block;
   position: relative;
+  padding: 0.25rem;
 }
 .logo::after, .link::after {
   content: "";
   display: block;
   position: absolute;
+  left: 0;
   width: 100%;
   height: 50%;
   background-color: transparent;
@@ -2076,10 +2078,11 @@ small {
   transform-origin: left;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
-.logo:hover, .link:hover {
+.logo:hover, .link:hover, .active.logo, .active.link {
+  color: #84c4fd;
   text-decoration: none;
 }
-.logo:hover::after, .link:hover::after {
+.logo:hover::after, .link:hover::after, .active.logo::after, .active.link::after {
   scale: 100% 100%;
 }
 
