@@ -30,7 +30,7 @@ a {
   transition: color $transition-duration $transition-timing-function;
 
   &:hover {
-    color: $color-primary;
+    color: $color-info;
     text-decoration: underline;
   }
 }
