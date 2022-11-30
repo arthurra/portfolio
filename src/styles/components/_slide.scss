@@ -35,20 +35,24 @@
   translate: 0 0;
   transform-origin: top;
   transform: rotate3d(1, 1, 1, -45deg);
-  transition: scale 2s $transition-timing-function,
-    translate 2s $transition-timing-function,
-    transform-origin 2s $transition-timing-function,
-    transform 2s $transition-timing-function;
+  transition: scale 1s $transition-timing-function,
+    translate 1s $transition-timing-function,
+    transform-origin 1s $transition-timing-function,
+    transform 1s $transition-timing-function;
 
   .slide:hover & {
-    scale: 1.15;
-    translate: -500px -500px;
-    transform-origin: top left;
-    transform: rotate3d(1, 0.2, 1, -30deg);
-    transition: scale 10s $transition-timing-function,
-      translate 10s 0.5s $transition-timing-function,
-      transform-origin 10s 0.5s $transition-timing-function,
-      transform 10s 0.5s $transition-timing-function;
+    scale: 1.2;
+    translate: -25% 8rem;
+    transform-origin: -25% 0;
+    transform: rotate3d(1, 0.2, 1, -20deg);
+    transition: scale 5s $transition-timing-function,
+      translate 5s 0.5s $transition-timing-function,
+      transform-origin 5s 0.5s $transition-timing-function,
+      transform 5s 0.5s $transition-timing-function;
+
+    &.scroll {
+      translate: -75% -75%;
+    }
   }
 }
 
