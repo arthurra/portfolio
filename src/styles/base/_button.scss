@@ -4,7 +4,7 @@
 
 $button-height: $input-height;
 $small-button-height: $button-height * 0.75;
-$button-box-shadow-inset: 0 0 0 $border-width #fff inset;
+$button-box-shadow-inset: 0 0 0 $border-width $gray-700 inset;
 $button-box-shadow-elevation: $box-shadow;
 $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
 
