@@ -42,7 +42,7 @@ function watchTask() {
   watch("src/styles/**/*.scss", series(scssTask, browserSyncReload));
   watch("src/*.html", series(htmlTask, browserSyncReload));
   watch("src/fonts/*", series(fontTask));
-  watch("src/images/*", series(imageTask));
+  watch("src/images/**/*", series(imageTask));
 }
 
 exports.default = series(

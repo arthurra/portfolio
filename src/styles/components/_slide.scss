@@ -42,8 +42,8 @@
     transform 1s $transition-timing-function;
 
   .slide:hover & {
-    scale: 1.2;
-    translate: -25% 8rem;
+    scale: 0.8;
+    translate: 0 8rem;
     transform-origin: -25% 0;
     transform: rotate3d(1, 0.2, 1, -20deg);
     transition: scale 5s $transition-timing-function,
@@ -52,7 +52,7 @@
       transform 5s $transition-timing-function;
 
     &.scroll {
-      translate: -55% -55%;
+      translate: -10% -10%;
     }
   }
 }
