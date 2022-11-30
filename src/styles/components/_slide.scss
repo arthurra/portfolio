@@ -47,9 +47,9 @@
     transform-origin: -25% 0;
     transform: rotate3d(1, 0.2, 1, -20deg);
     transition: scale 5s $transition-timing-function,
-      translate 5s 0.5s $transition-timing-function,
-      transform-origin 5s 0.5s $transition-timing-function,
-      transform 5s 0.5s $transition-timing-function;
+      translate 5s $transition-timing-function,
+      transform-origin 5s $transition-timing-function,
+      transform 5s $transition-timing-function;
 
     &.scroll {
       translate: -75% -75%;
