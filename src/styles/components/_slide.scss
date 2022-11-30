@@ -16,6 +16,7 @@
 }
 
 .slide__image-container {
+  @extend %background-texture;
   position: relative;
   height: 500px;
   background-color: $color-primary-light;
