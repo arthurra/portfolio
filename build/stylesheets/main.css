@@ -2048,7 +2048,7 @@ small {
   translate: -25% 8rem;
   transform-origin: -25% 0;
   transform: rotate3d(1, 0.2, 1, -20deg);
-  transition: scale 5s cubic-bezier(0.65, 0, 0.35, 1), translate 5s 0.5s cubic-bezier(0.65, 0, 0.35, 1), transform-origin 5s 0.5s cubic-bezier(0.65, 0, 0.35, 1), transform 5s 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: scale 5s cubic-bezier(0.65, 0, 0.35, 1), translate 5s cubic-bezier(0.65, 0, 0.35, 1), transform-origin 5s cubic-bezier(0.65, 0, 0.35, 1), transform 5s cubic-bezier(0.65, 0, 0.35, 1);
 }
 .slide:hover .slide__image-container img.scroll {
   translate: -75% -75%;
