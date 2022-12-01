@@ -61,12 +61,7 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
   &.disabled,
   [disabled] {
     @extend %tooltip;
-    color: $text-color-light !important;
-    background: $gray-100 !important;
-    border: $border !important;
     cursor: not-allowed !important;
-    box-shadow: none !important;
-    opacity: 0.65;
   }
 
   // ---------------------------------- \\

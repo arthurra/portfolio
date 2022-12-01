@@ -2,18 +2,17 @@
   position: relative;
 
   &:before {
-    @extend %p;
+    @extend %label;
     content: attr(aria-label);
     display: block;
     position: absolute;
     top: calc($spacing-xs) * -1;
     left: 50%;
-    letter-spacing: 0.01em;
     line-height: 1;
     white-space: nowrap;
-    color: #fff;
+    color: $gray-700;
     padding: $spacing-sm;
-    background-color: $color-secondary;
+    background-color: $color-info;
     border-radius: $border-radius;
     transform: translate(-50%, calc(-100% + 0.5rem));
     opacity: 0;
@@ -31,7 +30,7 @@
     height: 0;
     border-width: $spacing-xs;
     border-style: solid;
-    border-color: $color-secondary transparent transparent transparent;
+    border-color: $color-info transparent transparent transparent;
     transform: translate(-50%, calc(-100% + 0.5rem));
     opacity: 0;
     z-index: 100;
@@ -53,8 +52,13 @@
     }
   }
 
-  &[disabled]::before {
+  &[disabled]::before,
+  &.disabled::before {
     content: attr(aria-label) " Disabled";
+  }
+
+  &.disabled--coming-soon::before {
+    content: "Coming Soon!";
   }
 }
 
