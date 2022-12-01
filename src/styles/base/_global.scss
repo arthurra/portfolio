@@ -107,7 +107,7 @@ hr {
     content: "§";
     padding: 0 $spacing-sm;
     position: relative;
-    top: calc($spacing-md * -1);
+    top: -1.5ch;
     background-color: $gray-700;
   }
 }
