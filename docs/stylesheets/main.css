@@ -2,7 +2,7 @@
 /* ---------------------------------------- */
 /*                 DISPLAY                  */
 /* ---------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Zilla+Slab:wght@500;600&display=swap");
+@import url("https:/fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Zilla+Slab:wght@500;600&display=swap");
 .u-hidden {
   display: none !important;
 }
@@ -608,13 +608,13 @@ table {
 
 @font-face {
   font-family: "Calendas Plus";
-  src: url("/fonts/calendas_plus-webfont.woff2") format("woff2"), url("/fonts/calendas_plus-webfont.woff") format("woff");
+  src: url("../fonts/calendas_plus-webfont.woff2") format("woff2"), url("../fonts/calendas_plus-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Calendas Plus";
-  src: url("/fonts/calendas_plus_italic-webfont.woff2") format("woff2"), url("/fonts/calendas_plus_italic-webfont.woff") format("woff");
+  src: url("../fonts/calendas_plus_italic-webfont.woff2") format("woff2"), url("../fonts/calendas_plus_italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }

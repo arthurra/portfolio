@@ -8,26 +8,26 @@ function scssTask() {
   return src("src/styles/main.scss", { sourcemaps: true })
     .pipe(autoprefixer())
     .pipe(sass())
-    .pipe(dest("build/stylesheets", { sourcemaps: "./maps" }));
+    .pipe(dest("docs/stylesheets", { sourcemaps: "./maps" }));
 }
 
 function htmlTask() {
-  return src("src/**/*.html").pipe(dest("build"));
+  return src("src/**/*.html").pipe(dest("docs"));
 }
 
 function fontTask() {
-  return src("src/fonts/*").pipe(dest("build/fonts/"));
+  return src("src/fonts/*").pipe(dest("docs/fonts/"));
 }
 
 function imageTask() {
-  return src("src/images/**/*").pipe(dest("build/images/"));
+  return src("src/images/**/*").pipe(dest("docs/images/"));
 }
 
 // Static server
 function serve(cb) {
   browserSync.init({
     server: {
-      baseDir: "build",
+      baseDir: "docs",
     },
   });
   cb();
