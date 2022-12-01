@@ -1,0 +1,75 @@
+.slide {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 1fr;
+  margin: 5rem $spacing-md;
+  background-color: $gray-100;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-dark;
+  scroll-snap-align: center;
+  transition: all $transition-duration $transition-timing-function;
+
+  &:hover {
+    scale: 1.025;
+    transition: all 0.5s $transition-timing-function;
+  }
+}
+
+.slide__image-container {
+  @extend %background-texture;
+  position: relative;
+  height: 500px;
+  background-color: $color-primary-light;
+  border-radius: $border-radius 0 0 $border-radius;
+  overflow: hidden;
+  transition: all $transition-duration $transition-timing-function;
+}
+
+.slide__image-container img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: $box-shadow-dark, -1px 0 0 $gray-100, -2px 1px 0 $gray-100,
+    -2px 2px 0 $gray-100, -3px 2px 0 $gray-100, -3px 3px 0 $gray-100,
+    $box-shadow-dark, $box-shadow-dark;
+  scale: 1;
+  translate: 0 0;
+  transform-origin: top;
+  transform: rotate3d(1, 1, 1, -45deg);
+  transition: scale 1s $transition-timing-function,
+    translate 1s $transition-timing-function,
+    transform-origin 1s $transition-timing-function,
+    transform 1s $transition-timing-function;
+
+  .slide:hover & {
+    scale: 0.8;
+    translate: 0 8rem;
+    transform-origin: -25% 0;
+    transform: rotate3d(1, 0.2, 1, -20deg);
+    transition: scale 5s $transition-timing-function,
+      translate 5s $transition-timing-function,
+      transform-origin 5s $transition-timing-function,
+      transform 5s $transition-timing-function;
+
+    &.scroll {
+      translate: -10% -10%;
+    }
+  }
+}
+
+.slide__title {
+  padding-top: $spacing-md;
+  padding-bottom: $spacing-xl;
+  color: $title-color;
+  border-bottom: $border-dotted;
+}
+
+.slide__description-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: $spacing-md;
+  background-color: $gray-800;
+  padding: $spacing-xl;
+  border-radius: 0 $border-radius $border-radius 0;
+  transition: all $transition-duration $transition-timing-function;
+}
