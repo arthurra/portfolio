@@ -1,0 +1,2352 @@
+@charset "UTF-8";
+/* ---------------------------------------- */
+/*                 DISPLAY                  */
+/* ---------------------------------------- */
+@import url("https:/../fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Zilla+Slab:wght@500;600&display=swap");
+.u-hidden {
+  display: none !important;
+}
+
+.u-block {
+  display: block;
+}
+
+.u-inline {
+  display: inline-block !important;
+}
+
+.form-group--toggle .form-group__toggle-checkbox, .u-sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+@media screen and (max-width: 950px) {
+  .u-show-mobile {
+    display: inherit;
+  }
+}
+@media screen and (min-width: 950px) {
+  .u-show-mobile {
+    display: none !important;
+  }
+  .u-hide-mobile {
+    display: inherit;
+  }
+}
+/* ---------------------------------------- */
+/*                  CURSOR                  */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*                   SIZE                   */
+/* ---------------------------------------- */
+.u-full-width {
+  width: 100%;
+}
+
+/* ---------------------------------------- */
+/*                 POSITION                 */
+/* ---------------------------------------- */
+.u-absolute {
+  position: absolute !important;
+}
+
+.u-absolute--right {
+  right: 0;
+}
+
+.u-float-right {
+  float: right;
+}
+
+.u-float-left {
+  float: left;
+}
+
+.u-clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.u-push-right {
+  margin-left: auto;
+}
+
+.u-push-left {
+  margin-right: auto;
+}
+
+.u-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* ---------------------------------------- */
+/*                   TEXT                   */
+/* ---------------------------------------- */
+/* WHITE SPACE */
+.u-text-nowrap {
+  white-space: nowrap;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ALIGNMENT */
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+/* FONT */
+.u-font-label {
+  display: block;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: hsl(38deg, 100%, 68%);
+}
+
+.u-font-p {
+  text-transform: none !important;
+}
+
+.u-font-bold {
+  font-weight: bold !important;
+}
+
+/* COLORS */
+.u-color-text-default:not(a:hover) {
+  color: hsl(208deg, 8%, 63%) !important;
+}
+
+.u-color-text-light:not(a:hover) {
+  color: hsl(230deg, 7%, 47%) !important;
+}
+
+.u-color-text-dark:not(a:hover) {
+  color: hsl(197deg, 6%, 78%) !important;
+}
+
+.u-color-text-title:not(a:hover) {
+  color: hsl(0deg, 0%, 98%) !important;
+}
+
+.u-color-text-title-inverse:not(a:hover) {
+  color: hsl(218deg, 14%, 16%) !important;
+}
+
+.u-color-text-white {
+  color: #fff !important;
+}
+
+.u-color-primary {
+  color: hsl(356deg, 75%, 70%) !important;
+}
+
+.u-color-secondary {
+  color: hsl(38deg, 100%, 68%) !important;
+}
+
+.u-color-success {
+  color: hsl(122deg, 54%, 78%) !important;
+}
+
+.u-color-warning {
+  color: hsl(38deg, 100%, 68%) !important;
+}
+
+.u-color-favorite {
+  color: hsl(35deg, 70%, 48%) !important;
+}
+
+.u-color-danger {
+  color: hsl(356deg, 75%, 70%) !important;
+}
+
+.u-color-info {
+  color: hsl(208deg, 97%, 75%) !important;
+}
+
+/* ---------------------------------------- */
+/*             BACKGROUND COLOR             */
+/* ---------------------------------------- */
+.u-bg-white {
+  background-color: #fff !important;
+}
+
+.u-bg-gray-light {
+  background-color: hsl(0deg, 0%, 98%) !important;
+}
+
+/* ---------------------------------------- */
+/*                  BORDER                  */
+/* ---------------------------------------- */
+.u-border {
+  border: 2px solid hsl(230deg, 7%, 47%);
+}
+
+.u-border-top {
+  border-top: 2px solid hsl(230deg, 7%, 47%);
+}
+
+.u-border-right {
+  border-right: 2px solid hsl(230deg, 7%, 47%);
+}
+
+.u-border-bottom {
+  border-bottom: 2px solid hsl(230deg, 7%, 47%);
+}
+
+.u-border-left {
+  border-left: 2px solid hsl(230deg, 7%, 47%);
+}
+
+.u-border--dark {
+  border-color: hsl(197deg, 6%, 78%);
+}
+
+.u-border--alt {
+  border-color: hsl(38deg, 100%, 68%);
+}
+
+.u-border-dashed {
+  border-style: dashed !important;
+}
+
+/* ---------------------------------------- */
+/*                  MARGIN                  */
+/* ---------------------------------------- */
+.u-m-auto {
+  margin: auto;
+}
+
+.u-m-0 {
+  margin: 0 !important;
+}
+
+.u-m-xs {
+  margin: 0.25rem;
+}
+
+.u-m-sm {
+  margin: 0.5rem;
+}
+
+.u-m-md {
+  margin: 1rem;
+}
+
+.u-m-lg {
+  margin: 1.5rem;
+}
+
+.u-m-xl {
+  margin: 2rem;
+}
+
+.u-m-xxl {
+  margin: 2.5rem;
+}
+
+.u-mt-auto {
+  margin-top: auto;
+}
+
+.u-mt-0 {
+  margin-top: 0 !important;
+}
+
+.u-mt-xs {
+  margin-top: 0.25rem;
+}
+
+.u-mt-sm {
+  margin-top: 0.5rem;
+}
+
+.u-mt-md {
+  margin-top: 1rem;
+}
+
+.u-mt-lg {
+  margin-top: 1.5rem;
+}
+
+.u-mt-xl {
+  margin-top: 2rem;
+}
+
+.u-mt-xxl {
+  margin-top: 2.5rem;
+}
+
+.u-mb-auto {
+  margin-bottom: auto;
+}
+
+.u-mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.u-mb-xs {
+  margin-bottom: 0.25rem;
+}
+
+.u-mb-sm {
+  margin-bottom: 0.5rem;
+}
+
+.u-mb-md {
+  margin-bottom: 1rem;
+}
+
+.u-mb-lg {
+  margin-bottom: 1.5rem;
+}
+
+.u-mb-xl {
+  margin-bottom: 2rem;
+}
+
+.u-mb-xxl {
+  margin-bottom: 2.5rem;
+}
+
+.u-ml-auto {
+  margin-left: auto;
+}
+
+.u-ml-0 {
+  margin-left: 0 !important;
+}
+
+.u-ml-xs {
+  margin-left: 0.25rem;
+}
+
+.u-ml-sm {
+  margin-left: 0.5rem;
+}
+
+.u-ml-md {
+  margin-left: 1rem;
+}
+
+.u-ml-lg {
+  margin-left: 1.5rem;
+}
+
+.u-ml-xl {
+  margin-left: 2rem;
+}
+
+.u-ml-xxl {
+  margin-left: 2.5rem;
+}
+
+.u-mr-auto {
+  margin-right: auto;
+}
+
+.u-mr-0 {
+  margin-right: 0 !important;
+}
+
+.u-mr-xs {
+  margin-right: 0.25rem;
+}
+
+.u-mr-sm {
+  margin-right: 0.5rem;
+}
+
+.u-mr-md {
+  margin-right: 1rem;
+}
+
+.u-mr-lg {
+  margin-right: 1.5rem;
+}
+
+.u-mr-xl {
+  margin-right: 2rem;
+}
+
+.u-mr-xxl {
+  margin-right: 2.5rem;
+}
+
+/* ---------------------------------------- */
+/*                 PADDING                  */
+/* ---------------------------------------- */
+.u-p-xs {
+  padding: 1rem !important;
+}
+
+.u-p-sm {
+  padding: 1rem !important;
+}
+
+.u-p-md {
+  padding: 1rem !important;
+}
+
+.u-p-lg {
+  padding: 1rem !important;
+}
+
+.u-p-xl {
+  padding: 1rem !important;
+}
+
+.u-p-xxl {
+  padding: 1rem !important;
+}
+
+.u-pt-0 {
+  padding-top: 0 !important;
+}
+
+.u-pt-xs {
+  padding-top: 0.25rem !important;
+}
+
+.u-pt-sm {
+  padding-top: 0.5rem !important;
+}
+
+.u-pt-md {
+  padding-top: 1rem !important;
+}
+
+.u-pt-lg {
+  padding-top: 1.5rem !important;
+}
+
+.u-pt-xl {
+  padding-top: 2rem !important;
+}
+
+.u-pt-xxl {
+  padding-top: 2.5rem !important;
+}
+
+.u-pr-0 {
+  padding-right: 0 !important;
+}
+
+.u-pr-xs {
+  padding-right: 0.25rem !important;
+}
+
+.u-pr-sm {
+  padding-right: 0.5rem !important;
+}
+
+.u-pr-md {
+  padding-right: 1rem !important;
+}
+
+.u-pr-lg {
+  padding-right: 1.5rem !important;
+}
+
+.u-pr-xl {
+  padding-right: 2rem !important;
+}
+
+.u-pr-xxl {
+  padding-right: 2.5rem !important;
+}
+
+.u-pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.u-pb-xs {
+  padding-bottom: 0.25rem !important;
+}
+
+.u-pb-sm {
+  padding-bottom: 0.5rem !important;
+}
+
+.u-pb-md {
+  padding-bottom: 1rem !important;
+}
+
+.u-pb-lg {
+  padding-bottom: 1.5rem !important;
+}
+
+.u-pb-xl {
+  padding-bottom: 2rem !important;
+}
+
+.u-pb-xxl {
+  padding-bottom: 2.5rem !important;
+}
+
+.u-pl-0 {
+  padding-left: 0 !important;
+}
+
+.u-pl-xs {
+  padding-left: 0.25rem !important;
+}
+
+.u-pl-sm {
+  padding-left: 0.5rem !important;
+}
+
+.u-pl-md {
+  padding-left: 1rem !important;
+}
+
+.u-pl-lg {
+  padding-left: 1.5rem !important;
+}
+
+.u-pl-xl {
+  padding-left: 2rem !important;
+}
+
+.u-pl-xxl {
+  padding-left: 2.5rem !important;
+}
+
+/* ---------------------------------------- */
+/*                SCROLLING                 */
+/* ---------------------------------------- */
+.u-scroll {
+  overflow: auto;
+}
+
+.u-scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.u-scroll-y {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Calendas Plus";
+  src: url("../fonts/calendas_plus-webfont.woff2") format("woff2"), url("../fonts/calendas_plus-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Calendas Plus";
+  src: url("../fonts/calendas_plus_italic-webfont.woff2") format("woff2"), url("../fonts/calendas_plus_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
+.slide__image-container, hr::after, body {
+  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  background-blend-mode: overlay;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures contextual;
+  font-kerning: normal;
+  color: hsl(197deg, 6%, 78%);
+  background-color: hsl(218deg, 14%, 16%);
+}
+
+header,
+main,
+footer {
+  padding: 2rem;
+}
+
+a {
+  color: hsl(0deg, 0%, 98%);
+  text-decoration: none;
+  position: relative;
+  transition: color 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+a:hover {
+  color: hsl(208deg, 97%, 75%);
+  text-decoration: underline;
+}
+
+label {
+  display: inline-block;
+  letter-spacing: 0.01em;
+}
+
+ol,
+ul {
+  padding-left: 1rem;
+}
+ol.flex,
+ul.flex {
+  padding-left: 0;
+  gap: 1rem 3rem;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+li::marker {
+  font-weight: 600;
+  color: hsl(356deg, 75%, 70%);
+}
+
+code {
+  border: 2px solid hsl(230deg, 7%, 47%);
+  background-color: hsl(0deg, 0%, 98%);
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+  font-family: "Roboto Mono", monospace;
+  font-feature-settings: normal;
+  font-size: 87.5%;
+  font-weight: 700;
+  line-height: 1;
+  white-space: pre;
+  vertical-align: middle;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid hsl(230deg, 7%, 47%);
+  width: 100%;
+  overflow: visible;
+  text-align: center;
+  font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: hsl(197deg, 6%, 78%);
+  font-size: 1.5rem;
+}
+hr::after {
+  content: "§";
+  padding: 0 0.5rem;
+  position: relative;
+  top: -1.5ch;
+  background-color: hsl(218deg, 14%, 16%);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  min-height: 3rem;
+  padding: 0.5rem 1rem;
+  color: hsl(208deg, 8%, 63%);
+  background-color: hsl(0deg, 0%, 98%);
+  border: 2px solid hsl(230deg, 7%, 47%);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.button--hover, .button:hover, .button:focus {
+  color: hsl(356deg, 75%, 70%);
+  border-color: hsl(356deg, 75%, 70%);
+}
+.button--hover, .button:hover {
+  text-decoration: none;
+  color: hsl(359deg, 75%, 30%);
+  background-color: hsl(358deg, 70%, 91%);
+  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button:focus {
+  box-shadow: 0 0 0 4px hsl(218deg, 14%, 16%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  outline: none;
+}
+.button--pressed, .button:active {
+  color: #fff;
+  background-color: hsl(356deg, 75%, 70%);
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  translate: 0 2px;
+}
+.button.disabled,
+.button [disabled] {
+  cursor: not-allowed !important;
+}
+.button--primary {
+  color: hsl(359deg, 75%, 30%);
+  background-color: hsl(358deg, 70%, 91%);
+  border-color: hsl(356deg, 75%, 70%);
+}
+.button--primary:focus {
+  color: hsl(356deg, 75%, 70%);
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0 0 4px hsl(218deg, 14%, 16%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--primary:hover {
+  color: #fff;
+  border-color: hsl(359deg, 75%, 30%);
+  background-color: hsl(356deg, 75%, 70%);
+}
+.button--primary:active {
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--secondary {
+  color: hsl(37deg, 70%, 31%);
+  background-color: hsl(43deg, 97%, 85%);
+  border-color: hsl(38deg, 100%, 68%);
+}
+.button--secondary:focus {
+  color: hsl(38deg, 100%, 68%);
+  background-color: #fff;
+  border-color: hsl(38deg, 100%, 68%);
+  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--secondary:hover {
+  color: #fff;
+  border-color: hsl(38deg, 100%, 68%);
+  background-color: hsl(38deg, 100%, 68%);
+}
+.button--secondary:active {
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--confirm, .button--success {
+  color: hsl(159deg, 72%, 18%);
+  background-color: hsl(159deg, 41%, 87%);
+  border-color: hsl(122deg, 54%, 78%);
+}
+.button--confirm:focus, .button--success:focus {
+  color: hsl(122deg, 54%, 78%);
+  background-color: #fff;
+  border-color: hsl(122deg, 54%, 78%);
+  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--confirm:hover, .button--success:hover {
+  color: #fff;
+  border-color: hsl(122deg, 54%, 78%);
+  background-color: hsl(122deg, 54%, 78%);
+}
+.button--confirm:active, .button--success:active {
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--warning {
+  color: hsl(37deg, 70%, 31%);
+  background-color: hsl(43deg, 97%, 85%);
+  border-color: hsl(38deg, 100%, 68%);
+}
+.button--warning:focus {
+  color: hsl(38deg, 100%, 68%);
+  background-color: #fff;
+  border-color: hsl(38deg, 100%, 68%);
+  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--warning:hover {
+  color: #fff;
+  border-color: hsl(38deg, 100%, 68%);
+  background-color: hsl(38deg, 100%, 68%);
+}
+.button--warning:active {
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--danger {
+  color: hsl(359deg, 75%, 30%);
+  background-color: hsl(358deg, 70%, 91%);
+  border-color: hsl(356deg, 75%, 70%);
+}
+.button--danger:focus {
+  color: hsl(356deg, 75%, 70%);
+  background-color: #fff;
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--danger:hover {
+  color: #fff;
+  border-color: hsl(356deg, 75%, 70%);
+  background-color: hsl(356deg, 75%, 70%);
+}
+.button--danger:active {
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--info {
+  color: hsl(215deg, 79%, 28%);
+  background-color: hsl(209deg, 96%, 89%);
+  border-color: hsl(208deg, 97%, 75%);
+}
+.button--info:focus {
+  color: hsl(208deg, 97%, 75%);
+  background-color: #fff;
+  border-color: hsl(208deg, 97%, 75%);
+  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--info:hover {
+  color: #fff;
+  border-color: hsl(208deg, 97%, 75%);
+  background-color: hsl(208deg, 97%, 75%);
+}
+.button--info:active {
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--outline {
+  background-color: transparent;
+}
+.button--outline:focus {
+  color: hsl(356deg, 75%, 70%);
+  border-color: hsl(356deg, 75%, 70%);
+}
+.button--outline.button--hover, .button--outline:hover {
+  color: hsl(218deg, 14%, 16%);
+  background-color: hsl(358deg, 70%, 91%);
+  border-color: hsl(356deg, 75%, 70%);
+}
+.button--outline.button--pressed, .button--outline:active {
+  color: #fff;
+  background-color: hsl(356deg, 75%, 70%);
+}
+.button--outline.button--primary {
+  color: hsl(356deg, 75%, 70%);
+}
+.button--outline.button--primary:focus {
+  color: hsl(218deg, 14%, 16%);
+  background-color: hsl(356deg, 75%, 70%);
+  border-color: hsl(356deg, 75%, 70%);
+}
+.button--outline.button--primary:hover {
+  color: hsl(218deg, 14%, 16%);
+  background-color: hsl(356deg, 75%, 70%);
+  border-color: hsl(356deg, 75%, 70%);
+}
+.button--outline.button--primary:active {
+  background-color: hsl(356deg, 75%, 70%);
+}
+.button--outline.button--secondary {
+  color: hsl(38deg, 100%, 68%);
+}
+.button--outline.button--secondary:focus {
+  color: hsl(38deg, 100%, 68%);
+  background-color: #fff;
+  border-color: hsl(38deg, 100%, 68%);
+}
+.button--outline.button--secondary:hover {
+  color: #fff;
+  background-color: hsl(38deg, 100%, 68%);
+  border-color: hsl(38deg, 100%, 68%);
+}
+.button--outline.button--secondary:active {
+  background-color: hsl(38deg, 100%, 68%);
+}
+.button--outline.button--confirm, .button--outline.button--success {
+  color: hsl(122deg, 54%, 78%);
+}
+.button--outline.button--confirm:focus, .button--outline.button--success:focus {
+  color: hsl(122deg, 54%, 78%);
+  background-color: #fff;
+  border-color: hsl(122deg, 54%, 78%);
+}
+.button--outline.button--confirm:hover, .button--outline.button--success:hover {
+  color: #fff;
+  background-color: hsl(122deg, 54%, 78%);
+  border-color: hsl(122deg, 54%, 78%);
+}
+.button--outline.button--confirm:active, .button--outline.button--success:active {
+  background-color: hsl(122deg, 54%, 78%);
+}
+.button--outline.button--warning {
+  color: hsl(38deg, 100%, 68%);
+}
+.button--outline.button--warning:focus {
+  color: hsl(38deg, 100%, 68%);
+  background-color: #fff;
+  border-color: hsl(38deg, 100%, 68%);
+}
+.button--outline.button--warning:hover {
+  color: #fff;
+  background-color: hsl(38deg, 100%, 68%);
+  border-color: hsl(38deg, 100%, 68%);
+}
+.button--outline.button--warning:active {
+  background-color: hsl(38deg, 100%, 68%);
+}
+.button--outline.button--danger {
+  color: hsl(356deg, 75%, 70%);
+}
+.button--outline.button--danger:focus {
+  color: hsl(356deg, 75%, 70%);
+  background-color: #fff;
+  border-color: hsl(356deg, 75%, 70%);
+}
+.button--outline.button--danger:hover {
+  color: #fff;
+  background-color: hsl(356deg, 75%, 70%);
+  border-color: hsl(356deg, 75%, 70%);
+}
+.button--outline.button--danger:active {
+  background-color: hsl(356deg, 75%, 70%);
+}
+.button--outline.button--info {
+  color: hsl(208deg, 97%, 75%);
+}
+.button--outline.button--info:focus {
+  color: hsl(208deg, 97%, 75%);
+  background-color: #fff;
+  border-color: hsl(208deg, 97%, 75%);
+}
+.button--outline.button--info:hover {
+  color: #fff;
+  background-color: hsl(208deg, 97%, 75%);
+  border-color: hsl(208deg, 97%, 75%);
+}
+.button--outline.button--info:active {
+  background-color: hsl(208deg, 97%, 75%);
+}
+.button--link {
+  color: hsl(208deg, 8%, 63%);
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.button--link:focus {
+  color: hsl(356deg, 75%, 70%);
+  background-color: #fff;
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--link.button--hover, .button--link:hover {
+  color: hsl(359deg, 75%, 30%);
+  background-color: hsl(358deg, 70%, 91%);
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--link:focus:hover {
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--link.button--pressed, .button--link:active {
+  color: #fff;
+  background-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--link.button--primary {
+  color: hsl(356deg, 75%, 70%);
+}
+.button--link.button--primary:focus {
+  color: hsl(356deg, 75%, 70%);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--link.button--primary:hover {
+  color: #fff;
+  background-color: hsl(356deg, 75%, 70%);
+  border-color: hsl(356deg, 75%, 70%);
+}
+.button--link.button--primary:active {
+  background-color: hsl(356deg, 75%, 70%);
+}
+.button--link.button--secondary {
+  color: hsl(38deg, 100%, 68%);
+}
+.button--link.button--secondary:focus {
+  color: hsl(38deg, 100%, 68%);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--link.button--secondary:hover {
+  color: #fff;
+  background-color: hsl(38deg, 100%, 68%);
+  border-color: hsl(38deg, 100%, 68%);
+}
+.button--link.button--secondary:active {
+  background-color: hsl(38deg, 100%, 68%);
+}
+.button--link.button--confirm, .button--link.button--success {
+  color: hsl(122deg, 54%, 78%);
+}
+.button--link.button--confirm:focus, .button--link.button--success:focus {
+  color: hsl(122deg, 54%, 78%);
+  background-color: #fff;
+  border-color: hsl(122deg, 54%, 78%);
+  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--link.button--confirm:hover, .button--link.button--success:hover {
+  color: #fff;
+  background-color: hsl(122deg, 54%, 78%);
+  border-color: hsl(122deg, 54%, 78%);
+}
+.button--link.button--confirm:active, .button--link.button--success:active {
+  background-color: hsl(122deg, 54%, 78%);
+}
+.button--link.button--warning {
+  color: hsl(38deg, 100%, 68%);
+}
+.button--link.button--warning:focus {
+  color: hsl(38deg, 100%, 68%);
+  background-color: #fff;
+  border-color: hsl(38deg, 100%, 68%);
+  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--link.button--warning:hover {
+  color: #fff;
+  background-color: hsl(38deg, 100%, 68%);
+  border-color: hsl(38deg, 100%, 68%);
+}
+.button--link.button--warning:active {
+  background-color: hsl(38deg, 100%, 68%);
+}
+.button--link.button--danger {
+  color: hsl(356deg, 75%, 70%);
+}
+.button--link.button--danger:focus {
+  color: hsl(356deg, 75%, 70%);
+  background-color: #fff;
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--link.button--danger:hover {
+  color: #fff;
+  background-color: hsl(356deg, 75%, 70%);
+  border-color: hsl(356deg, 75%, 70%);
+}
+.button--link.button--danger:active {
+  background-color: hsl(356deg, 75%, 70%);
+}
+.button--link.button--info {
+  color: hsl(208deg, 97%, 75%);
+}
+.button--link.button--info:focus {
+  color: hsl(208deg, 97%, 75%);
+  background-color: #fff;
+  border-color: hsl(208deg, 97%, 75%);
+  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.button--link.button--info:hover {
+  color: #fff;
+  background-color: hsl(208deg, 97%, 75%);
+  border-color: hsl(208deg, 97%, 75%);
+}
+.button--link.button--info:active {
+  background-color: hsl(208deg, 97%, 75%);
+}
+.button--icon {
+  width: 3rem;
+  min-width: 3rem;
+}
+.button--rounded {
+  border-radius: 3rem;
+}
+.button--rounded.button--sm {
+  border-radius: 2.25rem;
+}
+.button--sm {
+  min-height: 2.25rem;
+  padding: 0 0.5rem;
+}
+
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/*
+<div class="form-group">
+    <label for="input" class="form-group__label">Text Input</label>
+    <input type="text" name="text-input" id="input" class="form-group__input" />
+    <span class="form-group__help-text">
+        <i class="far fa-info-circle"></i>
+        Text input help text
+    </span>
+</div>
+
+<div class="form-group form-group--has-icon-left">
+    <label for="msrp" class="form-group__label">MSRP</label>
+    <input type="number" step="any" value="" id="msrp" class="form-group__input">
+    <span class="form-group__input-icon form-group__input-icon--left">
+        <i class="far fa-dollar-sign"></i>
+    </span>
+</div>
+*/
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+.form-group {
+  display: grid;
+  grid-template-rows: auto 3rem auto;
+  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-areas: "label      label       label" "left-icon  input       right-icon" "help-text  help-text   help-text";
+  align-content: start;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.form-group--inline {
+  display: inline-grid;
+}
+.form-group--sm {
+  width: 8ch;
+}
+.form-group--md {
+  width: 16ch;
+}
+.form-group--lg {
+  width: 24ch;
+}
+.form-group--xl {
+  width: 32ch;
+}
+.form-group--xxl {
+  width: 40ch;
+}
+
+.form-group__label {
+  grid-area: label;
+}
+
+.form-group__input {
+  grid-area: left-icon/left-icon/right-icon/right-icon;
+  appearance: none;
+  display: block;
+  max-width: 100%;
+  padding: 0 0.5rem;
+  line-height: 3rem;
+  color: hsl(208deg, 8%, 63%);
+  background-color: hsl(0deg, 0%, 98%);
+  border: 2px solid hsl(230deg, 7%, 47%);
+  border-radius: 0.25rem;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.form-group__input::placeholder {
+  color: hsl(230deg, 7%, 47%);
+  opacity: 1;
+}
+.form-group__input:hover {
+  border-color: hsl(356deg, 75%, 70%);
+}
+.form-group__input:focus {
+  background-color: #fff;
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  outline: none;
+}
+.form-group__input.disabled, .form-group__input[disabled] {
+  color: hsl(230deg, 7%, 47%) !important;
+  background: hsl(0deg, 0%, 98%) !important;
+  border: 2px solid hsl(230deg, 7%, 47%) !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+  opacity: 0.5;
+}
+.form-group__input.disabled::placeholder, .form-group__input[disabled]::placeholder {
+  color: hsl(0deg, 0%, 98%);
+  opacity: 0.5;
+}
+.form-group__input.disabled:hover, .form-group__input[disabled]:hover {
+  border: 2px solid hsl(230deg, 7%, 47%);
+}
+.form-group__input[required]:valid {
+  background-color: #fff;
+}
+.form-group__input[readonly] {
+  padding: 0;
+  background-color: white;
+  border-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+.form-group__input[list]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.form-group--has-icon-left .form-group__input {
+  padding-left: 3rem;
+}
+.form-group--has-icon-right .form-group__input {
+  padding-right: 3rem;
+}
+.form-group--success .form-group__input {
+  border-color: hsl(122deg, 54%, 78%);
+  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.form-group--warning .form-group__input {
+  border-color: hsl(38deg, 100%, 68%);
+  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.form-group--error .form-group__input, .form-group--danger .form-group__input {
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.form-group--info .form-group__input {
+  border-color: hsl(208deg, 97%, 75%);
+  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+.form-group--info .form-group__input:hover, .form-group--success .form-group__input:hover, .form-group--warning .form-group__input:hover, .form-group--error .form-group__input:hover, .form-group--danger .form-group__input:hover {
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: none;
+}
+.form-group--info .form-group__input:focus, .form-group--success .form-group__input:focus, .form-group--warning .form-group__input:focus, .form-group--error .form-group__input:focus, .form-group--danger .form-group__input:focus {
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+
+.form-group__input-icon {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-size: 125%;
+}
+.form-group__input-icon--left {
+  grid-area: left-icon;
+}
+.form-group__input-icon--right {
+  grid-area: right-icon;
+}
+.form-group__input-icon--primary, .form-group__input-icon--required {
+  color: hsl(356deg, 75%, 70%);
+}
+.form-group__input-icon--secondary {
+  color: hsl(38deg, 100%, 68%);
+}
+.form-group__input-icon--success, .form-group--success .form-group__input-icon {
+  color: hsl(122deg, 54%, 78%);
+}
+.form-group__input-icon--warning, .form-group--warning .form-group__input-icon {
+  color: hsl(38deg, 100%, 68%);
+}
+.form-group__input-icon--error, .form-group__input-icon--danger, .form-group--error .form-group__input-icon, .form-group--danger .form-group__input-icon {
+  color: hsl(356deg, 75%, 70%);
+}
+.form-group__input-icon--info, .form-group--info .form-group__input-icon {
+  color: hsl(208deg, 97%, 75%);
+}
+
+.form-group__help-text {
+  grid-area: help-text;
+  display: inline-block;
+  padding-top: 0.5rem;
+  color: hsl(208deg, 8%, 63%);
+}
+.form-group__help-text--primary {
+  color: hsl(356deg, 75%, 70%);
+}
+.form-group__help-text--secondary {
+  color: hsl(38deg, 100%, 68%);
+}
+.form-group__help-text--success, .form-group--success .form-group__help-text {
+  color: hsl(122deg, 54%, 78%);
+}
+.form-group__help-text--warning, .form-group--warning .form-group__help-text {
+  color: hsl(38deg, 100%, 68%);
+}
+.form-group__help-text--error, .form-group__help-text--danger, .form-group--error .form-group__help-text, .form-group--danger .form-group__help-text {
+  color: hsl(356deg, 75%, 70%);
+}
+.form-group__help-text--info, .form-group--info .form-group__help-text {
+  color: hsl(208deg, 97%, 75%);
+}
+
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/* 
+<div class="form-group form-group--checkbox">
+    <label for="" class="form-group__label">Checkboxes</label>
+    <label for="sg-checkbox-1" class="form-group__input">
+        <input type="checkbox" name="checkboxes" id="sg-checkbox-1" class="form-group__checkbox">
+        <span class="form-group__checkbox-label">Option 1</span>
+    </label>
+    <label for="sg-checkbox-2" class="form-group__input">
+        <input type="checkbox" name="checkboxes" id="sg-checkbox-2" class="form-group__checkbox">
+        <span class="form-group__checkbox-label">Option 2</span>
+    </label>
+    <label for="sg-checkbox-3" class="form-group__input">
+        <input type="checkbox" name="checkboxes" id="sg-checkbox-3" class="form-group__checkbox">
+        <span class="form-group__checkbox-label">Option 3</span>
+    </label>
+</div>
+
+<div class="form-group form-group--radio">
+    <label for="" class="form-group__label">Radio Buttons</label>
+    <label for="sg-radio-1" class="form-group__input">
+        <input type="radio" name="radioes" id="sg-radio-1" class="form-group__radio">
+        <span class="form-group__radio-label">Option 1</span>
+    </label>
+    <label for="sg-radio-2" class="form-group__input">
+        <input type="radio" name="radioes" id="sg-radio-2" class="form-group__radio">
+        <span class="form-group__radio-label">Option 2</span>
+    </label>
+    <label for="sg-radio-3" class="form-group__input">
+        <input type="radio" name="radioes" id="sg-radio-3" class="form-group__radio">
+        <span class="form-group__radio-label">Option 3</span>
+    </label>
+</div>
+*/
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+.form-group--checkbox,
+.form-group--radio {
+  grid-template-rows: auto 3rem;
+  grid-template-columns: auto;
+  grid-auto-rows: minmax(3rem, auto);
+  grid-template-areas: "label" "inputs";
+  grid-row-gap: 0.5rem;
+  justify-content: start;
+}
+
+.form-group--checkbox .form-group__input,
+.form-group--radio .form-group__input {
+  grid-area: auto;
+  display: grid;
+  grid-template-columns: 3rem auto;
+  grid-template-areas: "input label";
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.form-group--checkbox .form-group__input:focus-within,
+.form-group--radio .form-group__input:focus-within {
+  background-color: white;
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  outline: none;
+}
+
+.form-group--checkbox .form-group__input input {
+  justify-self: center;
+}
+
+.form-group__checkbox,
+.form-group__radio {
+  grid-area: input;
+  justify-self: center;
+}
+
+.form-group__checkbox-label,
+.form-group__radio-label {
+  grid-area: label;
+}
+
+.form-group--checkbox .form-group__label,
+.form-group--radio .form-group__label {
+  height: 1.5rem;
+  margin-bottom: -0.5rem;
+}
+
+.form-group--checkbox .form-group__radio,
+.form-group--radio .form-group__radio {
+  margin: 0;
+}
+
+.form-group--checkbox .form-group__radio:focus,
+.form-group--radio .form-group__radio:focus {
+  outline: none;
+}
+
+/* ---------------------------------------- */
+/*               DESCRIPTION                */
+/* ---------------------------------------- */
+/* Two or more form groups displayed horizontally that share a border */
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/* 
+<fieldset class="fieldset">
+    <legend class="fieldset__label">Search</legend>
+    <div class="fieldset__container">
+        <div class="form-group form-group--select">
+            <label for="select-search-type" class="sr-only">Select what you would like to search for</label>
+            <select name="search type" id="select-search-type" class="form-group__input">
+                <option value="">Products</option>
+            </select>
+        </div>
+        <div class="form-group form-group--has-icon-left flex-grow">
+            <label for="search-input" class="sr-only">Enter search term</label>
+            <input type="search" id="search-input" class="form-group__input" placeholder="Search..." />
+            <div class="form-group__input-icon form-group__input-icon--left">
+                <i class="far fa-search"></i>
+            </div>
+        </div>
+    </div>
+</fieldset>
+*/
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+.fieldset__container {
+  display: flex;
+}
+
+.fieldset__container > .form-group .form-group__input {
+  border-radius: 0;
+}
+
+.fieldset__container > .form-group:first-of-type .form-group__input {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.fieldset__container > .form-group:last-of-type .form-group__input {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/*
+<div class="form-group form-group--file">
+    <label for="images" class="form-group__label">Upload Images</label>
+    <label for="images" class="form-group__input">
+        <input type="file" id="images" name="images" class="form-group__file" multiple>
+        <span class="form-group__file-icon">
+            <i class="far fa-cloud-upload"></i>
+        </span>
+        <span class="form-group__file-label">
+            Drag or click to upload files
+        </span>
+    </label>
+</div>
+*/
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+.form-group--file {
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  grid-template-areas: "label" "input" "help-text";
+}
+
+.form-group--file .form-group__input {
+  grid-area: input;
+  display: grid;
+  grid-template-rows: 1.5rem 6rem 1.5rem 0.75rem;
+  grid-template-areas: "." "icon" "text" ".";
+  justify-items: center;
+  align-items: center;
+  color: hsl(230deg, 7%, 47%);
+}
+
+.form-group__file {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+.form-group__file-icon {
+  grid-area: icon;
+  font-size: 4em;
+  line-height: 4rem;
+}
+
+.form-group__file-label {
+  grid-area: text;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.form-group--file .form-group__file:hover + .form-group__input,
+.form-group--file .form-group__file--active + .form-group__input {
+  color: hsl(356deg, 75%, 70%);
+  border-color: hsl(356deg, 75%, 70%);
+}
+
+.form-group--file .form-group__input:focus-within {
+  border-color: hsl(356deg, 75%, 70%);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+}
+
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/*
+<div class="form-group form-group--select">
+    <label for="select-input" class="form-group__label">Select Box</label>
+    <select name="select-input" id="select-input" class="form-group__input">
+        <option value="">Select an option</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+</div>
+*/
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+.form-group--select::before,
+.form-group--select::after {
+  grid-area: right-icon;
+  align-self: center;
+  justify-self: center;
+  content: "";
+  position: relative;
+  border-style: solid;
+  border-width: 0.4rem 0.25rem;
+  border-radius: 2px;
+  pointer-events: none;
+  transition: border-color 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.form-group--select::before {
+  top: 0.5rem;
+  border-color: hsl(230deg, 7%, 47%) transparent transparent transparent;
+}
+
+.form-group--select::after {
+  top: -0.5rem;
+  border-color: transparent transparent hsl(230deg, 7%, 47%) transparent;
+}
+
+.form-group--select .form-group__input {
+  padding-right: 3rem;
+}
+
+/* MULTIPLE */
+.form-group--select-multiple {
+  grid-template-rows: auto max-content auto;
+}
+
+.form-group--select-multiple .form-group__input {
+  padding-right: 0.5rem;
+}
+
+.form-group--select-multiple::before,
+.form-group--select-multiple::after {
+  display: none;
+}
+
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/*
+<div class="form-group form-group--textarea">
+    <label for="textarea-input" class="form-group__label">Text Area</label>
+    <textarea name="textarea-input" id="textarea-input" class="form-group__input" placeholder="Add some text...">
+    </textarea>
+</div>
+*/
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+.form-group--textarea {
+  grid-template-rows: auto 3rem minmax(6.5rem, auto) auto;
+  grid-template-areas: "label          label           label" "left-icon      .               right-icon" "input          input           input" "help-text      help-text       help-text";
+  resize: none;
+}
+
+.form-group--textarea .form-group__input {
+  grid-row: 2/-2;
+  grid-column: 1/-1;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  line-height: 1.5rem;
+}
+
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/* 
+<div class="form-group form-group--toggle">
+    <label for="toggle" class="form-group__label">Enabled</label>
+    <input type="checkbox" name="assembly" id="toggle" class="form-group__toggle-checkbox">
+    <label for="toggle" class="form-group__toggle"></label>
+</div>
+*/
+/* ---------------------------------------- */
+/*                  LAYOUT                  */
+/* ---------------------------------------- */
+.form-group--toggle {
+  grid-template-rows: 3rem min-content;
+  grid-template-columns: 3rem 1fr 3.75rem;
+  grid-template-areas: "left-icon  label       toggle" "help-text  help-text   help-text";
+}
+
+.form-group--toggle .form-group__label {
+  grid-area: left-icon/left-icon/label/label;
+}
+
+.form-group--toggle .form-group__toggle {
+  grid-area: toggle;
+}
+
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+.form-group--toggle {
+  align-items: center;
+}
+.form-group--toggle .form-group__label {
+  grid-area: left-icon/left-icon/toggle/toggle;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding: 0 6rem 0 1rem;
+  border: 2px solid hsl(230deg, 7%, 47%);
+  border-radius: 0.25rem;
+  background-color: hsl(0deg, 0%, 98%);
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.form-group--toggle .form-group__label:hover {
+  border-color: hsl(356deg, 75%, 70%);
+}
+.form-group--toggle .form-group__toggle {
+  position: relative;
+  display: grid;
+  place-content: center start;
+  padding: 0.25rem;
+  height: 2.25rem;
+  border: 2px solid hsl(230deg, 7%, 47%);
+  border-radius: 3rem;
+  background-color: white;
+  transform: translateX(-1rem);
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.form-group--toggle .form-group__toggle:hover {
+  cursor: pointer;
+  border-color: hsl(356deg, 75%, 70%);
+}
+.form-group--toggle .form-group__toggle::before {
+  content: "";
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: hsl(197deg, 6%, 78%);
+  border: 2px solid hsl(230deg, 7%, 47%);
+  translate: 0;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.form-group--toggle .form-group__toggle::after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  width: 1.5rem;
+  translate: -50% -50%;
+  scale: 0;
+  opacity: 0;
+  top: 50%;
+  color: hsl(122deg, 54%, 78%);
+  text-align: center;
+  transition: all 75ms cubic-bezier(0.65, 0, 0.35, 1);
+  right: 0.25rem;
+}
+.form-group--toggle .form-group__toggle-checkbox:checked + .form-group__toggle::before {
+  background-color: hsl(159deg, 41%, 87%);
+  border-color: hsl(122deg, 54%, 78%);
+  translate: 100% 0;
+}
+.form-group--toggle .form-group__toggle-checkbox:checked + .form-group__toggle::after {
+  opacity: 1;
+  translate: 0 -50%;
+  scale: 1;
+  transition-duration: 150ms;
+}
+.form-group--toggle .form-group__toggle-checkbox:focus + .form-group__toggle {
+  background-color: white;
+  border-color: hsl(356deg, 75%, 70%);
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(0deg, 0%, 98%);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+h2, .u-font-h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+h3, .u-font-h3, li {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-family: "Zilla Slab", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+h3 {
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+h4, .u-font-h4 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+}
+
+h4 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+nav .link, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
+.button [disabled]::before, .button--icon::before, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
+  font-weight: 800;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
+
+h5 {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  color: hsl(38deg, 100%, 68%);
+}
+
+h6, .form-group__help-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Zilla Slab", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.01em;
+}
+
+h6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.table th,
+.table td, p, .u-font-p, body, .form-group__input, .form-group__file-label {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+.lead-text {
+  font-weight: 500;
+  font-size: 2.5rem;
+  font-style: italic;
+  line-height: 3.5rem;
+  font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.lead-text {
+  color: hsl(0deg, 0%, 98%);
+}
+
+.eyebrow-text {
+  display: block;
+  padding-bottom: 0.5rem;
+  color: hsl(38deg, 100%, 68%);
+}
+
+small {
+  font-size: 87.5%;
+}
+
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/*
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                ...
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                ...
+            </tr>
+            ...
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                ...
+            </tr>
+        </tfoot>
+    </table>
+</div>
+*/
+.table {
+  display: grid;
+  line-height: 1;
+  background-color: #fff;
+  border: 2px solid hsl(230deg, 7%, 47%);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1);
+}
+.table th,
+.table td {
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  vertical-align: middle;
+}
+.table th {
+  text-align: left;
+  color: hsl(197deg, 6%, 78%);
+  background-color: hsl(0deg, 0%, 98%);
+  border-bottom: 2px solid hsl(230deg, 7%, 47%);
+}
+.table tr:not(:last-of-type) td {
+  border-bottom: 2px solid hsl(230deg, 7%, 47%);
+}
+.table tr:hover td {
+  background-color: hsl(0deg, 0%, 98%);
+}
+.table thead th:first-child {
+  border-radius: 0.25rem 0 0 0;
+}
+.table thead th:last-child {
+  border-radius: 0 0.25rem 0 0;
+}
+.table tbody tr:last-of-type td:first-child,
+.table tfoot tr:last-of-type td:first-child,
+.table tfoot tr:last-of-type th:first-child {
+  border-radius: 0 0 0 0.25rem;
+}
+.table tbody tr:last-of-type td:last-child,
+.table tfoot tr:last-of-type td:last-child tfoot tr:last-of-type th:last-child {
+  border-radius: 0 0 0.25rem 0;
+}
+.table--striped tr:nth-of-type(even) td {
+  background-color: hsl(0deg, 0%, 98%);
+}
+.table--striped tr:nth-of-type(odd):hover td {
+  background-color: #fff;
+}
+.table--condensed th,
+.table--condensed td {
+  height: 3rem;
+}
+.table .form-group {
+  margin-bottom: 0;
+}
+
+.table__actions {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.disabled.logo, .disabled.link, .has-tooltip, .button.disabled,
+.button [disabled], .button--icon {
+  position: relative;
+}
+.disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
+.button [disabled]::before, .button--icon::before {
+  content: attr(aria-label);
+  display: block;
+  position: absolute;
+  top: -0.25rem;
+  left: 50%;
+  line-height: 1;
+  white-space: nowrap;
+  color: hsl(218deg, 14%, 16%);
+  padding: 0.5rem;
+  background-color: hsl(208deg, 97%, 75%);
+  border-radius: 0.25rem;
+  translate: -50% calc(-100% + 0.5rem);
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+  transition: all 75ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.disabled.logo::after, .disabled.link::after, .has-tooltip::after, .button.disabled::after,
+.button [disabled]::after, .button--icon::after {
+  content: "";
+  position: absolute;
+  top: 0.25rem;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-width: 0.25rem;
+  border-style: solid;
+  border-color: hsl(208deg, 97%, 75%) transparent transparent transparent;
+  translate: -50% calc(-100% + 0.5rem);
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+  transition: all 75ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.disabled.logo:hover:before, .disabled.link:hover:before, .has-tooltip:hover:before, .button.disabled:hover:before,
+.button [disabled]:hover:before, .button--icon:hover:before, .disabled.logo:hover:after, .disabled.link:hover:after, .has-tooltip:hover:after, .button.disabled:hover:after,
+.button [disabled]:hover:after, .button--icon:hover:after, .disabled.logo:focus:before, .disabled.link:focus:before, .has-tooltip:focus:before, .button.disabled:focus:before,
+.button [disabled]:focus:before, .button--icon:focus:before, .disabled.logo:focus:after, .disabled.link:focus:after, .has-tooltip:focus:after, .button.disabled:focus:after,
+.button [disabled]:focus:after, .button--icon:focus:after, .disabled.logo:focus-within:before, .disabled.link:focus-within:before, .has-tooltip:focus-within:before, .button.disabled:focus-within:before,
+.button [disabled]:focus-within:before, .button--icon:focus-within:before, .disabled.logo:focus-within:after, .disabled.link:focus-within:after, .has-tooltip:focus-within:after, .button.disabled:focus-within:after,
+.button [disabled]:focus-within:after, .button--icon:focus-within:after {
+  opacity: 1;
+  translate: -50% -100%;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+[disabled].has-tooltip::before,
+.button [disabled]::before, [disabled].button--icon::before, .disabled.logo::before, .disabled.link::before, .disabled.has-tooltip::before, .disabled.button::before, .disabled.button--icon::before {
+  content: attr(aria-label) " Disabled";
+}
+.disabled--coming-soon.disabled.logo::before, .disabled--coming-soon.disabled.link::before, .disabled--coming-soon.has-tooltip::before, .disabled--coming-soon.button.disabled::before,
+.button .disabled--coming-soon[disabled]::before, .disabled--coming-soon.button--icon::before {
+  content: "Coming Soon!";
+}
+
+.slide {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 1fr;
+  margin: 5rem 1rem;
+  background-color: hsl(0deg, 0%, 98%);
+  border-radius: 0.25rem;
+  box-shadow: 0 1rem 4rem -2rem hsla(0deg, 0%, 0%, 0.5), 0 0.5rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.25rem 0.25rem hsla(0deg, 0%, 0%, 0.1);
+  scroll-snap-align: center;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.slide:hover {
+  scale: 1.025;
+  transition: all 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.slide__image-container {
+  position: relative;
+  height: 500px;
+  background-color: hsl(358deg, 70%, 91%);
+  border-radius: 0.25rem 0 0 0.25rem;
+  overflow: hidden;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.slide__image-container img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 4rem -2rem hsla(0deg, 0%, 0%, 0.5), 0 0.5rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.25rem 0.25rem hsla(0deg, 0%, 0%, 0.1), -1px 0 0 hsl(0deg, 0%, 98%), -2px 1px 0 hsl(0deg, 0%, 98%), -2px 2px 0 hsl(0deg, 0%, 98%), -3px 2px 0 hsl(0deg, 0%, 98%), -3px 3px 0 hsl(0deg, 0%, 98%), 0 1rem 4rem -2rem hsla(0deg, 0%, 0%, 0.5), 0 0.5rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.25rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 1rem 4rem -2rem hsla(0deg, 0%, 0%, 0.5), 0 0.5rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.25rem 0.25rem hsla(0deg, 0%, 0%, 0.1);
+  scale: 1;
+  translate: 0 0;
+  transform-origin: top;
+  transform: rotate3d(1, 1, 1, -45deg);
+  transition: scale 1s cubic-bezier(0.65, 0, 0.35, 1), translate 1s cubic-bezier(0.65, 0, 0.35, 1), transform-origin 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.slide:hover .slide__image-container img {
+  scale: 0.8;
+  translate: 0 8rem;
+  transform-origin: -25% 0;
+  transform: rotate3d(1, 0.2, 1, -20deg);
+  transition: scale 5s cubic-bezier(0.65, 0, 0.35, 1), translate 5s cubic-bezier(0.65, 0, 0.35, 1), transform-origin 5s cubic-bezier(0.65, 0, 0.35, 1), transform 5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.slide:hover .slide__image-container img.scroll {
+  translate: -10% -10%;
+}
+
+.slide__title {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: hsl(0deg, 0%, 98%);
+  border-bottom: 2px dotted hsl(197deg, 6%, 78%);
+}
+
+.slide__description-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  background-color: hsl(224deg, 22%, 10%);
+  padding: 2rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.logo, .link {
+  display: inline-block;
+  position: relative;
+  padding: 0.25rem;
+}
+.logo::after, .link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: transparent;
+  border-bottom: 2px solid hsl(0deg, 0%, 98%);
+  translate: 0 -100%;
+  scale: 0% 100%;
+  z-index: -1;
+  transform-origin: left;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.logo:hover, .link:hover, .active.logo, .active.link {
+  color: hsl(208deg, 97%, 75%);
+  text-decoration: none;
+}
+.logo:hover::after, .link:hover::after, .active.logo::after, .active.link::after {
+  scale: 100% 100%;
+}
+.disabled.logo, .disabled.link {
+  cursor: not-allowed;
+}
+.disabled.logo::after, .disabled.link::after {
+  scale: 100%;
+}
+.disabled.logo:hover, .disabled.link:hover {
+  color: hsl(197deg, 6%, 78%);
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+  min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  justify-self: center;
+  max-width: 69rem;
+}
+
+footer {
+  grid-area: footer;
+}
+
+nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  gap: 2rem;
+  position: relative;
+  margin-top: 1rem;
+  z-index: 1;
+}
+.logo {
+  fill: hsl(0deg, 0%, 98%);
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.logo:hover {
+  fill: hsl(356deg, 75%, 70%);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  background-color: hsl(38deg, 100%, 68%);
+  color: hsl(218deg, 14%, 16%);
+}
+footer .logo {
+  fill: hsl(356deg, 75%, 70%);
+}
+footer .logo:hover {
+  fill: hsl(0deg, 0%, 98%);
+}
+
+.grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.grid-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0 1rem;
+  grid-auto-flow: dense;
+}
+
+.grid-columns-half {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 1rem;
+}
+
+.grid-columns-5 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 1rem;
+  justify-items: start;
+  justify-content: start;
+  margin-bottom: 1rem;
+}
+
+/* ---------------------------------------- */
+/*                CONTAINER                 */
+/* ---------------------------------------- */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex--inline {
+  display: inline-flex;
+}
+
+.flex--inline-stretch {
+  width: 100%;
+}
+
+.flex--column {
+  flex-direction: column;
+  align-items: start;
+}
+
+@media screen and (max-width: 950px) {
+  .flex--mobile-column {
+    flex-direction: column;
+    align-items: start;
+  }
+  .flex--mobile-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+.flex--truncate {
+  flex: 1;
+  min-width: 0;
+}
+
+.flex--truncate > *:not(i) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flex--nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex--between {
+  justify-content: space-between !important;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
+.flex--justify-start {
+  justify-content: flex-start !important;
+}
+
+.flex--justify-end {
+  justify-content: flex-end;
+}
+
+.flex--justify-stretch {
+  justify-content: stretch !important;
+  justify-items: stretch !important;
+}
+
+.flex--align-start {
+  align-items: flex-start !important;
+}
+
+.flex--align-end {
+  align-items: flex-end;
+}
+
+.flex--align-baseline {
+  align-items: baseline !important;
+}
+
+.flex--align-stretch,
+.flex--column-stretch {
+  align-items: stretch !important;
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.flex--align-between {
+  align-content: space-between !important;
+}
+
+/* ---------------------------------------- */
+/*                GAP SIZE                  */
+/* ---------------------------------------- */
+.flex--nogap {
+  gap: 0 !important;
+}
+
+.flex--xs {
+  gap: 0.25rem;
+}
+
+.flex--sm {
+  gap: 0.5rem;
+}
+
+.flex--md {
+  gap: 1rem !important;
+}
+
+.flex--lg {
+  gap: 1.5rem;
+}
+
+.flex--xxl {
+  gap: 2.5rem;
+}
+
+/* ---------------------------------------- */
+/*                 CHILDREN                 */
+/* ---------------------------------------- */
+.flex--align-self-stretch {
+  align-self: stretch;
+}
+
+.flex--align-self-center {
+  align-self: center;
+}
+
+.flex--align-self-start {
+  align-self: flex-start;
+}
+
+.flex--align-self-end {
+  align-self: flex-end;
+}
+
+.flex--justify-self-start {
+  justify-self: start;
+}
+
+.flex--justify-self-end {
+  justify-self: end;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+/*# sourceMappingURL=maps/main.css.map */

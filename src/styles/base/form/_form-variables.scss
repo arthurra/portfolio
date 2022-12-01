@@ -1,0 +1,9 @@
+// ---------------------------------- \\
+//             VARIABLES              \\
+// ---------------------------------- \\
+
+$input-height: calc($spacing-base * 3);
+$input-icon-width: $input-height;
+$input-label-height: calc($input-height * 0.5);
+$input-help-text-height: $input-label-height;
+$input-background-color: $gray-100;

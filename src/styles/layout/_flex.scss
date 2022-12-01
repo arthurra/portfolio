@@ -1,0 +1,155 @@
+/* ---------------------------------------- */
+/*                CONTAINER                 */
+/* ---------------------------------------- */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $spacing-md;
+}
+
+.flex--inline {
+  display: inline-flex;
+}
+
+.flex--inline-stretch {
+  width: 100%;
+}
+
+.flex--column {
+  flex-direction: column;
+  align-items: start;
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .flex--mobile-column {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .flex--mobile-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+.flex--truncate {
+  flex: 1;
+  min-width: 0;
+}
+
+.flex--truncate > *:not(i) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flex--nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex--between {
+  justify-content: space-between !important;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
+.flex--justify-start {
+  justify-content: flex-start !important;
+}
+
+.flex--justify-end {
+  justify-content: flex-end;
+}
+
+.flex--justify-stretch {
+  justify-content: stretch !important;
+  justify-items: stretch !important;
+}
+
+.flex--align-start {
+  align-items: flex-start !important;
+}
+
+.flex--align-end {
+  align-items: flex-end;
+}
+
+.flex--align-baseline {
+  align-items: baseline !important;
+}
+
+.flex--align-stretch,
+.flex--column-stretch {
+  align-items: stretch !important;
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.flex--align-between {
+  align-content: space-between !important;
+}
+
+/* ---------------------------------------- */
+/*                GAP SIZE                  */
+/* ---------------------------------------- */
+
+.flex--nogap {
+  gap: 0 !important;
+}
+
+.flex--xs {
+  gap: $spacing-xs;
+}
+
+.flex--sm {
+  gap: $spacing-sm;
+}
+
+.flex--md {
+  gap: $spacing-md !important;
+}
+
+.flex--lg {
+  gap: $spacing-lg;
+}
+
+.flex--xxl {
+  gap: $spacing-xxl;
+}
+
+/* ---------------------------------------- */
+/*                 CHILDREN                 */
+/* ---------------------------------------- */
+
+.flex--align-self-stretch {
+  align-self: stretch;
+}
+
+.flex--align-self-center {
+  align-self: center;
+}
+
+.flex--align-self-start {
+  align-self: flex-start;
+}
+
+.flex--align-self-end {
+  align-self: flex-end;
+}
+
+.flex--justify-self-start {
+  justify-self: start;
+}
+
+.flex--justify-self-end {
+  justify-self: end;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}

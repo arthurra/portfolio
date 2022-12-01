@@ -1,0 +1,142 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $title-color;
+}
+
+%h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-family: $font-family-title;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  @extend %h1;
+  padding-top: ($spacing-base * 3);
+  padding-bottom: $spacing-base;
+}
+
+%h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: $font-family-title;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  @extend %h2;
+  padding-top: ($spacing-base * 3.5);
+  padding-bottom: $spacing-base;
+}
+
+%h3 {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-family: $font-family-title-alt;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+h3 {
+  @extend %h3;
+  padding-top: ($spacing-base * 3.5);
+  padding-bottom: $spacing-base;
+}
+
+%h4 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-family: $font-family-title;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+}
+
+h4 {
+  @extend %h4;
+  padding-top: ($spacing-base * 2);
+  padding-bottom: ($spacing-base * 1);
+}
+
+%h5 {
+  font-weight: 800;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  font-family: $font-family-title;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
+
+h5 {
+  @extend %h5;
+  padding-top: ($spacing-base * 1.5);
+  padding-bottom: $spacing-base;
+  color: $color-secondary;
+}
+
+%h6 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: $font-family-title-alt;
+  letter-spacing: 0.01em;
+}
+
+h6 {
+  @extend %h6;
+  padding-top: ($spacing-base * 1.5);
+  padding-bottom: $spacing-base;
+}
+
+%p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  font-family: $font-family-text;
+}
+
+p {
+  @extend %p;
+  padding-bottom: $spacing-base;
+}
+
+%lead {
+  font-weight: 500;
+  font-size: 2.5rem;
+  font-style: italic;
+  line-height: 3.5rem;
+  font-family: $font-family-text;
+}
+
+.lead-text {
+  @extend %lead;
+  color: $title-color;
+}
+
+%label {
+  @extend %h5;
+}
+
+label {
+  @extend %label;
+}
+
+.eyebrow-text {
+  @extend %label;
+  display: block;
+  padding-bottom: $spacing-sm;
+  color: $color-secondary;
+}
+
+small {
+  font-size: 87.5%;
+}
