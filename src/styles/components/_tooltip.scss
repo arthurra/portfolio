@@ -1,7 +1,7 @@
 %tooltip {
   position: relative;
 
-  &:before {
+  &::before {
     @extend %label;
     content: attr(aria-label);
     display: block;
@@ -14,14 +14,15 @@
     padding: $spacing-sm;
     background-color: $color-info;
     border-radius: $border-radius;
-    transform: translate(-50%, calc(-100% + 0.5rem));
+    // transform: translate(-50%, calc(-100% + 0.5rem));
+    translate: -50% calc(-100% + 0.5rem);
     opacity: 0;
     z-index: 100;
     pointer-events: none;
     transition: all calc($transition-duration / 2) $transition-timing-function;
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: $spacing-xs;
@@ -31,7 +32,7 @@
     border-width: $spacing-xs;
     border-style: solid;
     border-color: $color-info transparent transparent transparent;
-    transform: translate(-50%, calc(-100% + 0.5rem));
+    translate: -50% calc(-100% + 0.5rem);
     opacity: 0;
     z-index: 100;
     pointer-events: none;
@@ -47,7 +48,7 @@
     &:before,
     &:after {
       opacity: 1;
-      transform: translate(-50%, -100%);
+      translate: -50% -100%;
       transition: all $transition-duration $transition-timing-function;
     }
   }

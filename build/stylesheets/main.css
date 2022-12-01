@@ -1796,8 +1796,8 @@ h4 {
   padding-bottom: 1rem;
 }
 
-nav .link, .has-tooltip:before, .button.disabled:before,
-.button [disabled]:before, .button--icon:before, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
+nav .link, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
+.button [disabled]::before, .button--icon::before, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
   font-weight: 800;
   font-size: 0.8rem;
   line-height: 1.5rem;
@@ -1949,12 +1949,12 @@ small {
   gap: 0.5rem;
 }
 
-.has-tooltip, .button.disabled,
+.disabled.logo, .disabled.link, .has-tooltip, .button.disabled,
 .button [disabled], .button--icon {
   position: relative;
 }
-.has-tooltip:before, .button.disabled:before,
-.button [disabled]:before, .button--icon:before {
+.disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
+.button [disabled]::before, .button--icon::before {
   content: attr(aria-label);
   display: block;
   position: absolute;
@@ -1966,14 +1966,14 @@ small {
   padding: 0.5rem;
   background-color: hsl(208deg, 97%, 75%);
   border-radius: 0.25rem;
-  transform: translate(-50%, calc(-100% + 0.5rem));
+  translate: -50% calc(-100% + 0.5rem);
   opacity: 0;
   z-index: 100;
   pointer-events: none;
   transition: all 75ms cubic-bezier(0.65, 0, 0.35, 1);
 }
-.has-tooltip:after, .button.disabled:after,
-.button [disabled]:after, .button--icon:after {
+.disabled.logo::after, .disabled.link::after, .has-tooltip::after, .button.disabled::after,
+.button [disabled]::after, .button--icon::after {
   content: "";
   position: absolute;
   top: 0.25rem;
@@ -1983,28 +1983,28 @@ small {
   border-width: 0.25rem;
   border-style: solid;
   border-color: hsl(208deg, 97%, 75%) transparent transparent transparent;
-  transform: translate(-50%, calc(-100% + 0.5rem));
+  translate: -50% calc(-100% + 0.5rem);
   opacity: 0;
   z-index: 100;
   pointer-events: none;
   transition: all 75ms cubic-bezier(0.65, 0, 0.35, 1);
 }
-.has-tooltip:hover:before, .button.disabled:hover:before,
-.button [disabled]:hover:before, .button--icon:hover:before, .has-tooltip:hover:after, .button.disabled:hover:after,
-.button [disabled]:hover:after, .button--icon:hover:after, .has-tooltip:focus:before, .button.disabled:focus:before,
-.button [disabled]:focus:before, .button--icon:focus:before, .has-tooltip:focus:after, .button.disabled:focus:after,
-.button [disabled]:focus:after, .button--icon:focus:after, .has-tooltip:focus-within:before, .button.disabled:focus-within:before,
-.button [disabled]:focus-within:before, .button--icon:focus-within:before, .has-tooltip:focus-within:after, .button.disabled:focus-within:after,
+.disabled.logo:hover:before, .disabled.link:hover:before, .has-tooltip:hover:before, .button.disabled:hover:before,
+.button [disabled]:hover:before, .button--icon:hover:before, .disabled.logo:hover:after, .disabled.link:hover:after, .has-tooltip:hover:after, .button.disabled:hover:after,
+.button [disabled]:hover:after, .button--icon:hover:after, .disabled.logo:focus:before, .disabled.link:focus:before, .has-tooltip:focus:before, .button.disabled:focus:before,
+.button [disabled]:focus:before, .button--icon:focus:before, .disabled.logo:focus:after, .disabled.link:focus:after, .has-tooltip:focus:after, .button.disabled:focus:after,
+.button [disabled]:focus:after, .button--icon:focus:after, .disabled.logo:focus-within:before, .disabled.link:focus-within:before, .has-tooltip:focus-within:before, .button.disabled:focus-within:before,
+.button [disabled]:focus-within:before, .button--icon:focus-within:before, .disabled.logo:focus-within:after, .disabled.link:focus-within:after, .has-tooltip:focus-within:after, .button.disabled:focus-within:after,
 .button [disabled]:focus-within:after, .button--icon:focus-within:after {
   opacity: 1;
-  transform: translate(-50%, -100%);
+  translate: -50% -100%;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 [disabled].has-tooltip::before,
-.button [disabled]::before, [disabled].button--icon::before, .disabled.has-tooltip::before, .disabled.button::before, .disabled.button--icon::before {
+.button [disabled]::before, [disabled].button--icon::before, .disabled.logo::before, .disabled.link::before, .disabled.has-tooltip::before, .disabled.button::before, .disabled.button--icon::before {
   content: attr(aria-label) " Disabled";
 }
-.disabled--coming-soon.has-tooltip::before, .disabled--coming-soon.button.disabled::before,
+.disabled--coming-soon.disabled.logo::before, .disabled--coming-soon.disabled.link::before, .disabled--coming-soon.has-tooltip::before, .disabled--coming-soon.button.disabled::before,
 .button .disabled--coming-soon[disabled]::before, .disabled--coming-soon.button--icon::before {
   content: "Coming Soon!";
 }
@@ -2099,6 +2099,15 @@ small {
 }
 .logo:hover::after, .link:hover::after, .active.logo::after, .active.link::after {
   scale: 100% 100%;
+}
+.disabled.logo, .disabled.link {
+  cursor: not-allowed;
+}
+.disabled.logo::after, .disabled.link::after {
+  scale: 100%;
+}
+.disabled.logo:hover, .disabled.link:hover {
+  color: hsl(197deg, 6%, 78%);
 }
 
 body {

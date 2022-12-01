@@ -28,6 +28,19 @@
       scale: 100% 100%;
     }
   }
+
+  &.disabled {
+    @extend %tooltip;
+    cursor: not-allowed;
+
+    &::after {
+      scale: 100%;
+    }
+
+    &:hover {
+      color: $text-color-dark;
+    }
+  }
 }
 
 .link {
