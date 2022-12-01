@@ -183,6 +183,10 @@
   color: $title-color !important;
 }
 
+.u-color-text-title-inverse:not(a:hover) {
+  color: $title-inverse-color !important;
+}
+
 .u-color-text-white {
   color: #fff !important;
 }

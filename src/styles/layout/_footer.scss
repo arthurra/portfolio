@@ -1,8 +1,18 @@
-$footer-height: $spacing-md * 3;
+$footer-height: $spacing-md * 9;
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: $footer-height;
   background-color: $color-secondary;
-  color: $text-color-light;
-  text-align: center;
+  color: $gray-700;
+
+  .logo {
+    fill: $color-primary;
+
+    &:hover {
+      fill: $title-color;
+    }
+  }
 }

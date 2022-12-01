@@ -151,6 +151,10 @@
   color: hsl(0deg, 0%, 98%) !important;
 }
 
+.u-color-text-title-inverse:not(a:hover) {
+  color: hsl(218deg, 14%, 16%) !important;
+}
+
 .u-color-text-white {
   color: #fff !important;
 }
@@ -2152,10 +2156,18 @@ nav {
 }
 
 footer {
-  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
   background-color: hsl(38deg, 100%, 68%);
-  color: hsl(230deg, 7%, 47%);
-  text-align: center;
+  color: hsl(218deg, 14%, 16%);
+}
+footer .logo {
+  fill: hsl(356deg, 75%, 70%);
+}
+footer .logo:hover {
+  fill: hsl(0deg, 0%, 98%);
 }
 
 .grid {
