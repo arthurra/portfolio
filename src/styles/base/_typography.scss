@@ -130,6 +130,13 @@ label {
   @extend %label;
 }
 
+.eyebrow-text {
+  @extend %label;
+  display: block;
+  padding-bottom: $spacing-sm;
+  color: $color-secondary;
+}
+
 small {
   font-size: 87.5%;
 }

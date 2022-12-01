@@ -1799,7 +1799,7 @@ h4 {
 }
 
 nav .link, .has-tooltip:before, .button.disabled:before,
-.button [disabled]:before, .button--icon:before, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
+.button [disabled]:before, .button--icon:before, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
   font-weight: 800;
   font-size: 0.8rem;
   line-height: 1.5rem;
@@ -1849,6 +1849,12 @@ p {
 
 .lead-text {
   color: hsl(0deg, 0%, 98%);
+}
+
+.eyebrow-text {
+  display: block;
+  padding-bottom: 0.5rem;
+  color: hsl(38deg, 100%, 68%);
 }
 
 small {
