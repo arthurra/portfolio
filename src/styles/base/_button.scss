@@ -4,7 +4,7 @@
 
 $button-height: $input-height;
 $small-button-height: $button-height * 0.75;
-$button-box-shadow-inset: 0 0 0 $border-width $gray-700 inset;
+$button-box-shadow-inset: 0 0 0 $border-width $title-color inset;
 $button-box-shadow-elevation: $box-shadow;
 $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
 
@@ -44,8 +44,7 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
   }
 
   &:focus {
-    box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
-      $button-box-shadow-base;
+    box-shadow: 0 0 0 ($border-width * 2) $gray-700, $button-box-shadow-base;
     outline: none;
   }
 
@@ -75,10 +74,9 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
 
     &:focus {
       color: $color-primary;
-      background-color: #fff;
+      // background-color: #fff;
       border-color: $color-primary;
-      box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
-        $button-box-shadow-base;
+      box-shadow: 0 0 0 ($border-width * 2) $gray-700, $button-box-shadow-base;
     }
 
     &:hover {
@@ -218,13 +216,13 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
 
     &:focus {
       color: $color-primary;
-      background-color: #fff;
+      // background-color: #fff;
       border-color: $color-primary;
     }
 
     &.button--hover,
     &:hover {
-      color: $gray-700;
+      color: $title-inverse-color;
       background-color: $color-primary-light;
       border-color: $color-primary;
     }
@@ -239,13 +237,13 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
       color: $color-primary;
 
       &:focus {
-        color: $color-primary;
-        background-color: #fff;
+        color: $title-inverse-color;
+        background-color: $color-primary;
         border-color: $color-primary;
       }
 
       &:hover {
-        color: $gray-700;
+        color: $title-inverse-color;
         background-color: $color-primary;
         border-color: $color-primary;
       }

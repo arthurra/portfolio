@@ -741,17 +741,17 @@ hr::after {
   text-decoration: none;
   color: hsl(359deg, 75%, 30%);
   background-color: hsl(358deg, 70%, 91%);
-  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button:focus {
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(218deg, 14%, 16%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
   outline: none;
 }
 .button--pressed, .button:active {
   color: #fff;
   background-color: hsl(356deg, 75%, 70%);
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
   translate: 0 2px;
 }
 .button.disabled,
@@ -765,9 +765,8 @@ hr::after {
 }
 .button--primary:focus {
   color: hsl(356deg, 75%, 70%);
-  background-color: #fff;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(218deg, 14%, 16%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--primary:hover {
   color: #fff;
@@ -775,7 +774,7 @@ hr::after {
   background-color: hsl(356deg, 75%, 70%);
 }
 .button--primary:active {
-  box-shadow: 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--secondary {
   color: hsl(37deg, 70%, 31%);
@@ -786,7 +785,7 @@ hr::after {
   color: hsl(38deg, 100%, 68%);
   background-color: #fff;
   border-color: hsl(38deg, 100%, 68%);
-  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--secondary:hover {
   color: #fff;
@@ -794,7 +793,7 @@ hr::after {
   background-color: hsl(38deg, 100%, 68%);
 }
 .button--secondary:active {
-  box-shadow: 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--confirm, .button--success {
   color: hsl(159deg, 72%, 18%);
@@ -805,7 +804,7 @@ hr::after {
   color: hsl(122deg, 54%, 78%);
   background-color: #fff;
   border-color: hsl(122deg, 54%, 78%);
-  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--confirm:hover, .button--success:hover {
   color: #fff;
@@ -813,7 +812,7 @@ hr::after {
   background-color: hsl(122deg, 54%, 78%);
 }
 .button--confirm:active, .button--success:active {
-  box-shadow: 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--warning {
   color: hsl(37deg, 70%, 31%);
@@ -824,7 +823,7 @@ hr::after {
   color: hsl(38deg, 100%, 68%);
   background-color: #fff;
   border-color: hsl(38deg, 100%, 68%);
-  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--warning:hover {
   color: #fff;
@@ -832,7 +831,7 @@ hr::after {
   background-color: hsl(38deg, 100%, 68%);
 }
 .button--warning:active {
-  box-shadow: 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--danger {
   color: hsl(359deg, 75%, 30%);
@@ -843,7 +842,7 @@ hr::after {
   color: hsl(356deg, 75%, 70%);
   background-color: #fff;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--danger:hover {
   color: #fff;
@@ -851,7 +850,7 @@ hr::after {
   background-color: hsl(356deg, 75%, 70%);
 }
 .button--danger:active {
-  box-shadow: 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--info {
   color: hsl(215deg, 79%, 28%);
@@ -862,7 +861,7 @@ hr::after {
   color: hsl(208deg, 97%, 75%);
   background-color: #fff;
   border-color: hsl(208deg, 97%, 75%);
-  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--info:hover {
   color: #fff;
@@ -870,14 +869,13 @@ hr::after {
   background-color: hsl(208deg, 97%, 75%);
 }
 .button--info:active {
-  box-shadow: 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--outline {
   background-color: transparent;
 }
 .button--outline:focus {
   color: hsl(356deg, 75%, 70%);
-  background-color: #fff;
   border-color: hsl(356deg, 75%, 70%);
 }
 .button--outline.button--hover, .button--outline:hover {
@@ -893,8 +891,8 @@ hr::after {
   color: hsl(356deg, 75%, 70%);
 }
 .button--outline.button--primary:focus {
-  color: hsl(356deg, 75%, 70%);
-  background-color: #fff;
+  color: hsl(218deg, 14%, 16%);
+  background-color: hsl(356deg, 75%, 70%);
   border-color: hsl(356deg, 75%, 70%);
 }
 .button--outline.button--primary:hover {
@@ -995,21 +993,21 @@ hr::after {
   color: hsl(356deg, 75%, 70%);
   background-color: #fff;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--hover, .button--link:hover {
   color: hsl(359deg, 75%, 30%);
   background-color: hsl(358deg, 70%, 91%);
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--link:focus:hover {
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--pressed, .button--link:active {
   color: #fff;
   background-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--primary {
   color: hsl(356deg, 75%, 70%);
@@ -1017,7 +1015,7 @@ hr::after {
 .button--link.button--primary:focus {
   color: hsl(356deg, 75%, 70%);
   background-color: #fff;
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--primary:hover {
   color: #fff;
@@ -1033,7 +1031,7 @@ hr::after {
 .button--link.button--secondary:focus {
   color: hsl(38deg, 100%, 68%);
   background-color: #fff;
-  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--secondary:hover {
   color: #fff;
@@ -1050,7 +1048,7 @@ hr::after {
   color: hsl(122deg, 54%, 78%);
   background-color: #fff;
   border-color: hsl(122deg, 54%, 78%);
-  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--confirm:hover, .button--link.button--success:hover {
   color: #fff;
@@ -1067,7 +1065,7 @@ hr::after {
   color: hsl(38deg, 100%, 68%);
   background-color: #fff;
   border-color: hsl(38deg, 100%, 68%);
-  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--warning:hover {
   color: #fff;
@@ -1084,7 +1082,7 @@ hr::after {
   color: hsl(356deg, 75%, 70%);
   background-color: #fff;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--danger:hover {
   color: #fff;
@@ -1101,7 +1099,7 @@ hr::after {
   color: hsl(208deg, 97%, 75%);
   background-color: #fff;
   border-color: hsl(208deg, 97%, 75%);
-  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--info:hover {
   color: #fff;
@@ -1205,7 +1203,7 @@ hr::after {
 .form-group__input:focus {
   background-color: #fff;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
   outline: none;
 }
 .form-group__input.disabled, .form-group__input[disabled] {
@@ -1244,19 +1242,19 @@ hr::after {
 }
 .form-group--success .form-group__input {
   border-color: hsl(122deg, 54%, 78%);
-  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .form-group--warning .form-group__input {
   border-color: hsl(38deg, 100%, 68%);
-  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .form-group--error .form-group__input, .form-group--danger .form-group__input {
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .form-group--info .form-group__input {
   border-color: hsl(208deg, 97%, 75%);
-  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 .form-group--info .form-group__input:hover, .form-group--success .form-group__input:hover, .form-group--warning .form-group__input:hover, .form-group--error .form-group__input:hover, .form-group--danger .form-group__input:hover {
   border-color: hsl(356deg, 75%, 70%);
@@ -1264,7 +1262,7 @@ hr::after {
 }
 .form-group--info .form-group__input:focus, .form-group--success .form-group__input:focus, .form-group--warning .form-group__input:focus, .form-group--error .form-group__input:focus, .form-group--danger .form-group__input:focus {
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 
 .form-group__input-icon {
@@ -1389,7 +1387,7 @@ hr::after {
 .form-group--radio .form-group__input:focus-within {
   background-color: white;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
   outline: none;
 }
 
@@ -1538,7 +1536,7 @@ hr::after {
 .form-group--file .form-group__input:focus-within {
   border-color: hsl(356deg, 75%, 70%);
   background-color: #fff;
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
 }
 
 /* ---------------------------------------- */
@@ -1729,7 +1727,7 @@ hr::after {
 .form-group--toggle .form-group__toggle-checkbox:focus + .form-group__toggle {
   background-color: white;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(218deg, 14%, 16%) inset;
+  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
   outline: none;
 }
 
