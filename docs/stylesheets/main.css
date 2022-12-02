@@ -2079,6 +2079,9 @@ small {
     grid-auto-flow: row;
     margin: 1rem;
   }
+  .slide:hover {
+    scale: 1.05;
+  }
 }
 
 .slide__image-container {
@@ -2119,6 +2122,17 @@ small {
 .slide:hover .slide__image-container img.scroll {
   translate: -10% -10%;
 }
+@media screen and (max-width: 950px) {
+  .slide__image-container img {
+    scale: 1.5;
+  }
+  .slide:hover .slide__image-container img {
+    translate: 0 4rem;
+  }
+  .slide:hover .slide__image-container img.scroll {
+    translate: -10% 0;
+  }
+}
 
 .slide__title {
   padding-top: 1rem;
@@ -2138,6 +2152,7 @@ small {
 }
 @media screen and (max-width: 950px) {
   .slide__description-container {
+    padding: 1.5rem;
     border-radius: 0 0 0.25rem 0.25rem;
   }
 }
