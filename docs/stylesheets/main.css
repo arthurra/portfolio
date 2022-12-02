@@ -2264,6 +2264,19 @@ small {
 .l-footer .logo:hover {
   fill: hsl(0deg, 0%, 98%);
 }
+@media screen and (max-width: 950px) {
+  .l-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    height: auto;
+  }
+  .l-footer .logo {
+    align-self: center;
+  }
+  .l-footer .button {
+    width: 100%;
+  }
+}
 
 .grid {
   display: grid;

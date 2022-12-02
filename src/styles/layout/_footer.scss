@@ -15,4 +15,18 @@ $footer-height: $spacing-md * 9;
       fill: $title-color;
     }
   }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+    gap: $spacing-lg;
+    height: auto;
+
+    .logo {
+      align-self: center;
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
 }
