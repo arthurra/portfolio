@@ -17,12 +17,15 @@ html {
 
 body {
   @extend %p;
-  @extend %background-texture;
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures contextual;
   font-kerning: normal;
   color: $gray-200;
   background-color: $gray-700;
+  // lame fallback becuase background-blend-mode
+  // and background-repeat break on iOS
+  background-image: url(../../images/bg.png);
+  background-size: 100px 100px;
 }
 
 .l-header,
