@@ -118,7 +118,9 @@ h6 {
 
   @media screen and (max-width: $mobile-breakpoint) {
     font-size: 1rem;
+    font-weight: 700;
     line-height: 1.5rem;
+    letter-spacing: -0.015em;
   }
 }
 
@@ -143,6 +145,9 @@ p {
 .lead-text {
   @extend %lead;
   color: $title-color;
+  margin-top: $spacing-lg;
+  padding-bottom: 0;
+  text-align: center;
 }
 
 %label {
@@ -157,7 +162,7 @@ label {
 .eyebrow-text {
   @extend %label;
   display: block;
-  padding-bottom: $spacing-sm;
+  padding-bottom: $spacing-xs;
   color: $color-secondary;
 }
 
