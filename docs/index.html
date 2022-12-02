@@ -12,8 +12,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
   </head>
-  <body>
-    <header>
+  <body class="l-body">
+    <header class="l-header">
       <div class="flex flex--between">
         <section>
           <a href="/" class="logo u-pt-md">
@@ -32,7 +32,7 @@
           </a>
         </section>
         <!-- desktop nav -->
-        <nav class="u-hide-mobile">
+        <nav class="l-nav u-hide-mobile">
           <a href="/" class="link active">Products</a>
           <a
             href="/"
@@ -54,7 +54,7 @@
           >
         </nav>
         <!-- mobile nav -->
-        <nav class="u-show-mobile">
+        <nav class="l-nav u-show-mobile">
           <a
             href="mailto:ryan@ryanarthurdigital.com?subject=Work with me! &body=👋 Tell me a little bit about your project."
             class="button button--primary button--outline"
@@ -64,10 +64,8 @@
         </nav>
       </div>
     </header>
-    <main>
-      <article
-        class="l-content-container flex flex--xxl flex--column flex--column-stretch"
-      >
+    <main class="l-main">
+      <article class="l-content-container">
         <div class="u-text-center">
           <h1 class="u-pt-0">Digital Product Design</h1>
           <h4 class="u-pt-0 u-color-secondary">
@@ -279,7 +277,7 @@
         </section>
       </article>
     </main>
-    <footer>
+    <footer class="l-footer">
       <div class="flex flex--nogap flex--align-baseline">
         <a href="/" class="logo u-pt-md">
           <svg
