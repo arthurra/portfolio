@@ -13,6 +13,11 @@
     scale: 1.025;
     transition: all 0.5s $transition-timing-function;
   }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
 }
 
 .slide__image-container {
@@ -23,6 +28,13 @@
   border-radius: $border-radius 0 0 $border-radius;
   overflow: hidden;
   transition: all $transition-duration $transition-timing-function;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 5 / 4;
+    border-radius: $border-radius $border-radius 0 0;
+  }
 }
 
 .slide__image-container img {
@@ -72,4 +84,8 @@
   padding: $spacing-xl;
   border-radius: 0 $border-radius $border-radius 0;
   transition: all $transition-duration $transition-timing-function;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    border-radius: 0 0 $border-radius $border-radius;
+  }
 }
