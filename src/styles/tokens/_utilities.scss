@@ -52,6 +52,14 @@
   }
 }
 
+.u-text-columns {
+  column-count: var(--column-count);
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    column-count: 1;
+  }
+}
+
 /* ---------------------------------------- */
 /*                  CURSOR                  */
 /* ---------------------------------------- */

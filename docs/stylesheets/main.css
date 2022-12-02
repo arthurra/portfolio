@@ -45,6 +45,15 @@
     display: inherit;
   }
 }
+.u-text-columns {
+  column-count: var(--column-count);
+}
+@media screen and (max-width: 950px) {
+  .u-text-columns {
+    column-count: 1;
+  }
+}
+
 /* ---------------------------------------- */
 /*                  CURSOR                  */
 /* ---------------------------------------- */
@@ -1762,6 +1771,12 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+@media screen and (max-width: 950px) {
+  h1 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+}
 
 h1 {
   padding-top: 3rem;
@@ -1803,6 +1818,12 @@ h4, .u-font-h4 {
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.085em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 950px) {
+  h4, .u-font-h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 h4 {
@@ -1846,6 +1867,13 @@ h6 {
   line-height: 1.75rem;
   font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+@media screen and (max-width: 950px) {
+  .table th,
+  .table td, p, .u-font-p, body, .form-group__input, .form-group__file-label {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 
 p {
   padding-bottom: 1rem;
@@ -1857,6 +1885,12 @@ p {
   font-style: italic;
   line-height: 3.5rem;
   font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@media screen and (max-width: 950px) {
+  .lead-text {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
 }
 
 .lead-text {
