@@ -644,7 +644,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.slide__image-container, hr::after, body {
+.slide__image-container, hr::after {
   background: url(https://grainy-gradients.vercel.app/noise.svg);
   background-blend-mode: overlay;
 }
@@ -655,6 +655,8 @@ body {
   font-kerning: normal;
   color: hsl(197deg, 6%, 78%);
   background-color: hsl(218deg, 14%, 16%);
+  background-image: url(../../images/bg.png);
+  background-size: 100px 100px;
 }
 
 .l-header,
@@ -1874,7 +1876,9 @@ h6 {
   .table th,
   .table td, p, .u-font-p, body, .form-group__input, .form-group__file-label {
     font-size: 1rem;
+    font-weight: 700;
     line-height: 1.5rem;
+    letter-spacing: -0.015em;
   }
 }
 
@@ -1898,6 +1902,9 @@ p {
 
 .lead-text {
   color: hsl(0deg, 0%, 98%);
+  margin-top: 1.5rem;
+  padding-bottom: 0;
+  text-align: center;
 }
 
 .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
@@ -2097,13 +2104,14 @@ small {
   background-color: hsl(358deg, 70%, 91%);
   border-radius: 0.25rem 0 0 0.25rem;
   overflow: hidden;
+  isolation: isolate;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 @media screen and (max-width: 950px) {
   .slide__image-container {
     height: auto;
     max-width: 100%;
-    aspect-ratio: 5/4;
+    aspect-ratio: 6/4;
     border-radius: 0.25rem 0.25rem 0 0;
   }
 }
@@ -2143,9 +2151,8 @@ small {
 
 .slide__title {
   padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   color: hsl(0deg, 0%, 98%);
-  border-bottom: 2px dotted hsl(197deg, 6%, 78%);
 }
 
 .slide__description-container {
@@ -2161,6 +2168,16 @@ small {
   .slide__description-container {
     padding: 1.5rem;
     border-radius: 0 0 0.25rem 0.25rem;
+  }
+}
+
+.slide__description {
+  padding-top: 0.5rem;
+  border-top: 2px dotted hsl(197deg, 6%, 78%);
+}
+@media screen and (max-width: 950px) {
+  .slide__description {
+    display: none;
   }
 }
 
