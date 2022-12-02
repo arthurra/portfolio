@@ -33,6 +33,9 @@
   .u-show-mobile {
     display: inherit;
   }
+  .u-hide-mobile {
+    display: none !important;
+  }
 }
 @media screen and (min-width: 950px) {
   .u-show-mobile {
@@ -42,6 +45,17 @@
     display: inherit;
   }
 }
+.u-text-columns {
+  column-count: var(--column-count);
+  column-gap: 2.5rem;
+  text-align: justify;
+}
+@media screen and (max-width: 950px) {
+  .u-text-columns {
+    column-count: 1;
+  }
+}
+
 /* ---------------------------------------- */
 /*                  CURSOR                  */
 /* ---------------------------------------- */
@@ -643,10 +657,17 @@ body {
   background-color: hsl(218deg, 14%, 16%);
 }
 
-header,
-main,
-footer {
+.l-header,
+.l-main,
+.l-footer {
   padding: 2rem;
+}
+@media screen and (max-width: 950px) {
+  .l-header,
+  .l-main,
+  .l-footer {
+    padding: 1rem;
+  }
 }
 
 a {
@@ -667,11 +688,10 @@ label {
 
 ol,
 ul {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 ol.flex,
 ul.flex {
-  padding-left: 0;
   gap: 1rem 3rem;
 }
 
@@ -1744,13 +1764,19 @@ h6 {
   color: hsl(0deg, 0%, 98%);
 }
 
-h1 {
+.logo__type, h1 {
   font-weight: 700;
   font-size: 3.5rem;
   line-height: 4rem;
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+@media screen and (max-width: 950px) {
+  .logo__type, h1 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
 }
 
 h1 {
@@ -1763,6 +1789,7 @@ h2, .u-font-h2 {
   font-size: 2rem;
   line-height: 2.5rem;
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: italic;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -1794,18 +1821,25 @@ h4, .u-font-h4 {
   letter-spacing: 0.085em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 950px) {
+  h4, .u-font-h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 
 h4 {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
-nav .link, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
+.l-nav .link, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
 .button [disabled]::before, .button--icon::before, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
   font-weight: 800;
   font-size: 0.8rem;
   line-height: 1.5rem;
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: italic;
   letter-spacing: 0.125em;
   text-transform: uppercase;
 }
@@ -1836,6 +1870,13 @@ h6 {
   line-height: 1.75rem;
   font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+@media screen and (max-width: 950px) {
+  .table th,
+  .table td, p, .u-font-p, body, .form-group__input, .form-group__file-label {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 
 p {
   padding-bottom: 1rem;
@@ -1848,9 +1889,20 @@ p {
   line-height: 3.5rem;
   font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+@media screen and (max-width: 950px) {
+  .lead-text {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+}
 
 .lead-text {
   color: hsl(0deg, 0%, 98%);
+}
+
+.disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
+.button [disabled]::before, .button--icon::before, .eyebrow-text, .u-font-label, label, .fieldset__label {
+  font-style: normal;
 }
 
 .eyebrow-text {
@@ -2028,6 +2080,16 @@ small {
   scale: 1.025;
   transition: all 0.5s cubic-bezier(0.65, 0, 0.35, 1);
 }
+@media screen and (max-width: 950px) {
+  .slide {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    margin: 1rem;
+  }
+  .slide:hover {
+    scale: 1.05;
+  }
+}
 
 .slide__image-container {
   position: relative;
@@ -2036,6 +2098,14 @@ small {
   border-radius: 0.25rem 0 0 0.25rem;
   overflow: hidden;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+@media screen and (max-width: 950px) {
+  .slide__image-container {
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 5/4;
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
 }
 
 .slide__image-container img {
@@ -2059,6 +2129,17 @@ small {
 .slide:hover .slide__image-container img.scroll {
   translate: -10% -10%;
 }
+@media screen and (max-width: 950px) {
+  .slide__image-container img {
+    scale: 1.5;
+  }
+  .slide:hover .slide__image-container img {
+    translate: 0 4rem;
+  }
+  .slide:hover .slide__image-container img.scroll {
+    translate: -10% 0;
+  }
+}
 
 .slide__title {
   padding-top: 1rem;
@@ -2076,9 +2157,15 @@ small {
   border-radius: 0 0.25rem 0.25rem 0;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
+@media screen and (max-width: 950px) {
+  .slide__description-container {
+    padding: 1.5rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
+}
 
 .logo, .link {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   padding: 0.25rem;
 }
@@ -2086,12 +2173,10 @@ small {
   content: "";
   display: block;
   position: absolute;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 50%;
-  background-color: transparent;
   border-bottom: 2px solid hsl(0deg, 0%, 98%);
-  translate: 0 -100%;
   scale: 0% 100%;
   z-index: -1;
   transform-origin: left;
@@ -2114,29 +2199,34 @@ small {
   color: hsl(197deg, 6%, 78%);
 }
 
-body {
+.l-body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
   min-height: 100vh;
 }
+@media screen and (max-width: 950px) {
+  .l-body {
+    gap: 2rem;
+  }
+}
 
-header {
+.l-header {
   grid-area: header;
 }
 
-main {
+.l-main {
   grid-area: main;
   justify-self: center;
   max-width: 69rem;
 }
 
-footer {
+.l-footer {
   grid-area: footer;
 }
 
-nav {
+.l-nav {
   display: flex;
   align-items: baseline;
   justify-content: end;
@@ -2146,16 +2236,39 @@ nav {
   z-index: 1;
 }
 .logo {
+  display: inline-flex;
+  align-items: center;
   fill: hsl(0deg, 0%, 98%);
-  width: 3.5rem;
-  height: 3.5rem;
-  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 .logo:hover {
   fill: hsl(356deg, 75%, 70%);
 }
+.logo__image {
+  width: 3rem;
+  height: 3rem;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.logo__type {
+  font-size: 100%;
+  font-style: italic;
+  line-height: 1;
+  text-indent: 0.85ch;
+  margin-left: 0.5rem;
+}
 
-footer {
+.l-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 950px) {
+  .l-content-container {
+    gap: 1.5rem;
+  }
+}
+
+.l-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2163,11 +2276,24 @@ footer {
   background-color: hsl(38deg, 100%, 68%);
   color: hsl(218deg, 14%, 16%);
 }
-footer .logo {
+.l-footer .logo {
   fill: hsl(356deg, 75%, 70%);
 }
-footer .logo:hover {
+.l-footer .logo:hover {
   fill: hsl(0deg, 0%, 98%);
+}
+@media screen and (max-width: 950px) {
+  .l-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    height: auto;
+  }
+  .l-footer .logo {
+    align-self: center;
+  }
+  .l-footer .button {
+    width: 100%;
+  }
 }
 
 .grid {

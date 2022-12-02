@@ -12,14 +12,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
   </head>
-  <body>
-    <header>
-      <div class="grid">
+  <body class="l-body">
+    <header class="l-header">
+      <div class="flex flex--between">
         <section>
-          <a href="/" class="logo u-pt-md">
+          <a href="/" class="logo u-mt-md">
             <svg
               id="a"
-              class=""
+              class="logo__image"
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -29,45 +29,58 @@
                 d="M264.22,.05c24.29,0,48.57-.02,72.86,0,87.17,.09,159.1,61.36,171.65,147.49,11.68,80.16-35.7,158.97-115.17,185.28-8.49,2.81-9.16,5.93-6.56,13.6,15.58,45.97,30.7,92.1,45.94,138.18,6.48,19.59,.96,27.36-19.44,27.39-23.67,.03-47.34,.03-71.01,0-13.68-.02-17.66-2.91-22.06-16.12-15.35-46.06-30.89-92.06-45.78-138.27-2.81-8.71-6.63-12.17-16.08-11.94-26.11,.65-52.26,.19-78.39,.24-12.54,.02-15.23,1.96-19.27,14.06-14.96,44.9-29.84,89.82-44.77,134.72-5.11,15.36-7.72,17.22-23.85,17.24-23.36,.02-46.73,.05-70.09-.01-18.21-.05-24.28-8.14-18.64-25.1,25.18-75.82,50.42-151.62,75.69-227.41,4.62-13.85,7.91-16.12,22.88-16.13,32.89-.03,65.79,.08,98.68-.07,9.2-.04,18.4-1.2,27.59-1.05,7.62,.12,7.84-2.78,5.77-8.94-16.65-49.51-33.06-99.1-49.54-148.66-6.59-19.83-13.24-39.64-19.75-59.5-5.24-15.99,.75-24.8,17.27-24.92,27.36-.2,54.72-.05,82.07-.06Zm70.46,103.95c-7.84,0-13.4,.36-18.9-.09-7.79-.63-8.74,2.27-6.43,9.12,13.63,40.46,27.02,81,40.28,121.57,1.97,6.04,4.89,7.19,10.96,5.58,45.28-12.04,65.9-67.61,38.93-105.98-16.33-23.24-39.22-32.49-64.85-30.2Z"
               />
             </svg>
+            <span class="logo__type u-hide-mobile"
+              >Ryan <br />
+              Arthur
+            </span>
           </a>
         </section>
-        <section>
-          <nav>
-            <a href="/" class="link active">Products</a>
-            <a
-              href="/"
-              class="link disabled disabled--coming-soon"
-              onclick="event.preventDefault();"
-              >Branding</a
-            >
-            <a
-              href="/"
-              class="link disabled disabled--coming-soon"
-              onclick="event.preventDefault();"
-              >Renders</a
-            >
-            <a
-              href="mailto:ryan@ryanarthurdigital.com?subject=Work with me! &body=👋 Tell me a little bit about your project."
-              class="button button--primary button--outline"
-              >Work with Me</a
-            >
-          </nav>
-        </section>
+        <!-- desktop nav -->
+        <nav class="l-nav u-hide-mobile">
+          <a href="/" class="link active">Product Design</a>
+          <a
+            href="/"
+            class="link disabled disabled--coming-soon"
+            onclick="event.preventDefault();"
+            >Branding</a
+          >
+          <a
+            href="/"
+            class="link disabled disabled--coming-soon"
+            onclick="event.preventDefault();"
+            >Renders</a
+          >
+          <a
+            href="mailto:ryan@ryanarthurdigital.com?subject=Work with me! &body=👋 Tell me a little bit about your project."
+            class="button button--primary button--outline"
+          >
+            <span style="font-size: 169%">👋</span> Work with me</a
+          >
+        </nav>
+        <!-- mobile nav -->
+        <nav class="l-nav u-show-mobile">
+          <a
+            href="mailto:ryan@ryanarthurdigital.com?subject=Work with me! &body=👋 Tell me a little bit about your project."
+            class="button button--primary button--outline"
+          >
+            <span style="font-size: 169%">👋</span> Work with me</a
+          >
+        </nav>
       </div>
     </header>
-    <main>
-      <article class="flex flex--xxl flex--column flex--column-stretch">
+    <main class="l-main">
+      <article class="l-content-container">
         <div class="u-text-center">
           <h1 class="u-pt-0">Digital Product Design</h1>
           <h4 class="u-pt-0 u-color-secondary">
             User Experience Design & Web Development
           </h4>
         </div>
-        <p class="lead-text u-text-center u-mt-md u-pb-0">
-          My specialty is handcrafted digital products <br />
-          that are simple, beautiful, and most of all, useful.
+        <p class="lead-text u-text-center u-mt-lg u-pb-0">
+          My specialty is handcrafted digital products that are simple,
+          beautiful, and most of all, useful.
         </p>
-        <p class="u-mb-xxl" style="column-count: 2">
+        <p class="u-mb-xxl u-text-columns" style="--column-count: 2">
           Over the past ten years, I've helped to combine my clients' vision of
           the future with the perspectives of their users to create qaulity,
           handcrafted digital products. By taking the time to understand the the
@@ -75,7 +88,7 @@
           tailored experience that is useful and accessible to everyone on the
           web.
         </p>
-        <ol class="flex flex--justify-center">
+        <ol class="flex flex--justify-center flex--mobile-column u-mb-xxl">
           <li>
             <a href="#construction-marketplace" class="link u-text-h3">
               Construction Marketplace
@@ -268,12 +281,12 @@
         </section>
       </article>
     </main>
-    <footer>
-      <div class="flex flex--nogap flex--align-baseline">
+    <footer class="l-footer">
+      <div class="flex flex--nogap flex--align-baseline flex--mobile-column">
         <a href="/" class="logo u-pt-md">
           <svg
             id="a"
-            class=""
+            class="logo__image"
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
@@ -286,7 +299,9 @@
         </a>
         <span class="u-font-h5">© 2023 Ryan Arthur Digital LLC</span>
       </div>
-      <a href="#" class="button button--outline button--primary u-float-right"
+      <a
+        href="#"
+        class="button button--outline button--primary u-color-text-title-inverse u-float-right"
         >&#8593; Return to top</a
       >
     </footer>

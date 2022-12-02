@@ -25,10 +25,14 @@ body {
   background-color: $gray-700;
 }
 
-header,
-main,
-footer {
+.l-header,
+.l-main,
+.l-footer {
   padding: $spacing-xl;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    padding: $spacing-md;
+  }
 }
 
 a {
@@ -51,10 +55,9 @@ label {
 
 ol,
 ul {
-  padding-left: $spacing-md;
+  padding-left: $spacing-xl;
 
   &.flex {
-    padding-left: 0;
     gap: $spacing-md calc($spacing-lg * 2);
   }
 }

@@ -36,6 +36,10 @@
   .u-show-mobile {
     display: inherit;
   }
+
+  .u-hide-mobile {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: $mobile-breakpoint) {
@@ -45,6 +49,16 @@
 
   .u-hide-mobile {
     display: inherit;
+  }
+}
+
+.u-text-columns {
+  column-count: var(--column-count);
+  column-gap: $spacing-xxl;
+  text-align: justify;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    column-count: 1;
   }
 }
 
