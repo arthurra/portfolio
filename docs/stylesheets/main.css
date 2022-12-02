@@ -688,11 +688,10 @@ label {
 
 ol,
 ul {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 ol.flex,
 ul.flex {
-  padding-left: 0;
   gap: 1rem 3rem;
 }
 
@@ -2144,7 +2143,7 @@ small {
 }
 
 .logo, .link {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   padding: 0.25rem;
 }
@@ -2152,12 +2151,10 @@ small {
   content: "";
   display: block;
   position: absolute;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 50%;
-  background-color: transparent;
   border-bottom: 2px solid hsl(0deg, 0%, 98%);
-  translate: 0 -100%;
   scale: 0% 100%;
   z-index: -1;
   transform-origin: left;

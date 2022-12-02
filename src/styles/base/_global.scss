@@ -55,10 +55,9 @@ label {
 
 ol,
 ul {
-  padding-left: $spacing-md;
+  padding-left: $spacing-xl;
 
   &.flex {
-    padding-left: 0;
     gap: $spacing-md calc($spacing-lg * 2);
   }
 }
