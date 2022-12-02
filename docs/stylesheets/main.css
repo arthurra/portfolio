@@ -1818,7 +1818,6 @@ h4, .u-font-h4 {
   font-size: 1.25rem;
   line-height: 2.25rem;
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-style: italic;
   letter-spacing: 0.085em;
   text-transform: uppercase;
 }
@@ -1899,6 +1898,11 @@ p {
 
 .lead-text {
   color: hsl(0deg, 0%, 98%);
+}
+
+.disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
+.button [disabled]::before, .button--icon::before, .eyebrow-text, .u-font-label, label, .fieldset__label {
+  font-style: normal;
 }
 
 .eyebrow-text {
@@ -2256,7 +2260,7 @@ small {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 @media screen and (max-width: 950px) {
   .l-content-container {
