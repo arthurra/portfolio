@@ -1,12 +1,26 @@
 .logo {
   @extend %link;
-
+  display: inline-flex;
+  align-items: center;
   fill: $title-color;
-  width: 3.5rem;
-  height: 3.5rem;
-  transition: all $transition-duration $transition-timing-function;
+  // color: $text-color-dark;
 
   &:hover {
     fill: $color-primary;
+  }
+
+  &__image {
+    width: 3rem;
+    height: 3rem;
+    transition: all $transition-duration $transition-timing-function;
+  }
+
+  &__type {
+    @extend %h1;
+    font-size: 100%;
+    font-style: italic;
+    line-height: 1;
+    text-indent: 0.85ch;
+    margin-left: $spacing-sm;
   }
 }
