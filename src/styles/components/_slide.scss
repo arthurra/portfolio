@@ -17,6 +17,7 @@
   @media screen and (max-width: $mobile-breakpoint) {
     grid-template-columns: 1fr;
     grid-auto-flow: row;
+    margin: $spacing-md;
   }
 }
 
