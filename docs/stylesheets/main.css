@@ -648,6 +648,13 @@ main,
 footer {
   padding: 2rem;
 }
+@media screen and (max-width: 950px) {
+  header,
+  main,
+  footer {
+    padding: 1rem;
+  }
+}
 
 a {
   color: hsl(0deg, 0%, 98%);
@@ -2032,6 +2039,7 @@ small {
   .slide {
     grid-template-columns: 1fr;
     grid-auto-flow: row;
+    margin: 1rem;
   }
 }
 

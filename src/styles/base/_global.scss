@@ -29,6 +29,10 @@ header,
 main,
 footer {
   padding: $spacing-xl;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    padding: $spacing-md;
+  }
 }
 
 a {
