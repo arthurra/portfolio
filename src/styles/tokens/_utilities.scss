@@ -36,6 +36,10 @@
   .u-show-mobile {
     display: inherit;
   }
+
+  .u-hide-mobile {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: $mobile-breakpoint) {

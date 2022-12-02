@@ -33,6 +33,9 @@
   .u-show-mobile {
     display: inherit;
   }
+  .u-hide-mobile {
+    display: none !important;
+  }
 }
 @media screen and (min-width: 950px) {
   .u-show-mobile {
