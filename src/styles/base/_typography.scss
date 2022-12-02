@@ -32,6 +32,7 @@ h1 {
   font-size: 2rem;
   line-height: 2.5rem;
   font-family: $font-family-title;
+  font-style: italic;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -62,6 +63,7 @@ h3 {
   font-size: 1.25rem;
   line-height: 2.25rem;
   font-family: $font-family-title;
+  font-style: italic;
   letter-spacing: 0.085em;
   text-transform: uppercase;
 
@@ -82,6 +84,7 @@ h4 {
   font-size: 0.8rem;
   line-height: 1.5rem;
   font-family: $font-family-title;
+  font-style: italic;
   letter-spacing: 0.125em;
   text-transform: uppercase;
 }
@@ -144,6 +147,7 @@ p {
 
 %label {
   @extend %h5;
+  // font-style: normal;
 }
 
 label {

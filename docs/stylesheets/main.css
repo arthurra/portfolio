@@ -1789,6 +1789,7 @@ h2, .u-font-h2 {
   font-size: 2rem;
   line-height: 2.5rem;
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: italic;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -1817,6 +1818,7 @@ h4, .u-font-h4 {
   font-size: 1.25rem;
   line-height: 2.25rem;
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: italic;
   letter-spacing: 0.085em;
   text-transform: uppercase;
 }
@@ -1838,6 +1840,7 @@ h4 {
   font-size: 0.8rem;
   line-height: 1.5rem;
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: italic;
   letter-spacing: 0.125em;
   text-transform: uppercase;
 }
