@@ -25,9 +25,9 @@ body {
   background-color: $gray-700;
 }
 
-header,
-main,
-footer {
+.l-header,
+.l-main,
+.l-footer {
   padding: $spacing-xl;
 
   @media screen and (max-width: $mobile-breakpoint) {

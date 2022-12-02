@@ -47,6 +47,8 @@
 }
 .u-text-columns {
   column-count: var(--column-count);
+  column-gap: 2.5rem;
+  text-align: justify;
 }
 @media screen and (max-width: 950px) {
   .u-text-columns {
@@ -655,15 +657,15 @@ body {
   background-color: hsl(218deg, 14%, 16%);
 }
 
-header,
-main,
-footer {
+.l-header,
+.l-main,
+.l-footer {
   padding: 2rem;
 }
 @media screen and (max-width: 950px) {
-  header,
-  main,
-  footer {
+  .l-header,
+  .l-main,
+  .l-footer {
     padding: 1rem;
   }
 }
@@ -1831,7 +1833,7 @@ h4 {
   padding-bottom: 1rem;
 }
 
-nav .link, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
+.l-nav .link, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
 .button [disabled]::before, .button--icon::before, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
   font-weight: 800;
   font-size: 0.8rem;
@@ -2178,29 +2180,34 @@ small {
   color: hsl(197deg, 6%, 78%);
 }
 
-body {
+.l-body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
   min-height: 100vh;
 }
+@media screen and (max-width: 950px) {
+  .l-body {
+    gap: 2rem;
+  }
+}
 
-header {
+.l-header {
   grid-area: header;
 }
 
-main {
+.l-main {
   grid-area: main;
   justify-self: center;
   max-width: 69rem;
 }
 
-footer {
+.l-footer {
   grid-area: footer;
 }
 
-nav {
+.l-nav {
   display: flex;
   align-items: baseline;
   justify-content: end;
@@ -2219,7 +2226,19 @@ nav {
   fill: hsl(356deg, 75%, 70%);
 }
 
-footer {
+.l-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2.5rem;
+}
+@media screen and (max-width: 950px) {
+  .l-content-container {
+    gap: 1.5rem;
+  }
+}
+
+.l-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2227,10 +2246,10 @@ footer {
   background-color: hsl(38deg, 100%, 68%);
   color: hsl(218deg, 14%, 16%);
 }
-footer .logo {
+.l-footer .logo {
   fill: hsl(356deg, 75%, 70%);
 }
-footer .logo:hover {
+.l-footer .logo:hover {
   fill: hsl(0deg, 0%, 98%);
 }
 

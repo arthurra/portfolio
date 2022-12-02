@@ -54,6 +54,8 @@
 
 .u-text-columns {
   column-count: var(--column-count);
+  column-gap: $spacing-xxl;
+  text-align: justify;
 
   @media screen and (max-width: $mobile-breakpoint) {
     column-count: 1;
