@@ -644,7 +644,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.slide__image-container, hr::after {
+.slide__image-container {
   background: url(https://grainy-gradients.vercel.app/noise.svg);
   background-blend-mode: overlay;
 }
@@ -742,6 +742,8 @@ hr::after {
   position: relative;
   top: -1.5ch;
   background-color: hsl(218deg, 14%, 16%);
+  background-image: url(../../images/bg.png);
+  background-size: 100px 100px;
 }
 
 .button {
@@ -1914,7 +1916,7 @@ p {
 
 .eyebrow-text {
   display: block;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
   color: hsl(38deg, 100%, 68%);
 }
 

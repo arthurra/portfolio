@@ -109,11 +109,14 @@ hr {
   font-size: 1.5rem;
 
   &::after {
-    @extend %background-texture;
     content: "§";
     padding: 0 $spacing-sm;
     position: relative;
     top: -1.5ch;
     background-color: $gray-700;
+    // lame fallback becuase background-blend-mode
+    // and background-repeat break on iOS
+    background-image: url(../../images/bg.png);
+    background-size: 100px 100px;
   }
 }
