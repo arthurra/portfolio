@@ -46,7 +46,7 @@
 .slide__image-container img {
   width: 100%;
   object-fit: contain;
-  border-radius: 1rem;
+  border-radius: $spacing-md;
   box-shadow: $box-shadow-dark, -1px 0 0 $gray-100, -2px 1px 0 $gray-100,
     -2px 2px 0 $gray-100, -3px 2px 0 $gray-100, -3px 3px 0 $gray-100,
     $box-shadow-dark, $box-shadow-dark;
@@ -75,6 +75,7 @@
   }
 
   @media screen and (max-width: $mobile-breakpoint) {
+    border-radius: $spacing-xs;
     scale: 1.5;
 
     .slide:hover & {

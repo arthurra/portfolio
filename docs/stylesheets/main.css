@@ -2141,6 +2141,7 @@ small {
 }
 @media screen and (max-width: 950px) {
   .slide__image-container img {
+    border-radius: 0.25rem;
     scale: 1.5;
   }
   .slide:hover .slide__image-container img {
