@@ -4,6 +4,7 @@
   align-items: center;
   fill: $title-color;
   // color: $text-color-dark;
+  filter: url(#fuzzy-text);
 
   &:hover {
     fill: $color-primary;

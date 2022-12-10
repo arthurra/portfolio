@@ -28,6 +28,137 @@
     <link rel="manifest" href="site.webmanifest" />
   </head>
   <body class="l-body">
+    <svg>
+      <filter id="fuzzy-text">
+        <!-- base -->
+        <feMorphology
+          operator="dilate"
+          radius="2"
+          in="SourceGraphic"
+          result="BASE"
+        />
+
+        <!-- fuzz -->
+        <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          result="FUZZBASE"
+          values="0 0 0 0 0
+                           0 0 0 0 0
+                           0 0 0 0 0
+                           0 0 0 0.8 0"
+        />
+        <feMorphology
+          operator="dilate"
+          radius="1"
+          in="FUZZBASE"
+          result="DILATE"
+        />
+        <feGaussianBlur
+          stdDeviation="1"
+          in="DILATE"
+          result="BLUR"
+        ></feGaussianBlur>
+        <feTurbulence
+          id="turbulence"
+          type="fractalNoise"
+          baseFrequency="0.69"
+          numOctaves="3"
+          stitchTiles="stitch"
+          result="NOISE"
+        />
+        <!-- <feColorMatrix in="NOISE" type="saturate" values="0" result="WNOISE" /> -->
+        <!-- <feComposite operator="out" in="DILATE" in2="NOISE" result="MASK" /> -->
+        <feDisplacementMap
+          in="BLUR"
+          in2="NOISE"
+          scale="8"
+          result="FUZZ"
+        ></feDisplacementMap>
+        <!-- <animate
+          xlink:href="#turbulence"
+          attributeName="baseFrequency"
+          dur="180s"
+          keyTimes="0;0.5;1"
+          values="0.69;0.420;0.69"
+          repeatCount="indefinite"
+        ></animate> -->
+        <feOffset in="FUZZ" dx="2" dy="2" result="FUZZY"></feOffset>
+        <feComposite
+          operator="in"
+          in="FUZZY"
+          in2="LONGSHADOW"
+          result="FUZZYSHADOW"
+        />
+        <!-- <feColorMatrix
+          in="FUZZYOUTLINE"
+          type="matrix"
+          result="FUZZYSHADOW"
+          values="0.1 0 0 0 0
+                           0 0.1 0 0 0
+                           0 0 0.1 0 0
+                           0 0 0 1 0"
+        /> -->
+        <!-- <feOffset
+          in="SHADOWCOLOR"
+          dx="0"
+          dy="0"
+          result="FUZZYSHADOW"
+        ></feOffset> -->
+
+        <!-- <feComposite
+          operator="in"
+          in="LONGSHADOW"
+          in2="FUZZYSHADOW"
+          result="FINALSHADOW"
+        /> -->
+
+        <!-- long shadow -->
+        <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          result="LSBASE"
+          values="0.25 0 0 0 0
+                           0 0.25 0 0 0
+                           0 0 0.25 0 0
+                           0 0 0 0.69 0"
+        />
+        <feOffset in="LSBASE" dx="0" dy="0" result="LS0"></feOffset>
+        <feOffset in="LSBASE" dx="1" dy="1" result="LS1"></feOffset>
+        <feOffset in="LSBASE" dx="2" dy="2" result="LS2"></feOffset>
+        <feOffset in="LSBASE" dx="3" dy="3" result="LS3"></feOffset>
+        <feOffset in="LSBASE" dx="4" dy="4" result="LS4"></feOffset>
+        <feOffset in="LSBASE" dx="5" dy="5" result="LS5"></feOffset>
+
+        <feMerge result="LONGSHADOW">
+          <feMergeNode in="LSBASE"></feMergeNode>
+          <feMergeNode in="LS5"></feMergeNode>
+          <feMergeNode in="LS4"></feMergeNode>
+          <feMergeNode in="LS3"></feMergeNode>
+          <feMergeNode in="LS2"></feMergeNode>
+          <feMergeNode in="LS1"></feMergeNode>
+          <feMergeNode in="LS0"></feMergeNode>
+        </feMerge>
+
+        <!-- <feDisplacementMap
+          in="LONGSHADOWSHAPE"
+          in2="NOISE"
+          scale="5"
+          result="LONGSHADOW"
+        ></feDisplacementMap> -->
+
+        <feMerge>
+          <!-- <feMergeNode in="FUZZ"></feMergeNode> -->
+          <feMergeNode in="LONGSHADOW"></feMergeNode>
+          <feMergeNode in="FUZZYSHADOW"></feMergeNode>
+          <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+
+        <!-- <feDiffuseLighting in="noise" lighting-color="white" surfaceScale="2">
+          <feDistantLight azimuth="45" elevation="60" />
+        </feDiffuseLighting> -->
+      </filter>
+    </svg>
     <header class="l-header">
       <div class="flex flex--between">
         <section>
