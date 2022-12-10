@@ -2,6 +2,7 @@
   display: inline-flex;
   position: relative;
   padding: $spacing-xs;
+  // filter: url(#fuzzy-text);
 
   &::after {
     content: "";
@@ -15,6 +16,7 @@
     z-index: -1;
     transform-origin: left;
     transition: all $transition-duration $transition-timing-function;
+    // filter: url(#fuzzy-text);
   }
 
   &:hover,
