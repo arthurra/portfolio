@@ -47,7 +47,7 @@
             values="0 0 0 0 0
                  0 0 0 0 0
                  0 0 0 0 0
-                 0 0 0 0.69 0"
+                 0 0 0 0.8 0"
           />
 
           <feMorphology
@@ -58,7 +58,7 @@
           />
 
           <feGaussianBlur
-            stdDeviation="1"
+            stdDeviation="2"
             in="DILATE"
             result="BLUR"
           ></feGaussianBlur>
@@ -88,7 +88,7 @@
             repeatCount="indefinite"
           ></animate> -->
 
-          <feOffset in="FUZZ" dx="2" dy="2" result="FUZZY"></feOffset>
+          <feOffset in="FUZZ" dx="3" dy="3" result="FUZZY"></feOffset>
 
           <feComposite
             operator="in"
@@ -107,6 +107,7 @@
                          0 0 1 0 0
                          0 0 0 1 0"
           />
+
           <feOffset in="LSBASE" dx="0" dy="0" result="LS0"></feOffset>
           <feOffset in="LSBASE" dx="1" dy="1" result="LS1"></feOffset>
           <feOffset in="LSBASE" dx="2" dy="2" result="LS2"></feOffset>
@@ -196,22 +197,22 @@
         <filter id="fuzzy-edge">
           <feMorphology
             operator="dilate"
-            radius=".2"
+            radius="0.420"
             in="SourceGraphic"
-            result="DILATE"
+            result="BASE"
           />
 
           <feGaussianBlur
-            stdDeviation="1"
-            in="DILATE"
+            stdDeviation="0.69"
+            in="BASE"
             result="BLUR"
           ></feGaussianBlur>
 
           <feTurbulence
             id="turbulence"
-            type="fractalNoise"
+            type="turbulence"
             baseFrequency="0.69"
-            numOctaves="3"
+            numOctaves="5"
             stitchTiles="stitch"
             result="NOISE"
           />
@@ -219,18 +220,34 @@
           <feDisplacementMap
             in="BLUR"
             in2="NOISE"
-            scale="0.420"
+            scale="4"
             result="FUZZ"
           ></feDisplacementMap>
 
-          <feOffset in="FUZZ" dx="-1" dy="-1" result="FUZZY"></feOffset>
+          <feOffset in="FUZZ" dx="0" dy="0" result="FUZZY"></feOffset>
 
           <feComposite
-            operator="in"
-            in="SourceGraphic"
-            in2="FUZZY"
+            operator="out"
+            in="FUZZY"
+            in2="SourceGraphic"
             result="FUZZYEDGE"
           />
+
+          <feColorMatrix
+            in="FUZZYEDGE"
+            type="matrix"
+            result="FUZZY_SHADOW"
+            values="1 0 0 0 0
+                         0 1 0 0 0
+                         0 0 1 0 0
+                         0 0 0 0.69 0"
+          />
+
+          <feMerge>
+            <!-- <feMergeNode in="FUZZ"></feMergeNode> -->
+            <feMergeNode in="FUZZY_SHADOW"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+          </feMerge>
         </filter>
       </defs>
     </svg>
