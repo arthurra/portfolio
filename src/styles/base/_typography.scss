@@ -53,6 +53,7 @@ h2 {
   font-family: $font-family-title-alt;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  // filter: url(#fuzzy-edge);
   // filter: url(#fuzzy-text);
 }
 
@@ -143,6 +144,7 @@ p {
   font-style: italic;
   line-height: 3.5rem;
   font-family: $font-family-text;
+  filter: url(#fuzzy-edge);
   // filter: url(#fuzzy-text);
   // filter: url(#soft-light);
 
@@ -174,7 +176,8 @@ label {
   display: block;
   padding-bottom: $spacing-xs;
   color: $color-secondary;
-  filter: url(#soft-light);
+  // filter: url(#fuzzy-edge);
+  // filter: url(#soft-light);
 }
 
 small {
