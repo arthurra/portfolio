@@ -216,23 +216,23 @@
 /*                  BORDER                  */
 /* ---------------------------------------- */
 .u-border {
-  border: 2px solid hsl(230deg, 7%, 47%);
+  border: 0.125rem solid hsl(230deg, 7%, 47%);
 }
 
 .u-border-top {
-  border-top: 2px solid hsl(230deg, 7%, 47%);
+  border-top: 0.125rem solid hsl(230deg, 7%, 47%);
 }
 
 .u-border-right {
-  border-right: 2px solid hsl(230deg, 7%, 47%);
+  border-right: 0.125rem solid hsl(230deg, 7%, 47%);
 }
 
 .u-border-bottom {
-  border-bottom: 2px solid hsl(230deg, 7%, 47%);
+  border-bottom: 0.125rem solid hsl(230deg, 7%, 47%);
 }
 
 .u-border-left {
-  border-left: 2px solid hsl(230deg, 7%, 47%);
+  border-left: 0.125rem solid hsl(230deg, 7%, 47%);
 }
 
 .u-border--dark {
@@ -713,7 +713,7 @@ li::marker {
 }
 
 code {
-  border: 2px solid hsl(230deg, 7%, 47%);
+  border: 0.125rem solid hsl(230deg, 7%, 47%);
   background-color: hsl(0deg, 0%, 98%);
   padding: 0 0.25rem;
   border-radius: 0.25rem;
@@ -728,22 +728,21 @@ code {
 
 hr {
   border: none;
-  border-top: 2px solid hsl(230deg, 7%, 47%);
+  border-top: 0.125rem solid hsl(230deg, 7%, 47%);
   width: 100%;
   overflow: visible;
   text-align: center;
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: hsl(197deg, 6%, 78%);
   font-size: 1.5rem;
+  filter: url(#fuzzy-edge);
 }
 hr::after {
   content: "§";
   padding: 0 0.5rem;
   position: relative;
   top: -1.5ch;
-  background-color: hsl(218deg, 14%, 16%);
-  background-image: url(../../images/bg.png);
-  background-size: 100px 100px;
+  text-shadow: 0 0 4px hsl(224deg, 22%, 10%);
 }
 
 .button {
@@ -756,7 +755,7 @@ hr::after {
   padding: 0.5rem 1rem;
   color: hsl(208deg, 8%, 63%);
   background-color: hsl(0deg, 0%, 98%);
-  border: 2px solid hsl(230deg, 7%, 47%);
+  border: 0.125rem solid hsl(230deg, 7%, 47%);
   border-radius: 0.25rem;
   cursor: pointer;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
@@ -769,17 +768,17 @@ hr::after {
   text-decoration: none;
   color: hsl(359deg, 75%, 30%);
   background-color: hsl(358deg, 70%, 91%);
-  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button:focus {
-  box-shadow: 0 0 0 4px hsl(218deg, 14%, 16%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(218deg, 14%, 16%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
   outline: none;
 }
 .button--pressed, .button:active {
   color: #fff;
   background-color: hsl(356deg, 75%, 70%);
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
   translate: 0 2px;
 }
 .button.disabled,
@@ -794,7 +793,7 @@ hr::after {
 .button--primary:focus {
   color: hsl(356deg, 75%, 70%);
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(218deg, 14%, 16%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(218deg, 14%, 16%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--primary:hover {
   color: #fff;
@@ -802,7 +801,7 @@ hr::after {
   background-color: hsl(356deg, 75%, 70%);
 }
 .button--primary:active {
-  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--secondary {
   color: hsl(37deg, 70%, 31%);
@@ -813,7 +812,7 @@ hr::after {
   color: hsl(38deg, 100%, 68%);
   background-color: #fff;
   border-color: hsl(38deg, 100%, 68%);
-  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--secondary:hover {
   color: #fff;
@@ -821,7 +820,7 @@ hr::after {
   background-color: hsl(38deg, 100%, 68%);
 }
 .button--secondary:active {
-  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--confirm, .button--success {
   color: hsl(159deg, 72%, 18%);
@@ -832,7 +831,7 @@ hr::after {
   color: hsl(122deg, 54%, 78%);
   background-color: #fff;
   border-color: hsl(122deg, 54%, 78%);
-  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--confirm:hover, .button--success:hover {
   color: #fff;
@@ -840,7 +839,7 @@ hr::after {
   background-color: hsl(122deg, 54%, 78%);
 }
 .button--confirm:active, .button--success:active {
-  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--warning {
   color: hsl(37deg, 70%, 31%);
@@ -851,7 +850,7 @@ hr::after {
   color: hsl(38deg, 100%, 68%);
   background-color: #fff;
   border-color: hsl(38deg, 100%, 68%);
-  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--warning:hover {
   color: #fff;
@@ -859,7 +858,7 @@ hr::after {
   background-color: hsl(38deg, 100%, 68%);
 }
 .button--warning:active {
-  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--danger {
   color: hsl(359deg, 75%, 30%);
@@ -870,7 +869,7 @@ hr::after {
   color: hsl(356deg, 75%, 70%);
   background-color: #fff;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--danger:hover {
   color: #fff;
@@ -878,7 +877,7 @@ hr::after {
   background-color: hsl(356deg, 75%, 70%);
 }
 .button--danger:active {
-  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--info {
   color: hsl(215deg, 79%, 28%);
@@ -889,7 +888,7 @@ hr::after {
   color: hsl(208deg, 97%, 75%);
   background-color: #fff;
   border-color: hsl(208deg, 97%, 75%);
-  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--info:hover {
   color: #fff;
@@ -897,7 +896,7 @@ hr::after {
   background-color: hsl(208deg, 97%, 75%);
 }
 .button--info:active {
-  box-shadow: 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--outline {
   background-color: transparent;
@@ -1021,21 +1020,21 @@ hr::after {
   color: hsl(356deg, 75%, 70%);
   background-color: #fff;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--hover, .button--link:hover {
   color: hsl(359deg, 75%, 30%);
   background-color: hsl(358deg, 70%, 91%);
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--link:focus:hover {
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--pressed, .button--link:active {
   color: #fff;
   background-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--primary {
   color: hsl(356deg, 75%, 70%);
@@ -1043,7 +1042,7 @@ hr::after {
 .button--link.button--primary:focus {
   color: hsl(356deg, 75%, 70%);
   background-color: #fff;
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--primary:hover {
   color: #fff;
@@ -1059,7 +1058,7 @@ hr::after {
 .button--link.button--secondary:focus {
   color: hsl(38deg, 100%, 68%);
   background-color: #fff;
-  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--secondary:hover {
   color: #fff;
@@ -1076,7 +1075,7 @@ hr::after {
   color: hsl(122deg, 54%, 78%);
   background-color: #fff;
   border-color: hsl(122deg, 54%, 78%);
-  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--confirm:hover, .button--link.button--success:hover {
   color: #fff;
@@ -1093,7 +1092,7 @@ hr::after {
   color: hsl(38deg, 100%, 68%);
   background-color: #fff;
   border-color: hsl(38deg, 100%, 68%);
-  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--warning:hover {
   color: #fff;
@@ -1110,7 +1109,7 @@ hr::after {
   color: hsl(356deg, 75%, 70%);
   background-color: #fff;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--danger:hover {
   color: #fff;
@@ -1127,7 +1126,7 @@ hr::after {
   color: hsl(208deg, 97%, 75%);
   background-color: #fff;
   border-color: hsl(208deg, 97%, 75%);
-  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .button--link.button--info:hover {
   color: #fff;
@@ -1217,7 +1216,7 @@ hr::after {
   line-height: 3rem;
   color: hsl(208deg, 8%, 63%);
   background-color: hsl(0deg, 0%, 98%);
-  border: 2px solid hsl(230deg, 7%, 47%);
+  border: 0.125rem solid hsl(230deg, 7%, 47%);
   border-radius: 0.25rem;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
@@ -1231,13 +1230,13 @@ hr::after {
 .form-group__input:focus {
   background-color: #fff;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
   outline: none;
 }
 .form-group__input.disabled, .form-group__input[disabled] {
   color: hsl(230deg, 7%, 47%) !important;
   background: hsl(0deg, 0%, 98%) !important;
-  border: 2px solid hsl(230deg, 7%, 47%) !important;
+  border: 0.125rem solid hsl(230deg, 7%, 47%) !important;
   cursor: not-allowed !important;
   box-shadow: none !important;
   opacity: 0.5;
@@ -1247,7 +1246,7 @@ hr::after {
   opacity: 0.5;
 }
 .form-group__input.disabled:hover, .form-group__input[disabled]:hover {
-  border: 2px solid hsl(230deg, 7%, 47%);
+  border: 0.125rem solid hsl(230deg, 7%, 47%);
 }
 .form-group__input[required]:valid {
   background-color: #fff;
@@ -1270,19 +1269,19 @@ hr::after {
 }
 .form-group--success .form-group__input {
   border-color: hsl(122deg, 54%, 78%);
-  box-shadow: 0 0 0 4px hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(159deg, 41%, 87%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .form-group--warning .form-group__input {
   border-color: hsl(38deg, 100%, 68%);
-  box-shadow: 0 0 0 4px hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(43deg, 97%, 85%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .form-group--error .form-group__input, .form-group--danger .form-group__input {
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .form-group--info .form-group__input {
   border-color: hsl(208deg, 97%, 75%);
-  box-shadow: 0 0 0 4px hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(209deg, 96%, 89%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 .form-group--info .form-group__input:hover, .form-group--success .form-group__input:hover, .form-group--warning .form-group__input:hover, .form-group--error .form-group__input:hover, .form-group--danger .form-group__input:hover {
   border-color: hsl(356deg, 75%, 70%);
@@ -1290,7 +1289,7 @@ hr::after {
 }
 .form-group--info .form-group__input:focus, .form-group--success .form-group__input:focus, .form-group--warning .form-group__input:focus, .form-group--error .form-group__input:focus, .form-group--danger .form-group__input:focus {
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 
 .form-group__input-icon {
@@ -1415,7 +1414,7 @@ hr::after {
 .form-group--radio .form-group__input:focus-within {
   background-color: white;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
   outline: none;
 }
 
@@ -1564,7 +1563,7 @@ hr::after {
 .form-group--file .form-group__input:focus-within {
   border-color: hsl(356deg, 75%, 70%);
   background-color: #fff;
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
 }
 
 /* ---------------------------------------- */
@@ -1692,7 +1691,7 @@ hr::after {
   align-items: center;
   height: 3rem;
   padding: 0 6rem 0 1rem;
-  border: 2px solid hsl(230deg, 7%, 47%);
+  border: 0.125rem solid hsl(230deg, 7%, 47%);
   border-radius: 0.25rem;
   background-color: hsl(0deg, 0%, 98%);
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
@@ -1706,7 +1705,7 @@ hr::after {
   place-content: center start;
   padding: 0.25rem;
   height: 2.25rem;
-  border: 2px solid hsl(230deg, 7%, 47%);
+  border: 0.125rem solid hsl(230deg, 7%, 47%);
   border-radius: 3rem;
   background-color: white;
   transform: translateX(-1rem);
@@ -1723,7 +1722,7 @@ hr::after {
   width: 1.5rem;
   border-radius: 50%;
   background-color: hsl(197deg, 6%, 78%);
-  border: 2px solid hsl(230deg, 7%, 47%);
+  border: 0.125rem solid hsl(230deg, 7%, 47%);
   translate: 0;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
@@ -1755,7 +1754,7 @@ hr::after {
 .form-group--toggle .form-group__toggle-checkbox:focus + .form-group__toggle {
   background-color: white;
   border-color: hsl(356deg, 75%, 70%);
-  box-shadow: 0 0 0 4px hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 2px hsl(0deg, 0%, 98%) inset;
+  box-shadow: 0 0 0 0.25rem hsl(358deg, 70%, 91%), 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 0 0 0.125rem hsl(0deg, 0%, 98%) inset;
   outline: none;
 }
 
@@ -1786,7 +1785,7 @@ h6 {
 h1 {
   padding-top: 3rem;
   padding-bottom: 1rem;
-  filter: url(#fuzzy-text);
+  filter: url(#fuzzy-text) url(#fuzzy-edge);
 }
 
 h2, .u-font-h2 {
@@ -1811,6 +1810,7 @@ h3, .u-font-h3, li {
   font-family: "Zilla Slab", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  filter: url(#soft-light);
 }
 
 h3 {
@@ -1825,6 +1825,7 @@ h4, .u-font-h4 {
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.085em;
   text-transform: uppercase;
+  filter: url(#soft-light);
 }
 @media screen and (max-width: 950px) {
   h4, .u-font-h4 {
@@ -1895,7 +1896,6 @@ p {
   font-style: italic;
   line-height: 3.5rem;
   font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  filter: url(#fuzzy-edge);
 }
 @media screen and (max-width: 950px) {
   .lead-text {
@@ -1909,6 +1909,7 @@ p {
   margin-top: 1.5rem;
   padding-bottom: 0;
   text-align: center;
+  filter: url(#soft-light);
 }
 
 .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
@@ -1959,7 +1960,7 @@ small {
   display: grid;
   line-height: 1;
   background-color: #fff;
-  border: 2px solid hsl(230deg, 7%, 47%);
+  border: 0.125rem solid hsl(230deg, 7%, 47%);
   border-radius: 0.25rem;
   box-shadow: 0 0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.125rem 0.25rem hsla(0deg, 0%, 0%, 0.1);
 }
@@ -1973,10 +1974,10 @@ small {
   text-align: left;
   color: hsl(197deg, 6%, 78%);
   background-color: hsl(0deg, 0%, 98%);
-  border-bottom: 2px solid hsl(230deg, 7%, 47%);
+  border-bottom: 0.125rem solid hsl(230deg, 7%, 47%);
 }
 .table tr:not(:last-of-type) td {
-  border-bottom: 2px solid hsl(230deg, 7%, 47%);
+  border-bottom: 0.125rem solid hsl(230deg, 7%, 47%);
 }
 .table tr:hover td {
   background-color: hsl(0deg, 0%, 98%);
@@ -2025,7 +2026,7 @@ small {
   content: attr(aria-label);
   display: block;
   position: absolute;
-  top: -0.25rem;
+  top: -0.5rem;
   left: 50%;
   line-height: 1;
   white-space: nowrap;
@@ -2038,16 +2039,17 @@ small {
   z-index: 100;
   pointer-events: none;
   transition: all 75ms cubic-bezier(0.65, 0, 0.35, 1);
+  filter: url(#fuzzy-edge);
 }
 .disabled.logo::after, .disabled.link::after, .has-tooltip::after, .button.disabled::after,
 .button [disabled]::after, .button--icon::after {
   content: "";
   position: absolute;
-  top: 0.25rem;
+  top: 1rem;
   left: 50%;
   width: 0;
   height: 0;
-  border-width: 0.25rem;
+  border-width: 1rem;
   border-style: solid;
   border-color: hsl(208deg, 97%, 75%) transparent transparent transparent;
   translate: -50% calc(-100% + 0.5rem);
@@ -2055,6 +2057,7 @@ small {
   z-index: 100;
   pointer-events: none;
   transition: all 75ms cubic-bezier(0.65, 0, 0.35, 1);
+  filter: url(#fuzzy-edge);
 }
 .disabled.logo:hover:before, .disabled.link:hover:before, .has-tooltip:hover:before, .button.disabled:hover:before,
 .button [disabled]:hover:before, .button--icon:hover:before, .disabled.logo:hover:after, .disabled.link:hover:after, .has-tooltip:hover:after, .button.disabled:hover:after,
@@ -2179,7 +2182,7 @@ small {
 
 .slide__description {
   padding-top: 0.5rem;
-  border-top: 2px dotted hsl(197deg, 6%, 78%);
+  border-top: 0.125rem dotted hsl(197deg, 6%, 78%);
 }
 @media screen and (max-width: 950px) {
   .slide__description {
@@ -2199,12 +2202,12 @@ small {
   bottom: 0;
   left: 0;
   width: 100%;
-  border-bottom: 2px solid hsl(0deg, 0%, 98%);
+  border-bottom: 0.125rem solid hsl(0deg, 0%, 98%);
   scale: 0% 100%;
   z-index: -1;
   transform-origin: left;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
-  filter: url(#soft-light);
+  filter: url(#fuzzy-edge);
 }
 .logo:hover, .link:hover, .active.logo, .active.link {
   color: hsl(208deg, 97%, 75%);
