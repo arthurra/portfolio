@@ -26,7 +26,7 @@ h1 {
   @extend %h1;
   padding-top: ($spacing-base * 3);
   padding-bottom: $spacing-base;
-  filter: url(#fuzzy-text) url(#fuzzy-edge);
+  filter: url(#fuzzy-text);
 }
 
 %h2 {

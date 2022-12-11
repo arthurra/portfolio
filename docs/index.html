@@ -125,32 +125,31 @@
             <feMergeNode in="LS0"></feMergeNode>
           </feMerge>
 
-          <feDisplacementMap
-            in="LONGSHADOWSHARP"
-            in2="NOISE"
-            scale="4"
-            result="LONGSHADOWROUGH"
-          ></feDisplacementMap>
-
-          <feComposite
-            operator="in"
-            in="LONGSHADOWROUGH"
-            in2="LONGSHADOWSHARP"
-            result="LONGSHADOWSMOOTH"
-          />
-
           <feGaussianBlur
             stdDeviation="0.420"
-            in="LONGSHADOWSMOOTH"
-            result="LONGSHADOW"
+            in="LONGSHADOWSHARP"
+            result="LONGSHADOWSMOOTH"
           ></feGaussianBlur>
+
+          <feDisplacementMap
+            in="LONGSHADOWSMOOTH"
+            in2="NOISE"
+            scale="2"
+            result="LONGSHADOW"
+          ></feDisplacementMap>
 
           <feComposite
             operator="out"
             in="OUTLINE"
             in2="SourceGraphic"
-            result="OUTLINE_FOR_DISP"
+            result="OUTLINE_CUTOUT"
           />
+
+          <feGaussianBlur
+            stdDeviation="1"
+            in="OUTLINE_CUTOUT"
+            result="OUTLINE_FOR_DISP"
+          ></feGaussianBlur>
 
           <feDisplacementMap
             in="OUTLINE_FOR_DISP"
@@ -254,7 +253,7 @@
             values="1 0 0 0 0
                          0 1 0 0 0
                          0 0 1 0 0
-                         0 0 0 0.69 0"
+                         0 0 0 1 0"
           />
 
           <feMerge>

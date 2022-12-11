@@ -12,6 +12,7 @@
     width: 3rem;
     height: 3rem;
     transition: all $transition-duration $transition-timing-function;
+    filter: url(#fuzzy-edge);
   }
 
   &__type {
