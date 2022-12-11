@@ -196,7 +196,7 @@
         <filter id="fuzzy-edge">
           <feMorphology
             operator="dilate"
-            radius="1"
+            radius=".2"
             in="SourceGraphic"
             result="DILATE"
           />
@@ -219,9 +219,18 @@
           <feDisplacementMap
             in="BLUR"
             in2="NOISE"
-            scale="8"
+            scale="0.420"
             result="FUZZ"
           ></feDisplacementMap>
+
+          <feOffset in="FUZZ" dx="-1" dy="-1" result="FUZZY"></feOffset>
+
+          <feComposite
+            operator="in"
+            in="SourceGraphic"
+            in2="FUZZY"
+            result="FUZZYEDGE"
+          />
         </filter>
       </defs>
     </svg>
