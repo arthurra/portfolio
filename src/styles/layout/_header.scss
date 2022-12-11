@@ -3,10 +3,6 @@
   display: inline-flex;
   align-items: center;
   fill: $title-color;
-  // color: $text-color-dark;
-  // filter: url(#soft-light);
-  // filter: url(#fuzzy-edge) url(#soft-light);
-  // filter: url(#fuzzy-edge);
 
   &:hover {
     fill: $color-primary;
@@ -16,8 +12,6 @@
     width: 3rem;
     height: 3rem;
     transition: all $transition-duration $transition-timing-function;
-    filter: url(#fuzzy-edge);
-    // filter: url(#fuzzy-text);
   }
 
   &__type {
