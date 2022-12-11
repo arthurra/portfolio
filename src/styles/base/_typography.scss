@@ -70,7 +70,9 @@ h3 {
   // font-style: italic;
   letter-spacing: 0.085em;
   text-transform: uppercase;
+  // filter: url(#fuzzy-edge);
   // filter: url(#fuzzy-text);
+  // filter: url(#soft-light);
 
   @media screen and (max-width: $mobile-breakpoint) {
     font-size: 1rem;
@@ -92,6 +94,7 @@ h4 {
   font-style: italic;
   letter-spacing: 0.125em;
   text-transform: uppercase;
+  // filter: url(#soft-light);
 }
 
 h5 {
@@ -141,6 +144,7 @@ p {
   line-height: 3.5rem;
   font-family: $font-family-text;
   // filter: url(#fuzzy-text);
+  // filter: url(#soft-light);
 
   @media screen and (max-width: $mobile-breakpoint) {
     font-size: 1.4rem;
@@ -170,6 +174,7 @@ label {
   display: block;
   padding-bottom: $spacing-xs;
   color: $color-secondary;
+  filter: url(#soft-light);
 }
 
 small {

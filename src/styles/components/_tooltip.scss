@@ -20,6 +20,8 @@
     z-index: 100;
     pointer-events: none;
     transition: all calc($transition-duration / 2) $transition-timing-function;
+    // filter: url(#soft-light);
+    // filter: url(#fuzzy-text);
   }
 
   &::after {

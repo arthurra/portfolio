@@ -644,7 +644,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.slide__image-container {
+.slide__description-container, .slide__image-container {
   background: url(https://grainy-gradients.vercel.app/noise.svg);
   background-blend-mode: overlay;
 }
@@ -1919,6 +1919,7 @@ p {
   display: block;
   padding-bottom: 0.25rem;
   color: hsl(38deg, 100%, 68%);
+  filter: url(#soft-light);
 }
 
 small {
@@ -2163,10 +2164,11 @@ small {
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 1rem;
-  background-color: hsl(224deg, 22%, 10%);
   padding: 2rem;
   border-radius: 0 0.25rem 0.25rem 0;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+  background-image: url(../../images/bg-dark.png);
+  background-size: 242px 242px;
 }
 @media screen and (max-width: 950px) {
   .slide__description-container {
@@ -2202,6 +2204,7 @@ small {
   z-index: -1;
   transform-origin: left;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+  filter: url(#soft-light);
 }
 .logo:hover, .link:hover, .active.logo, .active.link {
   color: hsl(208deg, 97%, 75%);

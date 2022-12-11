@@ -28,6 +28,7 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
   cursor: pointer;
   transition: all $transition-duration $transition-timing-function;
   // filter: url(#fuzzy-text);
+  // filter: url(#soft-light);
 
   &--hover,
   &:hover,

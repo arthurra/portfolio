@@ -28,146 +28,202 @@
     <link rel="manifest" href="site.webmanifest" />
   </head>
   <body class="l-body">
-    <svg>
-      <filter id="fuzzy-text">
-        <!-- base -->
-        <feMorphology
-          operator="dilate"
-          radius="2"
-          in="SourceGraphic"
-          result="BASE"
-        />
+    <svg class="u-absolute">
+      <defs>
+        <filter id="fuzzy-text">
+          <!-- base -->
+          <feMorphology
+            operator="dilate"
+            radius="2"
+            in="SourceGraphic"
+            result="OUTLINE"
+          />
 
-        <!-- fuzz -->
-        <feColorMatrix
-          in="BASE"
-          type="matrix"
-          result="FUZZBASE"
-          values="0 0 0 0 0
-                           0 0 0 0 0
-                           0 0 0 0 0
-                           0 0 0 0.69 0"
-        />
+          <!-- fuzz -->
+          <feColorMatrix
+            in="OUTLINE"
+            type="matrix"
+            result="FUZZBASE"
+            values="0 0 0 0 0
+                 0 0 0 0 0
+                 0 0 0 0 0
+                 0 0 0 0.69 0"
+          />
 
-        <feMorphology
-          operator="dilate"
-          radius="1"
-          in="FUZZBASE"
-          result="DILATE"
-        />
+          <feMorphology
+            operator="dilate"
+            radius="1"
+            in="FUZZBASE"
+            result="DILATE"
+          />
 
-        <feGaussianBlur
-          stdDeviation="1"
-          in="DILATE"
-          result="BLUR"
-        ></feGaussianBlur>
+          <feGaussianBlur
+            stdDeviation="1"
+            in="DILATE"
+            result="BLUR"
+          ></feGaussianBlur>
 
-        <feTurbulence
-          id="turbulence"
-          type="fractalNoise"
-          baseFrequency="0.69"
-          numOctaves="3"
-          stitchTiles="stitch"
-          result="NOISE"
-        />
+          <feTurbulence
+            id="turbulence"
+            type="fractalNoise"
+            baseFrequency="0.69"
+            numOctaves="3"
+            stitchTiles="stitch"
+            result="NOISE"
+          />
 
-        <feDisplacementMap
-          in="BLUR"
-          in2="NOISE"
-          scale="8"
-          result="FUZZ"
-        ></feDisplacementMap>
-        <!-- <animate
-          xlink:href="#turbulence"
-          attributeName="baseFrequency"
-          dur="60s"
-          keyTimes="0;0.5;1"
-          values="0.69;0.420;0.69"
-          repeatCount="indefinite"
-        ></animate> -->
-        <feOffset in="FUZZ" dx="2" dy="2" result="FUZZY"></feOffset>
-        <feComposite
-          operator="in"
-          in="FUZZY"
-          in2="LONGSHADOW"
-          result="FUZZYSHADOW"
-        />
+          <feDisplacementMap
+            in="BLUR"
+            in2="NOISE"
+            scale="8"
+            result="FUZZ"
+          ></feDisplacementMap>
 
-        <!-- long shadow -->
-        <feColorMatrix
-          in="BASE"
-          type="matrix"
-          result="LSBASE"
-          values="1 0 0 0 0
-                           0 1 0 0 0
-                           0 0 1 0 0
-                           0 0 0 1 0"
-        />
-        <feOffset in="LSBASE" dx="0" dy="0" result="LS0"></feOffset>
-        <feOffset in="LSBASE" dx="1" dy="1" result="LS1"></feOffset>
-        <feOffset in="LSBASE" dx="2" dy="2" result="LS2"></feOffset>
-        <feOffset in="LSBASE" dx="3" dy="3" result="LS3"></feOffset>
-        <feOffset in="LSBASE" dx="4" dy="4" result="LS4"></feOffset>
-        <feOffset in="LSBASE" dx="5" dy="5" result="LS5"></feOffset>
+          <!-- <animate
+            xlink:href="#turbulence"
+            attributeName="baseFrequency"
+            dur="60s"
+            keyTimes="0;0.5;1"
+            values="0.69;0.420;0.69"
+            repeatCount="indefinite"
+          ></animate> -->
 
-        <feMerge result="LONGSHADOWSHARP">
-          <feMergeNode in="LSBASE"></feMergeNode>
-          <feMergeNode in="LS5"></feMergeNode>
-          <feMergeNode in="LS4"></feMergeNode>
-          <feMergeNode in="LS3"></feMergeNode>
-          <feMergeNode in="LS2"></feMergeNode>
-          <feMergeNode in="LS1"></feMergeNode>
-          <feMergeNode in="LS0"></feMergeNode>
-        </feMerge>
+          <feOffset in="FUZZ" dx="2" dy="2" result="FUZZY"></feOffset>
 
-        <feDisplacementMap
-          in="LONGSHADOWSHARP"
-          in2="NOISE"
-          scale="4"
-          result="LONGSHADOWROUGH"
-        ></feDisplacementMap>
+          <feComposite
+            operator="in"
+            in="FUZZY"
+            in2="LONGSHADOW"
+            result="FUZZYSHADOW"
+          />
 
-        <feComposite
-          operator="in"
-          in="LONGSHADOWROUGH"
-          in2="LONGSHADOWSHARP"
-          result="LONGSHADOWSMOOTH"
-        />
+          <!-- long shadow -->
+          <feColorMatrix
+            in="OUTLINE"
+            type="matrix"
+            result="LSBASE"
+            values="1 0 0 0 0
+                         0 1 0 0 0
+                         0 0 1 0 0
+                         0 0 0 1 0"
+          />
+          <feOffset in="LSBASE" dx="0" dy="0" result="LS0"></feOffset>
+          <feOffset in="LSBASE" dx="1" dy="1" result="LS1"></feOffset>
+          <feOffset in="LSBASE" dx="2" dy="2" result="LS2"></feOffset>
+          <feOffset in="LSBASE" dx="3" dy="3" result="LS3"></feOffset>
+          <feOffset in="LSBASE" dx="4" dy="4" result="LS4"></feOffset>
+          <feOffset in="LSBASE" dx="5" dy="5" result="LS5"></feOffset>
 
-        <feGaussianBlur
-          stdDeviation="0.420"
-          in="LONGSHADOWSMOOTH"
-          result="LONGSHADOW"
-        ></feGaussianBlur>
+          <feMerge result="LONGSHADOWSHARP">
+            <feMergeNode in="LSBASE"></feMergeNode>
+            <feMergeNode in="LS5"></feMergeNode>
+            <feMergeNode in="LS4"></feMergeNode>
+            <feMergeNode in="LS3"></feMergeNode>
+            <feMergeNode in="LS2"></feMergeNode>
+            <feMergeNode in="LS1"></feMergeNode>
+            <feMergeNode in="LS0"></feMergeNode>
+          </feMerge>
 
-        <!-- outline -->
-        <feColorMatrix
-          in="BASE"
-          type="matrix"
-          result="OUTLINE"
-          values="1 0 0 0 0
-                           0 1 0 0 0
-                           0 0 1 0 0
-                           0 0 0 1 0"
-        />
+          <feDisplacementMap
+            in="LONGSHADOWSHARP"
+            in2="NOISE"
+            scale="4"
+            result="LONGSHADOWROUGH"
+          ></feDisplacementMap>
 
-        <feMerge result="OUTLINESHADOW">
-          <feMergeNode in="LONGSHADOW"></feMergeNode>
-          <feMergeNode in="FUZZYSHADOW"></feMergeNode>
-          <feMergeNode in="OUTLINE"></feMergeNode>
-        </feMerge>
+          <feComposite
+            operator="in"
+            in="LONGSHADOWROUGH"
+            in2="LONGSHADOWSHARP"
+            result="LONGSHADOWSMOOTH"
+          />
 
-        <feComposite
-          operator="out"
-          in="OUTLINESHADOW"
-          in2="SourceGraphic"
-          result="FINALSHADOW"
-        />
+          <feGaussianBlur
+            stdDeviation="0.420"
+            in="LONGSHADOWSMOOTH"
+            result="LONGSHADOW"
+          ></feGaussianBlur>
 
-        <!-- <feDiffuseLighting in="noise" lighting-color="white" surfaceScale="2">
-          <feDistantLight azimuth="45" elevation="60" />
-        </feDiffuseLighting> -->
-      </filter>
+          <feMerge result="OUTLINESHADOW">
+            <feMergeNode in="LONGSHADOW"></feMergeNode>
+            <feMergeNode in="FUZZYSHADOW"></feMergeNode>
+            <feMergeNode in="OUTLINE"></feMergeNode>
+          </feMerge>
+
+          <feComposite
+            operator="out"
+            in="OUTLINESHADOW"
+            in2="SourceGraphic"
+            result="FINALSHADOW"
+          />
+        </filter>
+
+        <filter id="soft-light">
+          <!-- base -->
+          <feTurbulence
+            id="turbulence"
+            type="fractalNoise"
+            baseFrequency="0.5"
+            numOctaves="5"
+            stitchTiles="stitch"
+            result="NOISE"
+          />
+
+          <feDiffuseLighting
+            in="NOISE"
+            lighting-color="white"
+            surfaceScale="0.2"
+            result="BUMP"
+          >
+            <feDistantLight azimuth="45" elevation="45" />
+          </feDiffuseLighting>
+
+          <feComposite
+            operator="in"
+            in="BUMP"
+            in2="SourceGraphic"
+            result="TEXTURE"
+          />
+
+          <feBlend
+            in="SourceGraphic"
+            in2="TEXTURE"
+            mode="overlay"
+            result="BLEND"
+          ></feBlend>
+        </filter>
+
+        <filter id="fuzzy-edge">
+          <feMorphology
+            operator="dilate"
+            radius="1"
+            in="SourceGraphic"
+            result="DILATE"
+          />
+
+          <feGaussianBlur
+            stdDeviation="1"
+            in="DILATE"
+            result="BLUR"
+          ></feGaussianBlur>
+
+          <feTurbulence
+            id="turbulence"
+            type="fractalNoise"
+            baseFrequency="0.69"
+            numOctaves="3"
+            stitchTiles="stitch"
+            result="NOISE"
+          />
+
+          <feDisplacementMap
+            in="BLUR"
+            in2="NOISE"
+            scale="8"
+            result="FUZZ"
+          ></feDisplacementMap>
+        </filter>
+      </defs>
     </svg>
     <header class="l-header">
       <div class="flex flex--between">
