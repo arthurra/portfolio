@@ -16,7 +16,7 @@
     z-index: -1;
     transform-origin: left;
     transition: all $transition-duration $transition-timing-function;
-    // filter: url(#fuzzy-text);
+    filter: url(#soft-light);
   }
 
   &:hover,
