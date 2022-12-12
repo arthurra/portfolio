@@ -3,7 +3,6 @@
   display: inline-flex;
   align-items: center;
   fill: $title-color;
-  // color: $text-color-dark;
 
   &:hover {
     fill: $color-primary;
@@ -13,6 +12,10 @@
     width: 3rem;
     height: 3rem;
     transition: all $transition-duration $transition-timing-function;
+
+    .logo:hover & {
+      filter: url(#chalk);
+    }
   }
 
   &__type {

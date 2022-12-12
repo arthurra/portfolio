@@ -6,7 +6,7 @@
     content: attr(aria-label);
     display: block;
     position: absolute;
-    top: calc($spacing-xs) * -1;
+    top: calc($spacing-sm) * -1;
     left: 50%;
     line-height: 1;
     white-space: nowrap;
@@ -14,7 +14,6 @@
     padding: $spacing-sm;
     background-color: $color-info;
     border-radius: $border-radius;
-    // transform: translate(-50%, calc(-100% + 0.5rem));
     translate: -50% calc(-100% + 0.5rem);
     opacity: 0;
     z-index: 100;
@@ -25,7 +24,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: $spacing-xs;
+    top: 0;
     left: 50%;
     width: 0;
     height: 0;

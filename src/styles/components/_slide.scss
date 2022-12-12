@@ -95,13 +95,19 @@
 }
 
 .slide__description-container {
+  @extend %background-texture;
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: $spacing-md;
-  background-color: $gray-800;
+  // background-color: $gray-800;
   padding: $spacing-xl;
   border-radius: 0 $border-radius $border-radius 0;
   transition: all $transition-duration $transition-timing-function;
+  // filter: url(#soft-light);
+  // lame fallback becuase background-blend-mode
+  // and background-repeat break on iOS
+  background-image: url(../../images/bg-dark.png);
+  background-size: 182px 182px;
 
   @media screen and (max-width: $mobile-breakpoint) {
     padding: $spacing-lg;

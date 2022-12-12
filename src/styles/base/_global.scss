@@ -11,7 +11,7 @@ html {
 }
 
 %background-texture {
-  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  background: url(../../images/noise.svg);
   background-blend-mode: overlay;
 }
 
@@ -81,6 +81,7 @@ li {
   &::marker {
     font-weight: 600;
     color: $color-primary;
+    filter: url(#chalk);
   }
 }
 
@@ -100,19 +101,22 @@ code {
 
 hr {
   border: none;
-  border-top: $border;
+  border-top: $border-double;
   width: 100%;
   overflow: visible;
   text-align: center;
   font-family: $font-family-title;
-  color: $border-color-dark;
+  color: $border-color;
   font-size: 1.5rem;
+  filter: url(#chalk);
 
   &::after {
-    content: "§";
+    // content: "§";
     padding: 0 $spacing-sm;
     position: relative;
+    display: inline-block;
     top: -1.5ch;
+    text-shadow: 0 0 4px $gray-800;
     background-color: $gray-700;
     // lame fallback becuase background-blend-mode
     // and background-repeat break on iOS

@@ -27,6 +27,10 @@
     }
   }
 
+  &:not(.disabled)::after {
+    filter: url(#chalk);
+  }
+
   &.disabled {
     @extend %tooltip;
     cursor: not-allowed;
