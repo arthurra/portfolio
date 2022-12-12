@@ -18,7 +18,8 @@
     transition: all $transition-duration $transition-timing-function;
     // filter: url(#soft-light) url(#fuzzy-edge);
     // filter: url(#soft-light);
-    filter: url(#fuzzy-edge);
+    // filter: url(#fuzzy-edge);
+    filter: url(#chalk);
   }
 
   &:hover,

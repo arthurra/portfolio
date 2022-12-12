@@ -3,8 +3,11 @@
   display: inline-flex;
   align-items: center;
   fill: $title-color;
+  filter: url(#chalk);
+  // filter: url(#soft-light) url(#fuzzy-edge);
   // filter: url(#fuzzy-edge);
   // filter: url(#soft-light);
+  // filter: url(#outline);
 
   &:hover {
     fill: $color-primary;
@@ -14,8 +17,9 @@
     width: 3rem;
     height: 3rem;
     transition: all $transition-duration $transition-timing-function;
+    // filter: url(#fuzzy-edge) url(#soft-light);
     // filter: url(#fuzzy-edge);
-    // filter: url(#fuzzy-edge);
+    // filter: url(#chalk);
   }
 
   &__type {

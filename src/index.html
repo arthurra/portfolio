@@ -186,7 +186,7 @@
           <feDiffuseLighting
             in="NOISE"
             lighting-color="white"
-            surfaceScale="2"
+            surfaceScale="1.5"
             result="BUMP"
           >
             <feDistantLight azimuth="45" elevation="45" />
@@ -239,11 +239,11 @@
           <feDisplacementMap
             in="BLUR"
             in2="NOISE"
-            scale="3.25"
+            scale="3.2"
             result="FUZZ"
           ></feDisplacementMap>
 
-          <feOffset in="FUZZ" dx="-1" dy="-1" result="FUZZY"></feOffset>
+          <feOffset in="FUZZ" dx="-0.85" dy="-0.85" result="FUZZY"></feOffset>
 
           <feColorMatrix
             in="FUZZY"
@@ -252,7 +252,7 @@
             values="1 0 0 0 0
                     0 1 0 0 0
                     0 0 1 0 0
-                    0 0 0 1 0"
+                    0 0 0 0.3 0"
           />
 
           <feColorMatrix
@@ -265,10 +265,192 @@
                     0 0 0 0.420 0"
           />
 
+          <feMorphology
+            operator="erode"
+            radius="0.75"
+            in="FUZZY"
+            result="FUZZY_INSET"
+          />
+
+          <feComposite
+            operator="out"
+            in="BLUR"
+            in2="FUZZY_INSET"
+            result="OUTLINE_CUTOUT"
+          />
+
+          <feGaussianBlur
+            stdDeviation="0.420"
+            in="OUTLINE_CUTOUT"
+            result="OUTLINE_FOR_DISP"
+          ></feGaussianBlur>
+
+          <feDisplacementMap
+            in="OUTLINE_FOR_DISP"
+            in2="NOISE"
+            scale="2"
+            result="FUZZY_OUTLINE"
+          ></feDisplacementMap>
+
           <feMerge>
             <!-- <feMergeNode in="FUZZ"></feMergeNode> -->
             <feMergeNode in="FUZZY_SHADOW"></feMergeNode>
+            <!-- <feMergeNode in="OVERLAY"></feMergeNode> -->
+            <feMergeNode in="FUZZY_OUTLINE"></feMergeNode>
+          </feMerge>
+        </filter>
+
+        <filter id="outline">
+          <feMorphology
+            operator="dilate"
+            radius="1"
+            in="SourceGraphic"
+            result="BASE"
+          />
+
+          <feComposite
+            operator="out"
+            in="BASE"
+            in2="SourceGraphic"
+            result="OUTLINE"
+          />
+
+          <feGaussianBlur
+            stdDeviation="0.420"
+            in="OUTLINE"
+            result="BLUR"
+          ></feGaussianBlur>
+
+          <feTurbulence
+            id="turbulence"
+            type="turbulence"
+            baseFrequency="1"
+            numOctaves="5"
+            stitchTiles="stitch"
+            result="NOISE"
+          />
+
+          <feDisplacementMap
+            in="BLUR"
+            in2="NOISE"
+            scale="2"
+            result="FUZZ"
+          ></feDisplacementMap>
+
+          <feOffset in="FUZZ" dx="-1" dy="-1" result="FUZZY"></feOffset>
+
+          <feColorMatrix
+            in="SourceGraphic"
+            type="matrix"
+            result="OVERLAY"
+            values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 0.1 0"
+          />
+
+          <feMerge>
             <feMergeNode in="OVERLAY"></feMergeNode>
+            <feMergeNode in="FUZZY"></feMergeNode>
+          </feMerge>
+        </filter>
+
+        <filter id="chalk">
+          <!-- base noise -->
+          <feTurbulence
+            id="noise"
+            type="fractalNoise"
+            baseFrequency="1"
+            numOctaves="5"
+            stitchTiles="stitch"
+            result="baseNoise"
+          />
+
+          <!-- base garphic -->
+          <feMorphology
+            operator="dilate"
+            radius="0"
+            in="SourceGraphic"
+            result="base"
+          />
+
+          <!-- OUTLINE -->
+
+          <!-- inset -->
+          <feMorphology
+            operator="erode"
+            radius="1.5"
+            in="base"
+            result="outlineMask"
+          />
+
+          <!-- outline -->
+          <feComposite
+            operator="out"
+            in="base"
+            in2="outlineMask"
+            result="outline"
+          />
+
+          <!-- blur outline -->
+          <feGaussianBlur
+            stdDeviation="0.69"
+            in="outline"
+            result="outlineSmooth"
+          ></feGaussianBlur>
+
+          <!-- displace outline -->
+          <feDisplacementMap
+            in="outlineSmooth"
+            in2="baseNoise"
+            scale="2"
+            result="outlineFuzzy"
+          ></feDisplacementMap>
+
+          <!-- INTERIOR -->
+
+          <!-- interior -->
+          <feMorphology
+            operator="erode"
+            radius="0"
+            in="base"
+            result="interior"
+          />
+
+          <!-- blur interior -->
+          <feGaussianBlur
+            stdDeviation="3"
+            in="interior"
+            result="interiorSmooth"
+          ></feGaussianBlur>
+
+          <!-- displace interior -->
+          <feDisplacementMap
+            in="interiorSmooth"
+            in2="baseNoise"
+            scale="35"
+            result="interiorFuzzy"
+          ></feDisplacementMap>
+
+          <!-- mask interior -->
+          <feComposite
+            operator="in"
+            in="base"
+            in2="interiorFuzzy"
+            result="interiorMask"
+          />
+
+          <!-- smooth interior noise -->
+          <feGaussianBlur
+            stdDeviation="0.2"
+            in="interiorMask"
+            result="interiorSmoothNoise"
+          ></feGaussianBlur>
+
+          <!-- MERGE -->
+          <feMerge>
+            <feMergeNode in="interiorSmoothNoise"></feMergeNode>
+            <feMergeNode in="outlineFuzzy"></feMergeNode>
           </feMerge>
         </filter>
       </defs>

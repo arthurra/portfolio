@@ -727,14 +727,14 @@ code {
 
 hr {
   border: none;
-  border-top: 0.125rem solid hsl(230deg, 7%, 47%);
+  border-top: 0.375rem double hsl(230deg, 7%, 47%);
   width: 100%;
   overflow: visible;
   text-align: center;
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: hsl(230deg, 7%, 47%);
   font-size: 1.5rem;
-  filter: url(#fuzzy-edge);
+  filter: url(#chalk);
 }
 hr::after {
   padding: 0 0.5rem;
@@ -1826,7 +1826,7 @@ h4, .u-font-h4 {
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.085em;
   text-transform: uppercase;
-  filter: url(#fuzzy-edge) url(#soft-light);
+  filter: url(#chalk);
 }
 @media screen and (max-width: 950px) {
   h4, .u-font-h4 {
@@ -1897,7 +1897,7 @@ p {
   font-style: italic;
   line-height: 3.5rem;
   font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  filter: url(#fuzzy-edge) url(#soft-light);
+  filter: url(#chalk);
 }
 @media screen and (max-width: 950px) {
   .lead-text {
@@ -2041,7 +2041,6 @@ small {
   z-index: 100;
   pointer-events: none;
   transition: all 75ms cubic-bezier(0.65, 0, 0.35, 1);
-  filter: url(#fuzzy-edge);
 }
 .disabled.logo::after, .disabled.link::after, .has-tooltip::after, .button.disabled::after,
 .button [disabled]::after, .button--icon::after {
@@ -2059,7 +2058,6 @@ small {
   z-index: 100;
   pointer-events: none;
   transition: all 75ms cubic-bezier(0.65, 0, 0.35, 1);
-  filter: url(#fuzzy-edge);
 }
 .disabled.logo:hover:before, .disabled.link:hover:before, .has-tooltip:hover:before, .button.disabled:hover:before,
 .button [disabled]:hover:before, .button--icon:hover:before, .disabled.logo:hover:after, .disabled.link:hover:after, .has-tooltip:hover:after, .button.disabled:hover:after,
@@ -2209,7 +2207,7 @@ small {
   z-index: -1;
   transform-origin: left;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
-  filter: url(#fuzzy-edge);
+  filter: url(#chalk);
 }
 .logo:hover, .link:hover, .active.logo, .active.link {
   color: hsl(208deg, 97%, 75%);
@@ -2268,6 +2266,7 @@ small {
   display: inline-flex;
   align-items: center;
   fill: hsl(0deg, 0%, 98%);
+  filter: url(#chalk);
 }
 .logo:hover {
   fill: hsl(356deg, 75%, 70%);
