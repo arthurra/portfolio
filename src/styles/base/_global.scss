@@ -11,7 +11,7 @@ html {
 }
 
 %background-texture {
-  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  background: url(../../images/noise.svg);
   background-blend-mode: overlay;
 }
 
@@ -105,21 +105,22 @@ hr {
   overflow: visible;
   text-align: center;
   font-family: $font-family-title;
-  color: $border-color-dark;
+  color: $border-color;
   font-size: 1.5rem;
   filter: url(#fuzzy-edge);
   // filter: url(#soft-light);
 
   &::after {
-    content: "§";
+    // content: "§";
     padding: 0 $spacing-sm;
     position: relative;
+    display: inline-block;
     top: -1.5ch;
     text-shadow: 0 0 4px $gray-800;
-    // background-color: $gray-700;
+    background-color: $gray-700;
     // lame fallback becuase background-blend-mode
     // and background-repeat break on iOS
-    // background-image: url(../../images/bg.png);
-    // background-size: 100px 100px;
+    background-image: url(../../images/bg.png);
+    background-size: 100px 100px;
   }
 }
