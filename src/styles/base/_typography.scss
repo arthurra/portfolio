@@ -53,7 +53,7 @@ h2 {
   font-family: $font-family-title-alt;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  filter: url(#soft-light);
+  // filter: url(#soft-light);
   // filter: url(#fuzzy-edge);
   // filter: url(#fuzzy-text);
 }
@@ -72,9 +72,10 @@ h3 {
   // font-style: italic;
   letter-spacing: 0.085em;
   text-transform: uppercase;
+  filter: url(#fuzzy-edge) url(#soft-light);
   // filter: url(#fuzzy-edge);
   // filter: url(#fuzzy-text);
-  filter: url(#soft-light);
+  // filter: url(#soft-light);
 
   @media screen and (max-width: $mobile-breakpoint) {
     font-size: 1rem;
@@ -145,7 +146,7 @@ p {
   font-style: italic;
   line-height: 3.5rem;
   font-family: $font-family-text;
-  // filter: url(#fuzzy-edge);
+  filter: url(#fuzzy-edge) url(#soft-light);
   // filter: url(#fuzzy-text);
   // filter: url(#soft-light);
 
@@ -161,7 +162,8 @@ p {
   margin-top: $spacing-lg;
   padding-bottom: 0;
   text-align: center;
-  filter: url(#soft-light);
+  letter-spacing: 0.025em;
+  // filter: url(#soft-light);
   // filter: url(#soft-light) url(#fuzzy-edge);
 }
 

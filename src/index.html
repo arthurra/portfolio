@@ -193,7 +193,7 @@
           </feDiffuseLighting>
 
           <feGaussianBlur
-            stdDeviation="0.69"
+            stdDeviation="0.420"
             in="BUMP"
             result="SMOOTH_BUMP"
           ></feGaussianBlur>
@@ -216,13 +216,13 @@
         <filter id="fuzzy-edge">
           <feMorphology
             operator="dilate"
-            radius="0.420"
+            radius="0"
             in="SourceGraphic"
             result="BASE"
           />
 
           <feGaussianBlur
-            stdDeviation="0.69"
+            stdDeviation="0.420"
             in="BASE"
             result="BLUR"
           ></feGaussianBlur>
@@ -230,7 +230,7 @@
           <feTurbulence
             id="turbulence"
             type="turbulence"
-            baseFrequency="0.69"
+            baseFrequency="1"
             numOctaves="5"
             stitchTiles="stitch"
             result="NOISE"
@@ -239,26 +239,36 @@
           <feDisplacementMap
             in="BLUR"
             in2="NOISE"
-            scale="4"
+            scale="3.25"
             result="FUZZ"
           ></feDisplacementMap>
 
-          <feOffset in="FUZZ" dx="0" dy="0" result="FUZZY"></feOffset>
+          <feOffset in="FUZZ" dx="-1" dy="-1" result="FUZZY"></feOffset>
 
           <feColorMatrix
             in="FUZZY"
             type="matrix"
             result="FUZZY_SHADOW"
             values="1 0 0 0 0
-                         0 1 0 0 0
-                         0 0 1 0 0
-                         0 0 0 1 0"
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 1 0"
+          />
+
+          <feColorMatrix
+            in="SourceGraphic"
+            type="matrix"
+            result="OVERLAY"
+            values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 0.420 0"
           />
 
           <feMerge>
             <!-- <feMergeNode in="FUZZ"></feMergeNode> -->
             <feMergeNode in="FUZZY_SHADOW"></feMergeNode>
-            <feMergeNode in="SourceGraphic"></feMergeNode>
+            <feMergeNode in="OVERLAY"></feMergeNode>
           </feMerge>
         </filter>
       </defs>
