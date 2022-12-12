@@ -107,7 +107,7 @@
   // lame fallback becuase background-blend-mode
   // and background-repeat break on iOS
   background-image: url(../../images/bg-dark.png);
-  background-size: 242px 242px;
+  background-size: 182px 182px;
 
   @media screen and (max-width: $mobile-breakpoint) {
     padding: $spacing-lg;

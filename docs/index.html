@@ -47,7 +47,7 @@
             values="0 0 0 0 0
                  0 0 0 0 0
                  0 0 0 0 0
-                 0 0 0 0.8 0"
+                 0 0 0 0.9 0"
           />
 
           <feMorphology
@@ -103,9 +103,9 @@
             type="matrix"
             result="LSBASE"
             values="1 0 0 0 0
-                         0 1 0 0 0
-                         0 0 1 0 0
-                         0 0 0 1 0"
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 1 0"
           />
 
           <feOffset in="LSBASE" dx="0" dy="0" result="LS0"></feOffset>
@@ -146,7 +146,7 @@
           />
 
           <feGaussianBlur
-            stdDeviation="1"
+            stdDeviation="0.69"
             in="OUTLINE_CUTOUT"
             result="OUTLINE_FOR_DISP"
           ></feGaussianBlur>
@@ -177,7 +177,7 @@
           <feTurbulence
             id="turbulence"
             type="fractalNoise"
-            baseFrequency="0.5"
+            baseFrequency="1.69"
             numOctaves="5"
             stitchTiles="stitch"
             result="NOISE"
@@ -186,15 +186,21 @@
           <feDiffuseLighting
             in="NOISE"
             lighting-color="white"
-            surfaceScale="0.2"
+            surfaceScale="2"
             result="BUMP"
           >
             <feDistantLight azimuth="45" elevation="45" />
           </feDiffuseLighting>
 
+          <feGaussianBlur
+            stdDeviation="0.69"
+            in="BUMP"
+            result="SMOOTH_BUMP"
+          ></feGaussianBlur>
+
           <feComposite
             operator="in"
-            in="BUMP"
+            in="SMOOTH_BUMP"
             in2="SourceGraphic"
             result="TEXTURE"
           />
@@ -239,15 +245,8 @@
 
           <feOffset in="FUZZ" dx="0" dy="0" result="FUZZY"></feOffset>
 
-          <feComposite
-            operator="out"
-            in="FUZZY"
-            in2="SourceGraphic"
-            result="FUZZYEDGE"
-          />
-
           <feColorMatrix
-            in="FUZZYEDGE"
+            in="FUZZY"
             type="matrix"
             result="FUZZY_SHADOW"
             values="1 0 0 0 0
