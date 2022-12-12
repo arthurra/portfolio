@@ -761,7 +761,6 @@ hr::after {
   border-radius: 0.25rem;
   cursor: pointer;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
-  filter: url(#soft-light);
 }
 .button--hover, .button:hover, .button:focus {
   color: hsl(356deg, 75%, 70%);
@@ -1813,7 +1812,6 @@ h3, .u-font-h3, li {
   font-family: "Zilla Slab", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  filter: url(#soft-light);
 }
 
 h3 {
@@ -1828,7 +1826,7 @@ h4, .u-font-h4 {
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.085em;
   text-transform: uppercase;
-  filter: url(#soft-light);
+  filter: url(#fuzzy-edge) url(#soft-light);
 }
 @media screen and (max-width: 950px) {
   h4, .u-font-h4 {
@@ -1899,6 +1897,7 @@ p {
   font-style: italic;
   line-height: 3.5rem;
   font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  filter: url(#fuzzy-edge) url(#soft-light);
 }
 @media screen and (max-width: 950px) {
   .lead-text {
@@ -1912,7 +1911,7 @@ p {
   margin-top: 1.5rem;
   padding-bottom: 0;
   text-align: center;
-  filter: url(#soft-light);
+  letter-spacing: 0.025em;
 }
 
 .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
@@ -2269,7 +2268,6 @@ small {
   display: inline-flex;
   align-items: center;
   fill: hsl(0deg, 0%, 98%);
-  filter: url(#soft-light);
 }
 .logo:hover {
   fill: hsl(356deg, 75%, 70%);

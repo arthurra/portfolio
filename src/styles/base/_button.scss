@@ -29,7 +29,7 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
   transition: all $transition-duration $transition-timing-function;
   // filter: url(#fuzzy-edge);
   // filter: url(#fuzzy-text);
-  filter: url(#soft-light);
+  // filter: url(#soft-light);
 
   &--hover,
   &:hover,
@@ -44,6 +44,7 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
     color: $color-primary-dark;
     background-color: $color-primary-light;
     box-shadow: $button-box-shadow-base;
+    // filter: url(#fuzzy-edge) url(#soft-light);
   }
 
   &:focus {
