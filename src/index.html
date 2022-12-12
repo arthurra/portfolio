@@ -339,7 +339,7 @@
 
           <!-- blur outline -->
           <feGaussianBlur
-            stdDeviation="0.69"
+            stdDeviation="0.2"
             in="outline"
             result="outlineSmooth"
           ></feGaussianBlur>
@@ -348,7 +348,7 @@
           <feDisplacementMap
             in="outlineSmooth"
             in2="baseNoise"
-            scale="2"
+            scale="4"
             result="outlineFuzzy"
           ></feDisplacementMap>
 
@@ -364,7 +364,7 @@
 
           <!-- blur interior -->
           <feGaussianBlur
-            stdDeviation="3"
+            stdDeviation="1"
             in="interior"
             result="interiorSmooth"
           ></feGaussianBlur>
@@ -387,7 +387,7 @@
 
           <!-- smooth interior noise -->
           <feGaussianBlur
-            stdDeviation="0.2"
+            stdDeviation="0.1"
             in="interiorMask"
             result="interiorSmoothNoise"
           ></feGaussianBlur>
