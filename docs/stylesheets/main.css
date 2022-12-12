@@ -709,6 +709,7 @@ ul {
 li::marker {
   font-weight: 600;
   color: hsl(356deg, 75%, 70%);
+  filter: url(#chalk);
 }
 
 code {
@@ -1787,7 +1788,7 @@ h6 {
 h1 {
   padding-top: 3rem;
   padding-bottom: 1rem;
-  filter: url(#fuzzy-text);
+  filter: url(#chalk-long-shadow);
 }
 
 h2, .u-font-h2 {
@@ -2046,11 +2047,11 @@ small {
 .button [disabled]::after, .button--icon::after {
   content: "";
   position: absolute;
-  top: 1rem;
+  top: 0;
   left: 50%;
   width: 0;
   height: 0;
-  border-width: 1rem;
+  border-width: 0.25rem;
   border-style: solid;
   border-color: hsl(208deg, 97%, 75%) transparent transparent transparent;
   translate: -50% calc(-100% + 0.5rem);
@@ -2207,7 +2208,6 @@ small {
   z-index: -1;
   transform-origin: left;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
-  filter: url(#chalk);
 }
 .logo:hover, .link:hover, .active.logo, .active.link {
   color: hsl(208deg, 97%, 75%);
@@ -2215,6 +2215,9 @@ small {
 }
 .logo:hover::after, .link:hover::after, .active.logo::after, .active.link::after {
   scale: 100% 100%;
+}
+.logo:not(.disabled)::after, .link:not(.disabled)::after {
+  filter: url(#chalk);
 }
 .disabled.logo, .disabled.link {
   cursor: not-allowed;
@@ -2266,7 +2269,6 @@ small {
   display: inline-flex;
   align-items: center;
   fill: hsl(0deg, 0%, 98%);
-  filter: url(#chalk);
 }
 .logo:hover {
   fill: hsl(356deg, 75%, 70%);
@@ -2275,6 +2277,9 @@ small {
   width: 3rem;
   height: 3rem;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.logo:hover .logo__image {
+  filter: url(#chalk);
 }
 .logo__type {
   font-size: 100%;

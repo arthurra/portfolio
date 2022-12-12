@@ -14,7 +14,6 @@ h6 {
   font-family: $font-family-title;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  // filter: url(#fuzzy-text);
 
   @media screen and (max-width: $mobile-breakpoint) {
     font-size: 2.2rem;
@@ -26,7 +25,7 @@ h1 {
   @extend %h1;
   padding-top: ($spacing-base * 3);
   padding-bottom: $spacing-base;
-  filter: url(#fuzzy-text);
+  filter: url(#chalk-long-shadow);
 }
 
 %h2 {
@@ -37,7 +36,6 @@ h1 {
   font-style: italic;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  // filter: url(#fuzzy-text);
 }
 
 h2 {
@@ -53,10 +51,6 @@ h2 {
   font-family: $font-family-title-alt;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  // filter: url(#chalk);
-  // filter: url(#soft-light);
-  // filter: url(#fuzzy-edge);
-  // filter: url(#fuzzy-text);
 }
 
 h3 {
@@ -73,10 +67,6 @@ h3 {
   // font-style: italic;
   letter-spacing: 0.085em;
   text-transform: uppercase;
-  // filter: url(#fuzzy-edge) url(#soft-light);
-  // filter: url(#fuzzy-edge);
-  // filter: url(#fuzzy-text);
-  // filter: url(#soft-light);
   filter: url(#chalk);
 
   @media screen and (max-width: $mobile-breakpoint) {
@@ -99,7 +89,6 @@ h4 {
   font-style: italic;
   letter-spacing: 0.125em;
   text-transform: uppercase;
-  // filter: url(#soft-light);
 }
 
 h5 {
@@ -149,9 +138,6 @@ p {
   line-height: 3.5rem;
   font-family: $font-family-text;
   filter: url(#chalk);
-  // filter: url(#fuzzy-edge);
-  // filter: url(#fuzzy-text);
-  // filter: url(#soft-light);
 
   @media screen and (max-width: $mobile-breakpoint) {
     font-size: 1.4rem;
@@ -166,8 +152,6 @@ p {
   padding-bottom: 0;
   text-align: center;
   letter-spacing: 0.025em;
-  // filter: url(#soft-light);
-  // filter: url(#soft-light) url(#fuzzy-edge);
 }
 
 %label {
@@ -184,8 +168,6 @@ label {
   display: block;
   padding-bottom: $spacing-xs;
   color: $color-secondary;
-  // filter: url(#fuzzy-edge);
-  // filter: url(#soft-light);
 }
 
 small {

@@ -2,7 +2,6 @@
   display: inline-flex;
   position: relative;
   padding: $spacing-xs;
-  // filter: url(#fuzzy-text);
 
   &::after {
     content: "";
@@ -16,10 +15,6 @@
     z-index: -1;
     transform-origin: left;
     transition: all $transition-duration $transition-timing-function;
-    // filter: url(#soft-light) url(#fuzzy-edge);
-    // filter: url(#soft-light);
-    // filter: url(#fuzzy-edge);
-    filter: url(#chalk);
   }
 
   &:hover,
@@ -30,6 +25,10 @@
     &::after {
       scale: 100% 100%;
     }
+  }
+
+  &:not(.disabled)::after {
+    filter: url(#chalk);
   }
 
   &.disabled {

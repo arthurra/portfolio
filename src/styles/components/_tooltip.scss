@@ -1,6 +1,5 @@
 %tooltip {
   position: relative;
-  // filter: url(#fuzzy-edge);
 
   &::before {
     @extend %label;
@@ -15,26 +14,21 @@
     padding: $spacing-sm;
     background-color: $color-info;
     border-radius: $border-radius;
-    // transform: translate(-50%, calc(-100% + 0.5rem));
     translate: -50% calc(-100% + 0.5rem);
     opacity: 0;
     z-index: 100;
     pointer-events: none;
     transition: all calc($transition-duration / 2) $transition-timing-function;
-    // filter: url(#soft-light);
-    // filter: url(#fuzzy-text);
-    // filter: url(#fuzzy-edge);
-    // filter: url(#chalk);
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: $spacing-md;
+    top: 0;
     left: 50%;
     width: 0;
     height: 0;
-    border-width: $spacing-md;
+    border-width: $spacing-xs;
     border-style: solid;
     border-color: $color-info transparent transparent transparent;
     translate: -50% calc(-100% + 0.5rem);
@@ -42,7 +36,6 @@
     z-index: 100;
     pointer-events: none;
     transition: all calc($transition-duration / 2) $transition-timing-function;
-    // filter: url(#chalk);
   }
 
   &:hover,

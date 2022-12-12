@@ -30,7 +30,7 @@
   <body class="l-body">
     <svg class="u-absolute">
       <defs>
-        <filter id="fuzzy-text">
+        <filter id="chalk-long-shadow">
           <!-- base -->
           <feMorphology
             operator="dilate"
@@ -300,61 +300,6 @@
           </feMerge>
         </filter>
 
-        <filter id="outline">
-          <feMorphology
-            operator="dilate"
-            radius="1"
-            in="SourceGraphic"
-            result="BASE"
-          />
-
-          <feComposite
-            operator="out"
-            in="BASE"
-            in2="SourceGraphic"
-            result="OUTLINE"
-          />
-
-          <feGaussianBlur
-            stdDeviation="0.420"
-            in="OUTLINE"
-            result="BLUR"
-          ></feGaussianBlur>
-
-          <feTurbulence
-            id="turbulence"
-            type="turbulence"
-            baseFrequency="1"
-            numOctaves="5"
-            stitchTiles="stitch"
-            result="NOISE"
-          />
-
-          <feDisplacementMap
-            in="BLUR"
-            in2="NOISE"
-            scale="2"
-            result="FUZZ"
-          ></feDisplacementMap>
-
-          <feOffset in="FUZZ" dx="-1" dy="-1" result="FUZZY"></feOffset>
-
-          <feColorMatrix
-            in="SourceGraphic"
-            type="matrix"
-            result="OVERLAY"
-            values="1 0 0 0 0
-                    0 1 0 0 0
-                    0 0 1 0 0
-                    0 0 0 0.1 0"
-          />
-
-          <feMerge>
-            <feMergeNode in="OVERLAY"></feMergeNode>
-            <feMergeNode in="FUZZY"></feMergeNode>
-          </feMerge>
-        </filter>
-
         <filter id="chalk">
           <!-- base noise -->
           <feTurbulence
@@ -524,9 +469,9 @@
         </p>
         <p class="u-mb-xxl u-text-columns" style="--column-count: 2">
           Over the past ten years, I've helped to combine my clients' vision of
-          the future with the perspectives of their users to create qaulity,
-          handcrafted digital products. By taking the time to understand the the
-          damend from your users we can create a foundation for a stunning,
+          the future with the perspectives of their users to create quality,
+          handcrafted digital products. By taking the time to understand the
+          demand from your users we can create a foundation for a stunning,
           tailored experience that is useful and accessible to everyone on the
           web.
         </p>
