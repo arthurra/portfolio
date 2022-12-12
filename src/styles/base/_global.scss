@@ -77,11 +77,11 @@ ul {
 
 li {
   @extend %h3;
-  // filter: url(#fuzzy-edge) url(#soft-light);
 
   &::marker {
     font-weight: 600;
     color: $color-primary;
+    filter: url(#chalk);
   }
 }
 
@@ -109,8 +109,6 @@ hr {
   color: $border-color;
   font-size: 1.5rem;
   filter: url(#chalk);
-  // filter: url(#fuzzy-edge);
-  // filter: url(#soft-light);
 
   &::after {
     // content: "§";
