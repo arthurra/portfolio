@@ -101,14 +101,15 @@ code {
 
 hr {
   border: none;
-  border-top: $border;
+  border-top: $border-double;
   width: 100%;
   overflow: visible;
   text-align: center;
   font-family: $font-family-title;
   color: $border-color;
   font-size: 1.5rem;
-  filter: url(#fuzzy-edge);
+  filter: url(#chalk);
+  // filter: url(#fuzzy-edge);
   // filter: url(#soft-light);
 
   &::after {
