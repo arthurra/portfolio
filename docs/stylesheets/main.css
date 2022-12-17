@@ -2226,6 +2226,35 @@ small {
   color: hsl(197deg, 6%, 78%);
 }
 
+.squiggle {
+  display: inline-block;
+  position: relative;
+}
+.squiggle::before {
+  position: absolute;
+  bottom: 0;
+  opacity: 0.8;
+  filter: url(#chalk);
+}
+@media screen and (max-width: 950px) {
+  .squiggle::before {
+    transform-origin: left;
+    scale: 0.55;
+  }
+}
+.squiggle--simple::before {
+  content: url(../../images/squiggle1.svg);
+  translate: 0 1rem;
+}
+.squiggle--beautiful::before {
+  content: url(../../images/squiggle2.svg);
+  translate: 0 1.25rem;
+}
+.squiggle--useful::before {
+  content: url(../../images/squiggle3.svg);
+  translate: -1rem 2rem;
+}
+
 .l-body {
   display: grid;
   grid-template-columns: 1fr;
