@@ -400,7 +400,7 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
       }
 
       &:hover {
-        color: #fff;
+        color: $title-inverse-color;
         background-color: $color-primary;
         border-color: $color-primary;
       }
@@ -525,6 +525,10 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
     @extend %tooltip;
     width: $button-height;
     min-width: $button-height;
+
+    i {
+      font-size: 150%;
+    }
   }
 
   &--rounded {
