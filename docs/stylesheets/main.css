@@ -1907,6 +1907,7 @@ p {
 .lead-text {
   color: hsl(0deg, 0%, 98%);
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
   padding-bottom: 0;
   text-align: center;
   letter-spacing: 0.025em;
@@ -2244,15 +2245,17 @@ small {
 }
 .squiggle--simple::before {
   content: url(../../images/squiggle1.svg);
-  translate: 0 1rem;
+  translate: -1rem 1rem;
+  rotate: 3deg;
 }
 .squiggle--beautiful::before {
   content: url(../../images/squiggle2.svg);
   translate: 0 1.25rem;
+  rotate: 5deg;
 }
 .squiggle--useful::before {
   content: url(../../images/squiggle3.svg);
-  translate: -1rem 2rem;
+  translate: -1.25rem 1.75rem;
 }
 
 .l-body {
