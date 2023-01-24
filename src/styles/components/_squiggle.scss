@@ -16,16 +16,18 @@
 
   &--simple::before {
     content: url(../../images/squiggle1.svg);
-    translate: 0 1rem;
+    translate: -1rem 1rem;
+    rotate: 3deg;
   }
 
   &--beautiful::before {
     content: url(../../images/squiggle2.svg);
     translate: 0 1.25rem;
+    rotate: 5deg;
   }
 
   &--useful::before {
     content: url(../../images/squiggle3.svg);
-    translate: -1rem 2rem;
+    translate: -1.25rem 1.75rem;
   }
 }
