@@ -52,6 +52,8 @@
 @media screen and (max-width: 950px) {
   .u-text-columns {
     column-count: 1;
+    text-align: left;
+    letter-spacing: 0.01rem;
   }
 }
 
@@ -2253,14 +2255,29 @@ small {
   translate: -1rem 1rem;
   rotate: 3deg;
 }
+@media screen and (max-width: 950px) {
+  .squiggle--simple::before {
+    translate: -0.5rem 0.75rem;
+  }
+}
 .squiggle--beautiful::before {
   content: url(../../images/squiggle2.svg);
   translate: 0 1.25rem;
   rotate: 5deg;
 }
+@media screen and (max-width: 950px) {
+  .squiggle--beautiful::before {
+    translate: 0 0.75rem;
+  }
+}
 .squiggle--useful::before {
   content: url(../../images/squiggle3.svg);
   translate: -1.25rem 1.75rem;
+}
+@media screen and (max-width: 950px) {
+  .squiggle--useful::before {
+    translate: -0.75rem 2rem;
+  }
 }
 
 .l-body {
@@ -2354,6 +2371,7 @@ small {
     flex-direction: column;
     gap: 1.5rem;
     height: auto;
+    padding-bottom: 2rem;
   }
   .l-footer .logo {
     align-self: center;

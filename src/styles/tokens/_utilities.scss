@@ -59,6 +59,8 @@
 
   @media screen and (max-width: $mobile-breakpoint) {
     column-count: 1;
+    text-align: left;
+    letter-spacing: 0.01rem;
   }
 }
 

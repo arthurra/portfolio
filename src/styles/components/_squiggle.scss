@@ -18,16 +18,28 @@
     content: url(../../images/squiggle1.svg);
     translate: -1rem 1rem;
     rotate: 3deg;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      translate: -0.5rem 0.75rem;
+    }
   }
 
   &--beautiful::before {
     content: url(../../images/squiggle2.svg);
     translate: 0 1.25rem;
     rotate: 5deg;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      translate: 0 0.75rem;
+    }
   }
 
   &--useful::before {
     content: url(../../images/squiggle3.svg);
     translate: -1.25rem 1.75rem;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      translate: -0.75rem 2rem;
+    }
   }
 }
