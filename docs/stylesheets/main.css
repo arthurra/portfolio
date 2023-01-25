@@ -567,6 +567,31 @@
   overflow-y: auto;
 }
 
+@keyframes wave {
+  0% {
+    rotate: 0deg;
+  }
+  60% {
+    rotate: 0deg;
+  }
+  70% {
+    rotate: 12deg;
+  }
+  80% {
+    rotate: 0deg;
+  }
+  90% {
+    rotate: 12deg;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+.wave {
+  transform-origin: bottom right;
+  animation: wave 2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
