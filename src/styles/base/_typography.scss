@@ -164,11 +164,15 @@ label {
   @extend %label;
 }
 
-.eyebrow-text {
+%eyebrow {
   @extend %label;
   display: block;
   padding-bottom: $spacing-xs;
   color: $color-secondary;
+}
+
+.eyebrow-text {
+  @extend %eyebrow;
 }
 
 small {
