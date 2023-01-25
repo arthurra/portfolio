@@ -2319,8 +2319,15 @@ small {
   width: 100%;
 }
 .frame__cap {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
+.frame__title {
+  margin-bottom: 0.5rem;
+}
+.frame__desc {
+  padding-bottom: 1.5rem;
+}
+
 /* ---------------------------------------- */
 /*                 EXAMPLE                  */
 /* ---------------------------------------- */

@@ -17,10 +17,15 @@
   }
 
   &__cap {
-    margin-top: 1rem;
+    margin-top: $spacing-lg;
   }
 
   &__title {
     @extend %eyebrow;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__desc {
+    padding-bottom: $spacing-lg;
   }
 }
