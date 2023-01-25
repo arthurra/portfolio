@@ -1844,8 +1844,8 @@ h4 {
   padding-bottom: 1rem;
 }
 
-.l-nav .link, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
-.button [disabled]::before, .button--icon::before, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
+.l-nav .link, .tag, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
+.button [disabled]::before, .button--icon::before, .frame__title, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
   font-weight: 800;
   font-size: 0.8rem;
   line-height: 1.5rem;
@@ -1918,12 +1918,12 @@ p {
   letter-spacing: 0.025em;
 }
 
-.disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
-.button [disabled]::before, .button--icon::before, .eyebrow-text, .u-font-label, label, .fieldset__label {
+.tag, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
+.button [disabled]::before, .button--icon::before, .frame__title, .eyebrow-text, .u-font-label, label, .fieldset__label {
   font-style: normal;
 }
 
-.eyebrow-text {
+.frame__title, .eyebrow-text {
   display: block;
   padding-bottom: 0.25rem;
   color: hsl(38deg, 100%, 68%);
@@ -2278,6 +2278,43 @@ small {
   .squiggle--useful::before {
     translate: -0.75rem 2rem;
   }
+}
+
+.frame {
+  margin: 0;
+  padding: 2rem;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  border-radius: 0.25rem;
+  background-image: url(../../images/bg-dark.png);
+  background-size: 182px 182px;
+}
+.frame__img {
+  width: 100%;
+}
+.frame__cap {
+  margin-top: 1rem;
+}
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/*
+<span class="tag"> ... </span>
+*/
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  color: hsl(208deg, 97%, 75%);
+  background-color: transparent;
+  border: 0.125rem solid hsl(208deg, 97%, 75%);
+  border-radius: 0.125rem;
 }
 
 .l-body {

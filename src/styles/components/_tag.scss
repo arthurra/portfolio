@@ -1,0 +1,24 @@
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+
+/*
+<span class="tag"> ... </span>
+*/
+
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+
+.tag {
+  @extend %label;
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  height: 2rem;
+  padding: 0 $spacing-sm;
+  color: $color-info;
+  background-color: transparent;
+  border: $border-width $border-style $color-info;
+  border-radius: calc($border-radius / 2);
+}
