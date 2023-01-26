@@ -738,7 +738,9 @@ li::marker {
   color: hsl(208deg, 97%, 75%);
   filter: url(#chalk);
 }
-li:not(:last-of-type) {
+
+ol:not(.flex) li:not(:last-of-type),
+ul:not(.flex) li:not(:last-of-type) {
   margin-bottom: 1rem;
 }
 
