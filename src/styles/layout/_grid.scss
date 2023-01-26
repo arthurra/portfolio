@@ -26,3 +26,9 @@
   justify-content: start;
   margin-bottom: $spacing-md;
 }
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .grid--mobile-column {
+    grid-auto-flow: row;
+  }
+}
