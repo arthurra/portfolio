@@ -83,8 +83,11 @@ li {
     color: $color-info;
     filter: url(#chalk);
   }
+}
 
-  &:not(:last-of-type) {
+ol,
+ul {
+  &:not(.flex) li:not(:last-of-type) {
     margin-bottom: $spacing-md;
   }
 }
