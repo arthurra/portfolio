@@ -2500,6 +2500,11 @@ small {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 950px) {
+  .grid--mobile-column {
+    grid-auto-flow: row;
+  }
+}
 /* ---------------------------------------- */
 /*                CONTAINER                 */
 /* ---------------------------------------- */
