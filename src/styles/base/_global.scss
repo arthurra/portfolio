@@ -83,6 +83,24 @@ li {
     color: $color-info;
     filter: url(#chalk);
   }
+
+  &:not(:last-of-type) {
+    margin-bottom: $spacing-md;
+  }
+}
+
+ol,
+ul {
+  ol,
+  ul {
+    margin-top: calc($spacing-sm * -1);
+    margin-bottom: $spacing-md;
+
+    li {
+      @extend %h5;
+      margin-bottom: 0 !important;
+    }
+  }
 }
 
 code {

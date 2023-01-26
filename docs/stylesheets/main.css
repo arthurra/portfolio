@@ -738,6 +738,23 @@ li::marker {
   color: hsl(208deg, 97%, 75%);
   filter: url(#chalk);
 }
+li:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+ol ol li,
+ol ul li,
+ul ol li,
+ul ul li {
+  margin-bottom: 0 !important;
+}
 
 code {
   border: 0.125rem solid hsl(230deg, 7%, 47%);
@@ -1870,7 +1887,10 @@ h4 {
 }
 
 .l-nav .link, .tag, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
-.button [disabled]::before, .button--icon::before, .frame__title, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, .button {
+.button [disabled]::before, .button--icon::before, .frame__title, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, ol ol li,
+ol ul li,
+ul ol li,
+ul ul li, .button {
   font-weight: 800;
   font-size: 0.8rem;
   line-height: 1.5rem;
