@@ -122,7 +122,7 @@ $border-color-alt: $color-secondary;
 $border: $border-width $border-style $border-color;
 $border-dotted: $border-width dotted $border-color-dark;
 $border-double: calc($border-width * 3) double $border-color;
-$border-radius: 0.25rem;
+$border-radius: 0.5rem;
 
 // ---------------------------------- \\
 //              ELEVATION             \\
