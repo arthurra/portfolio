@@ -24,7 +24,7 @@ $button-box-shadow-base: $button-box-shadow-elevation, $button-box-shadow-inset;
   color: $text-color;
   background-color: $gray-100;
   border: $border;
-  border-radius: $border-radius;
+  border-radius: calc($border-radius / 2);
   cursor: pointer;
   transition: all $transition-duration $transition-timing-function;
 
