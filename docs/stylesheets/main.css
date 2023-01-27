@@ -1854,7 +1854,7 @@ h2 {
   padding-bottom: 1rem;
 }
 
-h3, .u-font-h3, li {
+.frame__title, h3, .u-font-h3, li {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.5rem;
@@ -1889,7 +1889,7 @@ h4 {
 }
 
 .l-nav .link, .tag, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
-.button [disabled]::before, .button--icon::before, .frame__title, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, ol ol li,
+.button [disabled]::before, .button--icon::before, .eyebrow-text, .u-font-label, label, .fieldset__label, h5, .u-font-h5, ol ol li,
 ol ul li,
 ul ol li,
 ul ul li, .button {
@@ -1966,11 +1966,11 @@ p {
 }
 
 .tag, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
-.button [disabled]::before, .button--icon::before, .frame__title, .eyebrow-text, .u-font-label, label, .fieldset__label {
+.button [disabled]::before, .button--icon::before, .eyebrow-text, .u-font-label, label, .fieldset__label {
   font-style: normal;
 }
 
-.frame__title, .eyebrow-text {
+.eyebrow-text {
   display: block;
   padding-bottom: 0.25rem;
   color: hsl(38deg, 100%, 68%);
@@ -2345,7 +2345,10 @@ small {
   margin-top: 1.5rem;
 }
 .frame__title {
+  display: block;
   margin-bottom: 0.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.125rem dotted hsl(197deg, 6%, 78%);
 }
 .frame__desc {
   padding-bottom: 1.5rem;
