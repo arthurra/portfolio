@@ -16,6 +16,12 @@
       gtag("config", "G-VDD3KQ1PT2");
     </script>
 
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ae56b1ba10.js"
+      crossorigin="anonymous"
+    ></script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -450,7 +456,7 @@
             href="mailto:ryan@ryanarthurdigital.com?subject=Work with me! &body=👋 Tell me a little bit about your project."
             class="button button--primary button--outline"
           >
-            <span style="font-size: 169%">👋</span> Work with me</a
+            <span class="wave" style="font-size: 169%">👋</span> Work with me</a
           >
         </nav>
       </div>
@@ -464,7 +470,7 @@
           </h4>
         </div>
         <p class="lead-text">
-          My specialty is handcrafted digital products that are
+          My specialty is handcrafted digital products that are <br />
           <span class="squiggle squiggle--simple">simple,</span>
           <span class="squiggle squiggle--beautiful">beautiful,</span> and
           <span class="squiggle squiggle--useful">useful.</span>
@@ -513,7 +519,10 @@
 
         <!-- CONSTRUCTION MARKETPLACE -->
         <section id="construction-marketplace" class="slide">
-          <a href="/" class="slide__image-container">
+          <a
+            href="construction-marketplace.html"
+            class="slide__image-container"
+          >
             <img
               src="images/construction-marketplace/construction-marketplace-slide.png"
               alt="A screenshot showing a sample quote for a collection of products"
@@ -532,9 +541,8 @@
               </p>
             </div>
             <a
-              href=""
-              class="button button--primary button--outline disabled disabled--coming-soon"
-              onclick="event.preventDefault();"
+              href="construction-marketplace.html"
+              class="button button--primary button--outline"
               >View Project</a
             >
           </aside>
@@ -700,11 +708,41 @@
         </a>
         <span class="u-font-h5">© 2023 Ryan Arthur Digital LLC</span>
       </div>
-      <a
-        href="#"
-        class="button button--outline button--primary u-color-text-title-inverse u-float-right"
-        >&#8593; Return to top</a
-      >
+
+      <div class="flex flex--mobile-column">
+        <!-- mobile links -->
+        <div class="flex flex--nowrap">
+          <!-- github -->
+          <a
+            href="https://github.com/arthurra"
+            class="button button--primary button--icon button--outline u-color-text-title-inverse"
+            aria-label="Github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <!-- dribbble -->
+          <a
+            href="https://dribbble.com/ryan-arthur/shots"
+            class="button button--primary button--icon button--outline u-color-text-title-inverse"
+            aria-label="Dribbble"
+          >
+            <i class="fa-brands fa-dribbble"></i>
+          </a>
+          <!-- codepen -->
+          <a
+            href="https://codepen.io/arthurra"
+            class="button button--primary button--icon button--outline u-color-text-title-inverse"
+            aria-label="Codepen"
+          >
+            <i class="fa-brands fa-codepen"></i>
+          </a>
+        </div>
+        <a
+          href="#"
+          class="button button--outline button--primary u-color-text-title-inverse"
+          >&#8593; Return to top</a
+        >
+      </div>
     </footer>
   </body>
 </html>

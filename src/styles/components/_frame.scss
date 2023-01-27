@@ -1,0 +1,35 @@
+.frame {
+  margin: 0;
+  padding: $spacing-xl;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  border-radius: $border-radius;
+  // overflow: scroll;
+  // filter: url(#soft-light);
+  // lame fallback becuase background-blend-mode
+  // and background-repeat break on iOS
+  background-image: url(../../images/bg-dark.png);
+  background-size: 182px 182px;
+
+  &__img {
+    width: 100%;
+    border-radius: calc($border-radius / 2);
+  }
+
+  &__cap {
+    margin-top: $spacing-lg;
+  }
+
+  &__title {
+    @extend %h3;
+    display: block;
+    margin-bottom: $spacing-sm;
+    padding-bottom: $spacing-lg;
+    border-bottom: $border-dotted;
+  }
+
+  &__desc {
+    padding-bottom: $spacing-lg;
+  }
+}

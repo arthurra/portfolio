@@ -149,6 +149,7 @@ p {
   @extend %lead;
   color: $title-color;
   margin-top: $spacing-lg;
+  margin-bottom: $spacing-md;
   padding-bottom: 0;
   text-align: center;
   letter-spacing: 0.025em;
@@ -163,11 +164,15 @@ label {
   @extend %label;
 }
 
-.eyebrow-text {
+%eyebrow {
   @extend %label;
   display: block;
   padding-bottom: $spacing-xs;
   color: $color-secondary;
+}
+
+.eyebrow-text {
+  @extend %eyebrow;
 }
 
 small {

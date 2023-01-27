@@ -80,8 +80,29 @@ li {
 
   &::marker {
     font-weight: 600;
-    color: $color-primary;
+    color: $color-info;
     filter: url(#chalk);
+  }
+}
+
+ol,
+ul {
+  &:not(.flex) li:not(:last-of-type) {
+    margin-bottom: $spacing-md;
+  }
+}
+
+ol,
+ul {
+  ol,
+  ul {
+    margin-top: calc($spacing-sm * -1);
+    margin-bottom: $spacing-md;
+
+    li {
+      @extend %h5;
+      margin-bottom: 0 !important;
+    }
   }
 }
 
