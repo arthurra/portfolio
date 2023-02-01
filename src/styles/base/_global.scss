@@ -77,11 +77,16 @@ ul {
 
 li {
   @extend %h3;
+  color: $title-color;
 
   &::marker {
     font-weight: 600;
     color: $color-info;
     filter: url(#chalk);
+  }
+
+  small {
+    color: $text-color-dark;
   }
 }
 
@@ -101,6 +106,7 @@ ul {
 
     li {
       @extend %h5;
+      color: $text-color-dark;
       margin-bottom: 0 !important;
     }
   }

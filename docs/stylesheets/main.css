@@ -733,10 +733,16 @@ ul {
   margin-bottom: 1rem;
 }
 
+li {
+  color: hsl(0deg, 0%, 98%);
+}
 li::marker {
   font-weight: 600;
   color: hsl(208deg, 97%, 75%);
   filter: url(#chalk);
+}
+li small {
+  color: hsl(197deg, 6%, 78%);
 }
 
 ol:not(.flex) li:not(:last-of-type),
@@ -755,6 +761,7 @@ ol ol li,
 ol ul li,
 ul ol li,
 ul ul li {
+  color: hsl(197deg, 6%, 78%);
   margin-bottom: 0 !important;
 }
 
@@ -2433,6 +2440,7 @@ small {
   line-height: 1;
   text-indent: 0.85ch;
   margin-left: 0.5rem;
+  filter: url(#goo);
 }
 
 .l-content-container {

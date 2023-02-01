@@ -404,6 +404,21 @@
             <feMergeNode in="outlineFuzzy"></feMergeNode>
           </feMerge>
         </filter>
+
+        <filter id="goo">
+          <feGaussianBlur
+            in="SourceGraphic"
+            stdDeviation="0.275"
+            result="blur"
+          />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="goo"
+          />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+        </filter>
       </defs>
     </svg>
     <header class="l-header">
@@ -447,7 +462,7 @@
             href="mailto:ryan@ryanarthurdigital.com?subject=Work with me! &body=👋 Tell me a little bit about your project."
             class="button button--primary button--outline"
           >
-            <span style="font-size: 169%">👋</span> Work with me</a
+            <span class="wave" style="font-size: 169%">👋</span> Work with me</a
           >
         </nav>
         <!-- mobile nav -->
