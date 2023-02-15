@@ -25,6 +25,7 @@ h1 {
   @extend %h1;
   padding-top: ($spacing-base * 3);
   padding-bottom: $spacing-base;
+  filter: url(#goo-heavy);
   // filter: url(#chalk-long-shadow);
 }
 

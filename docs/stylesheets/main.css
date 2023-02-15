@@ -1844,6 +1844,7 @@ h6 {
 h1 {
   padding-top: 3rem;
   padding-bottom: 1rem;
+  filter: url(#goo-heavy);
 }
 
 h2, .u-font-h2 {
