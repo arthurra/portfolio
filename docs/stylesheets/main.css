@@ -2360,11 +2360,11 @@ small {
   display: block;
   margin-bottom: 0.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 0.125rem dotted hsl(197deg, 6%, 78%);
   color: hsl(0deg, 0%, 98%);
 }
 .frame__desc {
   padding-bottom: 1.5rem;
+  border-top: 0.125rem dotted hsl(197deg, 6%, 78%);
 }
 
 /* ---------------------------------------- */
