@@ -1846,6 +1846,11 @@ h1 {
   padding-bottom: 1rem;
   filter: url(#goo-heavy) url(#chalk);
 }
+@media screen and (max-width: 950px) {
+  h1 {
+    filter: url(#goo-heavy);
+  }
+}
 
 h2, .u-font-h2 {
   font-weight: 600;
