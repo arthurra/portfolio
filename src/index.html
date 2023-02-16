@@ -405,10 +405,21 @@
           </feMerge>
         </filter>
 
+        <filter id="goo-heavy">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="goo-heavy"
+          />
+          <feComposite in="SourceGraphic" in2="goo-heavy" operator="atop" />
+        </filter>
+
         <filter id="goo">
           <feGaussianBlur
             in="SourceGraphic"
-            stdDeviation="0.275"
+            stdDeviation="0.26"
             result="blur"
           />
           <feColorMatrix
@@ -545,10 +556,10 @@
             />
           </a>
           <aside class="slide__description-container">
-            <h3 class="slide__title">
+            <header class="description-container__header">
               <span class="eyebrow-text">Construction</span>
-              Construction Marketplace
-            </h3>
+              <h3 class="slide__title">Construction Marketplace</h3>
+            </header>
             <div class="slide__description">
               <p>
                 Transtion from the design phase to procurement seemlessly by
@@ -565,17 +576,17 @@
 
         <!-- WORK ORDER MANAGEMENT SYSTEM -->
         <section id="work-order-system" class="slide">
-          <a href="/" class="slide__image-container">
+          <a href="/work-order.html" class="slide__image-container">
             <img
               src="images/work-order/work-order-slide.png"
               alt="A screenshot showing the processing information for a job entry"
             />
           </a>
           <aside class="slide__description-container">
-            <h3 class="slide__title">
+            <header class="description-container__header">
               <span class="eyebrow-text">Manufacturing</span>
-              Work Order Management System
-            </h3>
+              <h3 class="slide__title">Work Order Management System</h3>
+            </header>
             <div class="slide__description">
               <p>
                 A custom process requires a custom solution. I helped to turn a
@@ -583,9 +594,8 @@
               </p>
             </div>
             <a
-              href=""
-              class="button button--primary button--outline disabled disabled--coming-soon"
-              onclick="event.preventDefault();"
+              href="/work-order.html"
+              class="button button--primary button--outline"
               >View Project</a
             >
           </aside>
@@ -600,10 +610,10 @@
             />
           </a>
           <aside class="slide__description-container">
-            <h3 class="slide__title">
+            <header class="description-container__header">
               <span class="eyebrow-text">Transportation</span>
-              City Transit App
-            </h3>
+              <h3 class="slide__title">City Transit App</h3>
+            </header>
             <div class="slide__description">
               <p>
                 A dashboard and companion app that was submitted as a bid for a
@@ -629,10 +639,10 @@
             />
           </a>
           <aside class="slide__description-container">
-            <h3 class="slide__title">
+            <header class="description-container__header">
               <span class="eyebrow-text">Finance</span>
-              Bank Compliance Tracker
-            </h3>
+              <h3 class="slide__title">Bank Compliance Tracker</h3>
+            </header>
             <div class="slide__description">
               <p>
                 Helping a financial service company provide even more insight to
@@ -657,10 +667,10 @@
             />
           </a>
           <aside class="slide__description-container">
-            <h3 class="slide__title">
+            <header class="description-container__header">
               <span class="eyebrow-text">Accounting</span>
-              Sales Analysis Tool
-            </h3>
+              <h3 class="slide__title">Sales Analysis Tool</h3>
+            </header>
             <div class="slide__description">
               <p>
                 Seeing data update in real time empowered sales assocciates to
@@ -685,10 +695,10 @@
             />
           </a>
           <aside class="slide__description-container">
-            <h3 class="slide__title">
+            <header class="description-container__header">
               <span class="eyebrow-text">Technology</span>
-              Blockchain Explorer
-            </h3>
+              <h3 class="slide__title">Blockchain Explorer</h3>
+            </header>
             <div class="slide__description">
               <p>
                 A tool for inspecting and analyzing EVM based blockchains on

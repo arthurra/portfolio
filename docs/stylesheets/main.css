@@ -1844,6 +1844,7 @@ h6 {
 h1 {
   padding-top: 3rem;
   padding-bottom: 1rem;
+  filter: url(#goo-heavy) url(#chalk);
 }
 
 h2, .u-font-h2 {
@@ -1868,6 +1869,7 @@ h2 {
   font-family: "Zilla Slab", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  filter: url(#goo);
 }
 
 h3 {
@@ -1882,6 +1884,7 @@ h4, .u-font-h4 {
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.085em;
   text-transform: uppercase;
+  filter: url(#goo);
 }
 @media screen and (max-width: 950px) {
   h4, .u-font-h4 {
@@ -1951,7 +1954,7 @@ p {
 
 .lead-text {
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-style: italic;
   line-height: 3.5rem;
   font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -2188,18 +2191,17 @@ small {
   object-fit: contain;
   border-radius: 1rem;
   box-shadow: 0 1rem 4rem -2rem hsla(0deg, 0%, 0%, 0.5), 0 0.5rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.25rem 0.25rem hsla(0deg, 0%, 0%, 0.1), -1px 0 0 hsl(0deg, 0%, 98%), -2px 1px 0 hsl(0deg, 0%, 98%), -2px 2px 0 hsl(0deg, 0%, 98%), -3px 2px 0 hsl(0deg, 0%, 98%), -3px 3px 0 hsl(0deg, 0%, 98%), 0 1rem 4rem -2rem hsla(0deg, 0%, 0%, 0.5), 0 0.5rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.25rem 0.25rem hsla(0deg, 0%, 0%, 0.1), 0 1rem 4rem -2rem hsla(0deg, 0%, 0%, 0.5), 0 0.5rem 0.5rem hsla(0deg, 0%, 0%, 0.1), 0 0.25rem 0.25rem hsla(0deg, 0%, 0%, 0.1);
-  scale: 1;
+  scale: 1.1;
   translate: 0 0;
   transform-origin: top;
   transform: rotate3d(1, 1, 1, -45deg);
-  transition: scale 1s cubic-bezier(0.65, 0, 0.35, 1), translate 1s cubic-bezier(0.65, 0, 0.35, 1), transform-origin 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: scale 1s cubic-bezier(0.65, 0, 0.35, 1), translate 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
 }
 .slide:hover .slide__image-container img {
-  scale: 0.8;
-  translate: 0 8rem;
-  transform-origin: -25% 0;
+  scale: 0.7;
+  translate: -4rem 4rem;
   transform: rotate3d(1, 0.2, 1, -20deg);
-  transition: scale 5s cubic-bezier(0.65, 0, 0.35, 1), translate 5s cubic-bezier(0.65, 0, 0.35, 1), transform-origin 5s cubic-bezier(0.65, 0, 0.35, 1), transform 5s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: scale 5s cubic-bezier(0.65, 0, 0.35, 1), translate 5s cubic-bezier(0.65, 0, 0.35, 1), transform 5s cubic-bezier(0.65, 0, 0.35, 1);
 }
 .slide:hover .slide__image-container img.scroll {
   translate: -10% -10%;
@@ -2218,7 +2220,7 @@ small {
 }
 
 .slide__title {
-  padding-top: 1rem;
+  padding-top: 0;
   padding-bottom: 1rem;
   color: hsl(0deg, 0%, 98%);
 }
@@ -2228,6 +2230,7 @@ small {
   grid-template-rows: auto 1fr auto;
   gap: 1rem;
   padding: 2rem;
+  padding-top: 2.5rem;
   border-radius: 0 0.5rem 0.5rem 0;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
   background-image: url(../../images/bg-dark.png);
@@ -2263,7 +2266,7 @@ small {
   left: 0;
   width: 100%;
   border-bottom: 0.125rem solid hsl(0deg, 0%, 98%);
-  scale: 0% 100%;
+  clip-path: inset(0 100% 0 0);
   z-index: -1;
   transform-origin: left;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
@@ -2273,7 +2276,7 @@ small {
   text-decoration: none;
 }
 .logo:hover::after, .link:hover::after, .active.logo::after, .active.link::after {
-  scale: 100% 100%;
+  clip-path: inset(0 0 0 0);
 }
 .logo:not(.disabled)::after, .link:not(.disabled)::after {
   filter: url(#chalk);
@@ -2296,6 +2299,7 @@ small {
   position: absolute;
   bottom: 0;
   opacity: 0.8;
+  scale: 0.9;
   filter: url(#chalk);
 }
 @media screen and (max-width: 950px) {
@@ -2316,7 +2320,7 @@ small {
 }
 .squiggle--beautiful::before {
   content: url(../../images/squiggle2.svg);
-  translate: 0 1.25rem;
+  translate: -0.5rem 1.25rem;
   rotate: 5deg;
 }
 @media screen and (max-width: 950px) {
@@ -2355,10 +2359,11 @@ small {
   display: block;
   margin-bottom: 0.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 0.125rem dotted hsl(197deg, 6%, 78%);
+  color: hsl(0deg, 0%, 98%);
 }
 .frame__desc {
   padding-bottom: 1.5rem;
+  border-top: 0.125rem dotted hsl(197deg, 6%, 78%);
 }
 
 /* ---------------------------------------- */
