@@ -176,6 +176,32 @@
             <feMergeNode in="outlineFuzzy"></feMergeNode>
           </feMerge>
         </filter>
+
+        <filter id="goo-heavy">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="goo-heavy"
+          />
+          <feComposite in="SourceGraphic" in2="goo-heavy" operator="atop" />
+        </filter>
+
+        <filter id="goo">
+          <feGaussianBlur
+            in="SourceGraphic"
+            stdDeviation="0.26"
+            result="blur"
+          />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="goo"
+          />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+        </filter>
       </defs>
     </svg>
     <header class="l-header">
@@ -251,7 +277,7 @@
         </p> -->
         <div class="grid grid--mobile-column" style="gap: 4rem">
           <section>
-            <h4 class="u-pb-0">Services</h4>
+            <h4 class="u-color-secondary u-pb-0">Services</h4>
             <hr class="u-pb-lg" />
             <ol class="u-pt-md">
               <li>Design Sprint</li>
@@ -267,13 +293,13 @@
                 <li>HTML</li>
                 <li>CSS</li>
               </ul>
-              <li>Web UI Documentation</li>
-              <li>Web UI Maintenance</li>
+              <li>Design System Documentation</li>
+              <li>Design System Maintenance</li>
               <li>New Feature Developent</li>
             </ol>
           </section>
           <section>
-            <h4 class="u-pb-0">Timeline</h4>
+            <h4 class="u-color-secondary u-pb-0">Timeline</h4>
             <hr class="u-pb-lg" />
             <ol class="">
               <li>

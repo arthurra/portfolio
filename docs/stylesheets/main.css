@@ -1844,7 +1844,7 @@ h6 {
 h1 {
   padding-top: 3rem;
   padding-bottom: 1rem;
-  filter: url(#goo-heavy);
+  filter: url(#goo-heavy) url(#chalk);
 }
 
 h2, .u-font-h2 {
@@ -1869,6 +1869,7 @@ h2 {
   font-family: "Zilla Slab", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  filter: url(#goo);
 }
 
 h3 {
@@ -1883,6 +1884,7 @@ h4, .u-font-h4 {
   font-family: "Barlow Semi Condensed", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.085em;
   text-transform: uppercase;
+  filter: url(#goo);
 }
 @media screen and (max-width: 950px) {
   h4, .u-font-h4 {
@@ -1952,7 +1954,7 @@ p {
 
 .lead-text {
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-style: italic;
   line-height: 3.5rem;
   font-family: "Calendas Plus", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -2219,7 +2221,7 @@ small {
 }
 
 .slide__title {
-  padding-top: 1rem;
+  padding-top: 0;
   padding-bottom: 1rem;
   color: hsl(0deg, 0%, 98%);
 }
@@ -2229,6 +2231,7 @@ small {
   grid-template-rows: auto 1fr auto;
   gap: 1rem;
   padding: 2rem;
+  padding-top: 2.5rem;
   border-radius: 0 0.5rem 0.5rem 0;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
   background-image: url(../../images/bg-dark.png);
@@ -2297,6 +2300,7 @@ small {
   position: absolute;
   bottom: 0;
   opacity: 0.8;
+  scale: 0.9;
   filter: url(#chalk);
 }
 @media screen and (max-width: 950px) {
@@ -2317,7 +2321,7 @@ small {
 }
 .squiggle--beautiful::before {
   content: url(../../images/squiggle2.svg);
-  translate: 0 1.25rem;
+  translate: -0.5rem 1.25rem;
   rotate: 5deg;
 }
 @media screen and (max-width: 950px) {
@@ -2357,6 +2361,7 @@ small {
   margin-bottom: 0.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 0.125rem dotted hsl(197deg, 6%, 78%);
+  color: hsl(0deg, 0%, 98%);
 }
 .frame__desc {
   padding-bottom: 1.5rem;
