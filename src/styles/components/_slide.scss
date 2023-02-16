@@ -50,23 +50,20 @@
   box-shadow: $box-shadow-dark, -1px 0 0 $gray-100, -2px 1px 0 $gray-100,
     -2px 2px 0 $gray-100, -3px 2px 0 $gray-100, -3px 3px 0 $gray-100,
     $box-shadow-dark, $box-shadow-dark;
-  scale: 1;
+  scale: 1.1;
   translate: 0 0;
   transform-origin: top;
   transform: rotate3d(1, 1, 1, -45deg);
   transition: scale 1s $transition-timing-function,
     translate 1s $transition-timing-function,
-    transform-origin 1s $transition-timing-function,
     transform 1s $transition-timing-function;
 
   .slide:hover & {
-    scale: 0.8;
-    translate: 0 8rem;
-    transform-origin: -25% 0;
+    scale: 0.7;
+    translate: -4rem 4rem;
     transform: rotate3d(1, 0.2, 1, -20deg);
     transition: scale 5s $transition-timing-function,
       translate 5s $transition-timing-function,
-      transform-origin 5s $transition-timing-function,
       transform 5s $transition-timing-function;
 
     &.scroll {
