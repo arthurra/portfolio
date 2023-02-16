@@ -11,7 +11,7 @@
     left: 0;
     width: 100%;
     border-bottom: $border-width $border-style $title-color;
-    scale: 0% 100%;
+    clip-path: inset(0 100% 0 0);
     z-index: -1;
     transform-origin: left;
     transition: all $transition-duration $transition-timing-function;
@@ -23,7 +23,7 @@
     text-decoration: none;
 
     &::after {
-      scale: 100% 100%;
+      clip-path: inset(0 0 0 0);
     }
   }
 

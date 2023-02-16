@@ -2267,7 +2267,7 @@ small {
   left: 0;
   width: 100%;
   border-bottom: 0.125rem solid hsl(0deg, 0%, 98%);
-  scale: 0% 100%;
+  clip-path: inset(0 100% 0 0);
   z-index: -1;
   transform-origin: left;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
@@ -2277,7 +2277,7 @@ small {
   text-decoration: none;
 }
 .logo:hover::after, .link:hover::after, .active.logo::after, .active.link::after {
-  scale: 100% 100%;
+  clip-path: inset(0 0 0 0);
 }
 .logo:not(.disabled)::after, .link:not(.disabled)::after {
   filter: url(#chalk);
