@@ -24,12 +24,12 @@
   &__title {
     @extend %h3;
     display: block;
-    margin-bottom: $spacing-sm;
     padding-bottom: $spacing-lg;
     color: $title-color;
   }
 
   &__desc {
+    padding-top: $spacing-sm;
     padding-bottom: $spacing-lg;
     border-top: $border-dotted;
   }
