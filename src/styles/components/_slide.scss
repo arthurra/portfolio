@@ -89,7 +89,7 @@
 }
 
 .slide__title {
-  padding-top: $spacing-md;
+  padding-top: 0;
   padding-bottom: $spacing-md;
   color: $title-color;
 }
@@ -101,6 +101,7 @@
   gap: $spacing-md;
   // background-color: $gray-800;
   padding: $spacing-xl;
+  padding-top: $spacing-xxl;
   border-radius: 0 $border-radius $border-radius 0;
   transition: all $transition-duration $transition-timing-function;
   // filter: url(#soft-light);
