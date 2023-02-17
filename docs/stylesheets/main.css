@@ -2217,7 +2217,7 @@ small {
     scale: 1.5;
   }
   .slide:hover .slide__image-container img {
-    translate: 0 4rem;
+    translate: -1rem 2.5rem;
   }
   .slide:hover .slide__image-container img.scroll {
     translate: -10% 0;
