@@ -53,7 +53,7 @@
   .u-text-columns {
     column-count: 1;
     text-align: left;
-    letter-spacing: 0.01rem;
+    letter-spacing: 0;
   }
 }
 
@@ -739,7 +739,6 @@ li {
 li::marker {
   font-weight: 600;
   color: hsl(208deg, 97%, 75%);
-  filter: url(#chalk);
 }
 li small {
   color: hsl(197deg, 6%, 78%);
@@ -1848,7 +1847,7 @@ h1 {
 }
 @media screen and (max-width: 950px) {
   h1 {
-    filter: url(#goo-heavy);
+    filter: none;
   }
 }
 
@@ -1876,6 +1875,11 @@ h2 {
   text-transform: uppercase;
   filter: url(#goo);
 }
+@media screen and (max-width: 950px) {
+  .frame__title, h3, .u-font-h3, li {
+    filter: none;
+  }
+}
 
 h3 {
   padding-top: 3.5rem;
@@ -1895,6 +1899,7 @@ h4, .u-font-h4 {
   h4, .u-font-h4 {
     font-size: 1rem;
     line-height: 1.5rem;
+    filter: none;
   }
 }
 

@@ -29,7 +29,7 @@ h1 {
   // filter: url(#chalk-long-shadow);
 
   @media screen and (max-width: $mobile-breakpoint) {
-    filter: url(#goo-heavy);
+    filter: none;
   }
 }
 
@@ -57,6 +57,10 @@ h2 {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   filter: url(#goo);
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    filter: none;
+  }
 }
 
 h3 {
@@ -78,6 +82,7 @@ h3 {
   @media screen and (max-width: $mobile-breakpoint) {
     font-size: 1rem;
     line-height: 1.5rem;
+    filter: none;
   }
 }
 

@@ -82,7 +82,6 @@ li {
   &::marker {
     font-weight: 600;
     color: $color-info;
-    filter: url(#chalk);
   }
 
   small {
