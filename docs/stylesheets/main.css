@@ -1982,7 +1982,6 @@ p {
   margin-bottom: 1rem;
   padding-bottom: 0;
   text-align: center;
-  letter-spacing: 0.025em;
 }
 
 .tag, .disabled.logo::before, .disabled.link::before, .has-tooltip::before, .button.disabled::before,
@@ -2359,7 +2358,9 @@ small {
   background-size: 182px 182px;
 }
 .frame__img {
-  width: 100%;
+  display: block;
+  margin: auto;
+  max-width: 100%;
   border-radius: 0.25rem;
 }
 .frame__cap {

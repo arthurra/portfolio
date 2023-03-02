@@ -13,7 +13,9 @@
   background-size: 182px 182px;
 
   &__img {
-    width: 100%;
+    display: block;
+    margin: auto;
+    max-width: 100%;
     border-radius: calc($border-radius / 2);
   }
 
