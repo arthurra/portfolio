@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VDD3KQ1PT2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VDD3KQ1PT2");
+    </script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ae56b1ba10.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAD</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <script src="js/spotlight.bundle.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body class="l-body">
+    <svg class="u-absolute">
+      <defs>
+        <filter id="soft-light">
+          <!-- base -->
+          <feTurbulence
+            id="turbulence"
+            type="fractalNoise"
+            baseFrequency="1.69"
+            numOctaves="5"
+            stitchTiles="stitch"
+            result="NOISE"
+          />
+
+          <feDiffuseLighting
+            in="NOISE"
+            lighting-color="white"
+            surfaceScale="1.5"
+            result="BUMP"
+          >
+            <feDistantLight azimuth="45" elevation="45" />
+          </feDiffuseLighting>
+
+          <feGaussianBlur
+            stdDeviation="0.420"
+            in="BUMP"
+            result="SMOOTH_BUMP"
+          ></feGaussianBlur>
+
+          <feComposite
+            operator="in"
+            in="SMOOTH_BUMP"
+            in2="SourceGraphic"
+            result="TEXTURE"
+          />
+
+          <feBlend
+            in="SourceGraphic"
+            in2="TEXTURE"
+            mode="overlay"
+            result="BLEND"
+          ></feBlend>
+        </filter>
+
+        <filter id="chalk">
+          <!-- base noise -->
+          <feTurbulence
+            id="noise"
+            type="fractalNoise"
+            baseFrequency="1"
+            numOctaves="5"
+            stitchTiles="stitch"
+            result="baseNoise"
+          />
+
+          <!-- base garphic -->
+          <feMorphology
+            operator="dilate"
+            radius="0"
+            in="SourceGraphic"
+            result="base"
+          />
+
+          <!-- OUTLINE -->
+
+          <!-- inset -->
+          <feMorphology
+            operator="erode"
+            radius="1.5"
+            in="base"
+            result="outlineMask"
+          />
+
+          <!-- outline -->
+          <feComposite
+            operator="out"
+            in="base"
+            in2="outlineMask"
+            result="outline"
+          />
+
+          <!-- blur outline -->
+          <feGaussianBlur
+            stdDeviation="0.2"
+            in="outline"
+            result="outlineSmooth"
+          ></feGaussianBlur>
+
+          <!-- displace outline -->
+          <feDisplacementMap
+            in="outlineSmooth"
+            in2="baseNoise"
+            scale="4"
+            result="outlineFuzzy"
+          ></feDisplacementMap>
+
+          <!-- INTERIOR -->
+
+          <!-- interior -->
+          <feMorphology
+            operator="erode"
+            radius="0"
+            in="base"
+            result="interior"
+          />
+
+          <!-- blur interior -->
+          <feGaussianBlur
+            stdDeviation="1"
+            in="interior"
+            result="interiorSmooth"
+          ></feGaussianBlur>
+
+          <!-- displace interior -->
+          <feDisplacementMap
+            in="interiorSmooth"
+            in2="baseNoise"
+            scale="35"
+            result="interiorFuzzy"
+          ></feDisplacementMap>
+
+          <!-- mask interior -->
+          <feComposite
+            operator="in"
+            in="base"
+            in2="interiorFuzzy"
+            result="interiorMask"
+          />
+
+          <!-- smooth interior noise -->
+          <feGaussianBlur
+            stdDeviation="0.1"
+            in="interiorMask"
+            result="interiorSmoothNoise"
+          ></feGaussianBlur>
+
+          <!-- MERGE -->
+          <feMerge>
+            <feMergeNode in="interiorSmoothNoise"></feMergeNode>
+            <feMergeNode in="outlineFuzzy"></feMergeNode>
+          </feMerge>
+        </filter>
+
+        <filter id="goo-heavy">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="goo-heavy"
+          />
+          <feComposite in="SourceGraphic" in2="goo-heavy" operator="atop" />
+        </filter>
+
+        <filter id="goo">
+          <feGaussianBlur
+            in="SourceGraphic"
+            stdDeviation="0.26"
+            result="blur"
+          />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="goo"
+          />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+        </filter>
+      </defs>
+    </svg>
+    <header class="l-header">
+      <div class="flex flex--between">
+        <section>
+          <a href="/" class="logo u-mt-md">
+            <svg
+              id="a"
+              class="logo__image"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              aria-label="Ryan Arthur Digital"
+            >
+              <path
+                d="M264.22,.05c24.29,0,48.57-.02,72.86,0,87.17,.09,159.1,61.36,171.65,147.49,11.68,80.16-35.7,158.97-115.17,185.28-8.49,2.81-9.16,5.93-6.56,13.6,15.58,45.97,30.7,92.1,45.94,138.18,6.48,19.59,.96,27.36-19.44,27.39-23.67,.03-47.34,.03-71.01,0-13.68-.02-17.66-2.91-22.06-16.12-15.35-46.06-30.89-92.06-45.78-138.27-2.81-8.71-6.63-12.17-16.08-11.94-26.11,.65-52.26,.19-78.39,.24-12.54,.02-15.23,1.96-19.27,14.06-14.96,44.9-29.84,89.82-44.77,134.72-5.11,15.36-7.72,17.22-23.85,17.24-23.36,.02-46.73,.05-70.09-.01-18.21-.05-24.28-8.14-18.64-25.1,25.18-75.82,50.42-151.62,75.69-227.41,4.62-13.85,7.91-16.12,22.88-16.13,32.89-.03,65.79,.08,98.68-.07,9.2-.04,18.4-1.2,27.59-1.05,7.62,.12,7.84-2.78,5.77-8.94-16.65-49.51-33.06-99.1-49.54-148.66-6.59-19.83-13.24-39.64-19.75-59.5-5.24-15.99,.75-24.8,17.27-24.92,27.36-.2,54.72-.05,82.07-.06Zm70.46,103.95c-7.84,0-13.4,.36-18.9-.09-7.79-.63-8.74,2.27-6.43,9.12,13.63,40.46,27.02,81,40.28,121.57,1.97,6.04,4.89,7.19,10.96,5.58,45.28-12.04,65.9-67.61,38.93-105.98-16.33-23.24-39.22-32.49-64.85-30.2Z"
+              />
+            </svg>
+            <span class="logo__type u-hide-mobile"
+              >Ryan <br />
+              Arthur
+            </span>
+          </a>
+        </section>
+        <!-- desktop nav -->
+        <nav class="l-nav u-hide-mobile">
+          <a href="/" class="link">Product Design</a>
+          <a
+            href="/"
+            class="link disabled disabled--coming-soon"
+            onclick="event.preventDefault();"
+            >Branding</a
+          >
+          <a
+            href="/"
+            class="link disabled disabled--coming-soon"
+            onclick="event.preventDefault();"
+            >Renders</a
+          >
+          <a
+            href="mailto:ryan@ryanarthurdigital.com?subject=Work with me! &body=👋 Tell me a little bit about your project."
+            class="button button--primary button--outline"
+          >
+            <span class="wave" style="font-size: 169%">👋</span> Work with me</a
+          >
+        </nav>
+        <!-- mobile nav -->
+        <nav class="l-nav u-show-mobile">
+          <a
+            href="mailto:ryan@ryanarthurdigital.com?subject=Work with me! &body=👋 Tell me a little bit about your project."
+            class="button button--primary button--outline"
+          >
+            <span class="wave" style="font-size: 169%">👋</span> Work with me</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="l-main">
+      <article class="l-content-container">
+        <div class="u-text-center">
+          <h1 class="u-pt-0">Sales Analysis Tool</h1>
+          <h4 class="u-pt-0 u-color-secondary">
+            Accounting Data Transformation
+          </h4>
+        </div>
+        <!-- <p class="lead-text">
+          Using open data to create a more accessible city
+        </p> -->
+        <!-- <div class="grid grid--mobile-column" style="gap: 4rem">
+          <section>
+            <h4 class="u-color-secondary u-pb-0">Services</h4>
+            <hr class="u-pb-lg" />
+            <ol class="u-pt-md">
+              <li>Design Sprint</li>
+              <ul>
+                <li>UI Flow Diagram</li>
+                <li>Wireframes</li>
+                <li>Mockups</li>
+                <li>Prototype</li>
+              </ul>
+              <li>User Testing</li>
+              <li>Web UI Development</li>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <li>Design System Documentation</li>
+              <li>Design System Maintenance</li>
+              <li>New Feature Developent</li>
+            </ol>
+          </section>
+          <section>
+            <h4 class="u-color-secondary u-pb-0">Timeline</h4>
+            <hr class="u-pb-lg" />
+            <ol class="">
+              <li>
+                <div class="flex flex--between flex--mobile-column">
+                  Design Sprint
+                  <span class="tag u-mt-sm u-mb-md">4 weeks</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex flex--between flex--mobile-column">
+                  <span>
+                    User Testing
+                    <br />
+                    <small class="u-font-h5">(1 Round Recuring)</small>
+                  </span>
+                  <span class="tag u-mt-sm u-mb-md">1 week</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex flex--between flex--mobile-column">
+                  <span>
+                    Web UI Development
+                    <br />
+                    <small class="u-font-h5">(initial Release)</small>
+                  </span>
+                  <span class="tag u-mt-sm u-mb-md">12 months</span>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="flex flex--between flex--mobile-column flex--nowrap"
+                >
+                  Maintenance & New Features
+                  <span class="tag u-mt-sm u-text-nowrap">270 hrs. / year</span>
+                </div>
+              </li>
+            </ol>
+          </section>
+        </div> -->
+
+        <hr class="u-mb-xl" />
+
+        <!-- PRICING INDEX -->
+        <figure class="frame">
+          <a href="images/sales-analysis/all-pricings.png" class="spotlight">
+            <img
+              src="images/sales-analysis/all-pricings.png"
+              alt="A page that lists all of the pricings"
+              class="frame__img"
+            />
+          </a>
+          <figcaption class="frame__cap">
+            <span class="eyebrow-text">Webpage</span>
+            <span class="frame__title">Pricing List</span>
+            <!-- <p class="frame__desc">
+              Image description
+            </p> -->
+            <div class="flex">
+              <div class="tag">UI</div>
+              <div class="tag">HTML</div>
+              <div class="tag">CSS</div>
+              <div class="tag">Atom</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- UPDATE PRICING -->
+        <figure class="frame">
+          <a href="images/sales-analysis/update-pricing.png" class="spotlight">
+            <img
+              src="images/sales-analysis/update-pricing.png"
+              alt="A page for uploading documents"
+              class="frame__img"
+            />
+          </a>
+          <figcaption class="frame__cap">
+            <span class="eyebrow-text">Webpage</span>
+            <span class="frame__title">Update Pricing Form</span>
+            <!-- <p class="frame__desc">
+              Image description
+            </p> -->
+            <div class="flex">
+              <div class="tag">UI</div>
+              <div class="tag">HTML</div>
+              <div class="tag">CSS</div>
+              <div class="tag">Atom</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- PRICING  -->
+        <figure class="frame">
+          <a href="images/sales-analysis/pertersen.png" class="spotlight">
+            <img
+              src="images/sales-analysis/pertersen.png"
+              alt="A page that summarizes all of the pricing data"
+              class="frame__img"
+            />
+          </a>
+          <figcaption class="frame__cap">
+            <span class="eyebrow-text">Webpage</span>
+            <span class="frame__title">Pricing Summary</span>
+            <!-- <p class="frame__desc">
+              Image description
+            </p> -->
+            <div class="flex">
+              <div class="tag">UI</div>
+              <div class="tag">HTML</div>
+              <div class="tag">CSS</div>
+              <div class="tag">Atom</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- PRICING EXPANDED -->
+        <figure class="frame">
+          <a
+            href="images/sales-analysis/peterson-expanded.png"
+            class="spotlight"
+          >
+            <img
+              src="images/sales-analysis/peterson-expanded.png"
+              alt="A page that summarizes all of the pricing data"
+              class="frame__img"
+            />
+          </a>
+          <figcaption class="frame__cap">
+            <span class="eyebrow-text">Webpage</span>
+            <span class="frame__title">Pricing Summary Expanded</span>
+            <!-- <p class="frame__desc">
+              Image description
+            </p> -->
+            <div class="flex">
+              <div class="tag">UI</div>
+              <div class="tag">HTML</div>
+              <div class="tag">CSS</div>
+              <div class="tag">Atom</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- CONTRACT TERMS -->
+        <figure class="frame">
+          <a href="images/sales-analysis/contract-terms.png" class="spotlight">
+            <img
+              src="images/sales-analysis/contract-terms.png"
+              alt="A page for entering data into the pricing calculation"
+              class="frame__img"
+            />
+          </a>
+          <figcaption class="frame__cap">
+            <span class="eyebrow-text">Webpage</span>
+            <span class="frame__title">Pricing Contract Terms</span>
+            <!-- <p class="frame__desc">
+              Image description
+            </p> -->
+            <div class="flex">
+              <div class="tag">UI</div>
+              <div class="tag">HTML</div>
+              <div class="tag">CSS</div>
+              <div class="tag">Atom</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <a
+          href="mailto:ryan@ryanarthurdigital.com?subject=Let's Talk! &body=👋 Tell me a little bit about your project."
+          class="button button--primary button--outline u-mt-lg u-mb-lg flex--align-self-center"
+        >
+          <span class="wave" style="font-size: 169%">👋</span> Let's Talk!
+        </a>
+      </article>
+    </main>
+    <footer class="l-footer">
+      <div class="flex flex--nogap flex--align-baseline flex--mobile-column">
+        <a href="/" class="logo u-pt-md">
+          <svg
+            id="a"
+            class="logo__image"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            aria-label="Ryan Arthur Digital"
+          >
+            <path
+              d="M264.22,.05c24.29,0,48.57-.02,72.86,0,87.17,.09,159.1,61.36,171.65,147.49,11.68,80.16-35.7,158.97-115.17,185.28-8.49,2.81-9.16,5.93-6.56,13.6,15.58,45.97,30.7,92.1,45.94,138.18,6.48,19.59,.96,27.36-19.44,27.39-23.67,.03-47.34,.03-71.01,0-13.68-.02-17.66-2.91-22.06-16.12-15.35-46.06-30.89-92.06-45.78-138.27-2.81-8.71-6.63-12.17-16.08-11.94-26.11,.65-52.26,.19-78.39,.24-12.54,.02-15.23,1.96-19.27,14.06-14.96,44.9-29.84,89.82-44.77,134.72-5.11,15.36-7.72,17.22-23.85,17.24-23.36,.02-46.73,.05-70.09-.01-18.21-.05-24.28-8.14-18.64-25.1,25.18-75.82,50.42-151.62,75.69-227.41,4.62-13.85,7.91-16.12,22.88-16.13,32.89-.03,65.79,.08,98.68-.07,9.2-.04,18.4-1.2,27.59-1.05,7.62,.12,7.84-2.78,5.77-8.94-16.65-49.51-33.06-99.1-49.54-148.66-6.59-19.83-13.24-39.64-19.75-59.5-5.24-15.99,.75-24.8,17.27-24.92,27.36-.2,54.72-.05,82.07-.06Zm70.46,103.95c-7.84,0-13.4,.36-18.9-.09-7.79-.63-8.74,2.27-6.43,9.12,13.63,40.46,27.02,81,40.28,121.57,1.97,6.04,4.89,7.19,10.96,5.58,45.28-12.04,65.9-67.61,38.93-105.98-16.33-23.24-39.22-32.49-64.85-30.2Z"
+            />
+          </svg>
+        </a>
+        <span class="u-font-h5">© 2023 Ryan Arthur Digital LLC</span>
+      </div>
+
+      <div class="flex flex--mobile-column">
+        <!-- mobile links -->
+        <div class="flex flex--nowrap">
+          <!-- github -->
+          <a
+            href="https://github.com/arthurra"
+            class="button button--primary button--icon button--outline u-color-text-title-inverse"
+            aria-label="Github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <!-- dribbble -->
+          <a
+            href="https://dribbble.com/ryan-arthur/shots"
+            class="button button--primary button--icon button--outline u-color-text-title-inverse"
+            aria-label="Dribbble"
+          >
+            <i class="fa-brands fa-dribbble"></i>
+          </a>
+          <!-- codepen -->
+          <a
+            href="https://codepen.io/arthurra"
+            class="button button--primary button--icon button--outline u-color-text-title-inverse"
+            aria-label="Codepen"
+          >
+            <i class="fa-brands fa-codepen"></i>
+          </a>
+        </div>
+        <a
+          href="#"
+          class="button button--outline button--primary u-color-text-title-inverse"
+          >&#8593; Return to top</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
