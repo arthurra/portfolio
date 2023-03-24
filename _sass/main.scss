@@ -1,3 +1,5 @@
+@use "tokens" as *;
+
 .current {
-  color: green;
+  color: $color-primary;
 }
