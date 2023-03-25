@@ -1,9 +1,23 @@
 @use "../tokens" as *;
 
+// Colors
 :root {
   @each $color, $shade in $colors {
     @each $prop, $value in $shade {
       --color-#{$color}-#{$prop}: #{$value};
     }
+  }
+}
+
+// Typogaphy
+:root {
+  --base-fs: 16px;
+
+  @each $scale, $size in $type-scale {
+    --fs-#{$scale}: #{$size};
+  }
+
+  @each $type, $family in $font-families {
+    --ff-#{$type}: #{$family};
   }
 }
