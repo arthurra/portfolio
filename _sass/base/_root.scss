@@ -40,3 +40,30 @@
     --border-radius-#{$scale}: #{$size};
   }
 }
+
+// Elevation
+:root {
+  @each $scale, $value in $elevations {
+    --elevation-#{$scale}: #{$value};
+  }
+
+  @each $scale, $value in $insets {
+    --inset-#{$scale}: #{$value};
+  }
+
+  --box-shadow-400: var(--elevation-400);
+  --box-shadow-700: var(--elevation-700);
+
+  --text-shadow-400: var(--elevation-100);
+  --text-shadow-700: var(--elevation-500);
+}
+
+// Easing
+:root {
+  @each $function, $value in $timing-functions {
+    --ease-#{$function}: #{$value};
+  }
+
+  --transtion-duration: 150ms;
+  --transition-timing-function: var(--ease-cubic);
+}
