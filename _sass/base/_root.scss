@@ -28,3 +28,15 @@
     --space-#{$scale}: #{$size};
   }
 }
+
+// Border
+:root {
+  --border-width: var(--space-100);
+  --border-style: solid;
+  --border-color: currentColor;
+  --border: var(--border-width) var(--border-style) var(--border-color);
+
+  @each $scale, $size in $radius-scale {
+    --border-radius-#{$scale}: #{$size};
+  }
+}
