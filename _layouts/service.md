@@ -6,26 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  {% include head/fonts.html %}
   {% feed_meta %}
   {% seo %}
   {% if jekyll.environment == "production" %}
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-VDD3KQ1PT2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-VDD3KQ1PT2");
-    </script>
-
-{% endif %}
-
+    {% include head/analytics.html %}
+  {% endif %}
 </head>
 <body>
   {% include navigation/navigation.html %}
