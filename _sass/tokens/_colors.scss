@@ -111,4 +111,45 @@ $colors: (
     800: hsl(251, 54%, 28%),
     900: hsl(250, 58%, 21%),
   ),
+  primary: (
+    100: var(--color-purple-100),
+    400: var(--color-purple-400),
+    700: var(--color-purple-700),
+  ),
+  secondary: (
+    100: var(--color-cool-gray-100),
+    400: var(--color-cool-gray-400),
+    700: var(--color-cool-gray-700),
+  ),
+  success: (
+    100: var(--color-green-100),
+    400: var(--color-green-400),
+    700: var(--color-green-700),
+  ),
+  warning: (
+    100: var(--color-yellow-100),
+    400: var(--color-yellow-400),
+    700: var(--color-yellow-700),
+  ),
+  danger: (
+    100: var(--color-red-100),
+    400: var(--color-red-400),
+    700: var(--color-red-700),
+  ),
+  info: (
+    100: var(--color-blue-100),
+    400: var(--color-blue-400),
+    700: var(--color-blue-700),
+  ),
+  text: (
+    300: var(--color-cool-gray-300),
+    400: var(--color-cool-gray-400),
+    500: var(--color-cool-gray-500),
+    600: var(--color-cool-gray-600),
+  ),
+  link: (
+    100: var(--color-primary-100),
+    400: var(--color-primary-400),
+    700: var(--color-primary-700),
+  ),
 );
