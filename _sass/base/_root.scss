@@ -21,3 +21,10 @@
     --ff-#{$type}: #{$family};
   }
 }
+
+// Spacing
+:root {
+  @each $scale, $size in $space-scale {
+    --space-#{$scale}: #{$size};
+  }
+}
