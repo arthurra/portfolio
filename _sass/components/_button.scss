@@ -28,8 +28,8 @@
   }
 
   &:hover {
-    background-color: var(--color-primary-100);
-    color: var(--color-primary-700);
+    background-color: var(--color-primary-400);
+    color: #fff;
     translate: 0 calc(var(--space-025) * -0.5);
   }
 
@@ -37,6 +37,7 @@
     translate: 0;
   }
 
+  // Accent button
   &--secondary {
     color: #fff;
     background-color: var(--color-secondary-700);
@@ -59,10 +60,39 @@
       @include h6;
       content: attr(aria-label);
       position: absolute;
+      top: 0;
+      left: 50%;
+      translate: -50% -175%;
+      rotate: 15deg;
+      text-shadow: var(--text-shadow-400);
+      opacity: 0;
+      transition: all var(--transition-duration)
+        var(--transition-timing-function);
+    }
+
+    &::after {
+      content: url(../images/undraw_arched-arrow.svg);
+      position: absolute;
+      scale: -0.5 0.5;
+      rotate: 0.6turn;
+      top: -70%;
+      left: -10%;
+      filter: drop-shadow(var(--text-shadow-400));
+      opacity: 0;
+      transition: all var(--transition-duration)
+        var(--transition-timing-function);
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        opacity: 1;
+      }
     }
   }
 }
 
+// Hand wave emoji animation for CTAs
 @keyframes wave {
   0% {
     rotate: 0deg;
