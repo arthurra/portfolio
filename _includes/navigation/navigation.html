@@ -1,4 +1,8 @@
-<nav>
-  {% for item in site.data.navigation %} {% include
-  navigation/navigation-link.html %} {% endfor %}
-</nav>
+<header>
+  <div class="logo"></div>
+  <nav class="navbar">
+    {% for item in site.data.navigation %} {% include
+    navigation/navigation-link.html %} {% endfor %}
+  </nav>
+  <button class="button button--secondary">👋 Let's Talk!</button>
+</header>
