@@ -48,7 +48,7 @@
   }
 
   @each $scale, $value in $insets {
-    --inset-#{$scale}: #{$value};
+    --inset-shadow-#{$scale}: #{$value};
   }
 
   --box-shadow-400: var(--elevation-400);
