@@ -1,8 +1,12 @@
 - name: Linkedin
   link: https://www.linkedin.com/in/rarthurra/
+  icon: <i class="fa-brands fa-linkedin"></i>
 - name: Dribbble
   link: https://dribbble.com/ryan-arthur
+  icon: <i class="fa-brands fa-dribbble"></i>
 - name: Codepen
   link: https://codepen.io/arthurra/pens/showcase
+  icon: <i class="fa-brands fa-codepen"></i>
 - name: GitHub
   link: https://github.com/arthurra
+  icon: <i class="fa-brands fa-github"></i>

@@ -17,6 +17,5 @@
   {% include navigation/navigation.html %}
   {{ content }}
   {% include footer/footer.html %}
-
 </body>
 </html>
