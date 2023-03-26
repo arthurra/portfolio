@@ -1,19 +1,14 @@
-@use "../base/typography";
+@use "base/typography" as *;
 
 .button {
-  @extend %h4;
-  font-family: var(--ff-title);
-  font-size: var(--fs-400);
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
-  color: var(--color-text-700);
-  text-transform: uppercase;
+  @include h4;
+  --button-height: var(--space-400);
   appearance: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-050);
-  height: var(--space-400);
+  height: var(--button-height);
   padding: 0 var(--space-200);
   color: var(--color-primary-400);
   background-color: #fff;
@@ -50,6 +45,20 @@
     &:hover {
       color: #fff;
       background-color: var(--color-secondary-800);
+    }
+  }
+
+  // Square button with large icon and a tooltip label for a11y
+  &--icon {
+    position: relative;
+    aspect-ratio: 1;
+    padding: 0;
+    font-size: var(--fs-500);
+
+    &::before {
+      @include h6;
+      content: attr(aria-label);
+      position: absolute;
     }
   }
 }
