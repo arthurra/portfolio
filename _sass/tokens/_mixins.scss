@@ -1,3 +1,5 @@
+@use "../base/typography" as *;
+
 // Media query
 @mixin mq($key) {
   $size: map-get($breakpoints, $key);
@@ -16,5 +18,36 @@
 }
 
 // Tooltip
-@mixin tooltip($label) {
+@mixin tooltip {
+  &::before {
+    @include h6;
+    content: attr(aria-label);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% -175%;
+    rotate: 15deg;
+    text-shadow: var(--text-shadow-400);
+    opacity: 0;
+    transition: all var(--transition-duration) var(--transition-timing-function);
+  }
+
+  &::after {
+    content: url(../images/undraw_arched-arrow.svg);
+    position: absolute;
+    scale: -0.5 0.5;
+    rotate: 0.6turn;
+    top: -70%;
+    left: -10%;
+    filter: drop-shadow(var(--text-shadow-400));
+    opacity: 0;
+    transition: all var(--transition-duration) var(--transition-timing-function);
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 1;
+    }
+  }
 }
