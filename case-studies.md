@@ -1,8 +1,9 @@
 ---
-layout: services
+layout: service
 title: Case Studies
 permalink: /case-studies
 ---
+
 <h1>Case Studies</h1>
 
 <ul>
