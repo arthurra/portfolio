@@ -5,12 +5,14 @@
   padding: var(--space-025);
   background-color: var(--color-cool-gray-025);
   border-radius: var(--border-radius-400);
+  box-shadow: var(--inset-shadow-100);
 
   & > a {
     display: flex;
     height: 100%;
     align-items: center;
     padding: 0 var(--space-100);
+    color: var(--color-text-400);
     border-radius: var(--border-radius-100);
 
     &.current,
