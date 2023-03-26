@@ -102,6 +102,7 @@ a {
   @extend %h4;
   color: var(--color-primary-400);
   text-decoration: none;
+  transition: all var(--transition-duration) var(--transition-timing-function);
 
   &:hover {
     color: var(--color-primary-700);
