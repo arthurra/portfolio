@@ -1,7 +1,20 @@
+// Media query
 @mixin mq($key) {
   $size: map-get($breakpoints, $key);
 
   @media only screen and (min-width: $size) {
     @content;
   }
+}
+
+@mixin h6 {
+  font-family: var(--ff-hand);
+  font-size: var(--fs-300);
+  font-weight: 700;
+  color: var(--color-orange-300);
+  text-transform: uppercase;
+}
+
+// Tooltip
+@mixin tooltip($label) {
 }
