@@ -25,6 +25,11 @@
 
   &__icon {
     font-size: var(--fs-500);
+
+    &--wave {
+      transform-origin: bottom right;
+      animation: wave 2s var(--ease-sine) infinite;
+    }
   }
 
   &:hover {
@@ -46,5 +51,26 @@
       color: #fff;
       background-color: var(--color-secondary-800);
     }
+  }
+}
+
+@keyframes wave {
+  0% {
+    rotate: 0deg;
+  }
+  60% {
+    rotate: 0deg;
+  }
+  70% {
+    rotate: 12deg;
+  }
+  80% {
+    rotate: 0deg;
+  }
+  90% {
+    rotate: 12deg;
+  }
+  100% {
+    translate: 0 0;
   }
 }
