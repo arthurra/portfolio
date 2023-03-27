@@ -23,6 +23,15 @@
   gap: var(--space-150);
 }
 
+// Accent bg
+@mixin accent-bg {
+  border-top: var(--border-width) var(--border-style) #fff;
+  border-bottom: var(--border-width) var(--border-style) #fff;
+  background-image: url(../images/shapes.svg);
+  background-color: var(--color-primary-400);
+  box-shadow: var(--inset-shadow-700), var(--box-shadow-400);
+}
+
 // Tooltip
 @mixin tooltip {
   &::before {
