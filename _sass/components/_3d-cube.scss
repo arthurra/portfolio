@@ -5,6 +5,8 @@
   margin-left: auto;
   margin-right: var(--space-300);
   transform: skewY(-20deg);
+  filter: drop-shadow(var(--box-shadow-400));
+  animation: orbit 20s var(--transition-timing-function) alternate infinite;
 }
 
 .cube__unit-layer {
@@ -29,7 +31,9 @@
   gap: var(--space-200);
   translate: calc(calc(var(--space-500) * -1) * var(--x))
     calc(calc(var(--space-400) * -1) * var(--y));
-  animation: hue-rotate 5s calc(var(--x) * 1s) linear alternate infinite;
+  animation: hue-rotate 5s calc(var(--x) * 1s) linear alternate infinite,
+    orbit 10s calc(var(--x) * 2s) var(--transition-timing-function) alternate
+      both infinite;
 }
 
 .cube__unit {
@@ -39,9 +43,13 @@
   aspect-ratio: 1;
   background: var(--color-primary-200);
   z-index: var(--i);
-  filter: drop-shadow(var(--box-shadow-400));
+  filter: drop-shadow(var(--text-shadow-700));
   transition: all calc(var(--transition-duration) * 4)
     var(--transition-timing-function);
+  animation: grow 5s calc(var(--i) * 1s) var(--transition-timing-function)
+      alternate infinite,
+    orbit 10s calc(var(--i) * 2s) var(--transition-timing-function) alternate
+      both infinite;
 
   &::before {
     content: "";
@@ -93,5 +101,23 @@
   }
   100% {
     filter: hue-rotate(20deg);
+  }
+}
+
+@keyframes grow {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.2;
+  }
+}
+
+@keyframes orbit {
+  0% {
+    rotate: -5deg;
+  }
+  100% {
+    rotate: 5deg;
   }
 }
