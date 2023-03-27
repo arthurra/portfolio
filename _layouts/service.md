@@ -15,7 +15,9 @@
 </head>
 <body>
   {% include navigation/navigation.html %}
-  {{ content }}
+  <main>
+    {{ content }}
+  </main>
   {% include footer/footer.html %}
 </body>
 </html>
