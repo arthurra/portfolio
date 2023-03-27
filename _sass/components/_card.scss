@@ -1,4 +1,5 @@
 .card {
+  padding: var(--space-300);
   background-color: #fff;
   border-radius: var(--border-radius-700);
   box-shadow: var(--box-shadow-700);
@@ -6,4 +7,7 @@
 
 .card__body {
   padding: var(--space-300);
+  color: var(--color-primary-700);
+  background-color: var(--color-primary-025);
+  border-radius: var(--border-radius-400);
 }
