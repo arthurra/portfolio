@@ -1,0 +1,97 @@
+.cube {
+  position: relative;
+  top: -10%;
+  left: -35%;
+  margin-left: auto;
+  margin-right: var(--space-300);
+  transform: skewY(-20deg);
+}
+
+.cube__unit-layer {
+  position: relative;
+  z-index: 2;
+
+  &:nth-child(2) {
+    z-index: 1;
+    translate: calc(var(--space-400) * -1) calc(var(--space-400) * -1);
+  }
+
+  &:nth-child(3) {
+    z-index: 3;
+    translate: var(--space-400) var(--space-400);
+  }
+}
+
+.cube__unit-column {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+  translate: calc(calc(var(--space-500) * -1) * var(--x))
+    calc(calc(var(--space-400) * -1) * var(--y));
+  animation: hue-rotate 5s calc(var(--x) * 1s) linear alternate infinite;
+}
+
+.cube__unit {
+  position: relative;
+  display: inline-block;
+  width: var(--space-300);
+  aspect-ratio: 1;
+  background: var(--color-primary-200);
+  z-index: var(--i);
+  filter: drop-shadow(var(--box-shadow-400));
+  transition: all calc(var(--transition-duration) * 4)
+    var(--transition-timing-function);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(var(--space-250) * -1);
+    width: var(--space-250);
+    height: 100%;
+    background-color: var(--color-primary-300);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: all calc(var(--transition-duration) * 4)
+      var(--transition-timing-function);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--space-250) * -1);
+    left: 0;
+    height: var(--space-250);
+    width: 100%;
+    background-color: var(--color-primary-075);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: all calc(var(--transition-duration) * 4)
+      var(--transition-timing-function);
+  }
+
+  &:hover {
+    transition-duration: 0s;
+    background-color: var(--color-primary-500);
+    filter: drop-shadow(0 0 var(--space-200) var(--color-primary-700));
+
+    &::before {
+      transition-duration: 0s;
+      background-color: var(--color-primary-700);
+    }
+
+    &::after {
+      transition-duration: 0s;
+      background-color: var(--color-primary-300);
+    }
+  }
+}
+
+@keyframes hue-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(20deg);
+  }
+}
