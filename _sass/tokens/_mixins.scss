@@ -11,8 +11,10 @@
 
 // Container
 @mixin container {
+  width: 100%;
   max-width: 75rem;
   margin: 0 auto;
+  padding: var(--space-200) 0;
 }
 
 // Flex
