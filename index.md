@@ -19,7 +19,7 @@ layout: service
         <div class="card__body">
           <div class="grid">
             <div>
-              <p class="u-mb-300">Over the past ten years, I've helped to combine my clients' vision of the future with the perspectives of their users to create quality, handcrafted digital products.</p>
+              <p class="u-mb-300">Over the past ten years, I've helped to combine my clients' vision of the future with the perspectives of their users to create  stunning, tailored experiences that are accessible to everyone on the web.</p>
               <a href="#projects" class="button">
                 <span class="button__icon button__icon--bounce-down">👇</span>
                 See my work
