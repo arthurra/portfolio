@@ -26,6 +26,10 @@
       transform-origin: bottom right;
       animation: wave 2s var(--ease-sine) infinite;
     }
+
+    &--bounce {
+      animation: bounce 2s var(--ease-sine) infinite;
+    }
   }
 
   &:hover {
@@ -76,6 +80,28 @@
   }
   90% {
     rotate: 12deg;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+
+// Hand point emoji animation for return to top button
+@keyframes bounce {
+  0% {
+    translate: 0 0;
+  }
+  60% {
+    translate: 0 0;
+  }
+  70% {
+    translate: 0 -25%;
+  }
+  80% {
+    translate: 0 0;
+  }
+  90% {
+    translate: 0 -25%;
   }
   100% {
     translate: 0 0;

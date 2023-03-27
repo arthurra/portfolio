@@ -1,3 +1,5 @@
+@use "base/typography" as *;
+
 .logo {
   display: flex;
   align-items: center;
@@ -19,6 +21,11 @@
   &__type {
     font-size: var(--fs-500);
     line-height: 0.85;
+  }
+
+  &__copyright {
+    @include small-text;
+    align-self: end;
   }
 
   &:hover &__mark {
