@@ -3,3 +3,7 @@
 .flex {
   @include flex;
 }
+
+.flex--between {
+  justify-content: space-between;
+}
