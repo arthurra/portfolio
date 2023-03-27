@@ -47,15 +47,10 @@ illustration: cube
     <div class="container">
       <h2>Services</h2>
       <p class="u-mb-600">I make growing your product easy at every stage</p>
-      <div class="grid">
-        <div class="graphic-card">
-          <div class="graphic-card__illustration">
-            <img src="assets/images/service-illustrations/ui-service-illustration.png" alt="Layers">
-          </div>
-          <span class="graphic-card__title">UI Design</span>
-        </div>
-        <div></div>
-        <div></div>
+      <div class="grid grid--gap-200">
+        {% for service in site.data.services %}
+          {% include service-card.html %}
+        {% endfor %}
       </div>
     </div>
   </section>
