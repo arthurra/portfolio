@@ -1,3 +1,5 @@
+@use "../base/typography" as *;
+
 .graphic-card {
   position: relative;
   display: flex;
@@ -9,11 +11,103 @@
   background-color: var(--color-secondary-700);
   border-radius: var(--border-radius-700);
   box-shadow: var(--box-shadow-700);
-}
 
-.graphic-card__illustration {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  translate: var(--space-150) -50%;
+  &__illustration {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    translate: var(--space-150) -50%;
+  }
+
+  &__label {
+    @include h6;
+    position: absolute;
+    text-shadow: var(--text-shadow-700);
+
+    &::before {
+      position: absolute;
+      filter: drop-shadow(var(--text-shadow-700));
+    }
+
+    &:nth-child(1) {
+      top: 0;
+      left: var(--space-500);
+      translate: 0 -150%;
+      rotate: -10deg;
+
+      &::before {
+        content: url(../images/arrows/arrow-1-odd.svg);
+        translate: -125% 0;
+
+        .graphic-card:nth-child(even) & {
+          content: url(../images/arrows/arrow-1-even.svg);
+          translate: -155% 5%;
+          rotate: 30deg;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      top: 0;
+      right: var(--space-300);
+      translate: 0 -100%;
+      rotate: 12deg;
+
+      &::before {
+        content: url(../images/arrows/arrow-2-odd.svg);
+        translate: 30% -25%;
+
+        .graphic-card:nth-child(even) & {
+          content: url(../images/arrows/arrow-2-even.svg);
+          translate: 15% 30%;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      top: var(--space-500);
+      rotate: -10deg;
+
+      &::before {
+        content: url(../images/arrows/arrow-3-odd.svg);
+        translate: -125% 0;
+
+        .graphic-card:nth-child(even) & {
+          content: url(../images/arrows/arrow-3-even.svg);
+          translate: -45% 10%;
+          rotate: 20deg;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      bottom: 0;
+      right: var(--space-500);
+      translate: 0 160%;
+      rotate: -8deg;
+
+      &::before {
+        content: url(../images/arrows/arrow-4-even.svg);
+        translate: -30% -70%;
+        rotate: -30deg;
+
+        .graphic-card:nth-child(even) & {
+          content: url(../images/arrows/arrow-4-odd.svg);
+          translate: -35% -90%;
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      bottom: 0;
+      left: var(--space-300);
+      translate: 0 200%;
+      rotate: -20deg;
+
+      &::before {
+        content: url(../images/arrows/arrow-4-odd.svg);
+        translate: 0 -100%;
+      }
+    }
+  }
 }
