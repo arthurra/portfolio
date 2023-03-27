@@ -26,6 +26,7 @@
   &__copyright {
     @include small-text;
     align-self: end;
+    color: #fff;
   }
 
   &:hover &__mark {
