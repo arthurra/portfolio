@@ -1,0 +1,9 @@
+.card {
+  background-color: #fff;
+  border-radius: var(--border-radius-700);
+  box-shadow: var(--box-shadow-700);
+}
+
+.card__body {
+  padding: var(--space-150);
+}
