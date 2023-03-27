@@ -12,6 +12,7 @@ illustration: cube
 ---
 
 <article>
+  <!-- Hero Header -->
   <header>
     <div class="container">
       <div class="card">
@@ -40,5 +41,22 @@ illustration: cube
       </div>
     </div>
   </header>
-  <section></section>
+
+  <!-- Services -->
+  <section class="section section--accent">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="u-mb-600">I make growing your product easy at every stage</p>
+      <div class="grid">
+        <div class="graphic-card">
+          <div class="graphic-card__illustration">
+            <img src="assets/images/service-illustrations/ui-service-illustration.png" alt="Layers">
+          </div>
+          <span class="graphic-card__title">UI Design</span>
+        </div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </section>
 </article>

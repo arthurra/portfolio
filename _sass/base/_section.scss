@@ -1,0 +1,17 @@
+@use "../tokens/mixins" as *;
+
+.section {
+  &--accent {
+    @include accent-bg;
+
+    & .container > :is(h1, h2, h3, h4) {
+      color: #fff;
+      text-shadow: var(--text-shadow-700);
+    }
+
+    & .container > p {
+      color: var(--color-primary-050);
+      text-shadow: var(--text-shadow-700);
+    }
+  }
+}

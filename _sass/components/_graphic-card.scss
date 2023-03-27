@@ -1,0 +1,19 @@
+.graphic-card {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  min-height: 14rem;
+  padding: var(--space-150);
+  color: var(--color-cool-gray-050);
+  background-color: var(--color-secondary-700);
+  border-radius: var(--border-radius-700);
+  box-shadow: var(--box-shadow-700);
+}
+
+.graphic-card__illustration {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: var(--space-150) -50%;
+}
