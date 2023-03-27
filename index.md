@@ -26,59 +26,7 @@ layout: service
               </a>
             </div>
             <div class="grid">
-              <div class="cube">
-                <div class="cube__unit-layer">
-                  <div class="cube__unit-column" style="--x:-1;--y:0;">
-                    <span class="cube__unit" style="--i:3;"></span>
-                    <span class="cube__unit" style="--i:2;"></span>
-                    <span class="cube__unit" style="--i:1;"></span>
-                  </div>
-                  <div class="cube__unit-column" style="--x:0;--y:0;">
-                    <span class="cube__unit" style="--i:3;"></span>
-                    <span class="cube__unit" style="--i:2;"></span>
-                    <span class="cube__unit" style="--i:1;"></span>
-                  </div>
-                  <div class="cube__unit-column" style="--x:1;--y:0;">
-                    <span class="cube__unit" style="--i:3;"></span>
-                    <span class="cube__unit" style="--i:2;"></span>
-                    <span class="cube__unit" style="--i:1;"></span>
-                  </div>
-                </div>
-                <div class="cube__unit-layer">
-                  <div class="cube__unit-column" style="--x:-1;--y:0;">
-                    <span class="cube__unit" style="--i:3;"></span>
-                    <span class="cube__unit" style="--i:2;"></span>
-                    <span class="cube__unit" style="--i:1;"></span>
-                  </div>
-                  <div class="cube__unit-column" style="--x:0;--y:0;">
-                    <span class="cube__unit" style="--i:3;"></span>
-                    <span class="cube__unit" style="--i:2;"></span>
-                    <span class="cube__unit" style="--i:1;"></span>
-                  </div>
-                  <div class="cube__unit-column" style="--x:1;--y:0;">
-                    <span class="cube__unit" style="--i:3;"></span>
-                    <span class="cube__unit" style="--i:2;"></span>
-                    <span class="cube__unit" style="--i:1;"></span>
-                  </div>
-                </div>
-                <div class="cube__unit-layer">
-                  <div class="cube__unit-column" style="--x:-1;--y:0;">
-                    <span class="cube__unit" style="--i:3;"></span>
-                    <span class="cube__unit" style="--i:2;"></span>
-                    <span class="cube__unit" style="--i:1;"></span>
-                  </div>
-                  <div class="cube__unit-column" style="--x:0;--y:0;">
-                    <span class="cube__unit" style="--i:3;"></span>
-                    <span class="cube__unit" style="--i:2;"></span>
-                    <span class="cube__unit" style="--i:1;"></span>
-                  </div>
-                  <div class="cube__unit-column" style="--x:1;--y:0;">
-                    <span class="cube__unit" style="--i:3;"></span>
-                    <span class="cube__unit" style="--i:2;"></span>
-                    <span class="cube__unit" style="--i:1;"></span>
-                  </div>
-                </div>
-              </div>
+              {% include cube.html %}
             </div>
           </div>
         </div>
