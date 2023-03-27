@@ -27,8 +27,12 @@
       animation: wave 2s var(--ease-sine) infinite;
     }
 
-    &--bounce {
-      animation: bounce 2s var(--ease-sine) infinite;
+    &--bounce-down {
+      animation: bounce-down 2s var(--ease-sine) infinite;
+    }
+
+    &--bounce-up {
+      animation: bounce-up 2s var(--ease-sine) infinite;
     }
   }
 
@@ -86,8 +90,30 @@
   }
 }
 
-// Hand point emoji animation for return to top button
-@keyframes bounce {
+// Hand point down emoji animation for scroll down to content button
+@keyframes bounce-down {
+  0% {
+    translate: 0 0;
+  }
+  60% {
+    translate: 0 0;
+  }
+  70% {
+    translate: 0 25%;
+  }
+  80% {
+    translate: 0 0;
+  }
+  90% {
+    translate: 0 25%;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+
+// Hand point up emoji animation for return to top button
+@keyframes bounce-up {
   0% {
     translate: 0 0;
   }
