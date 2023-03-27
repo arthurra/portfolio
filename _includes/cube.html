@@ -1,0 +1,13 @@
+<div class="cube">
+  {% for l in (1..3) %}
+  <div class="cube__unit-layer">
+    {% for x in (-1..1) %}
+    <div class="cube__unit-column" style="--x: {{x}}; --y: 0">
+      {% for i in (1..3) reversed %}
+      <span class="cube__unit" style="--i: {{i}}"></span>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
