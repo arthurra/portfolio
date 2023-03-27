@@ -1,0 +1,8 @@
+@use "../tokens/mixins" as *;
+
+.footer {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-200) 0;
+}

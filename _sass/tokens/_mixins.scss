@@ -9,12 +9,16 @@
   }
 }
 
-@mixin h6 {
-  font-family: var(--ff-hand);
-  font-size: var(--fs-300);
-  font-weight: 700;
-  color: var(--color-orange-300);
-  text-transform: uppercase;
+// Container
+@mixin container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+// Flex
+@mixin flex {
+  display: flex;
+  gap: var(--space-100);
 }
 
 // Tooltip
