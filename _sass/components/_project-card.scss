@@ -1,0 +1,22 @@
+@use "../base/typography" as *;
+
+.project-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-250);
+}
+
+.project-card {
+  @include body-text;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  aspect-ratio: 1;
+  padding: var(--space-150);
+  color: var(--color-cool-gray-050);
+  background-color: var(--color-secondary-700);
+  border-radius: var(--border-radius-700);
+  box-shadow: var(--box-shadow-700);
+  transition: all var(--transition-duration) var(--transition-timing-function);
+}
