@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-250);
+  grid-auto-flow: dense;
 }
 
 .project-card {
@@ -38,6 +39,16 @@
   }
 
   &--large {
+    aspect-ratio: unset;
+
+    &[data-aspect="tall"] {
+      grid-row: span 2;
+    }
+
+    &[data-aspect="wide"] {
+      grid-column: span 2;
+    }
+
     .tag {
       color: var(--color-text-700);
     }
@@ -59,5 +70,10 @@
         }
       }
     }
+  }
+
+  &--featured {
+    grid-column: span 2;
+    grid-row: span 2;
   }
 }
