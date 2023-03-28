@@ -16,7 +16,7 @@
   align-items: end;
   justify-content: end;
   gap: var(--space-100);
-  aspect-ratio: 1;
+  aspect-ratio: 10/8;
   padding: var(--space-150);
   background-color: var(--color-secondary-700);
   border-radius: var(--border-radius-700);
@@ -36,6 +36,31 @@
   &__illustration {
     position: absolute;
     left: calc(var(--space-300) * -1);
+  }
+
+  &__thumbnail {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    rotate: 30deg;
+    border: var(--border-width) var(--border-style) var(--color-cool-gray-050);
+    border-radius: var(--border-radius-700);
+    box-shadow: var(--box-shadow-700);
+
+    .project-card--large[data-aspect="tall"] & {
+      translate: 50% 25%;
+    }
+
+    .project-card--large[data-aspect="wide"] & {
+      translate: 80% -10%;
+    }
+
+    .project-card--featured & {
+      top: 100%;
+      left: 100%;
+      rotate: -30deg;
+      translate: -75% -85%;
+    }
   }
 
   &--large {

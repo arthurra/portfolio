@@ -1,20 +1,19 @@
-{% assign file-name = project.name | downcase | split: " " | join: "-" | append:
- "-illustration.svg" %}
+{% assign file-name = project.name | downcase | split: " " | join: "-" %}
 
 <a
   href=""
   class="project-card project-card--{{project.size}}"
   data-color="{{project.color}}"
-  data-aspect="{{project.aspect}}">
+  {% if project.aspect %}data-aspect="{{project.aspect}}"{% endif %}>
   {% if project.size == "small" %}
     <img
-      src="assets/images/projects/illustrations/{{ file-name }}"
+      src="assets/images/projects/illustrations/{{ file-name }}-illustration.svg"
       alt=""
       role="presentation"
       class="project-card__illustration" />
   {% else %}
     <img
-      src="assets/images/projects/thumbnails/{{ file-name }}"
+      src="assets/images/projects/thumbnails/{{ file-name }}-thumbnail.png"
       alt=""
       role="presentation"
       class="project-card__thumbnail" />
