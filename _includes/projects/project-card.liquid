@@ -1,24 +1,29 @@
+{% assign file-name = project.name | downcase | split: " " | join: "-" | append:
+ "-illustration.svg" %}
+
 <a
   href=""
   class="project-card project-card--{{project.size}}"
   data-color="{{project.color}}">
   {% if project.size == "small" %}
     <img
-      src="assets/images/projects/illustrations/..."
+      src="assets/images/projects/illustrations/{{ file-name }}"
       alt=""
       role="presentation"
       class="project-card__illustration" />
   {% else %}
     <img
-      src="assets/images/projects/thumbnails/..."
+      src="assets/images/projects/thumbnails/{{ file-name }}"
       alt=""
       role="presentation"
       class="project-card__thumbnail" />
   {% endif %}
   {% if project.size != "small" %}
-    {% for tag in project.tags %}
-      <span class="tag">{{ tag.name }}</span>
-    {% endfor %}
+    <div class="tag-container">
+      {% for tag in project.tags %}
+        <span class="tag">{{ tag.name }}</span>
+      {% endfor %}
+    </div>
   {% endif %}
   <span class="project-card__title">{{ project.name }}</span>
 </a>
