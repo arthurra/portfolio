@@ -97,8 +97,27 @@
     }
   }
 
+  &:not(&--small) {
+    border: var(--border-width) var(--border-style) #fff;
+    box-shadow: var(--inset-shadow-700), var(--box-shadow-700);
+  }
+
   &--featured {
     grid-column: span 2;
     grid-row: span 2;
+    align-items: start;
+    justify-content: start;
+    padding: var(--space-200);
+    background-image: url(../images/topo-contour.svg);
+    background-blend-mode: overlay;
+
+    .project-card__title {
+      @include h2;
+      font-size: var(--fs-900);
+      line-height: 0.9;
+      text-align: start;
+      text-shadow: var(--text-shadow-700);
+      color: #fff;
+    }
   }
 }
