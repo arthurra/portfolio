@@ -14,10 +14,10 @@
   {% endif %}
 </head>
 <body>
-  {% include navigation/navigation.html %}
+  {% include navigation/navigation.liquid %}
   <main>
     {{ content }}
   </main>
-  {% include footer/footer.html %}
+  {% include footer/footer.liquid %}
 </body>
 </html>

@@ -35,7 +35,7 @@ services-tagline: I make growing your product easy at every stage
               </a>
             </div>
             <div class="grid">
-              {% include illustrations/{{page.illustration}}.html %}
+              {% include illustrations/{{page.illustration}}.liquid %}
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@ services-tagline: I make growing your product easy at every stage
       <p class="u-mb-600">{{ page.services-tagline }}</p>
       <div class="grid grid--gap-200">
         {% for service in site.data.services %}
-          {% include service-card.html %}
+          {% include service-card.liquid %}
         {% endfor %}
       </div>
     </div>
@@ -59,8 +59,8 @@ services-tagline: I make growing your product easy at every stage
   <!-- Projects -->
   <section class="section">
     <div class="container">
-      {% include projects/table-of-contents.html %}
-      {% include projects/project-card-grid.html %}
+      {% include projects/table-of-contents.liquid %}
+      {% include projects/project-card-grid.liquid %}
     </div>
   </section>
 </article>
