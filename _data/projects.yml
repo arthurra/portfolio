@@ -1,3 +1,11 @@
+- name: City Transit App
+  icon: 🚦
+  color: blue
+  tags:
+    - name: Transportation
+  illustration:
+  visible: true
+  size: small
 - name: Ground Control Station
   icon: 🛩
   color: green
@@ -15,35 +23,12 @@
   illustration:
   visible: true
   size: large
+  aspect: tall
 - name: Work Order Management
   icon: 📦
   color: red
   tags:
     - name: Manufacturing
-  illustration:
-  visible: true
-  size: small
-- name: City Transit App
-  icon: 🚦
-  color: blue
-  tags:
-    - name: Transportation
-  illustration:
-  visible: true
-  size: small
-- name: Banking Compliance Tracker
-  icon: 📋
-  color: violet
-  tags:
-    - name: Finance
-  illustration:
-  visible: true
-  size: large
-- name: Sales Analysis Tool
-  icon: 🧮
-  color: orange
-  tags:
-    - name: Accounting
   illustration:
   visible: true
   size: small
@@ -55,3 +40,21 @@
   illustration:
   visible: true
   size: small
+
+- name: Sales Analysis Tool
+  icon: 🧮
+  color: orange
+  tags:
+    - name: Accounting
+  illustration:
+  visible: true
+  size: small
+- name: Banking Compliance Tracker
+  icon: 📋
+  color: violet
+  tags:
+    - name: Finance
+  illustration:
+  visible: true
+  size: large
+  aspect: wide
