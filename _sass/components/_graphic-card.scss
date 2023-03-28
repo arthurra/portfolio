@@ -1,6 +1,7 @@
 @use "../base/typography" as *;
 
 .graphic-card {
+  @include body-text;
   position: relative;
   display: flex;
   align-items: end;

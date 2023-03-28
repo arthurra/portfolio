@@ -1,12 +1,16 @@
 {% assign file-name = service.name | downcase | split: " " | join: "-" | append:
- "-service-illustration.svg" %}
+"-service-illustration.svg" %}
 
 <div class="graphic-card">
   {% for tag in service.tags %}
-    <span class="graphic-card__label">{{ tag.name }}</span>
+  <span class="graphic-card__label">{{ tag.name }}</span>
   {% endfor %}
   <div class="graphic-card__illustration">
-    <img src="assets/images/service-illustrations/{{file-name}}" alt="Layers" />
+    <img
+      src="assets/images/service-illustrations/{{file-name}}"
+      alt=""
+      role="presentation"
+    />
   </div>
   <span class="graphic-card__title">{{ service.name }}</span>
 </div>

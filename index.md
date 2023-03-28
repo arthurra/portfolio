@@ -60,6 +60,35 @@ services-tagline: I make growing your product easy at every stage
   <section class="section">
     <div class="container">
       {% include projects/table-of-contents.html %}
+
+      <div class="project-card-container">
+        {% for project in site.data.projects %}
+          <a
+            href=""
+            class="project-card project-card--{{project.size}}"
+            data-color="{{project.color}}">
+            {% if project.size == "small" %}
+              <img
+                src="assets/images/projects/illustrations/..."
+                alt=""
+                role="presentation"
+                class="project-card__illustration" />
+            {% else %}
+              <img
+                src="assets/images/projects/thumbnails/..."
+                alt=""
+                role="presentation"
+                class="project-card__thumbnail" />
+            {% endif %}
+            {% if project.size != "small" %}
+              {% for tag in project.tags %}
+                <span class="tag">{{ tag.name }}</span>
+              {% endfor %}
+            {% endif %}
+            <span class="project-card__title">{{ project.name }}</span>
+          </a>
+        {% endfor %}
+      </div>
     </div>
   </section>
 </article>

@@ -1,50 +1,57 @@
 - name: Ground Control Station
   icon: 🛩
+  color: green
   tags:
     - name: Aviation
     - name: <i class="fa-solid fa-trophy-star"></i> Competition Winner
   illustration:
-  featured: true
   visible: true
+  size: featured
 - name: Construction Marketplace
   icon: 🏗
+  color: yellow
   tags:
     - name: E-commerce
   illustration:
-  featured: false
   visible: true
+  size: large
 - name: Work Order Management
   icon: 📦
+  color: red
   tags:
     - name: Manufacturing
   illustration:
-  featured: false
   visible: true
+  size: small
 - name: City Transit App
   icon: 🚦
+  color: blue
   tags:
     - name: Transportation
   illustration:
-  featured: false
   visible: true
+  size: small
 - name: Banking Compliance Tracker
   icon: 📋
+  color: purple
   tags:
     - name: Finance
   illustration:
-  featured: false
   visible: true
+  size: large
 - name: Sales Analysis Tool
   icon: 🧮
+  color: orange
   tags:
-    - Accounting
+    - name: Accounting
   illustration:
-  featured: false
   visible: true
+  size: small
 - name: Blockchain Explorer
   icon: 🔭
+  color: purple
   tags:
     - name: Technology
   illustration:
-  featured: false
   visible: true
+  size: small
