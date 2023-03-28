@@ -1,0 +1,50 @@
+- name: Ground Control Station
+  icon: 🛩
+  tags:
+    - name: Aviation
+    - name: <i class="fa-solid fa-trophy-star"></i> Competition Winner
+  illustration:
+  featured: true
+  visible: true
+- name: Construction Marketplace
+  icon: 🏗
+  tags:
+    - name: E-commerce
+  illustration:
+  featured: false
+  visible: true
+- name: Work Order Management
+  icon: 📦
+  tags:
+    - name: Manufacturing
+  illustration:
+  featured: false
+  visible: true
+- name: City Transit App
+  icon: 🚦
+  tags:
+    - name: Transportation
+  illustration:
+  featured: false
+  visible: true
+- name: Banking Compliance Tracker
+  icon: 📋
+  tags:
+    - name: Finance
+  illustration:
+  featured: false
+  visible: true
+- name: Sales Analysis Tool
+  icon: 🧮
+  tags:
+    - Accounting
+  illustration:
+  featured: false
+  visible: true
+- name: Blockchain Explorer
+  icon: 🔭
+  tags:
+    - name: Technology
+  illustration:
+  featured: false
+  visible: true

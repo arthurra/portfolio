@@ -9,6 +9,7 @@ tags:
 title: Digital Product Design
 description: Over the past ten years, I've helped to combine my clients' vision of the future with the perspectives of their users to create  stunning, tailored experiences that are accessible to everyone on the web
 illustration: cube
+services-tagline: I make growing your product easy at every stage
 ---
 
 <article>
@@ -46,12 +47,19 @@ illustration: cube
   <section class="section section--accent">
     <div class="container">
       <h2>Services</h2>
-      <p class="u-mb-600">I make growing your product easy at every stage</p>
+      <p class="u-mb-600">{{ page.services-tagline }}</p>
       <div class="grid grid--gap-200">
         {% for service in site.data.services %}
           {% include service-card.html %}
         {% endfor %}
       </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section">
+    <div class="container">
+      {% include projects/table-of-contents.html %}
     </div>
   </section>
 </article>

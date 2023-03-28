@@ -1,9 +1,15 @@
-body {
+@mixin body-text {
   font-family: var(--ff-text);
   font-size: var(--fs-400);
   font-weight: 500;
   color: var(--color-text-400);
   line-height: 1.6;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+body {
+  @include body-text;
   text-rendering: optimizeSpeed;
 }
 
