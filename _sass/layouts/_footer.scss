@@ -3,4 +3,9 @@
 .footer {
   @include accent-bg;
   border-bottom: none;
+  padding-bottom: var(--space-300);
+
+  .container {
+    padding-bottom: var(--space-300);
+  }
 }
