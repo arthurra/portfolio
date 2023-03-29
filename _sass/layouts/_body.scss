@@ -1,5 +1,23 @@
 body {
+  position: relative;
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+  background-color: #fff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/noise.svg);
+    background-blend-mode: luminosity;
+    background-size: 800px;
+    opacity: 33%;
+    z-index: 0;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
 }
