@@ -1,7 +1,7 @@
-{% assign file-name = case-study.name | downcase | split: " " | join: "-" %}
+{% assign file-name = case-study.title | downcase | split: " " | join: "-" %}
 
 <a
-  href=""
+  href="{{case-study.url}}"
   class="case-study-card case-study-card--{{case-study.size}}"
   data-color="{{case-study.color}}"
   {% if case-study.aspect %}data-aspect="{{case-study.aspect}}"{% endif %}>
@@ -25,5 +25,5 @@
       {% endfor %}
     </div>
   {% endif %}
-  <span class="case-study-card__title">{{ case-study.name }}</span>
+  <span class="case-study-card__title">{{ case-study.title }}</span>
 </a>
