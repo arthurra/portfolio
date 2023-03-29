@@ -1,0 +1,25 @@
+@use "../base/typography" as *;
+
+.cta-card {
+  position: relative;
+
+  .card__header {
+    display: grid;
+    place-items: center;
+  }
+
+  .card__body {
+    margin-top: calc(var(--space-500) * -1);
+  }
+
+  &__accent-text {
+    @include h1;
+    font-size: var(--fs-800);
+    line-height: 0.8;
+    color: var(--color-primary-400);
+  }
+
+  .button {
+    padding: 0 var(--space-400);
+  }
+}
