@@ -1,23 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  {% include head/fonts.html %}
-  {% feed_meta %}
-  {% seo %}
-  {% if jekyll.environment == "production" %}
-    {% include head/analytics.html %}
-  {% endif %}
-</head>
-<body>
-  {% include navigation/navigation.liquid %}
-  <main>
-    {{ content }}
-  </main>
-  {% include footer/footer.liquid %}
-</body>
-</html>
+---
+layout: shared
+---
+
+<article>
+  <!-- Hero Header -->
+ {{content}}
+
+  <!-- Services -->
+  <section class="section section--accent">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="u-mb-600">{{ page.services-tagline }}</p>
+      <div class="grid grid--gap-200">
+        {% for service in site.data.services %}
+          {% include service-card.liquid %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section">
+    <div class="container">
+      {% include case-studies/table-of-contents.liquid %}
+      {% include case-studies/case-study-card-grid.liquid %}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="card cta-card">
+        <header class="card__header grid">
+          <div>
+
+            <h3>
+              Ready to <br>
+              <span class="cta-card__accent-text">level up</span>
+              <br>
+              your product or idea?
+            </h3>
+          </div>
+          <div>
+            {% include cta-button.liquid %}
+
+          </div>
+        </header>
+        <div class="card__body"></div>
+      </div>
+    </div>
+
+  </section>
+</article>
