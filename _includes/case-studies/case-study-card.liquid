@@ -1,0 +1,29 @@
+{% assign file-name = case-study.name | downcase | split: " " | join: "-" %}
+
+<a
+  href=""
+  class="case-study-card case-study-card--{{case-study.size}}"
+  data-color="{{case-study.color}}"
+  {% if case-study.aspect %}data-aspect="{{case-study.aspect}}"{% endif %}>
+  {% if case-study.size == "small" %}
+    <img
+      src="assets/images/case-studies/illustrations/{{ file-name }}-illustration.svg"
+      alt=""
+      role="presentation"
+      class="case-study-card__illustration" />
+  {% else %}
+    <img
+      src="assets/images/case-studies/thumbnails/{{ file-name }}-thumbnail.png"
+      alt=""
+      role="presentation"
+      class="case-study-card__thumbnail" />
+  {% endif %}
+  {% if case-study.size != "small" %}
+    <div class="tag-container">
+      {% for tag in case-study.tags %}
+        <span class="tag">{{ tag.name }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+  <span class="case-study-card__title">{{ case-study.name }}</span>
+</a>

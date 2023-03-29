@@ -1,14 +1,14 @@
 @use "../tokens/colors" as *;
 @use "../base/typography" as *;
 
-.project-card-container {
+.case-study-card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-250);
   grid-auto-flow: dense;
 }
 
-.project-card {
+.case-study-card {
   @include body-text;
   position: relative;
   display: flex;
@@ -55,15 +55,15 @@
     border-radius: var(--border-radius-700);
     box-shadow: var(--box-shadow-700);
 
-    .project-card--large[data-aspect="tall"] & {
+    .case-study-card--large[data-aspect="tall"] & {
       translate: 50% 25%;
     }
 
-    .project-card--large[data-aspect="wide"] & {
+    .case-study-card--large[data-aspect="wide"] & {
       translate: 80% -10%;
     }
 
-    .project-card--featured & {
+    .case-study-card--featured & {
       top: 100%;
       left: 100%;
       rotate: -30deg;
@@ -119,7 +119,7 @@
     background-image: url(../images/topo-contour.svg);
     background-blend-mode: overlay;
 
-    .project-card__title {
+    .case-study-card__title {
       @include h2;
       font-size: var(--fs-900);
       line-height: 0.9;

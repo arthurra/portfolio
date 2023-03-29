@@ -1,0 +1,13 @@
+<div class="card u-mb-600">
+  <header class="card__header u-mb-300">
+    <h3>Case Studies</h3>
+  </header>
+  <ul class="emoji-list">
+    {% for case-study in site.data.case-studies %}
+      <li class="emoji-list__item">
+        <span class="emoji-list__icon">{{ case-study.icon }}</span>
+        <a href="" class="emoji-list__title">{{ case-study.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
