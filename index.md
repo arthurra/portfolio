@@ -63,4 +63,28 @@ services-tagline: I make growing your product easy at every stage
       {% include projects/project-card-grid.liquid %}
     </div>
   </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="card cta-card">
+        <header class="card__header grid">
+          <div>
+
+            <h3>
+              Ready to <br>
+              <span class="cta-card__accent-text">level up</span>
+              <br>
+              your product or idea?
+            </h3>
+          </div>
+          <div>
+            {% include cta-button.liquid %}
+
+          </div>
+        </header>
+        <div class="card__body"></div>
+      </div>
+    </div>
+  </section>
 </article>
