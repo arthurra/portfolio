@@ -18,6 +18,14 @@ body {
 
   & > * {
     position: relative;
+  }
+
+  & > header,
+  & > footer {
     z-index: 1;
+  }
+
+  & > main {
+    z-index: 2;
   }
 }

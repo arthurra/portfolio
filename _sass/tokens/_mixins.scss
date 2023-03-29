@@ -31,6 +31,8 @@
   background-color: var(--color-primary-400);
   background-blend-mode: overlay;
   box-shadow: var(--inset-shadow-700), var(--box-shadow-400);
+  padding: var(--space-600) 0;
+  margin: calc(var(--space-600) * -2) 0;
 }
 
 // Tooltip
