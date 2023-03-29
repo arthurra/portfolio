@@ -29,8 +29,8 @@ services-tagline: I make growing your product easy at every stage
   <!-- Projects -->
   <section class="section">
     <div class="container">
-      {% include projects/table-of-contents.liquid %}
-      {% include projects/project-card-grid.liquid %}
+      {% include case-studies/table-of-contents.liquid %}
+      {% include case-studies/case-study-card-grid.liquid %}
     </div>
   </section>
 
