@@ -9,3 +9,5 @@ description: Over the past ten years, I've helped to combine my clients' vision 
 illustration: cube
 services-tagline: I make growing your product easy at every stage
 ---
+
+{% include illustrations/{{page.illustration}}.liquid %}

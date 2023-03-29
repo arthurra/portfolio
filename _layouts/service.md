@@ -4,7 +4,34 @@ layout: shared
 
 <article>
   <!-- Hero Header -->
- {{content}}
+  <header>
+    <div class="container">
+      <div class="card">
+        <header class="card__header u-mb-500">
+          <div class="tag-container u-mb-100">
+            {% for tag in page.tags %}
+              <div class="tag">{{ tag }}</div>
+            {% endfor %}
+          </div>
+          <h1>{{ page.title }}</h1>
+        </header>
+        <div class="card__body">
+          <div class="grid">
+            <div>
+              <p class="u-mb-300">{{ page.description }}</p>
+              <a href="#projects" class="button">
+                <span class="button__icon button__icon--bounce-down">👇</span>
+                See my work
+              </a>
+            </div>
+            <div class="grid">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <!-- Services -->
   <section class="section section--accent">
