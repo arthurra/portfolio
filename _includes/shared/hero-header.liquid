@@ -4,7 +4,7 @@
       <header class="card__header u-mb-500">
         <div class="tag-container u-mb-100">
           {% for tag in page.tags %}
-            <div class="tag">{{ tag }}</div>
+            <div class="tag">{{ tag.name }}</div>
           {% endfor %}
         </div>
         <h1>{{ page.title }}</h1>
@@ -15,11 +15,19 @@
             <p class="u-mb-300">{{ page.description }}</p>
             <a href="#case-studies" class="button">
               <span class="button__icon button__icon--bounce-down">👇</span>
-              See my work
+              {{ include.cta-text }}
             </a>
           </div>
           <div class="grid">
-            {{ content }}
+            {% if page.hero-partial %}
+              {% include {{ page.hero-partial }} %}
+            {% elsif page.hero-image %}
+              <img
+                src="{{ page.hero-image }}"
+                class="card__hero-image"
+                alt=""
+                role="presentation">
+            {% endif %}
           </div>
         </div>
       </div>

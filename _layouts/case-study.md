@@ -1,15 +1,23 @@
 ---
-layout: default
+layout: shared
 ---
 
-<h1>{{ page.title }}</h1>
-<p>{{ page.description }}</p>
+<article>
 
-<h4>Services</h4>
-<ul>
-  {% for service in page.services %}
-    <li>{{ service }}</li>
-  {% endfor %}
-</ul>
+<!-- Hero Header -->
 
-{{ content }}
+{% include shared/hero-header.liquid cta-text="See the full case study" %}
+
+<!-- Services -->
+
+<!-- Testimonial -->
+
+<!-- Solution -->
+
+<!-- See More -->
+
+<!-- CTA -->
+
+{% include shared/cta-section.liquid %}
+
+</article>

@@ -6,7 +6,7 @@ layout: shared
 
 <!-- Hero Header -->
 
-{% include shared/hero-header.liquid %}
+{% include shared/hero-header.liquid cta-text="See my work" %}
 
 <!-- Services -->
 
