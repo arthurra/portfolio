@@ -57,13 +57,14 @@
     left: 50%;
     translate: -50% -175%;
     rotate: 15deg;
-    text-shadow: var(--text-shadow-700);
     white-space: nowrap;
+    text-shadow: var(--text-shadow-700);
     opacity: 0;
     transition: all var(--transition-duration) var(--transition-timing-function);
 
     @if $dark {
       color: var(--color-orange-200);
+      text-shadow: var(--text-shadow-400);
     }
   }
 
@@ -79,6 +80,7 @@
 
     @if $dark {
       content: url(../images/tooltip-arrow-dark.svg);
+      filter: drop-shadow(var(--text-shadow-400));
     }
   }
 
