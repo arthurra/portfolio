@@ -1,6 +1,6 @@
 ---
 layout: service
-permalink: "/"
+permalink: "/derp"
 tags:
   - UI/UX
   - Web Development

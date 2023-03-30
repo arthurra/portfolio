@@ -1,3 +1,5 @@
+@use "../tokens/mixins" as *;
+
 .navbar {
   display: flex;
   gap: var(--space-025);
@@ -19,6 +21,10 @@
     &:hover {
       color: #fff;
       background-color: var(--color-primary-400);
+    }
+
+    &.disabled {
+      @include tooltip($dark: true);
     }
   }
 }
