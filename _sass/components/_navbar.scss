@@ -25,6 +25,7 @@
 
     &.disabled {
       @include tooltip($dark: true);
+      cursor: not-allowed;
     }
   }
 }
