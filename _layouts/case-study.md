@@ -18,6 +18,8 @@ layout: shared
 
 <!-- Solution -->
 
+{% include case-study/solution-section.liquid %}
+
 <!-- See More -->
 
 <!-- CTA -->

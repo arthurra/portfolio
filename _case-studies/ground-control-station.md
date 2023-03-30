@@ -18,3 +18,6 @@ tags:
 size: featured
 visible: true
 ---
+
+<div class="card">
+</div>
