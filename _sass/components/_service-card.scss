@@ -139,4 +139,52 @@
       }
     }
   }
+
+  &__timeline {
+    @include h6;
+    position: relative;
+    text-shadow: var(--text-shadow-700);
+    justify-self: end;
+
+    &::before {
+      content: "Timeline: ";
+    }
+
+    &::after {
+      content: url(../images/undraw_fun-underline.svg);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      translate: -50% 100%;
+      text-shadow: var(--text-shadow-700);
+    }
+  }
+
+  .tag {
+    color: var(--color-text-700);
+  }
+
+  &--wide {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    width: 100%;
+    padding: var(--space-200);
+    min-height: unset;
+
+    .service-card {
+      &__illustration {
+        position: relative;
+        inset: 0;
+        translate: none;
+        width: var(--space-250);
+        height: var(--space-250);
+      }
+    }
+
+    .tag-container {
+      width: 50%;
+    }
+  }
 }

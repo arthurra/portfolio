@@ -1,22 +1,25 @@
 {% assign file-name = service.name | downcase | split: " " | join: "-" | append:
  "-service-illustration.svg" %}
 
-<div class="card">
-  <div class="card__illustration">
-    <img
-      src="../assets/images/service-illustrations/{{file-name}}"
-      alt=""
-      role="presentation" />
-  </div>
-  <span>{{ service.name }}</span>
+<div class="service-card service-card--wide">
   <div class="flex">
+
+    <div class="service-card__illustration">
+      <img
+        src="../assets/images/service-illustrations/{{file-name}}"
+        alt=""
+        role="presentation" />
+    </div>
+    <span class="service-card__title">{{ service.name }}</span>
+  </div>
+  <div class="tag-container">
     {% for tag in service.tags %}
       <span class="tag">
         {{ tag.name }}
       </span>
     {% endfor %}
   </div>
-  <span>
+  <span class="service-card__timeline">
     {{ service.timeline }}
   </span>
 </div>
