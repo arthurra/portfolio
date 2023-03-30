@@ -1,0 +1,43 @@
+@use "../tokens/mixins" as *;
+@use "../base/typography" as *;
+
+.testimonial-card {
+  @include card;
+
+  &__illustration {
+    position: relative;
+    top: -200px;
+    left: var(--space-300);
+    transform: skewY(-20deg);
+    filter: drop-shadow(var(--box-shadow-400));
+  }
+
+  &__testimonial {
+    position: relative;
+    margin: var(--space-300) var(--space-400);
+    text-align: center;
+  }
+
+  &__quote {
+    margin-left: calc(var(--space-900));
+  }
+
+  &__attribution {
+    @include h6($dark: true);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    translate: 0 200%;
+    rotate: -6.9deg;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: url(../images/arrows/arrow-attribution.svg);
+      rotate: 95deg;
+      scale: 0.8;
+      translate: calc(-100% - var(--space-100)) -55%;
+    }
+  }
+}

@@ -35,6 +35,16 @@
   margin: calc(var(--space-600) * -2) 0;
 }
 
+// Card
+@mixin card {
+  position: relative;
+  padding: var(--space-300);
+  background-color: #fff;
+  border-radius: var(--border-radius-700);
+  box-shadow: var(--box-shadow-700);
+  z-index: 2;
+}
+
 // Tooltip
 @mixin tooltip($label: attr(aria-label), $dark: false) {
   position: relative;
