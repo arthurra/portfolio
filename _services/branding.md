@@ -12,4 +12,6 @@ illustration: cube
 services-tagline: Connent with your audience in print and online
 ---
 
+<!-- Hero illustration -->
+
 {% include illustrations/{{page.illustration}}.liquid %}

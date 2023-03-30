@@ -1,0 +1,12 @@
+<section class="section section--accent">
+  <div class="container">
+    <h2>Services</h2>
+    <p class="u-mb-600">{{ page.services-tagline }}</p>
+    <div class="grid grid--gap-200">
+      {% assign category_services = site.data.services | where: "category", page.name %}
+      {% for service in category_services %}
+        {% include service/service-card.liquid %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

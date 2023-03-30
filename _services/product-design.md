@@ -2,7 +2,7 @@
 layout: service
 permalink: "/"
 order: 1
-name: Product Design
+name: product design
 tags:
   - UI/UX
   - Web Development
@@ -11,5 +11,7 @@ description: Over the past ten years, I've helped to combine my clients' vision 
 illustration: cube
 services-tagline: I make growing your product easy at every stage
 ---
+
+<!-- Hero illustration -->
 
 {% include illustrations/{{page.illustration}}.liquid %}
