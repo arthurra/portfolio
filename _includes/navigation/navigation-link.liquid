@@ -1,1 +1,12 @@
-<a href="{{ service.permalink }}" {% if page.url == service.permalink %}class="current"{% endif %}>{{ service.name }}</a>
+<a
+  href="{{ service.permalink }}"
+  {% if page.url == service.permalink %}
+  class="current"
+  {% endif %}
+  {% if service.status == "disabled" %}
+  class="disabled"
+  aria-label="Coming Soon!"
+  onclick="event.preventDefault();"
+  {% endif %}>
+  {{ service.name }}
+</a>

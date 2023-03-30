@@ -36,18 +36,25 @@
 }
 
 // Tooltip
-@mixin tooltip {
+@mixin tooltip($label: attr(aria-label), $dark: false) {
+  position: relative;
+
   &::before {
     @include h6;
-    content: attr(aria-label);
+    content: $label;
     position: absolute;
     top: 0;
     left: 50%;
     translate: -50% -175%;
     rotate: 15deg;
     text-shadow: var(--text-shadow-700);
+    white-space: nowrap;
     opacity: 0;
     transition: all var(--transition-duration) var(--transition-timing-function);
+
+    @if $dark {
+      color: var(--color-orange-200);
+    }
   }
 
   &::after {
@@ -55,10 +62,14 @@
     position: absolute;
     scale: 0.5;
     top: -60%;
-    left: -10%;
+    left: 0;
     filter: drop-shadow(var(--text-shadow-700));
     opacity: 0;
     transition: all var(--transition-duration) var(--transition-timing-function);
+
+    @if $dark {
+      content: url(../images/tooltip-arrow-dark.svg);
+    }
   }
 
   &:hover {
