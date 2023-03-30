@@ -1,4 +1,4 @@
-{% assign product-design-case-studies = site.case-studies | where: "category", "product design" | where: "visible", true | reverse %}
+{% assign product-design-case-studies = site.case-studies | where: "category", page.name | where: "visible", true | reverse %}
 
 <div class="card u-mb-600">
   <header class="card__header u-mb-300">

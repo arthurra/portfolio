@@ -1,7 +1,0 @@
-{% assign product-design-case-studies = site.case-studies | where: "category", "product design" | where: "visible", true | reverse %}
-
-<div class="case-study-card-container">
-  {% for case-study in product-design-case-studies %}
-    {% include case-studies/case-study-card.liquid %}
-  {% endfor %}
-</div>

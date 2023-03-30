@@ -12,4 +12,6 @@ illustration: cube
 services-tagline:
 ---
 
+<!-- Hero illustration -->
+
 {% include illustrations/{{page.illustration}}.liquid %}
