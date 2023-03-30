@@ -44,6 +44,15 @@
   &__illustration {
     position: absolute;
     left: calc(var(--space-300) * -1);
+    transition: all 0.5s var(--transition-timing-function);
+
+    .case-study-card:hover & {
+      rotate: -5deg;
+      scale: 1.15;
+      filter: drop-shadow(0 0.25rem 1.5rem hsla(0, 0%, 0%, 0.1))
+        drop-shadow(0 0.25rem 0.5rem hsla(0, 0%, 0%, 0.05));
+      transition: all 1s var(--transition-timing-function);
+    }
   }
 
   &__thumbnail {
@@ -54,6 +63,7 @@
     border: var(--border-width) var(--border-style) var(--color-cool-gray-050);
     border-radius: var(--border-radius-700);
     box-shadow: var(--box-shadow-700);
+    transition: all 1s var(--transition-timing-function);
 
     .case-study-card--large[data-aspect="tall"] & {
       translate: 50% 25%;
@@ -68,6 +78,21 @@
       left: 100%;
       rotate: -30deg;
       translate: -75% -85%;
+    }
+
+    .case-study-card:hover & {
+      transition: all 2s var(--transition-timing-function);
+      rotate: 25deg;
+      scale: 1.1;
+      border-color: #fff;
+      box-shadow: 0 2rem 5rem hsla(0, 0%, 0%, 0.75),
+        0 0.5rem 3rem hsla(0, 0%, 0%, 0.3),
+        0 0.25rem 1.5rem hsla(0, 0%, 0%, 0.2),
+        0 0.25rem 0.5rem hsla(0, 0%, 0%, 0.1);
+    }
+
+    .case-study-card--featured:hover & {
+      rotate: -25deg;
     }
   }
 
@@ -117,6 +142,7 @@
     justify-content: start;
     padding: var(--space-200);
     background-image: url(../images/topo-contour.svg);
+    background-size: 600px 600px;
     background-blend-mode: overlay;
 
     .case-study-card__title {
