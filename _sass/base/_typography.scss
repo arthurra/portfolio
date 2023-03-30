@@ -79,12 +79,16 @@ blockquote {
   @include h5;
 }
 
-@mixin h6 {
+@mixin h6($dark: false) {
   font-family: var(--ff-hand);
   font-size: var(--fs-300);
   font-weight: 700;
   color: var(--color-orange-075);
   text-transform: uppercase;
+
+  @if $dark {
+    color: var(--color-orange-200);
+  }
 }
 
 h6,
