@@ -8,7 +8,7 @@
     {% for case-study in product-design-case-studies %}
       <li class="emoji-list__item">
         <span class="emoji-list__icon">{{ case-study.icon }}</span>
-        <a href="" class="emoji-list__title">{{ case-study.title }}</a>
+        <a href="{{ case-study.url }}" class="emoji-list__title">{{ case-study.title }}</a>
       </li>
     {% endfor %}
   </ul>
