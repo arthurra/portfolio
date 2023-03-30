@@ -1,6 +1,6 @@
 @use "../base/typography" as *;
 
-.graphic-card {
+.service-card {
   @include body-text;
   position: relative;
   display: flex;
@@ -46,7 +46,7 @@
         content: url(../images/arrows/arrow-1-odd.svg);
         translate: -125% 0;
 
-        .graphic-card:nth-child(even) & {
+        .service-card:nth-child(even) & {
           content: url(../images/arrows/arrow-1-even.svg);
           translate: -155% 5%;
           rotate: 30deg;
@@ -64,7 +64,7 @@
         content: url(../images/arrows/arrow-2-odd.svg);
         translate: 30% -25%;
 
-        .graphic-card:nth-child(even) & {
+        .service-card:nth-child(even) & {
           content: url(../images/arrows/arrow-2-even.svg);
           translate: 15% 30%;
         }
@@ -79,7 +79,7 @@
         content: url(../images/arrows/arrow-3-odd.svg);
         translate: -125% 0;
 
-        .graphic-card:nth-child(even) & {
+        .service-card:nth-child(even) & {
           content: url(../images/arrows/arrow-3-even.svg);
           translate: -45% 10%;
           rotate: 20deg;
@@ -98,7 +98,7 @@
         translate: -30% -70%;
         rotate: -30deg;
 
-        .graphic-card:nth-child(even) & {
+        .service-card:nth-child(even) & {
           content: url(../images/arrows/arrow-4-odd.svg);
           translate: -35% -90%;
         }
@@ -121,7 +121,7 @@
   &:hover {
     translate: 0 calc(var(--space-050) * -1);
 
-    .graphic-card__label {
+    .service-card__label {
       opacity: 1;
       scale: 1;
 
