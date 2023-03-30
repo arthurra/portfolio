@@ -14,6 +14,8 @@ layout: shared
 
 <!-- Testimonial -->
 
+{% include case-study/testimonial-section.liquid %}
+
 <!-- Solution -->
 
 <!-- See More -->
