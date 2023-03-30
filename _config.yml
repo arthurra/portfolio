@@ -55,6 +55,8 @@ exclude:
 #   - vendor/ruby/
 
 collections:
+  services:
+    output: true
   case-studies:
     output: true
 
@@ -64,6 +66,11 @@ defaults:
       type: "case-studies"
     values:
       layout: "case-study"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
   - scope:
       path: ""
       type: "posts"

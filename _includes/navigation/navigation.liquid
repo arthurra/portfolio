@@ -16,9 +16,9 @@
     </span>
   </a>
   <nav class="navbar">
-    {% for item in site.data.navigation %}
-      {% include
-       navigation/navigation-link.liquid %}
+    {% assign links_by_order = site.services | sort: "order" %}
+    {% for service in links_by_order %}
+      {% include navigation/navigation-link.liquid %}
     {% endfor %}
   </nav>
   {% include cta-button.liquid %}

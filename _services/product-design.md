@@ -1,6 +1,8 @@
 ---
 layout: service
-permalink: "/product-design"
+permalink: "/"
+order: 1
+name: Product Design
 tags:
   - UI/UX
   - Web Development
