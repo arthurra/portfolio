@@ -10,6 +10,8 @@ layout: shared
 
 <!-- Services -->
 
+{% include case-study/services-section.liquid %}
+
 <!-- Testimonial -->
 
 <!-- Solution -->
