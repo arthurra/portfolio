@@ -22,11 +22,13 @@
             {% if page.hero-partial %}
               {% include {{ page.hero-partial }} %}
             {% elsif page.hero-image %}
-              <img
-                src="{{ page.hero-image }}"
-                class="card__hero-image"
-                alt=""
-                role="presentation">
+              <div class="card__hero-image-container">
+                <img
+                  src="{{ page.hero-image }}"
+                  class="card__hero-image"
+                  alt=""
+                  role="presentation">
+              </div>
             {% endif %}
           </div>
         </div>
