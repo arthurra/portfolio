@@ -1,0 +1,10 @@
+<section class="section section--accent">
+  <div class="container">
+    <h2 class="u-mb-600">Services</h2>
+    <div class="flex flex--column">
+      {% for service in page.services %}
+        {% include case-study/service-card.liquid %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

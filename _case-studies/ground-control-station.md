@@ -4,7 +4,12 @@ description: The goal of this NASA sponsored challenge was to design an effectiv
 hero-image: "/assets/images/case-studies/thumbnails/ground-control-station-thumbnail.png"
 category: product design
 services:
-  - UI Design
+  - name: UI Design
+    timeline: 1 wk.
+    tags:
+      - name: Wireframes
+      - name: Mockups
+      - name: Figma
 icon: 🛩
 color: green
 tags:
