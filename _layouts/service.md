@@ -6,7 +6,7 @@ layout: shared
 
 <!-- Hero Header -->
 
-{% include service/hero-header.liquid %}
+{% include shared/hero-header.liquid %}
 
 <!-- Services -->
 
@@ -18,6 +18,6 @@ layout: shared
 
 <!-- CTA -->
 
-{% include service/cta-section.liquid %}
+{% include shared/cta-section.liquid %}
 
 </article>
