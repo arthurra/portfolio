@@ -45,6 +45,15 @@
   z-index: 2;
 }
 
+// Card Body
+@mixin card-body {
+  padding: var(--space-300);
+  color: var(--color-primary-700);
+  background-color: var(--color-cool-gray-025);
+  border-radius: var(--border-radius-400);
+  box-shadow: var(--inset-shadow-100);
+}
+
 // Tooltip
 @mixin tooltip($label: attr(aria-label), $dark: false) {
   position: relative;

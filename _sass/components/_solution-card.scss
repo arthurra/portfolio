@@ -1,0 +1,61 @@
+@use "../tokens/mixins" as *;
+@use "../base/typography" as *;
+
+.solution-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+}
+
+.solution-card {
+  @include card;
+  display: grid;
+  grid-template-rows: 8rem auto;
+  gap: 0 var(--space-300);
+
+  &:nth-of-type(odd) {
+    grid-template-areas:
+      "title image"
+      "body  image";
+    grid-template-columns: 1fr 2fr;
+
+    .solution-card__body {
+      padding-right: 150%;
+      margin-right: -150%;
+    }
+  }
+
+  &:nth-of-type(even) {
+    grid-template-areas:
+      "image  title"
+      "image  body";
+    grid-template-columns: 2fr 1fr;
+
+    .solution-card__body {
+      padding-left: 150%;
+      margin-left: -150%;
+    }
+  }
+
+  &__title {
+    grid-area: title;
+    align-self: center;
+  }
+
+  &__body {
+    grid-area: body;
+    @include card-body;
+  }
+
+  &__description {
+    @include small-text;
+  }
+
+  &__image {
+    grid-area: image;
+    border: var(--border-width) var(--border-style) #fff;
+    border-radius: var(--border-radius-700);
+    box-shadow: var(--box-shadow-700);
+    margin-bottom: var(--space-200);
+  }
+}

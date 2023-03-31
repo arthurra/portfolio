@@ -19,5 +19,5 @@ size: featured
 visible: true
 ---
 
-<div class="card">
-</div>
+{% include case-study/solution-card.liquid %}
+{% include case-study/solution-card.liquid %}
