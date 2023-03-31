@@ -10,6 +10,7 @@ services:
       - name: Wireframes
       - name: Mockups
       - name: Style Guide
+      - name: Design Sprint
       - name: Adobe XD
   - name: Prototyping
     timeline: 3 weeks
@@ -22,6 +23,7 @@ services:
     tags:
       - name: HTML (Razor)
       - name: CSS
+      - name: Responsive
       - name: VSCode
 testimonial: Empowering building designers and contractors to easily compare, specify and purchase products by connecting them with local suppliers
 cite: Configure, Inc.

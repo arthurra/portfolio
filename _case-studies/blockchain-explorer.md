@@ -15,6 +15,7 @@ services:
     tags:
       - name: HTML (EEx)
       - name: CSS (Sass)
+      - name: Responsive
 testimonial: BlockScout provides a comprehensive, easy-to-use interface for users to view, confirm, and inspect transactions on all EVM (Ethereum Virtual Machine) blockchains
 cite: POA Network
 icon: 🔭

@@ -78,5 +78,16 @@
       description:
 
 - name: Sales Analysis Tool
+  solutions:
+    - title: pricing list
+      description:
+    - title: update pricing form
+      description:
+    - title: pricing summary
+      description:
+    - title: pricing summary expanded
+      description:
+    - title: pricing contract terms
+      description:
 
 - name: Banking Compliance Tracker

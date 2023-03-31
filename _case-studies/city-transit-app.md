@@ -8,6 +8,7 @@ services:
     tags:
       - name: Wireframs
       - name: Mockups
+      - name: Mobile
       - name: Adobe Illustrator
 tags:
   - name: Transportation
