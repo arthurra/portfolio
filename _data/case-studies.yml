@@ -14,6 +14,25 @@
       description: The map shows where the vehicles are in space. Several other components are overlayed on top of the map view. The toolbar along the left edge of the map contains all the tools for selecting and affecting vehicle operation. The traffic view window serves as a minimap with a simplified high-contrast view of vehicle positions. The camera window displays a stream from the selected vehicle's camera.
 
 - name: Construction Marketplace
+  solutions:
+    - title: user flow diagram
+      description: We began by mapping out the key content areas based on our target audience's needs. We identified each action that any of our user groups would need to make on each content block; and where that action would take them, allowing us to lay the foundation for a robust and efficient system.
+    - title: low fidelity wireframes
+      description: Here we block out the elements on the page to add some visuals to the screens described in our user flow diagram. Creating low-fidelity versions of what we think the page will look like allows us to test our assumptions and have better conversations about what we need to see on the screen.
+    - title: low fidelity prototype
+      description: Adding detail and stitching the screens together helps to make the experience start to feel real. We keep the flow through the system in mind as we refine individual pages. At this stage, we can test for usability and efficiency.
+    - title: high fidelity prototype
+      description: The high-fidelity prototype is the final stage in our UX design sprint. It combines the effective layouts of our wireframes with added style, visual hierarchy, and iconography. Next, it's time for us to take what we've learned and start building.
+    - title: project details
+      description: Groups of products, requests, and quotes, can be easily organized into projects. From here, users can quickly see all the most up-to-date information without searching through multiple files. They can save time and take the guesswork out of the equation.
+    - title: quote details
+      description: The quote builder/quote details page displays products alongside equipment tags and allows vendors to add custom line items to meet customer needs.
+    - title: project pricing table
+      description: Big projects can have a multitude of products coming from different vendors across several product categories. Our design makes it easy to see the breakdown of each offer so that users can make the best decision for their project.
+    - title: admin control panel
+      description: The app also featured a robust admin section for managing all the unique data points.
+    - title: style guide
+      description: Documentation describing the visual standards for the application's web components.
 
 - name: Work Order Management
 

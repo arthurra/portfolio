@@ -19,7 +19,7 @@
   }
 
   &__quote {
-    margin-left: calc(var(--space-900));
+    margin-left: calc(var(--space-800) + var(--space-300));
   }
 
   &__attribution {
