@@ -18,6 +18,3 @@ tags:
 size: featured
 visible: true
 ---
-
-{% include case-study/solution-card.liquid %}
-{% include case-study/solution-card.liquid %}

@@ -2,7 +2,13 @@
   <div class="container">
     <h2 class="u-mb-300">Solution</h2>
     <div class="solution-card-container">
-      {{ content }}
+      {% assign current = site.data.case-studies | where: "name", page.title %}
+
+      {% for cs in current %}
+        {% for solution in cs.solutions %}
+          {% include case-study/solution-card.liquid %}
+        {% endfor %}
+      {% endfor %}
     </div>
   </div>
 </section>
