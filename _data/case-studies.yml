@@ -1,60 +1,18 @@
 - name: City Transit App
-  icon: 🚦
-  color: blue
-  tags:
-    - name: Transportation
-  illustration:
-  visible: true
-  size: small
+
 - name: Ground Control Station
-  icon: 🛩
-  color: green
-  tags:
-    - name: Aviation
-    - name: <i class="fa-solid fa-trophy-star"></i> Competition Winner
-  illustration:
-  visible: true
-  size: featured
+  solutions:
+    - title: fly mode
+      description: The fly mode screen was the main focus of the challenge. Here I establish the layout structure of the page. I paid special attention to the vehicle outliner and how to represent the various states and controls for a vehicle based on its current status.
+    - title: vehicle status
+      description: The vehicle status screen introduces the vehicle details panel. This multi-panel display is used to navigate and manage all of the properties for the selected vehicle. Icons shown in the outliner correspond to the tab icons used in the detail panel. Some of the tab icons are also given a color to represent the health of the vehicle at a glance.
+
 - name: Construction Marketplace
-  icon: 🏗
-  color: yellow
-  tags:
-    - name: E-commerce
-  illustration:
-  visible: true
-  size: large
-  aspect: tall
+
 - name: Work Order Management
-  icon: 📦
-  color: red
-  tags:
-    - name: Manufacturing
-  illustration:
-  visible: true
-  size: small
+
 - name: Blockchain Explorer
-  icon: 🔭
-  color: purple
-  tags:
-    - name: Technology
-  illustration:
-  visible: true
-  size: small
 
 - name: Sales Analysis Tool
-  icon: 🧮
-  color: orange
-  tags:
-    - name: Accounting
-  illustration:
-  visible: true
-  size: small
+
 - name: Banking Compliance Tracker
-  icon: 📋
-  color: violet
-  tags:
-    - name: Finance
-  illustration:
-  visible: true
-  size: large
-  aspect: wide
