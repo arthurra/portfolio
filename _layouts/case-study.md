@@ -22,6 +22,8 @@ layout: shared
 
 <!-- See More -->
 
+{% include case-study/see-more-section.liquid %}
+
 <!-- CTA -->
 
 {% include shared/cta-section.liquid %}
