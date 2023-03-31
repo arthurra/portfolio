@@ -56,6 +56,15 @@
       description:
 
 - name: Blockchain Explorer
+  solutions:
+    - title: blockchain summary
+      description:
+    - title: address transactions
+      description:
+    - title: address tokens
+      description:
+    - title: token holdings modal
+      description:
 
 - name: Sales Analysis Tool
 
