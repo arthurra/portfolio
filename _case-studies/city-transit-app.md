@@ -1,11 +1,17 @@
 ---
 title: City Transit App
 description: A dashboard and companion app that was submitted as a bid for a grant to help people move around the city of Cincinnati
+hero-image: "/assets/images/case-studies/thumbnails/city-transit-app-thumbnail.png"
 category: product design
 services:
-  - UI Design
+  - name: UI Design
+    tags:
+      - name: Wireframs
+      - name: Mockups
+      - name: Adobe Illustrator
 tags:
   - name: Transportation
+testimonial: Using the power of open data to create a more accessible city
 icon: 🚦
 color: blue
 visible: true

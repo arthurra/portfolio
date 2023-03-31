@@ -4,6 +4,8 @@
   </div>
   <figure class="testimonial-card__testimonial">
     <blockquote class="testimonial-card__quote">{{ page.testimonial }}</blockquote>
-    <figcaption class="testimonial-card__attribution">{{ page.cite }}</figcaption>
+    {% if page.cite %}
+      <figcaption class="testimonial-card__attribution">{{ page.cite }}</figcaption>
+    {% endif %}
   </figure>
 </div>
