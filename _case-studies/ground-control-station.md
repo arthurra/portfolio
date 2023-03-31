@@ -10,7 +10,7 @@ services:
       - name: Wireframes
       - name: Mockups
       - name: Figma
-testimonial: NASA is researching future aviation operations where pilots will simultaneously control multiple aircraft remotely.
+testimonial: NASA is researching future aviation operations where pilots will simultaneously control multiple aircraft remotely
 cite: NASA Tournament Lab
 icon: 🛩
 color: green

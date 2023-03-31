@@ -35,6 +35,25 @@
       description: Documentation describing the visual standards for the application's web components.
 
 - name: Work Order Management
+  solutions:
+    - title: jobs list
+      description:
+    - title: new job form
+      description:
+    - title: new job form
+      description:
+    - title: job products
+      description:
+    - title: job progress
+      description:
+    - title: job history
+      description:
+    - title: production queue
+      description:
+    - title: work order products
+      description:
+    - title: work order production summary
+      description:
 
 - name: Blockchain Explorer
 
