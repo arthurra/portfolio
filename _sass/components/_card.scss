@@ -4,11 +4,7 @@
   @include card;
 
   &__body {
-    padding: var(--space-300);
-    color: var(--color-primary-700);
-    background-color: var(--color-cool-gray-025);
-    border-radius: var(--border-radius-400);
-    box-shadow: var(--inset-shadow-100);
+    @include card-body;
 
     .card:has(.card__hero-image) & {
       position: relative;
