@@ -1,3 +1,5 @@
+@use "../tokens/mixins" as *;
+
 .cube {
   position: relative;
   top: -10%;
@@ -7,6 +9,11 @@
   transform: skewY(-20deg);
   filter: drop-shadow(var(--box-shadow-400));
   animation: orbit 20s var(--transition-timing-function) alternate infinite;
+
+  @include mq(medium) {
+    top: 10%;
+    left: -25%;
+  }
 }
 
 .cube__unit-layer {

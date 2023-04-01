@@ -1,4 +1,5 @@
 @use "../base/typography" as *;
+@use "../tokens/mixins" as *;
 
 .service-card {
   @include body-text;
@@ -14,11 +15,21 @@
   box-shadow: var(--box-shadow-700);
   transition: all var(--transition-duration) var(--transition-timing-function);
 
+  &__title {
+    max-width: 75%;
+    text-align: end;
+  }
+
   &__illustration {
     position: absolute;
     top: 50%;
     left: 0;
     translate: var(--space-150) -50%;
+
+    @include mq(medium) {
+      scale: 66%;
+      transform-origin: left;
+    }
   }
 
   &__label {
@@ -173,6 +184,13 @@
     padding: var(--space-200);
     min-height: unset;
 
+    @include mq(medium) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "title timeline" "tags tags";
+      gap: var(--space-200);
+    }
+
     .service-card {
       &__illustration {
         position: relative;
@@ -180,10 +198,16 @@
         translate: none;
         width: var(--space-250);
         height: var(--space-250);
+
+        @include mq(medium) {
+          scale: 125%;
+          transform-origin: center;
+        }
       }
     }
 
     .tag-container {
+      grid-area: tags;
       width: 50%;
     }
   }
