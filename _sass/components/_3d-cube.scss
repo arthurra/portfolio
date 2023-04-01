@@ -16,13 +16,11 @@
   }
 
   @include mq(small) {
-    width: 150px;
-    height: 160px;
+    height: 175px;
     left: 50%;
     scale: 80%;
-    translate: -115% -25%;
+    translate: -2rem -25%;
     margin: 0;
-    margin-left: 12rem;
   }
 }
 
