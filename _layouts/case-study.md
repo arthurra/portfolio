@@ -6,7 +6,7 @@ layout: shared
 
 <!-- Hero Header -->
 
-{% include shared/hero-header.liquid link="solution" cta-text="See the case study" %}
+{% include shared/hero-header.liquid link="solution" cta-text="See case study" %}
 
 <!-- Services -->
 

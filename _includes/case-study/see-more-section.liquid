@@ -1,9 +1,9 @@
 <section class="section">
   <div class="container">
     <h3 class="u-mb-300">Keep Reading</h3>
-    <div class="grid grid--gap-250">
+    <div class="case-study-card-container case-study-card-container--see-more">
       {% assign cs-list = site.case-studies | where: "size", "small" | reverse %}
-      {% for case-study in cs-list limit: 3 %}
+      {% for case-study in cs-list limit: 4 %}
         {% include service/case-study-card.liquid %}
       {% endfor %}
     </div>

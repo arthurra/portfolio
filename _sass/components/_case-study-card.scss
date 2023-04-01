@@ -29,12 +29,24 @@
   overflow: hidden;
   transition: all var(--transition-duration) var(--transition-timing-function);
 
+  @include mq(small) {
+    aspect-ratio: 10/9;
+  }
+
   &:hover {
     translate: 0 calc(var(--space-050) * -1);
   }
 
   &:active {
     translate: 0;
+  }
+
+  .case-study-card-container--see-more &:nth-child(4) {
+    display: none;
+
+    @include mq(small) {
+      display: flex;
+    }
   }
 
   &__title {
@@ -57,7 +69,15 @@
 
     @include mq(medium) {
       scale: 75%;
+      top: -2rem;
+      left: -4rem;
+    }
+
+    @include mq(small) {
+      scale: 65%;
       transform-origin: bottom left;
+      top: -4rem;
+      left: -1rem;
     }
 
     .case-study-card:hover & {
@@ -94,12 +114,21 @@
 
       @include mq(small) {
         scale: 85%;
-        translate: 80% calc(var(--space-200) * -1);
+        translate: 16rem calc(var(--space-200) * -1);
       }
     }
 
     .case-study-card--large[data-aspect="wide"] & {
-      translate: 80% -10%;
+      translate: 60% -10%;
+
+      @include mq(medium) {
+        translate: 80% -10%;
+      }
+
+      @include mq(small) {
+        scale: 85%;
+        translate: 16rem calc(var(--space-200) * -1);
+      }
     }
 
     .case-study-card--featured & {
@@ -134,13 +163,22 @@
       @include mq(small) {
         grid-row: auto;
         grid-column: span 2;
-        aspect-ratio: 20/8;
+        aspect-ratio: 20/9;
       }
     }
 
     &[data-aspect="wide"] {
       grid-column: span 2;
-      aspect-ratio: 20/8;
+
+      @include mq(small) {
+        aspect-ratio: 20/9;
+      }
+    }
+
+    .case-study-card__title {
+      @include mq(small) {
+        max-width: 15ch;
+      }
     }
 
     .tag {
@@ -181,6 +219,10 @@
     background-size: 600px 600px;
     background-blend-mode: overlay;
 
+    @include mq(small) {
+      aspect-ratio: unset;
+    }
+
     .case-study-card__title {
       @include h2;
       font-size: var(--fs-900);
@@ -188,6 +230,10 @@
       text-align: start;
       text-shadow: var(--text-shadow-700);
       color: #fff;
+
+      @include mq(small) {
+        font-size: var(--fs-800);
+      }
     }
   }
 }
