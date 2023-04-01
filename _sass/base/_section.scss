@@ -7,6 +7,10 @@
     .container {
       padding: var(--space-900) 0;
 
+      @include mq(medium) {
+        padding: var(--space-900) var(--space-200);
+      }
+
       & > :is(h1, h2, h3, h4) {
         color: #fff;
         text-shadow: var(--text-shadow-700);
