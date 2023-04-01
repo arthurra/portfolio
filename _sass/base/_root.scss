@@ -1,0 +1,79 @@
+@use "../tokens" as *;
+@use "../tokens/mixins" as *;
+
+// Base font size
+html {
+  font-size: var(--base-fs);
+
+  @include mq(medium) {
+    font-size: 85%;
+  }
+}
+
+// Colors
+:root {
+  @each $color, $shade in $colors {
+    @each $prop, $value in $shade {
+      --color-#{$color}-#{$prop}: #{$value};
+    }
+  }
+}
+
+// Typogaphy
+:root {
+  --base-fs: 16px;
+
+  @each $scale, $size in $type-scale {
+    --fs-#{$scale}: #{$size};
+  }
+
+  @each $type, $family in $font-families {
+    --ff-#{$type}: #{$family};
+  }
+}
+
+// Spacing
+:root {
+  @each $scale, $size in $space-scale {
+    --space-#{$scale}: #{$size};
+  }
+}
+
+// Border
+:root {
+  --border-width: var(--space-025);
+  --border-style: solid;
+  --border-color: currentColor;
+  --border: var(--border-width) var(--border-style) var(--border-color);
+
+  @each $scale, $size in $radius-scale {
+    --border-radius-#{$scale}: #{$size};
+  }
+}
+
+// Elevation
+:root {
+  @each $scale, $value in $elevations {
+    --elevation-#{$scale}: #{$value};
+  }
+
+  @each $scale, $value in $insets {
+    --inset-shadow-#{$scale}: #{$value};
+  }
+
+  --box-shadow-400: var(--elevation-400);
+  --box-shadow-700: var(--elevation-700);
+
+  --text-shadow-400: var(--elevation-100);
+  --text-shadow-700: var(--elevation-500);
+}
+
+// Easing
+:root {
+  @each $function, $value in $timing-functions {
+    --ease-#{$function}: #{$value};
+  }
+
+  --transition-duration: 150ms;
+  --transition-timing-function: var(--ease-cubic);
+}

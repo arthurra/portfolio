@@ -1,0 +1,30 @@
+@use "../tokens/mixins" as *;
+@use "../utilities/flex" as *;
+
+.footer {
+  border-bottom: none;
+  padding-bottom: var(--space-300);
+
+  .container {
+    padding-bottom: var(--space-300);
+  }
+
+  &__layout-container {
+    @include flex;
+    justify-content: space-between;
+
+    @include mq(medium) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: var(--space-600);
+    }
+
+    @include mq(small) {
+      gap: var(--space-300);
+
+      .logo {
+        flex-direction: column;
+      }
+    }
+  }
+}

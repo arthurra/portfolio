@@ -1,0 +1,26 @@
+@use "../tokens/mixins" as *;
+
+.card {
+  @include card;
+
+  &__header h1 {
+    @include mq(small) {
+      font-size: calc(1rem + 6vw);
+    }
+  }
+
+  &__body {
+    @include card-body;
+
+    @include mq(small) {
+      & .grid {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      & .button {
+        width: 100%;
+      }
+    }
+  }
+}

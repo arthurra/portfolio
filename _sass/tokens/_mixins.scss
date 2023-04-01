@@ -1,0 +1,118 @@
+@use "../base/typography" as *;
+@use "../tokens/breakpionts" as *;
+
+// Media query
+@mixin mq($key) {
+  $size: map-get($breakpoints, $key);
+
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+// Container
+@mixin container {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: var(--space-300) 0;
+
+  @include mq(medium) {
+    padding: var(--space-200);
+  }
+}
+
+// Flex
+@mixin flex {
+  display: flex;
+  gap: var(--space-150);
+}
+
+// Grid
+@mixin grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+}
+
+// Accent bg
+@mixin accent-bg {
+  border-top: var(--border-width) var(--border-style) #fff;
+  border-bottom: var(--border-width) var(--border-style) #fff;
+  background-image: url(../images/shapes.svg);
+  background-color: var(--color-primary-400);
+  background-blend-mode: overlay;
+  box-shadow: var(--inset-shadow-700), var(--box-shadow-400);
+  padding: var(--space-600) 0;
+  margin: calc(var(--space-600) * -2) 0;
+}
+
+// Card
+@mixin card {
+  position: relative;
+  padding: var(--space-300);
+  background-color: #fff;
+  border-radius: var(--border-radius-700);
+  box-shadow: var(--box-shadow-700);
+  z-index: 2;
+}
+
+// Card Body
+@mixin card-body {
+  padding: var(--space-300);
+  background-color: var(--color-primary-025);
+  color: var(--color-text-700);
+  border-radius: var(--border-radius-400);
+  box-shadow: var(--inset-shadow-100);
+
+  @include mq(small) {
+    padding: var(--space-200);
+  }
+}
+
+// Tooltip
+@mixin tooltip($label: attr(aria-label), $dark: false) {
+  position: relative;
+
+  &::before {
+    @include h6;
+    content: $label;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% -175%;
+    rotate: 15deg;
+    white-space: nowrap;
+    text-shadow: var(--text-shadow-700);
+    opacity: 0;
+    transition: all var(--transition-duration) var(--transition-timing-function);
+
+    @if $dark {
+      color: var(--color-orange-200);
+      text-shadow: var(--text-shadow-400);
+    }
+  }
+
+  &::after {
+    content: url(../images/tooltip-arrow.svg);
+    position: absolute;
+    scale: 0.5;
+    top: -60%;
+    left: 0;
+    filter: drop-shadow(var(--text-shadow-700));
+    opacity: 0;
+    transition: all var(--transition-duration) var(--transition-timing-function);
+
+    @if $dark {
+      content: url(../images/tooltip-arrow-dark.svg);
+      filter: drop-shadow(var(--text-shadow-400));
+    }
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 1;
+    }
+  }
+}

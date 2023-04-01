@@ -1,0 +1,16 @@
+{% assign dir-name = cs.name | downcase | split: " " | join: "-" %}
+{% assign file-name = solution.title | downcase | split: " " | join: "-" %}
+
+<div class="solution-card">
+  <h3 class="solution-card__title">
+    {{ solution.title }}
+  </h3>
+  <div class="solution-card__body">
+    <p class="solution-card__description">{{ solution.description }}</p>
+  </div>
+  <img
+    class="solution-card__image"
+    src="/assets/images/case-studies/{{dir-name}}/{{file-name}}.png"
+    alt=""
+    role="presentation">
+</div>

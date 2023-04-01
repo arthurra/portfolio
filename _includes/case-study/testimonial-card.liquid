@@ -1,0 +1,11 @@
+<div class="testimonial-card">
+  <div class="testimonial-card__illustration">
+    {% include illustrations/cube-layer.liquid %}
+  </div>
+  <figure class="testimonial-card__testimonial">
+    <blockquote class="testimonial-card__quote">{{ page.testimonial }}</blockquote>
+    {% if page.cite %}
+      <figcaption class="testimonial-card__attribution">{{ page.cite }}</figcaption>
+    {% endif %}
+  </figure>
+</div>

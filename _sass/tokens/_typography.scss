@@ -1,0 +1,30 @@
+$type-scale: (
+  // mostly augmented fourth
+  300: 1rem,
+  400: 1.25rem,
+  500: 2rem,
+  600: 2.827rem,
+  700: 4rem,
+  800: 5.653rem,
+  900: 8rem
+);
+
+$font-families: (
+  title: (
+    "Barlow Semi Condensed",
+    "Inter",
+    sans-serif,
+  ),
+  text: (
+    "Inter",
+    sans-serif,
+  ),
+  mono: (
+    "Roboto Mono",
+    monospace,
+  ),
+  hand: (
+    "Fuzzy Bubbles",
+    sans-serif,
+  ),
+);

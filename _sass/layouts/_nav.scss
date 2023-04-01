@@ -1,0 +1,7 @@
+@use "../tokens/mixins" as *;
+
+.nav-container {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+}
