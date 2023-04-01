@@ -28,6 +28,13 @@
   gap: var(--space-150);
 }
 
+// Grid
+@mixin grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+}
+
 // Accent bg
 @mixin accent-bg {
   border-top: var(--border-width) var(--border-style) #fff;
