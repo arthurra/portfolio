@@ -1,3 +1,4 @@
+@use "../tokens/mixins" as *;
 @use "../tokens/colors" as *;
 @use "../base/typography" as *;
 
@@ -39,12 +40,21 @@
     text-align: end;
     text-shadow: var(--text-shadow-400);
     z-index: 2;
+
+    @include mq(medium) {
+      max-width: 10ch;
+    }
   }
 
   &__illustration {
     position: absolute;
     left: calc(var(--space-300) * -1);
     transition: all 0.5s var(--transition-timing-function);
+
+    @include mq(medium) {
+      scale: 75%;
+      transform-origin: bottom left;
+    }
 
     .case-study-card:hover & {
       rotate: -5deg;
@@ -65,8 +75,18 @@
     box-shadow: var(--box-shadow-700);
     transition: all 1s var(--transition-timing-function);
 
+    @include mq(medium) {
+      scale: 85%;
+      transform-origin: top;
+    }
+
     .case-study-card--large[data-aspect="tall"] & {
       translate: 50% 25%;
+
+      @include mq(medium) {
+        scale: 1;
+        translate: 85% 0;
+      }
     }
 
     .case-study-card--large[data-aspect="wide"] & {
