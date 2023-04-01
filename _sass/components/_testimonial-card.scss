@@ -10,6 +10,11 @@
     left: var(--space-300);
     transform: skewY(-20deg);
     filter: drop-shadow(var(--box-shadow-400));
+
+    @include mq(medium) {
+      top: -100px;
+      left: var(--space-400);
+    }
   }
 
   &__testimonial {
