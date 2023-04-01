@@ -15,6 +15,10 @@
   box-shadow: var(--box-shadow-700);
   transition: all var(--transition-duration) var(--transition-timing-function);
 
+  @include mq(small) {
+    pointer-events: none;
+  }
+
   &__title {
     max-width: 75%;
     text-align: end;
@@ -75,6 +79,11 @@
       translate: 0 -100%;
       rotate: 12deg;
 
+      .service-card:nth-child(even) & {
+        right: -2rem;
+        top: -2rem;
+      }
+
       &::before {
         content: url(../images/arrows/arrow-2-odd.svg);
         translate: 30% -25%;
@@ -88,6 +97,7 @@
 
     &:nth-child(3) {
       top: var(--space-500);
+      right: 0;
       rotate: -10deg;
 
       &::before {
@@ -108,6 +118,11 @@
       translate: 0 160%;
       rotate: -8deg;
 
+      .service-card:nth-child(even) & {
+        right: unset;
+        left: 5rem;
+      }
+
       &::before {
         content: url(../images/arrows/arrow-4-even.svg);
         translate: -30% -70%;
@@ -115,7 +130,7 @@
 
         .service-card:nth-child(even) & {
           content: url(../images/arrows/arrow-4-odd.svg);
-          translate: -35% -90%;
+          translate: -100% -75%;
         }
       }
     }
@@ -125,6 +140,11 @@
       left: var(--space-300);
       translate: 0 200%;
       rotate: -20deg;
+
+      @include mq(medium) {
+        translate: -80% 200%;
+        rotate: 20deg;
+      }
 
       &::before {
         content: url(../images/arrows/arrow-4-odd.svg);
