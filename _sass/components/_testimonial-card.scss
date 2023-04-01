@@ -15,16 +15,31 @@
       top: -100px;
       left: var(--space-400);
     }
+
+    @include mq(small) {
+      scale: 50%;
+      transform-origin: left;
+      top: -2rem;
+      left: 50%;
+    }
   }
 
   &__testimonial {
     position: relative;
     margin: var(--space-300) var(--space-400);
     text-align: center;
+
+    @include mq(small) {
+      margin: var(--space-600) 0 var(--space-400);
+    }
   }
 
   &__quote {
     margin-left: calc(var(--space-800) + var(--space-300));
+
+    @include mq(small) {
+      margin-left: 0;
+    }
   }
 
   &__attribution {
@@ -43,6 +58,10 @@
       rotate: 95deg;
       scale: 0.8;
       translate: calc(-100% - var(--space-100)) -55%;
+
+      @include mq(small) {
+        scale: 65%;
+      }
     }
   }
 }

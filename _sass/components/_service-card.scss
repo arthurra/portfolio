@@ -168,6 +168,11 @@
       left: 50%;
       translate: -50% 100%;
       text-shadow: var(--text-shadow-700);
+
+      @include mq(small) {
+        transform-origin: top;
+        scale: 65%;
+      }
     }
   }
 
