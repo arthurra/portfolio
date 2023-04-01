@@ -30,6 +30,10 @@
       scale: 66%;
       transform-origin: left;
     }
+
+    @include mq(small) {
+      scale: 85%;
+    }
   }
 
   &__label {
@@ -152,13 +156,22 @@
   }
 
   &__timeline {
+    @include flex;
     @include h6;
     position: relative;
     text-shadow: var(--text-shadow-700);
     justify-self: end;
+    white-space: nowrap;
+    gap: 0 var(--space-050);
+    justify-content: center;
+
+    @include mq(small) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
     &::before {
-      content: "Timeline: ";
+      content: "Timeline:";
     }
 
     &::after {
@@ -209,11 +222,19 @@
           transform-origin: center;
         }
       }
+
+      &__title {
+        text-align: start;
+      }
     }
 
     .tag-container {
-      grid-area: tags;
       width: 50%;
+
+      @include mq(medium) {
+        grid-area: tags;
+        width: 100%;
+      }
     }
   }
 }

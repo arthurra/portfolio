@@ -64,6 +64,10 @@
   background-color: var(--color-cool-gray-025);
   border-radius: var(--border-radius-400);
   box-shadow: var(--inset-shadow-100);
+
+  @include mq(small) {
+    padding: var(--space-200);
+  }
 }
 
 // Tooltip

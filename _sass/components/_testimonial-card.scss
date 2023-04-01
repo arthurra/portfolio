@@ -3,6 +3,9 @@
 
 .testimonial-card {
   @include card;
+  @include mq(small) {
+    padding: var(--space-150);
+  }
 
   &__illustration {
     position: relative;
@@ -39,6 +42,9 @@
 
     @include mq(small) {
       margin-left: 0;
+      padding-top: var(--space-100);
+      font-size: var(--fa-400);
+      font-weight: 400;
     }
   }
 

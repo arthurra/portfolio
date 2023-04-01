@@ -1,6 +1,12 @@
+@use "../tokens/mixins" as *;
+
 .tag-container {
   display: flex;
   gap: var(--space-050);
+
+  @include mq(small) {
+    flex-wrap: wrap;
+  }
 }
 
 .tag {
