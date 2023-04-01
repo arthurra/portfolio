@@ -7,11 +7,10 @@ services:
   - name: UI Design
     timeline: 2 weeks
     tags:
+      - name: Design Sprint
       - name: Wireframes
       - name: Mockups
       - name: Style Guide
-      - name: Design Sprint
-      - name: Adobe XD
   - name: Prototyping
     timeline: 3 weeks
     tags:

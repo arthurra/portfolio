@@ -91,3 +91,20 @@
       description:
 
 - name: Banking Compliance Tracker
+  solutions:
+    - title: user story map
+      description:
+    - title: ui flow outline
+      description:
+    - title: strategic dashboard
+      description:
+    - title: kpi category overview
+      description:
+    - title: project details page
+      description:
+    - title: project calendar view
+      description:
+    - title: project gantt view
+      description:
+    - title: project list view
+      description:
