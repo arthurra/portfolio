@@ -5,6 +5,7 @@ hero-image: "/assets/images/case-studies/thumbnails/city-transit-app-thumbnail.p
 category: product design
 services:
   - name: UI Design
+    timeline: 1 week
     tags:
       - name: Wireframs
       - name: Mockups
