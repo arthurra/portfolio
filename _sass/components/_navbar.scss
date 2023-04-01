@@ -9,6 +9,10 @@
   border-radius: var(--border-radius-400);
   box-shadow: var(--inset-shadow-100);
 
+  @include mq(small) {
+    display: none;
+  }
+
   & > a {
     display: flex;
     height: 100%;
