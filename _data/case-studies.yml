@@ -1,7 +1,7 @@
 - name: City Transit App
   solutions:
     - title: city transit dashboard
-      description: See all available transit options to a destination within the city. on this companion dashboard app.
+      description: See all available transit options to a destination within the city on this companion dashboard app.
     - title: route suggestion
       description: Use open data sources to find the optimal route to a destination to minimize travel time and ease city congestion.
     - title: nearby transit options
