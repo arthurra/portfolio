@@ -26,7 +26,7 @@
 
   &__layout-container {
     @include grid;
-    gap: var(--space-250);
+    gap: var(--space-400);
 
     @include mq(small) {
       grid-template-columns: 1fr;

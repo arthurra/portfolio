@@ -1,6 +1,6 @@
 ---
 title: Construction Marketplace
-description: Transtion from the design phase to procurement seemlessly by applying 21st century connectivity to an old-school process
+description: Transition from the design phase to procurement seemlessly by applying 21st century connectivity to an old-school process
 hero-image: "/assets/images/case-studies/thumbnails/construction-marketplace-thumbnail.png"
 category: product design
 services:
