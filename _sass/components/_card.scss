@@ -10,6 +10,13 @@
       position: relative;
       border: var(--border-width) var(--border-style) transparent;
     }
+
+    @include mq(small) {
+      & .grid {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
   }
 
   &__hero-image-container {
