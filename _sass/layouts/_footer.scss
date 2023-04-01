@@ -18,5 +18,13 @@
       justify-content: space-evenly;
       gap: var(--space-600);
     }
+
+    @include mq(small) {
+      gap: var(--space-300);
+
+      .logo {
+        flex-direction: column;
+      }
+    }
   }
 }
