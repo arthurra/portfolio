@@ -9,9 +9,7 @@
   {% include head/fonts.html %}
   {% feed_meta %}
   {% seo %}
-  {% if jekyll.environment == "production" %}
-    {% include head/analytics.html %}
-  {% endif %}
+  {% include head/analytics.html %}
 </head>
 <body>
   {% include navigation/navigation.liquid %}
