@@ -7,6 +7,7 @@
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   {% include head/fonts.html %}
+  {% include head/favicon.html %}
   {% feed_meta %}
   {% seo %}
   {% include head/analytics.html %}
