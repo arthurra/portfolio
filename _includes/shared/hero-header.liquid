@@ -1,6 +1,6 @@
 <header>
   <div class="container">
-    <div class="card hero-card">
+    <div class="card hero-card {% if page.hero-image %}hero-card--image{% endif %}">
       <header class="card__header u-mb-500">
         <div class="tag-container u-mb-100">
           {% for tag in page.tags %}

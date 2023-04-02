@@ -1,17 +1,12 @@
 @use "../tokens/mixins" as *;
 
 .hero-card {
-  &:has(.hero-card__image) .card__body {
-    position: relative;
-    border: var(--border-width) var(--border-style) transparent;
-  }
-
   @include mq(small) {
-    &:not(:has(.hero-card__image)) .hero-card__art-container {
+    &:not(&--image) .hero-card__art-container {
       order: -1;
     }
 
-    &:has(.hero-card__image) .hero-card__art-container {
+    &--image .hero-card__art-container {
       display: none;
     }
 
@@ -61,5 +56,10 @@
       right: calc(var(--space-400) * -1);
       top: var(--space-700);
     }
+  }
+
+  .card__body {
+    position: relative;
+    border: var(--border-width) var(--border-style) transparent;
   }
 }
