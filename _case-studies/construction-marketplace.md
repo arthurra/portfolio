@@ -26,7 +26,7 @@ services:
       - name: VSCode
 testimonial: Empowering building designers and contractors to easily compare, specify and purchase products by connecting them with local suppliers
 cite: Configure, Inc.
-icon: 🏗
+icon: 🛒
 color: yellow
 tags:
   - name: E-commerce

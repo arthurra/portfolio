@@ -12,7 +12,7 @@ services:
       - name: Figma
 testimonial: NASA is researching future aviation operations where pilots will simultaneously control multiple aircraft remotely
 cite: NASA Tournament Lab
-icon: 🛩
+icon: 🛫
 color: green
 tags:
   - name: Aviation
