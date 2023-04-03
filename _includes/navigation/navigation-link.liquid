@@ -3,7 +3,7 @@
   {% if page.url == service.permalink %}
   class="current"
   {% endif %}
-  {% if service.status == "disabled" %}
+  {% if service.active == false %}
   class="disabled"
   aria-label="Coming Soon!"
   onclick="event.preventDefault();"

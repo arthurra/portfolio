@@ -22,6 +22,80 @@ export default defineConfig({
   schema: {
     collections: [
       {
+        name: "service",
+        label: "Serives",
+        path: "_services",
+        fields: [
+          {
+            type: "boolean",
+            name: "active",
+            label: "Active",
+          },
+          {
+            type: "string",
+            name: "name",
+            label: "Name",
+          },
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "string",
+            name: "services_tagline",
+            nameOverride: "services-tagline",
+            label: "Services Tagline",
+          },
+          {
+            type: "string",
+            name: "permalink",
+            label: "Permalink",
+          },
+          {
+            type: "number",
+            name: "order",
+            label: "Order Index",
+          },
+          {
+            type: "object",
+            name: "tags",
+            label: "Tags",
+            list: true,
+            ui: {
+              // This allows the customization of the list item UI
+              // Data can be accessed by item?.<Name of field>
+              itemProps: (item) => {
+                return { label: `${item?.name}` };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "name",
+                label: "Tag",
+              },
+            ],
+          },
+          {
+            type: "string",
+            name: "hero_partial",
+            nameOverride: "hero-partial",
+            label: "Hero Illustration Path",
+          },
+        ],
+      },
+      {
         name: "case_study",
         label: "Case Studies",
         path: "_case-studies",

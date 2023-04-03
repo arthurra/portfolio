@@ -48,11 +48,14 @@ type Query {
   collections: [Collection!]!
   node(id: String): Node!
   document(collection: String, relativePath: String): DocumentNode!
+  service(relativePath: String): Service!
+  serviceConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: ServiceFilter): ServiceConnection!
   case_study(relativePath: String): Case_study!
   case_studyConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: Case_studyFilter): Case_studyConnection!
 }
 
 input DocumentFilter {
+  service: ServiceFilter
   case_study: Case_studyFilter
 }
 
@@ -79,7 +82,75 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float, sort: String, filter: DocumentFilter): DocumentConnection!
 }
 
-union DocumentNode = Case_study
+union DocumentNode = Service | Case_study
+
+type ServiceTags {
+  name: String
+}
+
+type Service implements Node & Document {
+  active: Boolean
+  name: String
+  title: String!
+  description: String
+  services_tagline: String
+  permalink: String
+  order: Float
+  tags: [ServiceTags]
+  hero_partial: String
+  id: ID!
+  _sys: SystemInfo!
+  _values: JSON!
+}
+
+input BooleanFilter {
+  eq: Boolean
+  exists: Boolean
+}
+
+input StringFilter {
+  startsWith: String
+  eq: String
+  exists: Boolean
+  in: [String]
+}
+
+input NumberFilter {
+  lt: Float
+  lte: Float
+  gte: Float
+  gt: Float
+  eq: Float
+  exists: Boolean
+  in: [Float]
+}
+
+input ServiceTagsFilter {
+  name: StringFilter
+}
+
+input ServiceFilter {
+  active: BooleanFilter
+  name: StringFilter
+  title: StringFilter
+  description: StringFilter
+  services_tagline: StringFilter
+  permalink: StringFilter
+  order: NumberFilter
+  tags: ServiceTagsFilter
+  hero_partial: StringFilter
+}
+
+type ServiceConnectionEdges {
+  cursor: String!
+  node: Service
+}
+
+type ServiceConnection implements Connection {
+  pageInfo: PageInfo!
+  totalCount: Float!
+  edges: [ServiceConnectionEdges]
+}
 
 type Case_studyServicesTags {
   name: String
@@ -113,13 +184,6 @@ type Case_study implements Node & Document {
   _values: JSON!
 }
 
-input StringFilter {
-  startsWith: String
-  eq: String
-  exists: Boolean
-  in: [String]
-}
-
 input ImageFilter {
   startsWith: String
   eq: String
@@ -138,11 +202,6 @@ input Case_studyServicesFilter {
 
 input Case_studyTagsFilter {
   name: StringFilter
-}
-
-input BooleanFilter {
-  eq: Boolean
-  exists: Boolean
 }
 
 input Case_studyFilter {
@@ -177,17 +236,37 @@ type Mutation {
   updateDocument(collection: String, relativePath: String!, params: DocumentUpdateMutation!): DocumentNode!
   deleteDocument(collection: String, relativePath: String!): DocumentNode!
   createDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
+  updateService(relativePath: String!, params: ServiceMutation!): Service!
+  createService(relativePath: String!, params: ServiceMutation!): Service!
   updateCase_study(relativePath: String!, params: Case_studyMutation!): Case_study!
   createCase_study(relativePath: String!, params: Case_studyMutation!): Case_study!
 }
 
 input DocumentUpdateMutation {
+  service: ServiceMutation
   case_study: Case_studyMutation
   relativePath: String
 }
 
 input DocumentMutation {
+  service: ServiceMutation
   case_study: Case_studyMutation
+}
+
+input ServiceTagsMutation {
+  name: String
+}
+
+input ServiceMutation {
+  active: Boolean
+  name: String
+  title: String
+  description: String
+  services_tagline: String
+  permalink: String
+  order: Float
+  tags: [ServiceTagsMutation]
+  hero_partial: String
 }
 
 input Case_studyServicesTagsMutation {

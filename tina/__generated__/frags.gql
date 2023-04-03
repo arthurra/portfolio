@@ -1,3 +1,18 @@
+fragment ServiceParts on Service {
+  active
+  name
+  title
+  description
+  services_tagline
+  permalink
+  order
+  tags {
+    __typename
+    name
+  }
+  hero_partial
+}
+
 fragment Case_studyParts on Case_study {
   title
   description

@@ -5,6 +5,22 @@ export function gql(strings, ...args) {
   });
   return str;
 }
+export const ServicePartsFragmentDoc = gql`
+    fragment ServiceParts on Service {
+  active
+  name
+  title
+  description
+  services_tagline
+  permalink
+  order
+  tags {
+    __typename
+    name
+  }
+  hero_partial
+}
+    `;
 export const Case_StudyPartsFragmentDoc = gql`
     fragment Case_studyParts on Case_study {
   title
@@ -32,6 +48,61 @@ export const Case_StudyPartsFragmentDoc = gql`
   visible
 }
     `;
+export const ServiceDocument = gql`
+    query service($relativePath: String!) {
+  service(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...ServiceParts
+  }
+}
+    ${ServicePartsFragmentDoc}`;
+export const ServiceConnectionDocument = gql`
+    query serviceConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: ServiceFilter) {
+  serviceConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...ServiceParts
+      }
+    }
+  }
+}
+    ${ServicePartsFragmentDoc}`;
 export const Case_StudyDocument = gql`
     query case_study($relativePath: String!) {
   case_study(relativePath: $relativePath) {
@@ -89,6 +160,12 @@ export const Case_StudyConnectionDocument = gql`
     ${Case_StudyPartsFragmentDoc}`;
 export function getSdk(requester) {
   return {
+    service(variables, options) {
+      return requester(ServiceDocument, variables, options);
+    },
+    serviceConnection(variables, options) {
+      return requester(ServiceConnectionDocument, variables, options);
+    },
     case_study(variables, options) {
       return requester(Case_StudyDocument, variables, options);
     },
