@@ -1,0 +1,25 @@
+@use "../tokens/mixins" as *;
+
+.section {
+  &--accent {
+    @include accent-bg;
+
+    .container {
+      padding: var(--space-900) 0;
+
+      @include mq(medium) {
+        padding: var(--space-900) var(--space-200);
+      }
+
+      & > :is(h1, h2, h3, h4) {
+        color: #fff;
+        text-shadow: var(--text-shadow-700);
+      }
+
+      & > p {
+        color: var(--color-primary-050);
+        text-shadow: var(--text-shadow-700);
+      }
+    }
+  }
+}

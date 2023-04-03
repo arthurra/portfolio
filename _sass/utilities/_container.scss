@@ -1,0 +1,5 @@
+@use "../tokens/mixins" as *;
+
+.container {
+  @include container;
+}

@@ -1,0 +1,9 @@
+@use "../tokens/colors" as *;
+
+@each $color, $shade in $colors {
+  @each $prop, $value in $shade {
+    .u-color-#{$color}-#{$prop} {
+      color: var(--color-#{$color}-#{$prop});
+    }
+  }
+}

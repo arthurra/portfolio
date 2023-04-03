@@ -1,0 +1,73 @@
+@use "../tokens/mixins" as *;
+@use "../base/typography" as *;
+
+.testimonial-card {
+  @include card;
+  @include mq(small) {
+    padding: var(--space-150);
+  }
+
+  &__illustration {
+    position: relative;
+    top: -200px;
+    left: var(--space-300);
+    transform: skewY(-20deg);
+    filter: drop-shadow(var(--box-shadow-400));
+
+    @include mq(medium) {
+      top: -100px;
+      left: var(--space-400);
+    }
+
+    @include mq(small) {
+      scale: 50%;
+      transform-origin: left;
+      top: -2rem;
+      left: 50%;
+    }
+  }
+
+  &__testimonial {
+    position: relative;
+    margin: var(--space-300) var(--space-400);
+    text-align: center;
+
+    @include mq(small) {
+      margin: var(--space-600) 0 var(--space-400);
+    }
+  }
+
+  &__quote {
+    margin-left: calc(var(--space-800) + var(--space-300));
+
+    @include mq(small) {
+      margin-left: 0;
+      padding-top: var(--space-100);
+      font-size: var(--fa-400);
+      font-weight: 400;
+    }
+  }
+
+  &__attribution {
+    @include h6($dark: true);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    translate: 0 200%;
+    rotate: -6.9deg;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: url(../images/arrows/arrow-attribution.svg);
+      rotate: 95deg;
+      scale: 0.8;
+      translate: calc(-100% - var(--space-100)) -55%;
+
+      @include mq(small) {
+        scale: 65%;
+      }
+    }
+  }
+}

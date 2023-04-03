@@ -1,0 +1,13 @@
+@use "../tokens/mixins" as *;
+
+.nav-container {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+
+  @include mq(small) {
+    .button {
+      padding: 0 var(--space-100);
+    }
+  }
+}

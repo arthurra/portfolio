@@ -1,0 +1,110 @@
+- name: City Transit App
+  solutions:
+    - title: city transit dashboard
+      description: See all available transit options to a destination within the city on this companion dashboard app.
+    - title: route suggestion
+      description: Use open data sources to find the optimal route to a destination to minimize travel time and ease city congestion.
+    - title: nearby transit options
+      description: Easily explore all the transit options near you using the map or list view.
+    - title: bus stop
+      description: See all the available service lines and pre-purchase fares.
+    - title: stop schedule
+      description: Scroll down after selecting a transit option to view the arrival schedule.
+
+- name: Ground Control Station
+  solutions:
+    - title: fly mode
+      description: The UI is divided into several flexible tiled windows to enhance the user's focus. All the windows are interconnected but are specialized to show specific vehicle information. Together they provide a complete picture of how the vehicles are operating.
+    - title: vehicle status
+      description: Imagining how to display all of the relevant information about not just one but multiple vehicles in a way the user could quickly understand was the most challenging task of the competition. I used a series of icons, as well as colors, to represent the various states that a vehicle can have. The outliner also contains controls for affecting each vehicle's basic flight operations.
+    - title: instruments
+      description: The details panel condenses a wealth of vehicle information into an easy-to-navigate window. Users can quickly see focused vehicle information and controls by switching between the tabbed interface. Each tab icon also corresponds to an alert icon in the outliner.
+    - title: checklist
+      description: The mission timeline displays a representation of a vehicle's progress through a planned mission. It also serves a dual purpose of graphically showing the vehicle altitude that can't be seen on the top-down map. The user can scrub through the timeline to see recorded or estimated spacial information to plan or review a mission.
+    - title: network
+      description: The map shows where the vehicles are in space. Several other components are overlayed on top of the map view. The toolbar along the left edge of the map contains all the tools for selecting and affecting vehicle operation. The traffic view window serves as a minimap with a simplified high-contrast view of vehicle positions. The camera window displays a stream from the selected vehicle's camera.
+
+- name: Construction Marketplace
+  solutions:
+    - title: user flow diagram
+      description: We began by mapping out the key content areas based on our target audience's needs. We identified each action that any of our user groups would need to make on each content block; and where that action would take them, allowing us to lay the foundation for a robust and efficient system.
+    - title: low fidelity wireframes
+      description: Here we block out the elements on the page to add some visuals to the screens described in our user flow diagram. Creating low-fidelity versions of what we think the page will look like allows us to test our assumptions and have better conversations about what we need to see on the screen.
+    - title: low fidelity prototype
+      description: Adding detail and stitching the screens together helps to make the experience start to feel real. We keep the flow through the system in mind as we refine individual pages. At this stage, we can test for usability and efficiency.
+    - title: high fidelity prototype
+      description: The high-fidelity prototype is the final stage in our UX design sprint. It combines the effective layouts of our wireframes with added style, visual hierarchy, and iconography. Next, it's time for us to take what we've learned and start building.
+    - title: project details
+      description: Groups of products, requests, and quotes, can be easily organized into projects. From here, users can quickly see all the most up-to-date information without searching through multiple files. They can save time and take the guesswork out of the equation.
+    - title: quote details
+      description: The quote builder/quote details page displays products alongside equipment tags and allows vendors to add custom line items to meet customer needs.
+    - title: project pricing table
+      description: Big projects can have a multitude of products coming from different vendors across several product categories. Our design makes it easy to see the breakdown of each offer so that users can make the best decision for their project.
+    - title: admin control panel
+      description: The app also featured a robust admin section for managing all the unique data points.
+    - title: style guide
+      description: Documentation describing the visual standards for the application's web components.
+
+- name: Work Order Management
+  solutions:
+    - title: jobs list
+      description:
+    - title: new job form
+      description:
+    - title: new job form
+      description:
+    - title: job products
+      description:
+    - title: job progress
+      description:
+    - title: job history
+      description:
+    - title: production queue
+      description:
+    - title: work order products
+      description:
+    - title: work order production summary
+      description:
+
+- name: Blockchain Explorer
+  solutions:
+    - title: blockchain summary
+      description:
+    - title: address transactions
+      description:
+    - title: address tokens
+      description:
+    - title: token holdings modal
+      description:
+
+- name: Sales Analysis Tool
+  solutions:
+    - title: pricing list
+      description:
+    - title: update pricing form
+      description:
+    - title: pricing summary
+      description:
+    - title: pricing summary expanded
+      description:
+    - title: pricing contract terms
+      description:
+
+- name: Banking Compliance Tracker
+  solutions:
+    - title: user story map
+      description:
+    - title: ui flow outline
+      description:
+    - title: strategic dashboard
+      description:
+    - title: kpi category overview
+      description:
+    - title: project details page
+      description:
+    - title: project calendar view
+      description:
+    - title: project gantt view
+      description:
+    - title: project list view
+      description:
