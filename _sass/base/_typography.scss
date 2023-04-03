@@ -16,6 +16,7 @@ body {
 @mixin title-base {
   font-family: var(--ff-title);
   font-weight: 700;
+  font-style: italic;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--color-text-700);
