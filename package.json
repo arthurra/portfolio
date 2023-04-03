@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@tinacms/cli": "^1.5.3"
+  }
+}
