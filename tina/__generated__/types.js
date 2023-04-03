@@ -5,15 +5,36 @@ export function gql(strings, ...args) {
   });
   return str;
 }
-export const PostPartsFragmentDoc = gql`
-    fragment PostParts on Post {
+export const Case_StudyPartsFragmentDoc = gql`
+    fragment Case_studyParts on Case_study {
   title
-  body
+  description
+  hero_image
+  category
+  services {
+    __typename
+    name
+    tags {
+      __typename
+      name
+    }
+  }
+  testimonial
+  cite
+  icon
+  color
+  tags {
+    __typename
+    name
+  }
+  size
+  aspect
+  visible
 }
     `;
-export const PostDocument = gql`
-    query post($relativePath: String!) {
-  post(relativePath: $relativePath) {
+export const Case_StudyDocument = gql`
+    query case_study($relativePath: String!) {
+  case_study(relativePath: $relativePath) {
     ... on Document {
       _sys {
         filename
@@ -25,13 +46,13 @@ export const PostDocument = gql`
       }
       id
     }
-    ...PostParts
+    ...Case_studyParts
   }
 }
-    ${PostPartsFragmentDoc}`;
-export const PostConnectionDocument = gql`
-    query postConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: PostFilter) {
-  postConnection(
+    ${Case_StudyPartsFragmentDoc}`;
+export const Case_StudyConnectionDocument = gql`
+    query case_studyConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: Case_studyFilter) {
+  case_studyConnection(
     before: $before
     after: $after
     first: $first
@@ -60,19 +81,19 @@ export const PostConnectionDocument = gql`
           }
           id
         }
-        ...PostParts
+        ...Case_studyParts
       }
     }
   }
 }
-    ${PostPartsFragmentDoc}`;
+    ${Case_StudyPartsFragmentDoc}`;
 export function getSdk(requester) {
   return {
-    post(variables, options) {
-      return requester(PostDocument, variables, options);
+    case_study(variables, options) {
+      return requester(Case_StudyDocument, variables, options);
     },
-    postConnection(variables, options) {
-      return requester(PostConnectionDocument, variables, options);
+    case_studyConnection(variables, options) {
+      return requester(Case_StudyConnectionDocument, variables, options);
     }
   };
 }
@@ -88,7 +109,7 @@ const generateRequester = (client) => {
   return requester;
 };
 export const ExperimentalGetTinaClient = () => getSdk(
-  generateRequester(createClient({ url: "https://content.tinajs.io/1.4/content/22468546-c359-4bf1-99e7-d3cf8b6b6284/github/gh-pages", queries }))
+  generateRequester(createClient({ url: "http://localhost:4001/graphql", queries }))
 );
 export const queries = (client) => {
   const requester = generateRequester(client);

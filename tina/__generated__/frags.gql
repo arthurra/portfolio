@@ -1,4 +1,25 @@
-fragment PostParts on Post {
+fragment Case_studyParts on Case_study {
   title
-  body
+  description
+  hero_image
+  category
+  services {
+    __typename
+    name
+    tags {
+      __typename
+      name
+    }
+  }
+  testimonial
+  cite
+  icon
+  color
+  tags {
+    __typename
+    name
+  }
+  size
+  aspect
+  visible
 }

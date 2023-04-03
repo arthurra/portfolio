@@ -16,15 +16,15 @@ export default defineConfig({
   media: {
     tina: {
       mediaRoot: "",
-      publicFolder: "./",
+      publicFolder: "./assets/images",
     },
   },
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        name: "case_study",
+        label: "Case Studies",
+        path: "_case-studies",
         fields: [
           {
             type: "string",
@@ -34,10 +34,197 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
+            type: "string",
+            name: "description",
+            label: "Description",
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            name: "hero_image",
+            nameOverride: "hero-image",
+            type: "image",
+            label: "Hero Image",
+          },
+          {
+            type: "string",
+            name: "category",
+            label: "Category",
+            options: [
+              {
+                value: "product design",
+                label: "Product Design",
+              },
+              {
+                value: "branding",
+                label: "Branding",
+              },
+              {
+                value: "renders",
+                label: "Renders",
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "services",
+            label: "Services",
+            list: true,
+            ui: {
+              // This allows the customization of the list item UI
+              // Data can be accessed by item?.<Name of field>
+              itemProps: (item) => {
+                return { label: `${item?.name}` };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "name",
+                label: "Service",
+              },
+              {
+                type: "object",
+                name: "tags",
+                label: "Tags",
+                list: true,
+                ui: {
+                  // This allows the customization of the list item UI
+                  // Data can be accessed by item?.<Name of field>
+                  itemProps: (item) => {
+                    return { label: `${item?.name}` };
+                  },
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "name",
+                    label: "Tag",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            type: "string",
+            name: "testimonial",
+            label: "Testimonial",
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "string",
+            name: "cite",
+            label: "Cite",
+          },
+          {
+            type: "string",
+            name: "icon",
+            label: "Icon",
+          },
+          {
+            type: "string",
+            name: "color",
+            label: "Color",
+            options: [
+              {
+                value: "gray",
+                label: "Gray",
+              },
+              {
+                value: "cool-gray",
+                label: "Cool Gray",
+              },
+              {
+                value: "red",
+                label: "Red",
+              },
+              {
+                value: "orange",
+                label: "Orange",
+              },
+              {
+                value: "green",
+                label: "Green",
+              },
+              {
+                value: "yellow",
+                label: "Yellow",
+              },
+              {
+                value: "blue",
+                label: "Blue",
+              },
+              {
+                value: "purple",
+                label: "Purple",
+              },
+              {
+                value: "violet",
+                label: "Violet",
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "tags",
+            label: "Tags",
+            list: true,
+            ui: {
+              // This allows the customization of the list item UI
+              // Data can be accessed by item?.<Name of field>
+              itemProps: (item) => {
+                return { label: `${item?.name}` };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "name",
+                label: "Tag",
+              },
+            ],
+          },
+          {
+            type: "string",
+            name: "size",
+            label: "Thumbnail Size",
+            options: [
+              {
+                value: "small",
+                label: "Small",
+              },
+              {
+                value: "large",
+                label: "Large",
+              },
+              {
+                value: "featured",
+                label: "Featured",
+              },
+            ],
+          },
+          {
+            type: "string",
+            name: "aspect",
+            label: "Aspect Ratio",
+            options: [
+              {
+                value: "wide",
+                label: "Wide",
+              },
+              {
+                value: "tall",
+                label: "Tall",
+              },
+            ],
+          },
+          {
+            type: "boolean",
+            name: "visible",
+            label: "Visible",
           },
         ],
       },

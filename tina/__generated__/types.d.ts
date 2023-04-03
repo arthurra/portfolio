@@ -73,8 +73,8 @@ export type Query = {
   collections: Array<Collection>;
   node: Node;
   document: DocumentNode;
-  post: Post;
-  postConnection: PostConnection;
+  case_study: Case_Study;
+  case_studyConnection: Case_StudyConnection;
 };
 
 
@@ -99,22 +99,22 @@ export type QueryDocumentArgs = {
 };
 
 
-export type QueryPostArgs = {
+export type QueryCase_StudyArgs = {
   relativePath?: InputMaybe<Scalars['String']>;
 };
 
 
-export type QueryPostConnectionArgs = {
+export type QueryCase_StudyConnectionArgs = {
   before?: InputMaybe<Scalars['String']>;
   after?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Float']>;
   last?: InputMaybe<Scalars['Float']>;
   sort?: InputMaybe<Scalars['String']>;
-  filter?: InputMaybe<PostFilter>;
+  filter?: InputMaybe<Case_StudyFilter>;
 };
 
 export type DocumentFilter = {
-  post?: InputMaybe<PostFilter>;
+  case_study?: InputMaybe<Case_StudyFilter>;
 };
 
 export type DocumentConnectionEdges = {
@@ -153,12 +153,39 @@ export type CollectionDocumentsArgs = {
   filter?: InputMaybe<DocumentFilter>;
 };
 
-export type DocumentNode = Post;
+export type DocumentNode = Case_Study;
 
-export type Post = Node & Document & {
-  __typename?: 'Post';
+export type Case_StudyServicesTags = {
+  __typename?: 'Case_studyServicesTags';
+  name?: Maybe<Scalars['String']>;
+};
+
+export type Case_StudyServices = {
+  __typename?: 'Case_studyServices';
+  name?: Maybe<Scalars['String']>;
+  tags?: Maybe<Array<Maybe<Case_StudyServicesTags>>>;
+};
+
+export type Case_StudyTags = {
+  __typename?: 'Case_studyTags';
+  name?: Maybe<Scalars['String']>;
+};
+
+export type Case_Study = Node & Document & {
+  __typename?: 'Case_study';
   title: Scalars['String'];
-  body?: Maybe<Scalars['JSON']>;
+  description?: Maybe<Scalars['String']>;
+  hero_image?: Maybe<Scalars['String']>;
+  category?: Maybe<Scalars['String']>;
+  services?: Maybe<Array<Maybe<Case_StudyServices>>>;
+  testimonial?: Maybe<Scalars['String']>;
+  cite?: Maybe<Scalars['String']>;
+  icon?: Maybe<Scalars['String']>;
+  color?: Maybe<Scalars['String']>;
+  tags?: Maybe<Array<Maybe<Case_StudyTags>>>;
+  size?: Maybe<Scalars['String']>;
+  aspect?: Maybe<Scalars['String']>;
+  visible?: Maybe<Scalars['Boolean']>;
   id: Scalars['ID'];
   _sys: SystemInfo;
   _values: Scalars['JSON'];
@@ -171,28 +198,58 @@ export type StringFilter = {
   in?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
 
-export type RichTextFilter = {
+export type ImageFilter = {
   startsWith?: InputMaybe<Scalars['String']>;
   eq?: InputMaybe<Scalars['String']>;
   exists?: InputMaybe<Scalars['Boolean']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
 
-export type PostFilter = {
+export type Case_StudyServicesTagsFilter = {
+  name?: InputMaybe<StringFilter>;
+};
+
+export type Case_StudyServicesFilter = {
+  name?: InputMaybe<StringFilter>;
+  tags?: InputMaybe<Case_StudyServicesTagsFilter>;
+};
+
+export type Case_StudyTagsFilter = {
+  name?: InputMaybe<StringFilter>;
+};
+
+export type BooleanFilter = {
+  eq?: InputMaybe<Scalars['Boolean']>;
+  exists?: InputMaybe<Scalars['Boolean']>;
+};
+
+export type Case_StudyFilter = {
   title?: InputMaybe<StringFilter>;
-  body?: InputMaybe<RichTextFilter>;
+  description?: InputMaybe<StringFilter>;
+  hero_image?: InputMaybe<ImageFilter>;
+  category?: InputMaybe<StringFilter>;
+  services?: InputMaybe<Case_StudyServicesFilter>;
+  testimonial?: InputMaybe<StringFilter>;
+  cite?: InputMaybe<StringFilter>;
+  icon?: InputMaybe<StringFilter>;
+  color?: InputMaybe<StringFilter>;
+  tags?: InputMaybe<Case_StudyTagsFilter>;
+  size?: InputMaybe<StringFilter>;
+  aspect?: InputMaybe<StringFilter>;
+  visible?: InputMaybe<BooleanFilter>;
 };
 
-export type PostConnectionEdges = {
-  __typename?: 'PostConnectionEdges';
+export type Case_StudyConnectionEdges = {
+  __typename?: 'Case_studyConnectionEdges';
   cursor: Scalars['String'];
-  node?: Maybe<Post>;
+  node?: Maybe<Case_Study>;
 };
 
-export type PostConnection = Connection & {
-  __typename?: 'PostConnection';
+export type Case_StudyConnection = Connection & {
+  __typename?: 'Case_studyConnection';
   pageInfo: PageInfo;
   totalCount: Scalars['Float'];
-  edges?: Maybe<Array<Maybe<PostConnectionEdges>>>;
+  edges?: Maybe<Array<Maybe<Case_StudyConnectionEdges>>>;
 };
 
 export type Mutation = {
@@ -201,8 +258,8 @@ export type Mutation = {
   updateDocument: DocumentNode;
   deleteDocument: DocumentNode;
   createDocument: DocumentNode;
-  updatePost: Post;
-  createPost: Post;
+  updateCase_study: Case_Study;
+  createCase_study: Case_Study;
 };
 
 
@@ -233,61 +290,106 @@ export type MutationCreateDocumentArgs = {
 };
 
 
-export type MutationUpdatePostArgs = {
+export type MutationUpdateCase_StudyArgs = {
   relativePath: Scalars['String'];
-  params: PostMutation;
+  params: Case_StudyMutation;
 };
 
 
-export type MutationCreatePostArgs = {
+export type MutationCreateCase_StudyArgs = {
   relativePath: Scalars['String'];
-  params: PostMutation;
+  params: Case_StudyMutation;
 };
 
 export type DocumentUpdateMutation = {
-  post?: InputMaybe<PostMutation>;
+  case_study?: InputMaybe<Case_StudyMutation>;
   relativePath?: InputMaybe<Scalars['String']>;
 };
 
 export type DocumentMutation = {
-  post?: InputMaybe<PostMutation>;
+  case_study?: InputMaybe<Case_StudyMutation>;
 };
 
-export type PostMutation = {
+export type Case_StudyServicesTagsMutation = {
+  name?: InputMaybe<Scalars['String']>;
+};
+
+export type Case_StudyServicesMutation = {
+  name?: InputMaybe<Scalars['String']>;
+  tags?: InputMaybe<Array<InputMaybe<Case_StudyServicesTagsMutation>>>;
+};
+
+export type Case_StudyTagsMutation = {
+  name?: InputMaybe<Scalars['String']>;
+};
+
+export type Case_StudyMutation = {
   title?: InputMaybe<Scalars['String']>;
-  body?: InputMaybe<Scalars['JSON']>;
+  description?: InputMaybe<Scalars['String']>;
+  hero_image?: InputMaybe<Scalars['String']>;
+  category?: InputMaybe<Scalars['String']>;
+  services?: InputMaybe<Array<InputMaybe<Case_StudyServicesMutation>>>;
+  testimonial?: InputMaybe<Scalars['String']>;
+  cite?: InputMaybe<Scalars['String']>;
+  icon?: InputMaybe<Scalars['String']>;
+  color?: InputMaybe<Scalars['String']>;
+  tags?: InputMaybe<Array<InputMaybe<Case_StudyTagsMutation>>>;
+  size?: InputMaybe<Scalars['String']>;
+  aspect?: InputMaybe<Scalars['String']>;
+  visible?: InputMaybe<Scalars['Boolean']>;
 };
 
-export type PostPartsFragment = { __typename?: 'Post', title: string, body?: any | null };
+export type Case_StudyPartsFragment = { __typename?: 'Case_study', title: string, description?: string | null, hero_image?: string | null, category?: string | null, testimonial?: string | null, cite?: string | null, icon?: string | null, color?: string | null, size?: string | null, aspect?: string | null, visible?: boolean | null, services?: Array<{ __typename: 'Case_studyServices', name?: string | null, tags?: Array<{ __typename: 'Case_studyServicesTags', name?: string | null } | null> | null } | null> | null, tags?: Array<{ __typename: 'Case_studyTags', name?: string | null } | null> | null };
 
-export type PostQueryVariables = Exact<{
+export type Case_StudyQueryVariables = Exact<{
   relativePath: Scalars['String'];
 }>;
 
 
-export type PostQuery = { __typename?: 'Query', post: { __typename?: 'Post', id: string, title: string, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type Case_StudyQuery = { __typename?: 'Query', case_study: { __typename?: 'Case_study', id: string, title: string, description?: string | null, hero_image?: string | null, category?: string | null, testimonial?: string | null, cite?: string | null, icon?: string | null, color?: string | null, size?: string | null, aspect?: string | null, visible?: boolean | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, services?: Array<{ __typename: 'Case_studyServices', name?: string | null, tags?: Array<{ __typename: 'Case_studyServicesTags', name?: string | null } | null> | null } | null> | null, tags?: Array<{ __typename: 'Case_studyTags', name?: string | null } | null> | null } };
 
-export type PostConnectionQueryVariables = Exact<{
+export type Case_StudyConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']>;
   after?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Float']>;
   last?: InputMaybe<Scalars['Float']>;
   sort?: InputMaybe<Scalars['String']>;
-  filter?: InputMaybe<PostFilter>;
+  filter?: InputMaybe<Case_StudyFilter>;
 }>;
 
 
-export type PostConnectionQuery = { __typename?: 'Query', postConnection: { __typename?: 'PostConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PostConnectionEdges', cursor: string, node?: { __typename?: 'Post', id: string, title: string, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type Case_StudyConnectionQuery = { __typename?: 'Query', case_studyConnection: { __typename?: 'Case_studyConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'Case_studyConnectionEdges', cursor: string, node?: { __typename?: 'Case_study', id: string, title: string, description?: string | null, hero_image?: string | null, category?: string | null, testimonial?: string | null, cite?: string | null, icon?: string | null, color?: string | null, size?: string | null, aspect?: string | null, visible?: boolean | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, services?: Array<{ __typename: 'Case_studyServices', name?: string | null, tags?: Array<{ __typename: 'Case_studyServicesTags', name?: string | null } | null> | null } | null> | null, tags?: Array<{ __typename: 'Case_studyTags', name?: string | null } | null> | null } | null } | null> | null } };
 
-export const PostPartsFragmentDoc = gql`
-    fragment PostParts on Post {
+export const Case_StudyPartsFragmentDoc = gql`
+    fragment Case_studyParts on Case_study {
   title
-  body
+  description
+  hero_image
+  category
+  services {
+    __typename
+    name
+    tags {
+      __typename
+      name
+    }
+  }
+  testimonial
+  cite
+  icon
+  color
+  tags {
+    __typename
+    name
+  }
+  size
+  aspect
+  visible
 }
     `;
-export const PostDocument = gql`
-    query post($relativePath: String!) {
-  post(relativePath: $relativePath) {
+export const Case_StudyDocument = gql`
+    query case_study($relativePath: String!) {
+  case_study(relativePath: $relativePath) {
     ... on Document {
       _sys {
         filename
@@ -299,13 +401,13 @@ export const PostDocument = gql`
       }
       id
     }
-    ...PostParts
+    ...Case_studyParts
   }
 }
-    ${PostPartsFragmentDoc}`;
-export const PostConnectionDocument = gql`
-    query postConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: PostFilter) {
-  postConnection(
+    ${Case_StudyPartsFragmentDoc}`;
+export const Case_StudyConnectionDocument = gql`
+    query case_studyConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: Case_studyFilter) {
+  case_studyConnection(
     before: $before
     after: $after
     first: $first
@@ -334,20 +436,20 @@ export const PostConnectionDocument = gql`
           }
           id
         }
-        ...PostParts
+        ...Case_studyParts
       }
     }
   }
 }
-    ${PostPartsFragmentDoc}`;
+    ${Case_StudyPartsFragmentDoc}`;
 export type Requester<C= {}> = <R, V>(doc: DocumentNode, vars?: V, options?: C) => Promise<R>
   export function getSdk<C>(requester: Requester<C>) {
     return {
-      post(variables: PostQueryVariables, options?: C): Promise<{data: PostQuery, variables: PostQueryVariables, query: string}> {
-        return requester<{data: PostQuery, variables: PostQueryVariables, query: string}, PostQueryVariables>(PostDocument, variables, options);
+      case_study(variables: Case_StudyQueryVariables, options?: C): Promise<{data: Case_StudyQuery, variables: Case_StudyQueryVariables, query: string}> {
+        return requester<{data: Case_StudyQuery, variables: Case_StudyQueryVariables, query: string}, Case_StudyQueryVariables>(Case_StudyDocument, variables, options);
       },
-    postConnection(variables?: PostConnectionQueryVariables, options?: C): Promise<{data: PostConnectionQuery, variables: PostConnectionQueryVariables, query: string}> {
-        return requester<{data: PostConnectionQuery, variables: PostConnectionQueryVariables, query: string}, PostConnectionQueryVariables>(PostConnectionDocument, variables, options);
+    case_studyConnection(variables?: Case_StudyConnectionQueryVariables, options?: C): Promise<{data: Case_StudyConnectionQuery, variables: Case_StudyConnectionQueryVariables, query: string}> {
+        return requester<{data: Case_StudyConnectionQuery, variables: Case_StudyConnectionQueryVariables, query: string}, Case_StudyConnectionQueryVariables>(Case_StudyConnectionDocument, variables, options);
       }
     };
   }
@@ -379,7 +481,7 @@ const generateRequester = (client: TinaClient) => {
  **/
 export const ExperimentalGetTinaClient = () =>
   getSdk(
-    generateRequester(createClient({ url: "https://content.tinajs.io/1.4/content/22468546-c359-4bf1-99e7-d3cf8b6b6284/github/gh-pages", queries }))
+    generateRequester(createClient({ url: "http://localhost:4001/graphql", queries }))
   );
 
 export const queries = (client: TinaClient) => {

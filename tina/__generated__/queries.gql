@@ -1,5 +1,5 @@
-query post($relativePath: String!) {
-  post(relativePath: $relativePath) {
+query case_study($relativePath: String!) {
+  case_study(relativePath: $relativePath) {
     ... on Document {
       _sys {
         filename
@@ -11,12 +11,12 @@ query post($relativePath: String!) {
       }
       id
     }
-    ...PostParts
+    ...Case_studyParts
   }
 }
 
-query postConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: PostFilter) {
-  postConnection(
+query case_studyConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: Case_studyFilter) {
+  case_studyConnection(
     before: $before
     after: $after
     first: $first
@@ -45,7 +45,7 @@ query postConnection($before: String, $after: String, $first: Float, $last: Floa
           }
           id
         }
-        ...PostParts
+        ...Case_studyParts
       }
     }
   }

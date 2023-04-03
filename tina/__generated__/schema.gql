@@ -48,12 +48,12 @@ type Query {
   collections: [Collection!]!
   node(id: String): Node!
   document(collection: String, relativePath: String): DocumentNode!
-  post(relativePath: String): Post!
-  postConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: PostFilter): PostConnection!
+  case_study(relativePath: String): Case_study!
+  case_studyConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: Case_studyFilter): Case_studyConnection!
 }
 
 input DocumentFilter {
-  post: PostFilter
+  case_study: Case_studyFilter
 }
 
 type DocumentConnectionEdges {
@@ -79,11 +79,35 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float, sort: String, filter: DocumentFilter): DocumentConnection!
 }
 
-union DocumentNode = Post
+union DocumentNode = Case_study
 
-type Post implements Node & Document {
+type Case_studyServicesTags {
+  name: String
+}
+
+type Case_studyServices {
+  name: String
+  tags: [Case_studyServicesTags]
+}
+
+type Case_studyTags {
+  name: String
+}
+
+type Case_study implements Node & Document {
   title: String!
-  body: JSON
+  description: String
+  hero_image: String
+  category: String
+  services: [Case_studyServices]
+  testimonial: String
+  cite: String
+  icon: String
+  color: String
+  tags: [Case_studyTags]
+  size: String
+  aspect: String
+  visible: Boolean
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -96,26 +120,56 @@ input StringFilter {
   in: [String]
 }
 
-input RichTextFilter {
+input ImageFilter {
   startsWith: String
   eq: String
   exists: Boolean
+  in: [String]
 }
 
-input PostFilter {
+input Case_studyServicesTagsFilter {
+  name: StringFilter
+}
+
+input Case_studyServicesFilter {
+  name: StringFilter
+  tags: Case_studyServicesTagsFilter
+}
+
+input Case_studyTagsFilter {
+  name: StringFilter
+}
+
+input BooleanFilter {
+  eq: Boolean
+  exists: Boolean
+}
+
+input Case_studyFilter {
   title: StringFilter
-  body: RichTextFilter
+  description: StringFilter
+  hero_image: ImageFilter
+  category: StringFilter
+  services: Case_studyServicesFilter
+  testimonial: StringFilter
+  cite: StringFilter
+  icon: StringFilter
+  color: StringFilter
+  tags: Case_studyTagsFilter
+  size: StringFilter
+  aspect: StringFilter
+  visible: BooleanFilter
 }
 
-type PostConnectionEdges {
+type Case_studyConnectionEdges {
   cursor: String!
-  node: Post
+  node: Case_study
 }
 
-type PostConnection implements Connection {
+type Case_studyConnection implements Connection {
   pageInfo: PageInfo!
   totalCount: Float!
-  edges: [PostConnectionEdges]
+  edges: [Case_studyConnectionEdges]
 }
 
 type Mutation {
@@ -123,22 +177,46 @@ type Mutation {
   updateDocument(collection: String, relativePath: String!, params: DocumentUpdateMutation!): DocumentNode!
   deleteDocument(collection: String, relativePath: String!): DocumentNode!
   createDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
-  updatePost(relativePath: String!, params: PostMutation!): Post!
-  createPost(relativePath: String!, params: PostMutation!): Post!
+  updateCase_study(relativePath: String!, params: Case_studyMutation!): Case_study!
+  createCase_study(relativePath: String!, params: Case_studyMutation!): Case_study!
 }
 
 input DocumentUpdateMutation {
-  post: PostMutation
+  case_study: Case_studyMutation
   relativePath: String
 }
 
 input DocumentMutation {
-  post: PostMutation
+  case_study: Case_studyMutation
 }
 
-input PostMutation {
+input Case_studyServicesTagsMutation {
+  name: String
+}
+
+input Case_studyServicesMutation {
+  name: String
+  tags: [Case_studyServicesTagsMutation]
+}
+
+input Case_studyTagsMutation {
+  name: String
+}
+
+input Case_studyMutation {
   title: String
-  body: JSON
+  description: String
+  hero_image: String
+  category: String
+  services: [Case_studyServicesMutation]
+  testimonial: String
+  cite: String
+  icon: String
+  color: String
+  tags: [Case_studyTagsMutation]
+  size: String
+  aspect: String
+  visible: Boolean
 }
 
 schema {

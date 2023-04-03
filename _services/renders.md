@@ -1,14 +1,14 @@
 ---
 layout: service
 permalink: "/renders"
-name: 3D Renders
 order: 3
+name: 3D Renders
 tags:
   - name: Logo Design
   - name: Brand Identity
 title: 3D Renders
-description:
-hero: illustrations/cube.liquid
-services-tagline:
+description: ""
+hero-partial: illustrations/cube.liquid
+services-tagline: ""
 status: disabled
 ---
