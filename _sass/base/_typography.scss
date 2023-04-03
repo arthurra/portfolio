@@ -10,7 +10,7 @@
 
 body {
   @include body-text;
-  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
 }
 
 @mixin title-base {

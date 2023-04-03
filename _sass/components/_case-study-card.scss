@@ -15,6 +15,7 @@
 
 .case-study-card {
   @include body-text;
+  font-style: normal;
   position: relative;
   display: flex;
   flex-direction: column;

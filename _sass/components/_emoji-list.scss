@@ -30,5 +30,6 @@
   &__title {
     @include body-text;
     color: var(--color-text-400);
+    font-style: normal;
   }
 }
