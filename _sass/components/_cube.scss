@@ -1,5 +1,23 @@
 @use "../tokens/mixins" as *;
 
+.cube-frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  translate: 10% -20%;
+
+  @include mq(medium) {
+    scale: 85%;
+    translate: 25% -20%;
+  }
+
+  @include mq(small) {
+    transform-origin: top;
+    scale: 50%;
+    translate: 27% -15%;
+  }
+}
+
 .cube {
   position: relative;
   top: calc(var(--space-500) * -1);
