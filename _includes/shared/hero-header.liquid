@@ -20,7 +20,10 @@
           </div>
           <div class="hero-card__art-container">
             {% if page.hero-partial %}
-              {% include {{ page.hero-partial }} %}
+              <div class="hero-card__image-container">
+
+                {% include {{ page.hero-partial }} %}
+              </div>
             {% elsif page.hero-image %}
               <div class="hero-card__image-container">
                 <img

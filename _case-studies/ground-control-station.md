@@ -7,6 +7,7 @@ hero-image: /assets/images/case-studies/thumbnails/ground-control-station-thumbn
 category: product design
 services:
   - name: UI Design
+    timeline: 1 week
     tags:
       - name: Wireframes
       - name: Mockups
@@ -23,5 +24,3 @@ tags:
 size: featured
 visible: true
 ---
-
-

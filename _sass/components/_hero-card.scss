@@ -35,10 +35,14 @@
     bottom: 0;
     right: 0;
     width: 600px;
-    height: 400px;
+    height: 450px;
     border-radius: var(--border-radius-400);
     overflow: hidden;
     pointer-events: none;
+
+    @include mq(medium) {
+      top: -50px;
+    }
   }
 
   &__image {

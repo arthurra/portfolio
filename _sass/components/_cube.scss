@@ -4,17 +4,17 @@
   position: absolute;
   top: 0;
   right: 0;
-  translate: 10% -20%;
+  translate: 10% -10%;
 
   @include mq(medium) {
     scale: 85%;
-    translate: 25% -20%;
+    translate: 30% -15%;
   }
 
   @include mq(small) {
     transform-origin: top;
     scale: 50%;
-    translate: 27% -15%;
+    translate: 40% -3%;
   }
 }
 
