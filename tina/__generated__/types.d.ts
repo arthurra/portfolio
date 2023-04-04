@@ -182,13 +182,13 @@ export type Service = Node & Document & {
   __typename?: 'Service';
   active?: Maybe<Scalars['Boolean']>;
   name?: Maybe<Scalars['String']>;
+  permalink?: Maybe<Scalars['String']>;
   title: Scalars['String'];
   description?: Maybe<Scalars['String']>;
+  frame_url?: Maybe<Scalars['String']>;
   services_tagline?: Maybe<Scalars['String']>;
-  permalink?: Maybe<Scalars['String']>;
-  order?: Maybe<Scalars['Float']>;
   tags?: Maybe<Array<Maybe<ServiceTags>>>;
-  hero_partial?: Maybe<Scalars['String']>;
+  order?: Maybe<Scalars['Float']>;
   id: Scalars['ID'];
   _sys: SystemInfo;
   _values: Scalars['JSON'];
@@ -206,6 +206,10 @@ export type StringFilter = {
   in?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
 
+export type ServiceTagsFilter = {
+  name?: InputMaybe<StringFilter>;
+};
+
 export type NumberFilter = {
   lt?: InputMaybe<Scalars['Float']>;
   lte?: InputMaybe<Scalars['Float']>;
@@ -216,20 +220,16 @@ export type NumberFilter = {
   in?: InputMaybe<Array<InputMaybe<Scalars['Float']>>>;
 };
 
-export type ServiceTagsFilter = {
-  name?: InputMaybe<StringFilter>;
-};
-
 export type ServiceFilter = {
   active?: InputMaybe<BooleanFilter>;
   name?: InputMaybe<StringFilter>;
+  permalink?: InputMaybe<StringFilter>;
   title?: InputMaybe<StringFilter>;
   description?: InputMaybe<StringFilter>;
+  frame_url?: InputMaybe<StringFilter>;
   services_tagline?: InputMaybe<StringFilter>;
-  permalink?: InputMaybe<StringFilter>;
-  order?: InputMaybe<NumberFilter>;
   tags?: InputMaybe<ServiceTagsFilter>;
-  hero_partial?: InputMaybe<StringFilter>;
+  order?: InputMaybe<NumberFilter>;
 };
 
 export type ServiceConnectionEdges = {
@@ -411,13 +411,13 @@ export type ServiceTagsMutation = {
 export type ServiceMutation = {
   active?: InputMaybe<Scalars['Boolean']>;
   name?: InputMaybe<Scalars['String']>;
+  permalink?: InputMaybe<Scalars['String']>;
   title?: InputMaybe<Scalars['String']>;
   description?: InputMaybe<Scalars['String']>;
+  frame_url?: InputMaybe<Scalars['String']>;
   services_tagline?: InputMaybe<Scalars['String']>;
-  permalink?: InputMaybe<Scalars['String']>;
-  order?: InputMaybe<Scalars['Float']>;
   tags?: InputMaybe<Array<InputMaybe<ServiceTagsMutation>>>;
-  hero_partial?: InputMaybe<Scalars['String']>;
+  order?: InputMaybe<Scalars['Float']>;
 };
 
 export type Case_StudyServicesTagsMutation = {
@@ -449,7 +449,7 @@ export type Case_StudyMutation = {
   visible?: InputMaybe<Scalars['Boolean']>;
 };
 
-export type ServicePartsFragment = { __typename?: 'Service', active?: boolean | null, name?: string | null, title: string, description?: string | null, services_tagline?: string | null, permalink?: string | null, order?: number | null, hero_partial?: string | null, tags?: Array<{ __typename: 'ServiceTags', name?: string | null } | null> | null };
+export type ServicePartsFragment = { __typename?: 'Service', active?: boolean | null, name?: string | null, permalink?: string | null, title: string, description?: string | null, frame_url?: string | null, services_tagline?: string | null, order?: number | null, tags?: Array<{ __typename: 'ServiceTags', name?: string | null } | null> | null };
 
 export type Case_StudyPartsFragment = { __typename?: 'Case_study', title: string, description?: string | null, hero_image?: string | null, category?: string | null, testimonial?: string | null, cite?: string | null, icon?: string | null, color?: string | null, size?: string | null, aspect?: string | null, visible?: boolean | null, services?: Array<{ __typename: 'Case_studyServices', name?: string | null, tags?: Array<{ __typename: 'Case_studyServicesTags', name?: string | null } | null> | null } | null> | null, tags?: Array<{ __typename: 'Case_studyTags', name?: string | null } | null> | null };
 
@@ -458,7 +458,7 @@ export type ServiceQueryVariables = Exact<{
 }>;
 
 
-export type ServiceQuery = { __typename?: 'Query', service: { __typename?: 'Service', id: string, active?: boolean | null, name?: string | null, title: string, description?: string | null, services_tagline?: string | null, permalink?: string | null, order?: number | null, hero_partial?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, tags?: Array<{ __typename: 'ServiceTags', name?: string | null } | null> | null } };
+export type ServiceQuery = { __typename?: 'Query', service: { __typename?: 'Service', id: string, active?: boolean | null, name?: string | null, permalink?: string | null, title: string, description?: string | null, frame_url?: string | null, services_tagline?: string | null, order?: number | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, tags?: Array<{ __typename: 'ServiceTags', name?: string | null } | null> | null } };
 
 export type ServiceConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']>;
@@ -470,7 +470,7 @@ export type ServiceConnectionQueryVariables = Exact<{
 }>;
 
 
-export type ServiceConnectionQuery = { __typename?: 'Query', serviceConnection: { __typename?: 'ServiceConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ServiceConnectionEdges', cursor: string, node?: { __typename?: 'Service', id: string, active?: boolean | null, name?: string | null, title: string, description?: string | null, services_tagline?: string | null, permalink?: string | null, order?: number | null, hero_partial?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, tags?: Array<{ __typename: 'ServiceTags', name?: string | null } | null> | null } | null } | null> | null } };
+export type ServiceConnectionQuery = { __typename?: 'Query', serviceConnection: { __typename?: 'ServiceConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ServiceConnectionEdges', cursor: string, node?: { __typename?: 'Service', id: string, active?: boolean | null, name?: string | null, permalink?: string | null, title: string, description?: string | null, frame_url?: string | null, services_tagline?: string | null, order?: number | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, tags?: Array<{ __typename: 'ServiceTags', name?: string | null } | null> | null } | null } | null> | null } };
 
 export type Case_StudyQueryVariables = Exact<{
   relativePath: Scalars['String'];
@@ -495,16 +495,16 @@ export const ServicePartsFragmentDoc = gql`
     fragment ServiceParts on Service {
   active
   name
+  permalink
   title
   description
+  frame_url
   services_tagline
-  permalink
-  order
   tags {
     __typename
     name
   }
-  hero_partial
+  order
 }
     `;
 export const Case_StudyPartsFragmentDoc = gql`

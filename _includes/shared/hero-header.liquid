@@ -19,20 +19,17 @@
             </a>
           </div>
           <div class="hero-card__art-container">
-            {% if page.hero-partial %}
-              <div class="hero-card__image-container">
-
-                {% include {{ page.hero-partial }} %}
-              </div>
-            {% elsif page.hero-image %}
-              <div class="hero-card__image-container">
+            <div class="hero-card__image-container">
+              {% if page.frame_url %}
+                {% include shared/frame.liquid %}
+              {% elsif page.hero-image %}
                 <img
                   src="{{ page.hero-image }}"
                   class="hero-card__image"
                   alt=""
                   role="presentation">
-              </div>
-            {% endif %}
+              {% endif %}
+            </div>
           </div>
         </div>
       </div>

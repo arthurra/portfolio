@@ -9,16 +9,16 @@ export const ServicePartsFragmentDoc = gql`
     fragment ServiceParts on Service {
   active
   name
+  permalink
   title
   description
+  frame_url
   services_tagline
-  permalink
-  order
   tags {
     __typename
     name
   }
-  hero_partial
+  order
 }
     `;
 export const Case_StudyPartsFragmentDoc = gql`

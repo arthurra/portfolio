@@ -8,7 +8,7 @@ tags:
   - name: Brand Identity
 title: 3D Renders
 description: ""
-hero-partial: illustrations/cube.liquid
+frame_url: https://my.spline.design/clonercubesimplecopy-bb630613937366454aab26e86c0a12b7/
 services-tagline: ""
 active: false
 ---

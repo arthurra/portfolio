@@ -38,6 +38,11 @@ export default defineConfig({
           },
           {
             type: "string",
+            name: "permalink",
+            label: "Permalink",
+          },
+          {
+            type: "string",
             name: "title",
             label: "Title",
             isTitle: true,
@@ -53,19 +58,14 @@ export default defineConfig({
           },
           {
             type: "string",
-            name: "services_tagline",
-            nameOverride: "services-tagline",
-            label: "Services Tagline",
+            name: "frame_url",
+            label: "Frame URL",
           },
           {
             type: "string",
-            name: "permalink",
-            label: "Permalink",
-          },
-          {
-            type: "number",
-            name: "order",
-            label: "Order Index",
+            name: "services_tagline",
+            nameOverride: "services-tagline",
+            label: "Services Tagline",
           },
           {
             type: "object",
@@ -88,10 +88,9 @@ export default defineConfig({
             ],
           },
           {
-            type: "string",
-            name: "hero_partial",
-            nameOverride: "hero-partial",
-            label: "Hero Illustration Path",
+            type: "number",
+            name: "order",
+            label: "Order Index",
           },
         ],
       },

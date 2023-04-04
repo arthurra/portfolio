@@ -1,6 +1,5 @@
-<iframe
-  src='https://my.spline.design/clonercubesimplecopy-bb630613937366454aab26e86c0a12b7/'
-  frameborder='0'
-  width='600px'
-  height='600px'
-  class='cube-frame'></iframe>
+<div class="cube">
+  {% for l in (1..3) %}
+    {% include illustrations/cube-layer.liquid %}
+  {% endfor %}
+</div>
