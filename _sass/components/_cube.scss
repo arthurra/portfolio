@@ -8,13 +8,11 @@
 
   @include mq(medium) {
     scale: 85%;
-    translate: 30% -15%;
+    translate: 30% -10%;
   }
 
   @include mq(small) {
-    transform-origin: top;
-    scale: 50%;
-    translate: 40% -3%;
+    display: none;
   }
 }
 

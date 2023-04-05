@@ -1,6 +1,12 @@
 @use "../tokens/mixins" as *;
 
 .section {
+  @include mq(small) {
+    h2 {
+      font-size: calc(1rem + 5.5vw);
+    }
+  }
+
   &--accent {
     @include accent-bg;
 

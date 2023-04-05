@@ -59,6 +59,13 @@
         padding-bottom: 50%;
         padding-left: var(--space-200);
       }
+
+      @include mq(small) {
+        margin-left: calc(var(--space-100) * -1);
+        margin-right: calc(var(--space-100) * -1);
+        padding-left: var(--space-150);
+        padding-right: var(--space-150);
+      }
     }
   }
 

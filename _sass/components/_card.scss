@@ -3,9 +3,15 @@
 .card {
   @include card;
 
-  &__header h1 {
+  &__header {
+    margin-bottom: var(--space-500);
+
     @include mq(small) {
-      font-size: calc(1rem + 6vw);
+      margin-bottom: var(--space-300);
+
+      h1 {
+        font-size: calc(1rem + 5.5vw);
+      }
     }
   }
 

@@ -9,6 +9,7 @@
     place-items: center;
     grid-auto-flow: column;
     gap: var(--space-200);
+    margin-bottom: 0;
 
     @include mq(small) {
       grid-auto-flow: row;

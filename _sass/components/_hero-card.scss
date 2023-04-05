@@ -6,12 +6,11 @@
       order: -1;
     }
 
-    &--image .hero-card__art-container {
+    .hero-card__art-container {
       display: none;
     }
 
     &__description-container {
-      padding-top: var(--space-900);
       font-size: var(--fs-400);
     }
 
@@ -39,10 +38,6 @@
     border-radius: var(--border-radius-400);
     overflow: hidden;
     pointer-events: none;
-
-    @include mq(medium) {
-      top: -50px;
-    }
   }
 
   &__image {
