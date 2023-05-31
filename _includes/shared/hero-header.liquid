@@ -1,6 +1,6 @@
 <header>
   <div class="container">
-    <div class="card hero-card {% if page.hero-image %}hero-card--image{% endif %}">
+    <div class="card hero-card {% if page.cover_image %}hero-card--image{% endif %}">
       <header class="card__header">
         <div class="tag-container u-mb-100">
           {% for tag in page.tags %}
@@ -22,9 +22,9 @@
             <div class="hero-card__image-container">
               {% if page.frame_url %}
                 {% include shared/frame.liquid %}
-              {% elsif page.hero-image %}
+              {% elsif page.cover_image %}
                 <img
-                  src="{{ page.hero-image }}"
+                  src="{{ page.cover_image }}"
                   class="hero-card__image"
                   alt=""
                   role="presentation">

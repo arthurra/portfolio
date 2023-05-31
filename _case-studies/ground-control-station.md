@@ -3,10 +3,11 @@ title: Ground Control Station
 description: >-
   The goal of this NASA sponsored challenge was to design an effective interface
   for simultaneously managing multiple autonomous vehicles.
-hero-image: /assets/images/case-studies/thumbnails/ground-control-station-thumbnail.png
+cover_image: /assets/images/case-studies/thumbnails/ground-control-station-thumbnail.png
 category: product design
 services:
   - name: UI Design
+    timeline: 1 week
     tags:
       - name: Wireframes
       - name: Mockups
@@ -64,8 +65,4 @@ solutions:
       stream from the selected vehicle's camera.
     media: /assets/images/case-studies/ground-control-station-network.png
 ---
-
-
-
-
 

@@ -3,17 +3,19 @@ title: Banking Compliance Tracker
 description: >-
   Helping a financial service company provide even more insight to their
   customers by re-imagining how data is visualized
-hero-image: >-
+cover_image: >-
   /assets/images/case-studies/thumbnails/banking-compliance-tracker-thumbnail.png
 category: product design
 services:
   - name: UI Design
+    timeline: 2 weeks
     tags:
       - name: Design Sprint
       - name: Wireframes
       - name: Mockups
       - name: Adobe XD
   - name: Prototyping
+    timeline: 2 weeks
     tags:
       - name: User Story Map
       - name: UI Flow Outline
@@ -47,14 +49,5 @@ solutions:
   - title: Project List View
     media: /assets/images/case-studies/compliance-tracker-project-list-view.png
 ---
-
-
-
-
-
-
-
-
-
 
 

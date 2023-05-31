@@ -3,15 +3,17 @@ title: Sales Analysis Tool
 description: >-
   Seeing data update in real time empowered sales assocciates to to engineer the
   best deals possible.
-hero-image: /assets/images/case-studies/thumbnails/sales-analysis-tool-thumbnail.png
+cover_image: /assets/images/case-studies/thumbnails/sales-analysis-tool-thumbnail.png
 category: product design
 services:
   - name: UI Design
+    timeline: 4 weeks
     tags:
       - name: Wireframes
       - name: Mockups
       - name: Adobe Illustrator
   - name: Web Development
+    timeline: 9 months
     tags:
       - name: HTML (Slim)
       - name: CSS (Sass)
@@ -36,11 +38,8 @@ solutions:
     media: /assets/images/case-studies/sales-analysis-pricing-summary-expanded.png
   - title: Pricing Contract Terms
     media: /assets/images/case-studies/sales-analysis-pricing-contract-terms.png
+illustration: /assets/images/case-studies/illustrations/sales-analysis-tool-illustration.svg
 ---
-
-
-
-
 
 
 

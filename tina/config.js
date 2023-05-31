@@ -117,89 +117,18 @@ export default defineConfig({
             },
           },
           {
-            name: "hero_image",
-            nameOverride: "hero-image",
+            name: "cover_image",
             type: "image",
-            label: "Hero Image",
+            label: "Cover Image",
             // upload images to same directory as content file
             uploadDir: () => "/case-studies/thumbnails/",
           },
           {
-            type: "string",
-            name: "category",
-            label: "Category",
-            options: [
-              {
-                value: "product design",
-                label: "Product Design",
-              },
-              {
-                value: "branding",
-                label: "Branding",
-              },
-              {
-                value: "renders",
-                label: "Renders",
-              },
-            ],
-          },
-          {
-            type: "object",
-            name: "services",
-            label: "Services",
-            list: true,
-            ui: {
-              // This allows the customization of the list item UI
-              // Data can be accessed by item?.<Name of field>
-              itemProps: (item) => {
-                return { label: `${item?.name}` };
-              },
-            },
-            fields: [
-              {
-                type: "string",
-                name: "name",
-                label: "Service",
-              },
-              {
-                type: "object",
-                name: "tags",
-                label: "Tags",
-                list: true,
-                ui: {
-                  // This allows the customization of the list item UI
-                  // Data can be accessed by item?.<Name of field>
-                  itemProps: (item) => {
-                    return { label: `${item?.name}` };
-                  },
-                },
-                fields: [
-                  {
-                    type: "string",
-                    name: "name",
-                    label: "Tag",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            type: "string",
-            name: "testimonial",
-            label: "Testimonial",
-            ui: {
-              component: "textarea",
-            },
-          },
-          {
-            type: "string",
-            name: "cite",
-            label: "Cite",
-          },
-          {
-            type: "string",
-            name: "icon",
-            label: "Icon",
+            name: "illustration",
+            type: "image",
+            label: "Illustration",
+            // upload images to same directory as content file
+            uploadDir: () => "/case-studies/illustrations/",
           },
           {
             type: "string",
@@ -243,6 +172,88 @@ export default defineConfig({
                 label: "Violet",
               },
             ],
+          },
+          {
+            type: "string",
+            name: "category",
+            label: "Category",
+            options: [
+              {
+                value: "product design",
+                label: "Product Design",
+              },
+              {
+                value: "branding",
+                label: "Branding",
+              },
+              {
+                value: "renders",
+                label: "Renders",
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "services",
+            label: "Services",
+            list: true,
+            ui: {
+              // This allows the customization of the list item UI
+              // Data can be accessed by item?.<Name of field>
+              itemProps: (item) => {
+                return { label: `${item?.name}` };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "name",
+                label: "Service",
+              },
+              {
+                type: "string",
+                name: "timeline",
+                label: "Timeline",
+              },
+              {
+                type: "object",
+                name: "tags",
+                label: "Tags",
+                list: true,
+                ui: {
+                  // This allows the customization of the list item UI
+                  // Data can be accessed by item?.<Name of field>
+                  itemProps: (item) => {
+                    return { label: `${item?.name}` };
+                  },
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "name",
+                    label: "Tag",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            type: "string",
+            name: "testimonial",
+            label: "Testimonial",
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "string",
+            name: "cite",
+            label: "Cite",
+          },
+          {
+            type: "string",
+            name: "icon",
+            label: "Icon",
           },
           {
             type: "object",

@@ -25,11 +25,14 @@ export const Case_StudyPartsFragmentDoc = gql`
     fragment Case_studyParts on Case_study {
   title
   description
-  hero_image
+  cover_image
+  illustration
+  color
   category
   services {
     __typename
     name
+    timeline
     tags {
       __typename
       name
@@ -38,7 +41,6 @@ export const Case_StudyPartsFragmentDoc = gql`
   testimonial
   cite
   icon
-  color
   tags {
     __typename
     name

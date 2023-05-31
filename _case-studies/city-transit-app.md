@@ -3,12 +3,13 @@ title: City Transit App
 description: >-
   A dashboard and companion app that was submitted as a bid for a grant to help
   people move around the city of Cincinnati
-hero-image: /assets/images/case-studies/thumbnails/city-transit-app-thumbnail.png
+cover_image: /assets/images/case-studies/thumbnails/city-transit-app-thumbnail.png
 category: product design
 services:
   - name: UI Design
+    timeline: 1 week
     tags:
-      - name: Wireframs
+      - name: Wireframes
       - name: Mockups
       - name: Mobile
       - name: Adobe Illustrator
@@ -41,13 +42,6 @@ solutions:
   - title: stop schedule
     description: Scroll down after selecting a transit option to view the arrival schedule.
     media: /assets/images/case-studies/city-transit-stop-schedule.png
+illustration: /assets/images/case-studies/illustrations/city-transit-app-illustration.svg
 ---
-
-
-
-
-
-
-
-
 

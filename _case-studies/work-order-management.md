@@ -3,15 +3,17 @@ title: Work Order Management
 description: >-
   A custom process requires a custom solution. I helped to turn a scattered
   paper trail into an easy to understand application.
-hero-image: /assets/images/case-studies/thumbnails/construction-marketplace-thumbnail.png
+cover_image: /assets/images/case-studies/thumbnails/work-order-management-thumbnail.png
 category: product design
 services:
   - name: UI Design
+    timeline: 4 weeks
     tags:
       - name: Wireframes
       - name: Style Guide
       - name: Adobe Illustrator
   - name: Web Development
+    timeline: 12 months
     tags:
       - name: 'HTML (ERB, HBS)'
       - name: CSS (Sass)
@@ -51,14 +53,9 @@ solutions:
   - title: work order production summary
     description: null
     media: /assets/images/case-studies/work-order-production-summary.png
+illustration: >-
+  /assets/images/case-studies/illustrations/work-order-management-illustration.svg
 ---
-
-
-
-
-
-
-
 
 
 

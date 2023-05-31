@@ -158,6 +158,7 @@ type Case_studyServicesTags {
 
 type Case_studyServices {
   name: String
+  timeline: String
   tags: [Case_studyServicesTags]
 }
 
@@ -174,13 +175,14 @@ type Case_studySolutions {
 type Case_study implements Node & Document {
   title: String!
   description: String
-  hero_image: String
+  cover_image: String
+  illustration: String
+  color: String
   category: String
   services: [Case_studyServices]
   testimonial: String
   cite: String
   icon: String
-  color: String
   tags: [Case_studyTags]
   size: String
   aspect: String
@@ -204,6 +206,7 @@ input Case_studyServicesTagsFilter {
 
 input Case_studyServicesFilter {
   name: StringFilter
+  timeline: StringFilter
   tags: Case_studyServicesTagsFilter
 }
 
@@ -220,13 +223,14 @@ input Case_studySolutionsFilter {
 input Case_studyFilter {
   title: StringFilter
   description: StringFilter
-  hero_image: ImageFilter
+  cover_image: ImageFilter
+  illustration: ImageFilter
+  color: StringFilter
   category: StringFilter
   services: Case_studyServicesFilter
   testimonial: StringFilter
   cite: StringFilter
   icon: StringFilter
-  color: StringFilter
   tags: Case_studyTagsFilter
   size: StringFilter
   aspect: StringFilter
@@ -289,6 +293,7 @@ input Case_studyServicesTagsMutation {
 
 input Case_studyServicesMutation {
   name: String
+  timeline: String
   tags: [Case_studyServicesTagsMutation]
 }
 
@@ -305,13 +310,14 @@ input Case_studySolutionsMutation {
 input Case_studyMutation {
   title: String
   description: String
-  hero_image: String
+  cover_image: String
+  illustration: String
+  color: String
   category: String
   services: [Case_studyServicesMutation]
   testimonial: String
   cite: String
   icon: String
-  color: String
   tags: [Case_studyTagsMutation]
   size: String
   aspect: String

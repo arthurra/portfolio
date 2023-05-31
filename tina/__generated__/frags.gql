@@ -16,11 +16,14 @@ fragment ServiceParts on Service {
 fragment Case_studyParts on Case_study {
   title
   description
-  hero_image
+  cover_image
+  illustration
+  color
   category
   services {
     __typename
     name
+    timeline
     tags {
       __typename
       name
@@ -29,7 +32,6 @@ fragment Case_studyParts on Case_study {
   testimonial
   cite
   icon
-  color
   tags {
     __typename
     name

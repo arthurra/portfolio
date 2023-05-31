@@ -3,15 +3,17 @@ title: Blockchain Explorer
 description: >-
   A tool for inspecting and analyzing EVM based blockchains on Ethereum Networks
   in real time.
-hero-image: /assets/images/case-studies/thumbnails/blockchain-explorer-thumbnail.png
+cover_image: /assets/images/case-studies/thumbnails/blockchain-explorer-thumbnail.png
 category: product design
 services:
   - name: UI Design
+    timeline: 4 weeks
     tags:
       - name: Wireframes
       - name: Mockups
       - name: Adobe Illustrator
   - name: Web Development
+    timeline: 6 months
     tags:
       - name: HTML (EEx)
       - name: CSS (Sass)
@@ -36,10 +38,8 @@ solutions:
     media: /assets/images/case-studies/blockchain-address-tokens.png
   - title: Token Holdings Modal
     media: /assets/images/case-studies/blockchain-token-holdings-modal.png
+illustration: /assets/images/case-studies/illustrations/blockchain-explorer-illustration.svg
 ---
-
-
-
 
 
 
