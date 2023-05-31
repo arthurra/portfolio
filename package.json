@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@tinacms/cli": "^1.5.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

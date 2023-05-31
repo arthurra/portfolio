@@ -37,4 +37,10 @@ fragment Case_studyParts on Case_study {
   size
   aspect
   visible
+  solutions {
+    __typename
+    title
+    description
+    media
+  }
 }

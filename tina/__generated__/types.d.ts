@@ -261,6 +261,13 @@ export type Case_StudyTags = {
   name?: Maybe<Scalars['String']>;
 };
 
+export type Case_StudySolutions = {
+  __typename?: 'Case_studySolutions';
+  title?: Maybe<Scalars['String']>;
+  description?: Maybe<Scalars['String']>;
+  media?: Maybe<Scalars['String']>;
+};
+
 export type Case_Study = Node & Document & {
   __typename?: 'Case_study';
   title: Scalars['String'];
@@ -276,6 +283,7 @@ export type Case_Study = Node & Document & {
   size?: Maybe<Scalars['String']>;
   aspect?: Maybe<Scalars['String']>;
   visible?: Maybe<Scalars['Boolean']>;
+  solutions?: Maybe<Array<Maybe<Case_StudySolutions>>>;
   id: Scalars['ID'];
   _sys: SystemInfo;
   _values: Scalars['JSON'];
@@ -301,6 +309,12 @@ export type Case_StudyTagsFilter = {
   name?: InputMaybe<StringFilter>;
 };
 
+export type Case_StudySolutionsFilter = {
+  title?: InputMaybe<StringFilter>;
+  description?: InputMaybe<StringFilter>;
+  media?: InputMaybe<ImageFilter>;
+};
+
 export type Case_StudyFilter = {
   title?: InputMaybe<StringFilter>;
   description?: InputMaybe<StringFilter>;
@@ -315,6 +329,7 @@ export type Case_StudyFilter = {
   size?: InputMaybe<StringFilter>;
   aspect?: InputMaybe<StringFilter>;
   visible?: InputMaybe<BooleanFilter>;
+  solutions?: InputMaybe<Case_StudySolutionsFilter>;
 };
 
 export type Case_StudyConnectionEdges = {
@@ -433,6 +448,12 @@ export type Case_StudyTagsMutation = {
   name?: InputMaybe<Scalars['String']>;
 };
 
+export type Case_StudySolutionsMutation = {
+  title?: InputMaybe<Scalars['String']>;
+  description?: InputMaybe<Scalars['String']>;
+  media?: InputMaybe<Scalars['String']>;
+};
+
 export type Case_StudyMutation = {
   title?: InputMaybe<Scalars['String']>;
   description?: InputMaybe<Scalars['String']>;
@@ -447,11 +468,12 @@ export type Case_StudyMutation = {
   size?: InputMaybe<Scalars['String']>;
   aspect?: InputMaybe<Scalars['String']>;
   visible?: InputMaybe<Scalars['Boolean']>;
+  solutions?: InputMaybe<Array<InputMaybe<Case_StudySolutionsMutation>>>;
 };
 
 export type ServicePartsFragment = { __typename?: 'Service', active?: boolean | null, name?: string | null, permalink?: string | null, title: string, description?: string | null, frame_url?: string | null, services_tagline?: string | null, order?: number | null, tags?: Array<{ __typename: 'ServiceTags', name?: string | null } | null> | null };
 
-export type Case_StudyPartsFragment = { __typename?: 'Case_study', title: string, description?: string | null, hero_image?: string | null, category?: string | null, testimonial?: string | null, cite?: string | null, icon?: string | null, color?: string | null, size?: string | null, aspect?: string | null, visible?: boolean | null, services?: Array<{ __typename: 'Case_studyServices', name?: string | null, tags?: Array<{ __typename: 'Case_studyServicesTags', name?: string | null } | null> | null } | null> | null, tags?: Array<{ __typename: 'Case_studyTags', name?: string | null } | null> | null };
+export type Case_StudyPartsFragment = { __typename?: 'Case_study', title: string, description?: string | null, hero_image?: string | null, category?: string | null, testimonial?: string | null, cite?: string | null, icon?: string | null, color?: string | null, size?: string | null, aspect?: string | null, visible?: boolean | null, services?: Array<{ __typename: 'Case_studyServices', name?: string | null, tags?: Array<{ __typename: 'Case_studyServicesTags', name?: string | null } | null> | null } | null> | null, tags?: Array<{ __typename: 'Case_studyTags', name?: string | null } | null> | null, solutions?: Array<{ __typename: 'Case_studySolutions', title?: string | null, description?: string | null, media?: string | null } | null> | null };
 
 export type ServiceQueryVariables = Exact<{
   relativePath: Scalars['String'];
@@ -477,7 +499,7 @@ export type Case_StudyQueryVariables = Exact<{
 }>;
 
 
-export type Case_StudyQuery = { __typename?: 'Query', case_study: { __typename?: 'Case_study', id: string, title: string, description?: string | null, hero_image?: string | null, category?: string | null, testimonial?: string | null, cite?: string | null, icon?: string | null, color?: string | null, size?: string | null, aspect?: string | null, visible?: boolean | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, services?: Array<{ __typename: 'Case_studyServices', name?: string | null, tags?: Array<{ __typename: 'Case_studyServicesTags', name?: string | null } | null> | null } | null> | null, tags?: Array<{ __typename: 'Case_studyTags', name?: string | null } | null> | null } };
+export type Case_StudyQuery = { __typename?: 'Query', case_study: { __typename?: 'Case_study', id: string, title: string, description?: string | null, hero_image?: string | null, category?: string | null, testimonial?: string | null, cite?: string | null, icon?: string | null, color?: string | null, size?: string | null, aspect?: string | null, visible?: boolean | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, services?: Array<{ __typename: 'Case_studyServices', name?: string | null, tags?: Array<{ __typename: 'Case_studyServicesTags', name?: string | null } | null> | null } | null> | null, tags?: Array<{ __typename: 'Case_studyTags', name?: string | null } | null> | null, solutions?: Array<{ __typename: 'Case_studySolutions', title?: string | null, description?: string | null, media?: string | null } | null> | null } };
 
 export type Case_StudyConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']>;
@@ -489,7 +511,7 @@ export type Case_StudyConnectionQueryVariables = Exact<{
 }>;
 
 
-export type Case_StudyConnectionQuery = { __typename?: 'Query', case_studyConnection: { __typename?: 'Case_studyConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'Case_studyConnectionEdges', cursor: string, node?: { __typename?: 'Case_study', id: string, title: string, description?: string | null, hero_image?: string | null, category?: string | null, testimonial?: string | null, cite?: string | null, icon?: string | null, color?: string | null, size?: string | null, aspect?: string | null, visible?: boolean | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, services?: Array<{ __typename: 'Case_studyServices', name?: string | null, tags?: Array<{ __typename: 'Case_studyServicesTags', name?: string | null } | null> | null } | null> | null, tags?: Array<{ __typename: 'Case_studyTags', name?: string | null } | null> | null } | null } | null> | null } };
+export type Case_StudyConnectionQuery = { __typename?: 'Query', case_studyConnection: { __typename?: 'Case_studyConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'Case_studyConnectionEdges', cursor: string, node?: { __typename?: 'Case_study', id: string, title: string, description?: string | null, hero_image?: string | null, category?: string | null, testimonial?: string | null, cite?: string | null, icon?: string | null, color?: string | null, size?: string | null, aspect?: string | null, visible?: boolean | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, services?: Array<{ __typename: 'Case_studyServices', name?: string | null, tags?: Array<{ __typename: 'Case_studyServicesTags', name?: string | null } | null> | null } | null> | null, tags?: Array<{ __typename: 'Case_studyTags', name?: string | null } | null> | null, solutions?: Array<{ __typename: 'Case_studySolutions', title?: string | null, description?: string | null, media?: string | null } | null> | null } | null } | null> | null } };
 
 export const ServicePartsFragmentDoc = gql`
     fragment ServiceParts on Service {
@@ -532,6 +554,12 @@ export const Case_StudyPartsFragmentDoc = gql`
   size
   aspect
   visible
+  solutions {
+    __typename
+    title
+    description
+    media
+  }
 }
     `;
 export const ServiceDocument = gql`

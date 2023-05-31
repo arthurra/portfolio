@@ -15,15 +15,17 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
-      publicFolder: "./assets/images",
+      // mediaRoot: "",
+      mediaRoot: "assets/images",
+      // publicFolder: "./assets/images",
+      publicFolder: "",
     },
   },
   schema: {
     collections: [
       {
         name: "service",
-        label: "Serives",
+        label: "Services",
         path: "_services",
         fields: [
           {
@@ -119,6 +121,8 @@ export default defineConfig({
             nameOverride: "hero-image",
             type: "image",
             label: "Hero Image",
+            // upload images to same directory as content file
+            uploadDir: () => "/case-studies/thumbnails/",
           },
           {
             type: "string",
@@ -298,6 +302,44 @@ export default defineConfig({
             type: "boolean",
             name: "visible",
             label: "Visible",
+          },
+          {
+            type: "object",
+            name: "solutions",
+            label: "Solutions",
+            list: true,
+            ui: {
+              // This allows the customization of the list item UI
+              // Data can be accessed by item?.<Name of field>
+              itemProps: (item) => {
+                return { label: `${item?.title}` };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Title",
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Description",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "image",
+                name: "media",
+                label: "Media",
+                // upload images to same directory as content file
+                uploadDir: () => "/case-studies/",
+
+                // image file is sibling of content file
+                // parse: (filename) => `./${filename}`,
+              },
+            ],
           },
         ],
       },

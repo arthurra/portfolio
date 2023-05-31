@@ -165,6 +165,12 @@ type Case_studyTags {
   name: String
 }
 
+type Case_studySolutions {
+  title: String
+  description: String
+  media: String
+}
+
 type Case_study implements Node & Document {
   title: String!
   description: String
@@ -179,6 +185,7 @@ type Case_study implements Node & Document {
   size: String
   aspect: String
   visible: Boolean
+  solutions: [Case_studySolutions]
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -204,6 +211,12 @@ input Case_studyTagsFilter {
   name: StringFilter
 }
 
+input Case_studySolutionsFilter {
+  title: StringFilter
+  description: StringFilter
+  media: ImageFilter
+}
+
 input Case_studyFilter {
   title: StringFilter
   description: StringFilter
@@ -218,6 +231,7 @@ input Case_studyFilter {
   size: StringFilter
   aspect: StringFilter
   visible: BooleanFilter
+  solutions: Case_studySolutionsFilter
 }
 
 type Case_studyConnectionEdges {
@@ -282,6 +296,12 @@ input Case_studyTagsMutation {
   name: String
 }
 
+input Case_studySolutionsMutation {
+  title: String
+  description: String
+  media: String
+}
+
 input Case_studyMutation {
   title: String
   description: String
@@ -296,6 +316,7 @@ input Case_studyMutation {
   size: String
   aspect: String
   visible: Boolean
+  solutions: [Case_studySolutionsMutation]
 }
 
 schema {

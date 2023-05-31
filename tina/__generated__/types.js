@@ -46,6 +46,12 @@ export const Case_StudyPartsFragmentDoc = gql`
   size
   aspect
   visible
+  solutions {
+    __typename
+    title
+    description
+    media
+  }
 }
     `;
 export const ServiceDocument = gql`
