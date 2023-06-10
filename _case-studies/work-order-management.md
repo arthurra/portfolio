@@ -60,7 +60,11 @@ solutions:
       jobs organized and troubleshoot any potential bottlenecks.
     media: /assets/images/case-studies/work-order-job-progress.png
   - title: job history
-    description: null
+    description: >-
+      Access to accurate metrics is essential to ensuring everything is running
+      smoothly. The status history visually represents when a job has progressed
+      past each checkpoint. Seeing the timeline helps to evaluate the job
+      process and identify opportunities to optimize.
     media: /assets/images/case-studies/work-order-job-history.png
   - title: production queue
     description: null
@@ -74,6 +78,7 @@ solutions:
 illustration: >-
   /assets/images/case-studies/illustrations/work-order-management-illustration.svg
 ---
+
 
 
 
