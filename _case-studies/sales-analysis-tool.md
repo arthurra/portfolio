@@ -54,9 +54,15 @@ solutions:
       with increased speed and accuracy.
     media: /assets/images/case-studies/sales-analysis-pricing-summary-expanded.png
   - title: Pricing Contract Terms
+    description: >-
+      When you need to dive into the data, you can drill down to the value for
+      every data field in the system. However, we reduced the need for manual
+      entry by providing shortcuts to quickly copy data from one row to another
+      or by duplicating a data template. 
     media: /assets/images/case-studies/sales-analysis-pricing-contract-terms.png
 illustration: /assets/images/case-studies/illustrations/sales-analysis-tool-illustration.svg
 ---
+
 
 
 
