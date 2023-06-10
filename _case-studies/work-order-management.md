@@ -80,11 +80,15 @@ solutions:
       techs. 
     media: /assets/images/case-studies/work-order-products.png
   - title: work order production summary
-    description: null
+    description: >-
+      Each work order's results are recorded and easily accessible for review.
+      Every report can be easily printed and is formatted to look great so that
+      it can be sent to clients.
     media: /assets/images/case-studies/work-order-production-summary.png
 illustration: >-
   /assets/images/case-studies/illustrations/work-order-management-illustration.svg
 ---
+
 
 
 
