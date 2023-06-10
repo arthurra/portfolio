@@ -29,6 +29,10 @@ visible: true
 size: small
 solutions:
   - title: Pricing List
+    description: >-
+      Easily navigate a sortable list of pricing tables that are shared across
+      users. No more outdated files that are emailed around that department. And
+      the added security of having all work backed up and stored in a database.
     media: /assets/images/case-studies/sales-analysis-pricing-list.png
   - title: Update Pricing Form
     media: /assets/images/case-studies/sales-analysis-update-pricing-form.png
@@ -40,6 +44,7 @@ solutions:
     media: /assets/images/case-studies/sales-analysis-pricing-contract-terms.png
 illustration: /assets/images/case-studies/illustrations/sales-analysis-tool-illustration.svg
 ---
+
 
 
 
