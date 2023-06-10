@@ -76,7 +76,6 @@
 
   &__body {
     grid-area: body;
-    @include card-body;
   }
 
   &__description {
