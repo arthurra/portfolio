@@ -30,7 +30,10 @@ visible: true
 size: small
 solutions:
   - title: jobs list
-    description: null
+    description: >-
+      The jobs list helps users keep track of everything that's going on.
+      Finding any job or group of jobs quickly by easily filtering or sorting
+      the list helps plant managers save time and keep everything organized.
     media: /assets/images/case-studies/work-order-jobs-list.png
   - title: new job form
     description: null
@@ -56,6 +59,7 @@ solutions:
 illustration: >-
   /assets/images/case-studies/illustrations/work-order-management-illustration.svg
 ---
+
 
 
 
