@@ -73,7 +73,11 @@ solutions:
       accuracy and reliability for all machines running in multiple plants.
     media: /assets/images/case-studies/work-order-production-queue.png
   - title: work order products
-    description: null
+    description: >-
+      Technicians used to flip through manuals to calibrate machines properly
+      for different processes throughout the day. By digitizing the
+      specifications, we can deliver real-time product-specific data to the
+      techs. 
     media: /assets/images/case-studies/work-order-products.png
   - title: work order production summary
     description: null
@@ -81,6 +85,7 @@ solutions:
 illustration: >-
   /assets/images/case-studies/illustrations/work-order-management-illustration.svg
 ---
+
 
 
 
