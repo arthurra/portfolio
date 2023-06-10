@@ -41,8 +41,8 @@ solutions:
       easy-to-use form. Capturing this data early was crucial for a smooth
       workflow down that line. We only ask for a few essential details up front
       and even make suggestions to make the process quick and easy. Suggesting
-      recently used data to the user helps to reduce cognitive load and saves
-      time on looking up contact details that are already in the system.
+      recently used data to the user helps reduce cognitive load and saves time
+      on looking up contact details already in the system.
     media: /assets/images/case-studies/work-order-new-job-form.png
   - title: job products
     description: null
@@ -65,6 +65,7 @@ solutions:
 illustration: >-
   /assets/images/case-studies/illustrations/work-order-management-illustration.svg
 ---
+
 
 
 
