@@ -35,6 +35,10 @@ solutions:
       the added security of having all work backed up and stored in a database.
     media: /assets/images/case-studies/sales-analysis-pricing-list.png
   - title: Update Pricing Form
+    description: >-
+      Quickly update pricing tables by dragging and dropping a file. Using this
+      method rather than manually entering or pasting from another file
+      dramatically reduces the risk of entry errors.
     media: /assets/images/case-studies/sales-analysis-update-pricing-form.png
   - title: Pricing Summary
     media: /assets/images/case-studies/sales-analysis-pricing-summary.png
@@ -44,6 +48,7 @@ solutions:
     media: /assets/images/case-studies/sales-analysis-pricing-contract-terms.png
 illustration: /assets/images/case-studies/illustrations/sales-analysis-tool-illustration.svg
 ---
+
 
 
 
