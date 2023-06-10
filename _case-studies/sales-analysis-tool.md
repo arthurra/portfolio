@@ -41,6 +41,10 @@ solutions:
       dramatically reduces the risk of entry errors.
     media: /assets/images/case-studies/sales-analysis-update-pricing-form.png
   - title: Pricing Summary
+    description: >-
+      Seeing the breakdown of multiple data pages in one view gives sales
+      representatives high-level insights into the intricacies of each deal.
+      View and compare data without ever having to change files or applications.
     media: /assets/images/case-studies/sales-analysis-pricing-summary.png
   - title: Expanded Pricing Summary
     media: /assets/images/case-studies/sales-analysis-pricing-summary-expanded.png
@@ -48,6 +52,7 @@ solutions:
     media: /assets/images/case-studies/sales-analysis-pricing-contract-terms.png
 illustration: /assets/images/case-studies/illustrations/sales-analysis-tool-illustration.svg
 ---
+
 
 
 
