@@ -45,7 +45,12 @@ solutions:
       on looking up contact details already in the system.
     media: /assets/images/case-studies/work-order-new-job-form.png
   - title: job products
-    description: null
+    description: >-
+      Every job has a lot of moving parts. Here we can track all of the products
+      that this job is for during the lifecycle of the job. Workers across
+      several departments all see the same information at the same time,
+      allowing them to work simultaneously. Users can add and update information
+      as it comes in so that no one ever misses a beat.
     media: /assets/images/case-studies/work-order-job-products.png
   - title: job progress
     description: null
@@ -65,6 +70,7 @@ solutions:
 illustration: >-
   /assets/images/case-studies/illustrations/work-order-management-illustration.svg
 ---
+
 
 
 
