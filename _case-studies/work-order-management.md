@@ -53,7 +53,11 @@ solutions:
       as it comes in so that no one ever misses a beat.
     media: /assets/images/case-studies/work-order-job-products.png
   - title: job progress
-    description: null
+    description: >-
+      Products in a job could be split up across several work orders. This was
+      especially difficult for managers to keep track of and optimize for.
+      Visualizing how each product is distributed made it much easier to keep
+      jobs organized and troubleshoot any potential bottlenecks.
     media: /assets/images/case-studies/work-order-job-progress.png
   - title: job history
     description: null
@@ -70,6 +74,7 @@ solutions:
 illustration: >-
   /assets/images/case-studies/illustrations/work-order-management-illustration.svg
 ---
+
 
 
 
