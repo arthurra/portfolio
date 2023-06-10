@@ -67,7 +67,10 @@ solutions:
       process and identify opportunities to optimize.
     media: /assets/images/case-studies/work-order-job-history.png
   - title: production queue
-    description: null
+    description: >-
+      What was spread out across numerous paper workbooks is now consolidated
+      into one easy to, easy to access queue. The new production queue provides
+      accuracy and reliability for all machines running in multiple plants.
     media: /assets/images/case-studies/work-order-production-queue.png
   - title: work order products
     description: null
@@ -78,6 +81,7 @@ solutions:
 illustration: >-
   /assets/images/case-studies/illustrations/work-order-management-illustration.svg
 ---
+
 
 
 
