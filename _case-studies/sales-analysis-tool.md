@@ -47,11 +47,17 @@ solutions:
       View and compare data without ever having to change files or applications.
     media: /assets/images/case-studies/sales-analysis-pricing-summary.png
   - title: Expanded Pricing Summary
+    description: >-
+      Sales analysts can expand any summary section to open a live worksheet.
+      They can edit the values and instantly see the effect on overall pricing
+      in real-time. This allowed them to fine-tune prices for their customers
+      with increased speed and accuracy.
     media: /assets/images/case-studies/sales-analysis-pricing-summary-expanded.png
   - title: Pricing Contract Terms
     media: /assets/images/case-studies/sales-analysis-pricing-contract-terms.png
 illustration: /assets/images/case-studies/illustrations/sales-analysis-tool-illustration.svg
 ---
+
 
 
 
