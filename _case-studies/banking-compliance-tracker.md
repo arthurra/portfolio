@@ -39,6 +39,13 @@ solutions:
       in the user group's workflow. 
     media: /assets/images/case-studies/compliance-tracker-user-story-map.png
   - title: UI Flow Outline
+    description: >-
+      By taking the activities outlined in the user story map, we can use a UI
+      flow outline to group actions into pages with which the user will
+      interact. This exercise helps us understand how the UI will be stitched
+      together. These lists can also act as a checklist as we begin to draw out
+      the screens. This ensured that users have access to critical features in
+      the early stages of the design. 
     media: /assets/images/case-studies/compliance-tracker-ui-flow-outline.png
   - title: Strategic Dashboard
     media: /assets/images/case-studies/compliance-tracker-strategic-dashboard.png
@@ -53,6 +60,7 @@ solutions:
   - title: Project List View
     media: /assets/images/case-studies/compliance-tracker-project-list-view.png
 ---
+
 
 
 
