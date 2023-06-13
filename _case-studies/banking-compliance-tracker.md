@@ -33,6 +33,10 @@ size: large
 aspect: wide
 solutions:
   - title: User Story Map
+    description: >-
+      We started the design sprint by using a user story map to discover key
+      content areas. This method also helps us to prioritize critical activities
+      in the user group's workflow. 
     media: /assets/images/case-studies/compliance-tracker-user-story-map.png
   - title: UI Flow Outline
     media: /assets/images/case-studies/compliance-tracker-ui-flow-outline.png
@@ -49,5 +53,6 @@ solutions:
   - title: Project List View
     media: /assets/images/case-studies/compliance-tracker-project-list-view.png
 ---
+
 
 
