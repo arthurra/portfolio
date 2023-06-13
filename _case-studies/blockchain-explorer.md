@@ -31,6 +31,11 @@ visible: true
 size: small
 solutions:
   - title: Blockchain Summary
+    description: >-
+      The summary page is the central hub for activity on the network. It's
+      where users can see vital stats for the network performance and the most
+      recent activity. New blocks and transactions are animated into the UI in
+      real time as they are validated.
     media: /assets/images/case-studies/blockchain-summary.png
   - title: Address Transactions
     media: /assets/images/case-studies/blockchain-address-transactions.png
@@ -40,6 +45,7 @@ solutions:
     media: /assets/images/case-studies/blockchain-token-holdings-modal.png
 illustration: /assets/images/case-studies/illustrations/blockchain-explorer-illustration.svg
 ---
+
 
 
 
