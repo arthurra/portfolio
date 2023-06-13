@@ -48,6 +48,12 @@ solutions:
       the early stages of the design. 
     media: /assets/images/case-studies/compliance-tracker-ui-flow-outline.png
   - title: Strategic Dashboard
+    description: >-
+      This high-level dashboard outlines all of the key performance indicators
+      for the organization. Executives can quickly see progress in critical
+      areas and if anything needs special attention. It also provides a look
+      into ongoing projects so that users can drill down into lower levels of
+      information. 
     media: /assets/images/case-studies/compliance-tracker-strategic-dashboard.png
   - title: KPI Category Overview
     media: /assets/images/case-studies/compliance-tracker-kpi-category-overview.png
@@ -60,6 +66,7 @@ solutions:
   - title: Project List View
     media: /assets/images/case-studies/compliance-tracker-project-list-view.png
 ---
+
 
 
 
