@@ -63,6 +63,10 @@ solutions:
       possible. 
     media: /assets/images/case-studies/compliance-tracker-kpi-category-overview.png
   - title: Project Details Page
+    description: >-
+      The project detail page is the central hub of activity. Here we capture
+      the workflow for the project and give managers an excellent view of
+      current progress and recommendations for how to respond if issues pop up.
     media: /assets/images/case-studies/compliance-tracker-project-details-page.png
   - title: Project Calendar View
     media: /assets/images/case-studies/compliance-tracker-project-calendar-view.png
@@ -71,6 +75,7 @@ solutions:
   - title: Project List View
     media: /assets/images/case-studies/compliance-tracker-project-list-view.png
 ---
+
 
 
 
