@@ -46,11 +46,18 @@ solutions:
       additional content. 
     media: /assets/images/case-studies/blockchain-address-transactions.png
   - title: 'Token Transfers '
+    description: >-
+      Some token transfers can contain several transfers. I grouped all those
+      transfers into one easy-to-read ledger so the users don't have to dig for
+      them. Each section can also be expanded to a complete list of transfers or
+      condensed to save space, making browsing through the list of transactions
+      easy.
     media: /assets/images/case-studies/blockchain-address-tokens.png
   - title: Token Holdings Modal
     media: /assets/images/case-studies/blockchain-token-holdings-modal.png
 illustration: /assets/images/case-studies/illustrations/blockchain-explorer-illustration.svg
 ---
+
 
 
 
