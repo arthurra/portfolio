@@ -69,12 +69,14 @@ solutions:
       current progress and recommendations for how to respond if issues pop up.
     media: /assets/images/case-studies/compliance-tracker-project-details-page.png
   - title: Project Calendar View
+    description: 'Give managers a view of what tasks must be done in the next few weeks. '
     media: /assets/images/case-studies/compliance-tracker-project-calendar-view.png
   - title: Project Gantt View
     media: /assets/images/case-studies/compliance-tracker-project-gantt-view.png
   - title: Project List View
     media: /assets/images/case-studies/compliance-tracker-project-list-view.png
 ---
+
 
 
 
