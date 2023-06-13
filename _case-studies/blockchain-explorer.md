@@ -54,9 +54,14 @@ solutions:
       easy.
     media: /assets/images/case-studies/blockchain-address-tokens.png
   - title: Token Holdings Modal
+    description: >-
+      Each address also has a breakdown of the tokens that the address is
+      holding. The list can be searched to find particular coins if the address
+      has a large number of holdings.
     media: /assets/images/case-studies/blockchain-token-holdings-modal.png
 illustration: /assets/images/case-studies/illustrations/blockchain-explorer-illustration.svg
 ---
+
 
 
 
