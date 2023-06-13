@@ -72,10 +72,15 @@ solutions:
     description: 'Give managers a view of what tasks must be done in the next few weeks. '
     media: /assets/images/case-studies/compliance-tracker-project-calendar-view.png
   - title: Project Gantt View
+    description: >-
+      The Gantt view visualizes how tasks across projects are related to one
+      another. This help to improve collaboration between departments and
+      provide valuable foresight. 
     media: /assets/images/case-studies/compliance-tracker-project-gantt-view.png
   - title: Project List View
     media: /assets/images/case-studies/compliance-tracker-project-list-view.png
 ---
+
 
 
 
