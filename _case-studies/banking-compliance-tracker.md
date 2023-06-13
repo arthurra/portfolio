@@ -78,8 +78,14 @@ solutions:
       provide valuable foresight. 
     media: /assets/images/case-studies/compliance-tracker-project-gantt-view.png
   - title: Project List View
+    description: >-
+      The list view is data-rich, giving managers a complete list of all tasks
+      that must be completed during a given project. No more paper checklists;
+      this list is all managers need to stay on track and stay up to date in
+      real time.
     media: /assets/images/case-studies/compliance-tracker-project-list-view.png
 ---
+
 
 
 
