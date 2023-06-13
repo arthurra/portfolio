@@ -38,6 +38,12 @@ solutions:
       real time as they are validated.
     media: /assets/images/case-studies/blockchain-summary.png
   - title: Address Transactions
+    description: >-
+      Every address on the blockchain has a dedicated page where all address
+      activity is recorded. Easily browse an address's content and review a
+      complete history of transactions. I used color queues to visually
+      distinguish transaction types and provided links for users to drill into
+      additional content. 
     media: /assets/images/case-studies/blockchain-address-transactions.png
   - title: 'Token Transfers '
     media: /assets/images/case-studies/blockchain-address-tokens.png
@@ -45,6 +51,7 @@ solutions:
     media: /assets/images/case-studies/blockchain-token-holdings-modal.png
 illustration: /assets/images/case-studies/illustrations/blockchain-explorer-illustration.svg
 ---
+
 
 
 
