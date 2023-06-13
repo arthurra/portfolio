@@ -56,6 +56,11 @@ solutions:
       information. 
     media: /assets/images/case-studies/compliance-tracker-strategic-dashboard.png
   - title: KPI Category Overview
+    description: >-
+      Each KPI category can have serval projects all going on simultaneously.
+      This overview page shows executives how their projects fit together on a
+      timeline. This allows for strategic insights that otherwise would never be
+      possible. 
     media: /assets/images/case-studies/compliance-tracker-kpi-category-overview.png
   - title: Project Details Page
     media: /assets/images/case-studies/compliance-tracker-project-details-page.png
@@ -66,6 +71,7 @@ solutions:
   - title: Project List View
     media: /assets/images/case-studies/compliance-tracker-project-list-view.png
 ---
+
 
 
 
