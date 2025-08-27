@@ -20,3 +20,16 @@
     - name: javascript
     - name: webflow
     - name: wordpress
+- name: Logo Design
+  category: branding
+  tags:
+    - name: adobe illustrator
+    - name: vector
+    - name: brand identity
+- name: Brand Strategy
+  category: branding
+  tags:
+    - name: market research
+    - name: positioning
+    - name: messaging
+    - name: competitive analysis
