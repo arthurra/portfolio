@@ -19,7 +19,7 @@ color: blue
 visible: true
 size: small
 solutions:
-  - title: Visual Identity
+  - title: Brand Identity
     description: >-
       The visual identity emphasizes sophistication and ease, with a symbol designed to capture the luxurious and relaxing qualities of the realtor’s listings. The final design balances elegance with approachability, ensuring it appeals to discerning clients while remaining welcoming and trustworthy.
     media: /assets/images/case-studies/francie-thurman-branding.webp
