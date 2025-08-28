@@ -20,3 +20,24 @@
     - name: javascript
     - name: webflow
     - name: wordpress
+- name: Logo Design
+  category: branding
+  tags:
+    - name: Letterheads
+    - name: Signatures
+    - name: Business Cards
+    - name: Visual Identity
+- name: Brand Identity
+  category: branding
+  tags:
+    - name: brand guidelines
+    - name: typography
+    - name: color theory
+    - name: visual identity
+- name: Brand Strategy
+  category: branding
+  tags:
+    - name: positioning
+    - name: messaging
+    - name: market research
+    - name: competitive analysis
