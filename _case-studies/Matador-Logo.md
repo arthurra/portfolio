@@ -5,6 +5,7 @@ description: >-
   pushing performance limits with sleek, high-quality products, encapsulated in
   the ethos: Stand strong. Be bold. Command attention.
 cover_image: /assets/images//case-studies/thumbnails//matador.webp
+illustration: /assets/images/case-studies/illustrations/matador-logo-illustration.svg
 color: red
 category: branding
 services:
