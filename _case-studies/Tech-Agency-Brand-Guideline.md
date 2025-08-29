@@ -1,5 +1,5 @@
 ---
-title: Tech Agency Brand Guideline
+title: Tech Agency Brand Guidelines
 description: >-
   This project presents a brand concept for Launch Scout, a tech agency focused
   on custom software solutions. The core of the brand identity is a logo that
