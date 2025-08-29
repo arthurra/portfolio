@@ -14,11 +14,8 @@ services:
     tags:
       - name: Adobe Illustrator
 testimonial: >-
-  Matador was founded with a simple idea: that in a world overflowing with
-  noise, only bold moves create lasting impact. The company takes its name from
-  the Spanish matador—not to glorify bullfighting, but to embody the courage,
-  precision, and showmanship that define those who step into the arena with
-  confidence.
+  Matador was conceived with a simple idea: that in a world overflowing with
+  noise, only bold moves create lasting impact.
 cite: Matador Inspiration
 icon: "\U0001F402"
 tags:
