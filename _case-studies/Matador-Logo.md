@@ -23,5 +23,19 @@ icon: "\U0001F402"
 tags:
   - name: Apparel
 size: small
+solutions:
+  - title: Matador Athletic Apparel Logo
+    description: >-
+      The art style, minimalist, geometric, and modern, communicates strength
+      through simplicity. The stylized bull horns and nose ring embedded in the
+      wordmark are subtle yet iconic, emphasizing that Matador is about more
+      than just performance; it’s about making an impact.
+
+
+      Deep navy blue symbolizes trust, authority, and professionalism, anchoring
+      the brand in dependability. Vibrant red reflects passion, energy, and
+      boldness—the daring spirit of a challenger unafraid of risks. Crisp white
+      provides balance, representing clarity, honesty, and transparency.
+    media: /assets/images//case-studies//matador.webp
 ---
 
