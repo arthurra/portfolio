@@ -24,6 +24,7 @@ icon: "\U0001F402"
 tags:
   - name: Apparel
 size: small
+visible: true
 solutions:
   - title: Matador Athletic Apparel Logo
     description: >-
