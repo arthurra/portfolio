@@ -23,7 +23,7 @@ cite: Launch Scout
 icon: "\U0001F4BB"
 tags:
   - name: Technology
-size: small
+size: featured
 visible: true
 solutions:
   - title: Logo
