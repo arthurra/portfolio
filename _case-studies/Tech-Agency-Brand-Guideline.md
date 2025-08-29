@@ -8,7 +8,7 @@ description: >-
 cover_image: >-
   /assets/images//case-studies/thumbnails//tech-agency-brand-guidelines-thumbnial.webp
 illustration: >-
-  /assets/images//case-studies/illustrations//tech-agency-brand-guidelines-illustration.svg
+  /assets/images//case-studies/illustrations//tech-agency-brand-guidelines-thumbnial.webp
 color: purple
 category: branding
 services:
