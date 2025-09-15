@@ -1,5 +1,5 @@
 ---
-title: Tech Agency Brand Guidelines
+title: Tech Agency Brand Guide
 description: >-
   This project presents a brand concept for Launch Scout, a tech agency focused
   on custom software solutions. The core of the brand identity is a logo that
@@ -15,7 +15,7 @@ services:
   - name: Brand Identity
     timeline: 2 weeks
     tags:
-      - name: Brand Guidelines
+      - name: Brand Guide
       - name: Visual Identity
       - name: Typography
 testimonial: 'Your launch pad for custom software ideation, design, and development.'
