@@ -6,7 +6,6 @@
   line-height: 1.6;
   letter-spacing: normal;
   text-transform: none;
-  text-wrap: balance;
 }
 
 body {
@@ -22,6 +21,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-text-700);
   text-transform: uppercase;
+  text-wrap: balance;
 }
 
 @mixin h1 {
@@ -73,6 +73,7 @@ h4,
   line-height: 1.5;
   letter-spacing: -0.03em;
   color: var(--color-text-700);
+  text-wrap: balance;
 }
 
 h5,

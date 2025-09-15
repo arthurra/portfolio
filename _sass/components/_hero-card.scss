@@ -12,6 +12,7 @@
 
     &__description-container {
       font-size: var(--fs-400);
+      text-wrap: auto;
     }
 
     & .button {
@@ -27,6 +28,10 @@
       grid-template-columns: 1fr;
       grid-auto-flow: row;
     }
+  }
+
+  &__description-container {
+    text-wrap: balance;
   }
 
   &__image-container {
