@@ -3,6 +3,18 @@ title: Banking Compliance Tracker
 description: >-
   Helping a financial service company provide even more insight to their
   customers by re-imagining how data is visualized
+problem: >-
+  Mitratech's RegTech platform automates risk, compliance, vendor, and
+  performance management for the financial industry, but executives struggled to
+  read across that data. Key performance indicators, projects, and timelines
+  lived in separate views, so the strategic picture stayed buried.
+role: >-
+  I led design through the sprint, owning the user story map, UI flow outline,
+  and the dashboard and prototype work in Adobe XD.
+outcome: >-
+  The new dashboards put KPIs, project timelines, and Gantt and list views in
+  one place, so executives could read progress across projects and spot what
+  needed attention at a glance.
 cover_image: >-
   /assets/images/case-studies/thumbnails/banking-compliance-tracker-thumbnail.png
 category: product design
@@ -57,7 +69,7 @@ solutions:
     media: /assets/images/case-studies/compliance-tracker-strategic-dashboard.png
   - title: KPI Category Overview
     description: >-
-      Each KPI category can have serval projects all going on simultaneously.
+      Each KPI category can have several projects all going on simultaneously.
       This overview page shows executives how their projects fit together on a
       timeline. This allows for strategic insights that otherwise would never be
       possible. 

@@ -3,6 +3,21 @@ title: Work Order Management
 description: >-
   A custom process requires a custom solution. I helped to turn a scattered
   paper trail into an easy to understand application.
+problem: >-
+  E-Beam Services ran work orders on paper across 3 facilities in 3 states.
+  Products in a single job split across multiple work orders and paper
+  workbooks, so managers had no reliable way to track progress, calibrate
+  machines, or troubleshoot bottlenecks across plants.
+role: >-
+  I led design on PRESTO and shipped the production front end in HTML with ERB
+  and HBS and Sass, working alongside the build team on the Ruby on Rails and
+  Ember stack.
+outcome: >-
+  PRESTO replaced paper across all 3 facilities with no parallel run and minimal
+  training. The COO called it functional software the team could test.
+quote: >-
+  Functional software we could test.
+quote_attribution: COO, E-Beam Services
 cover_image: /assets/images/case-studies/thumbnails/work-order-management-thumbnail.png
 category: product design
 services:
@@ -69,7 +84,7 @@ solutions:
   - title: production queue
     description: >-
       What was spread out across numerous paper workbooks is now consolidated
-      into one easy to, easy to access queue. The new production queue provides
+      into one queue that's easy to access. The new production queue provides
       accuracy and reliability for all machines running in multiple plants.
     media: /assets/images/case-studies/work-order-production-queue.png
   - title: work order products
