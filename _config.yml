@@ -21,11 +21,11 @@
 title: Ryan Arthur Digital
 email: ryan@ryanarthurdigital.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My specialty is handcrafted digital products that are simple, beautiful, and useful.
+  Senior product designer. 14 years building digital products with small, mighty teams, story-mapped and prototyped in the browser.
+author: Ryan Arthur
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ryanarthurdigital.com/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+github_username: arthurra
 
 # Build settings
 theme: minima
