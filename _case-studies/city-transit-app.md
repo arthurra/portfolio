@@ -3,6 +3,16 @@ title: City Transit App
 description: >-
   A dashboard and companion app that was submitted as a bid for a grant to help
   people move around the city of Cincinnati
+problem: >-
+  Getting around Cincinnati means piecing together routes from separate transit
+  options with no single view of what's available. The grant called for a way to
+  use open data to make the city easier to move through.
+role: >-
+  I designed the dashboard and companion app concept, owning the UX and UI for
+  the mobile-first screens.
+outcome: >-
+  The dashboard and companion app went out as a bid for the city grant, using
+  open data sources to suggest routes and surface nearby transit options.
 cover_image: /assets/images/case-studies/thumbnails/city-transit-app-thumbnail.png
 category: product design
 services:

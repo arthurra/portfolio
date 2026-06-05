@@ -3,6 +3,18 @@ title: Blockchain Explorer
 description: >-
   A tool for inspecting and analyzing EVM based blockchains on Ethereum Networks
   in real time.
+problem: >-
+  EVM and Ethereum networks generate blocks and transactions constantly, but
+  developers and users had no open-source way to inspect that activity in a
+  readable interface. They needed to see blocks, transactions, addresses, and
+  token holdings as they happened.
+role: >-
+  I designed and built the front end of the open-source blockchain explorer,
+  shipping the production interface in HTML with EEx and Sass and a custom
+  component library.
+outcome: >-
+  The explorer shipped over about 6 months with real-time block and transaction
+  views, address pages, and token holdings, built on a custom component library.
 cover_image: /assets/images/case-studies/thumbnails/blockchain-explorer-thumbnail.png
 category: product design
 services:
@@ -41,7 +53,7 @@ solutions:
     description: >-
       Every address on the blockchain has a dedicated page where all address
       activity is recorded. Easily browse an address's content and review a
-      complete history of transactions. I used color queues to visually
+      complete history of transactions. I used color cues to visually
       distinguish transaction types and provided links for users to drill into
       additional content. 
     media: /assets/images/case-studies/blockchain-address-transactions.png

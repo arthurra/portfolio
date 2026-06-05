@@ -5,10 +5,22 @@ description: >-
   on custom software solutions. The core of the brand identity is a logo that
   blends a spaceship and an eye. Although it wasn't ultimately selected, it was
   a strong contender for the final design.
+problem: >-
+  Launch Scout, a tech agency building custom software, needed a brand identity
+  that read as both credible and creative. The work called for a logo system,
+  type, color, and the guidelines to keep it consistent across digital and
+  print.
+role: >-
+  I designed the brand concept end to end, from the logomark and the logotype
+  set in a modified Gilroy ExtraBold to the alignment and layout variations, the
+  color system, and the typographic hierarchy and applications.
+outcome: >-
+  The concept was a strong contender for the final brand but wasn't ultimately
+  selected.
 cover_image: >-
-  /assets/images//case-studies/thumbnails//tech-agency-brand-guidelines-thumbnial.webp
+  /assets/images/case-studies/thumbnails/tech-agency-brand-guidelines-thumbnial.webp
 illustration: >-
-  /assets/images//case-studies/illustrations//tech-agency-brand-guidelines-thumbnial.webp
+  /assets/images/case-studies/illustrations/tech-agency-brand-guidelines-thumbnial.webp
 color: purple
 category: branding
 services:
@@ -37,7 +49,7 @@ solutions:
       brand asset. The accompanying logotype, a modified version of Gilroy
       ExtraBold, was selected for its clean, geometric forms that project a
       sense of modernity and stability.
-    media: /assets/images//case-studies//launch-scout-logo.png
+    media: /assets/images/case-studies/launch-scout-logo.png
   - title: Alignment
     description: >-
       I meticulously defined the alignment and whitespace to ensure the logo
@@ -45,7 +57,7 @@ solutions:
       of horizontal, vertical, and knockout variations demonstrates a
       forward-thinking approach, ensuring the brand is versatile and adaptable
       to any platform or medium.
-    media: /assets/images//case-studies//launch-scout-alignment.png
+    media: /assets/images/case-studies/launch-scout-alignment.png
   - title: Layout Variations
     description: >-
       I developed a series of horizontal and vertical logo layouts to ensure
@@ -54,7 +66,7 @@ solutions:
       on social media, or a tall banner ad. This isn't just a matter of
       aesthetics; it's a strategic decision that guarantees the brand's
       visibility and impact across all platforms, from digital to print.
-    media: /assets/images//case-studies//launch-scout-layout.png
+    media: /assets/images/case-studies/launch-scout-layout.png
   - title: Color Palette
     description: >-
       The color palette was strategically chosen to reinforce Launch Scout's
@@ -65,7 +77,7 @@ solutions:
       secondary palette of vibrant hues like yellow, fuchsia, and coral. These
       colors are used as accents to highlight key information and create visual
       interest without compromising the brand's professional tone. 
-    media: /assets/images//case-studies//launch-scout-colors.png
+    media: /assets/images/case-studies/launch-scout-colors.png
   - title: Color Combinations
     description: >-
       The palette is designed to be a strategic balance of opposing forces. The
@@ -76,7 +88,7 @@ solutions:
       sophisticated and approachable brand, demonstrating that Launch Scout is
       both an authoritative leader and a creative, dynamic partner in the custom
       software space.
-    media: /assets/images//case-studies//launch-scout-combinations.png
+    media: /assets/images/case-studies/launch-scout-combinations.png
   - title: Typography
     description: >-
       The typographic system was designed to create a clear visual hierarchy and
@@ -89,7 +101,7 @@ solutions:
       these fonts ensures that the brand's messaging is not only visually
       consistent but also effortlessly legible, communicating expertise and
       attention to detail at every level.
-    media: /assets/images//case-studies//launch-scout-typography.png
+    media: /assets/images/case-studies/launch-scout-typography.png
   - title: Applications
     description: >-
       The application mockups were created to illustrate the brand's cohesive
@@ -101,6 +113,6 @@ solutions:
       across various touchpoints. This level of detail in brand application
       reassures clients that the visual solution is not just an idea but a
       practical and well-thought-out system built for long-term success.
-    media: /assets/images//case-studies//launch-scout-applications.png
+    media: /assets/images/case-studies/launch-scout-applications.png
 ---
 

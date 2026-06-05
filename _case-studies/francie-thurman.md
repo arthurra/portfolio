@@ -2,6 +2,15 @@
 title: Francie Thurman Realty
 description: >-
   This branding project focused on creating a refined logo and wordmark for a local realtor.
+problem: >-
+  Francie Thurman, a local realtor, needed an identity that signaled luxury
+  listings while still feeling approachable to the clients she works with.
+role: >-
+  I designed the logo, wordmark, and supporting collateral, including business
+  cards and brochures.
+outcome: >-
+  The identity pairs a symbol drawn from the ease of home living with a refined
+  wordmark, balancing elegance with an approachable, trustworthy feel.
 cover_image: /assets/images/case-studies/thumbnails/francie-thurman-realty-thumbnail.png
 category: branding
 services:
