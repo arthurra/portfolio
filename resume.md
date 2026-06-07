@@ -91,6 +91,7 @@ permalink: /resume/
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -110,42 +111,55 @@ permalink: /resume/
   <div class="container">
     <h2 class="u-mb-400">Skills</h2>
 
-    <h3 class="u-mb-100">Design</h3>
-    <div class="tag-container u-mb-300">
-      <div class="tag">Figma</div>
-      <div class="tag">UX Design</div>
-      <div class="tag">UI Design</div>
-      <div class="tag">Design Sprints</div>
-      <div class="tag">User Story Mapping</div>
-      <div class="tag">Stakeholder Interviews</div>
-      <div class="tag">Information Architecture</div>
-      <div class="tag">Wireframing</div>
-      <div class="tag">Interaction Design</div>
-      <div class="tag">Design Systems</div>
-      <div class="tag">Design Tokens</div>
-      <div class="tag">User Testing</div>
-      <div class="tag">Mobile-First Design</div>
+    <div class="flex flex--column">
+      <div class="service-card service-card--wide service-card--skills">
+        <span class="service-card__title">Design</span>
+        <div class="tag-container">
+          <span class="tag">Figma</span>
+          <span class="tag">UX Design</span>
+          <span class="tag">UI Design</span>
+          <span class="tag">Design Sprints</span>
+          <span class="tag">User Story Mapping</span>
+          <span class="tag">Stakeholder Interviews</span>
+          <span class="tag">Information Architecture</span>
+          <span class="tag">Wireframing</span>
+          <span class="tag">Interaction Design</span>
+          <span class="tag">Design Systems</span>
+          <span class="tag">Design Tokens</span>
+          <span class="tag">User Testing</span>
+          <span class="tag">Mobile-First Design</span>
+        </div>
+      </div>
+
+      <div class="service-card service-card--wide service-card--skills">
+        <span class="service-card__title">Code</span>
+        <div class="tag-container">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS / SCSS</span>
+          <span class="tag">JavaScript / TypeScript</span>
+          <span class="tag">Phoenix LiveView</span>
+          <span class="tag">Blazor / Razor</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">Web Components</span>
+          <span class="tag">Web Accessibility</span>
+          <span class="tag">Git</span>
+          <span class="tag">Agile</span>
+        </div>
+      </div>
+
+      <div class="service-card service-card--wide service-card--skills">
+        <span class="service-card__title">AI</span>
+        <div class="tag-container">
+          <span class="tag">Jobs-to-Be-Done</span>
+          <span class="tag">Claude Code</span>
+          <span class="tag">AI Agent Authoring</span>
+        </div>
+      </div>
     </div>
 
-    <h3 class="u-mb-100">Code</h3>
-    <div class="tag-container u-mb-300">
-      <div class="tag">HTML</div>
-      <div class="tag">CSS / SCSS</div>
-      <div class="tag">JavaScript / TypeScript</div>
-      <div class="tag">Phoenix LiveView</div>
-      <div class="tag">Blazor / Razor</div>
-      <div class="tag">Next.js</div>
-      <div class="tag">Web Components</div>
-      <div class="tag">Web Accessibility</div>
-      <div class="tag">Git</div>
-      <div class="tag">Agile</div>
-    </div>
-
-    <h3 class="u-mb-100">AI</h3>
-    <div class="tag-container">
-      <div class="tag">Jobs-to-Be-Done</div>
-      <div class="tag">Claude Code</div>
-      <div class="tag">AI Agent Authoring</div>
-    </div>
   </div>
 </section>
+
+<!-- CTA -->
+
+{% include shared/cta-section.liquid %}
