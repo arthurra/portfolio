@@ -91,6 +91,7 @@ permalink: /resume/
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -155,5 +156,10 @@ permalink: /resume/
         </div>
       </div>
     </div>
+
   </div>
 </section>
+
+<!-- CTA -->
+
+{% include shared/cta-section.liquid %}

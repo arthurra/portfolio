@@ -6,14 +6,15 @@ permalink: /about/
 
 <section class="section">
   <div class="container">
-    <header class="u-mb-500">
-      <div class="tag-container u-mb-100">
-        <div class="tag">Product Designer</div>
-      </div>
-      <h1>About</h1>
-    </header>
 
     <div class="card">
+      <header class="u-mb-500">
+        <div class="tag-container u-mb-100">
+          <div class="tag">Product Designer</div>
+        </div>
+        <h1>About</h1>
+      </header>
+
       <div class="card__body">
         <p class="u-mb-300">I have spent 14 years designing digital products inside small, mighty teams, working from the user's story up. Every engagement starts the same way, with user story mapping and stakeholder interviews to find the real demand, and then the work moves into the browser, where I prototype alongside the build team instead of handing comps over a wall. Lately I pair that practice with AI agents I author, which compress weeks of discovery into days while keeping the methodology story-map-first.</p>
 
@@ -27,11 +28,9 @@ permalink: /about/
       </div>
     </div>
 
-    <div class="u-mb-400"></div>
-
-    <a href="mailto:ryan@ryanarthurdigital.com?subject=Work with me!&body=👋 Tell me a little bit about your project." class="button button--secondary">
-      <span class="button__icon button__icon--wave">👋</span>
-      Get in touch
-    </a>
   </div>
 </section>
+
+<!-- CTA -->
+
+{% include shared/cta-section.liquid %}
