@@ -1,8 +1,20 @@
 ---
 title: Construction Marketplace
 description: >-
-  Transition from the design phase to procurement seemlessly by applying 21st
+  Transition from the design phase to procurement seamlessly by applying 21st
   century connectivity to an old-school process
+problem: >-
+  Building designers and contractors specify and buy products through email,
+  phone calls, and PDFs scattered across vendors. Comparing quotes from multiple
+  suppliers meant reconciling files by hand, and the work that moves a project
+  from design to purchase had no shared place to live.
+role: >-
+  I led design on the construction-procurement marketplace from the design
+  sprint through launch, owning research, UX, UI, and the production front end
+  in HTML, CSS, and Razor alongside the .NET and Blazor build team.
+outcome: >-
+  The product secured more than $1.5M in seed funding in its first year and drew
+  industry buy-in from Autodesk.
 cover_image: /assets/images/case-studies/thumbnails/construction-marketplace-thumbnail.png
 category: product design
 services:

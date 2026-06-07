@@ -1,8 +1,19 @@
 ---
 title: Sales Analysis Tool
 description: >-
-  Seeing data update in real time empowered sales assocciates to to engineer the
+  Seeing data update in real time empowered sales associates to engineer the
   best deals possible.
+problem: >-
+  Institutional pharmacy pricing at Omnicare moved through spreadsheets emailed
+  around the department. Files went stale, edits were hard to trace, and sales
+  associates had no shared place to compare pricing or see the effect of a
+  change in real time.
+role: >-
+  I designed the sales analysis tool and shipped the production front end in
+  HTML with Slim and Sass, partnering with engineering across the engagement.
+outcome: >-
+  The emailed spreadsheets gave way to a shared, audited platform where every
+  change is backed up and traceable. The engagement ran about 9 months.
 cover_image: /assets/images/case-studies/thumbnails/sales-analysis-tool-thumbnail.png
 category: product design
 services:

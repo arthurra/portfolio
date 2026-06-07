@@ -20,6 +20,8 @@
     {% for service in links_by_order %}
       {% include navigation/navigation-link.liquid %}
     {% endfor %}
+    <a href="/about/" {% if page.url == "/about/" %}class="current"{% endif %}>About</a>
+    <a href="/resume/" {% if page.url == "/resume/" %}class="current"{% endif %}>Résumé</a>
   </nav>
   {% include shared/cta-button.liquid %}
 </header>

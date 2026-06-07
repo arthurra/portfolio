@@ -3,6 +3,18 @@ title: Ground Control Station
 description: >-
   The goal of this NASA sponsored challenge was to design an effective interface
   for simultaneously managing multiple autonomous vehicles.
+problem: >-
+  NASA is researching future aviation operations where a single pilot controls
+  multiple aircraft remotely at once. The challenge was to design a ground
+  control station that gives one operator a clear picture of many vehicles
+  without overwhelming them.
+role: >-
+  I designed the interface end to end for this competition entry, owning the
+  research, UX, and UI, including the icon and color system that signals each
+  vehicle's status at a glance.
+outcome: >-
+  The design won the NASA-sponsored challenge. It let one operator monitor and
+  control multiple autonomous aircraft at once.
 cover_image: /assets/images/case-studies/thumbnails/ground-control-station-thumbnail.png
 category: product design
 services:
@@ -52,7 +64,7 @@ solutions:
       The mission timeline displays a representation of a vehicle's progress
       through a planned mission. It also serves a dual purpose of graphically
       showing the vehicle altitude that can't be seen on the top-down map. The
-      user can scrub through the timeline to see recorded or estimated spacial
+      user can scrub through the timeline to see recorded or estimated spatial
       information to plan or review a mission.
     media: /assets/images/case-studies/ground-control-station-checklist.png
   - title: network

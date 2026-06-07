@@ -14,8 +14,7 @@
   {% else %}
     <img
       src="{{ case-study.cover_image }}"
-      alt=""
-      role="presentation"
+      alt="{{ case-study.title }}"
       class="case-study-card__thumbnail" />
   {% endif %}
   {% if case-study.size != "small" %}
