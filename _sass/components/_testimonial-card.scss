@@ -9,13 +9,14 @@
 
   &__illustration {
     position: relative;
-    top: -200px;
+    top: -50px;
     left: var(--space-300);
     transform: skewY(-20deg);
+    z-index: 2;
     filter: drop-shadow(var(--box-shadow-400));
 
     @include mq(medium) {
-      top: -100px;
+      top: -50px;
       left: var(--space-400);
     }
 
@@ -34,6 +35,18 @@
 
     @include mq(small) {
       margin: var(--space-600) 0 var(--space-400);
+    }
+  }
+
+  &__heading {
+    @include h3;
+    margin-bottom: var(--space-200);
+    margin-left: calc(var(--space-800) + var(--space-300));
+
+    @include mq(small) {
+      margin-left: 0;
+      margin-bottom: var(--space-100);
+      padding-top: var(--space-200);
     }
   }
 

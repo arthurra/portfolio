@@ -1,0 +1,33 @@
+@use "../tokens/mixins" as *;
+@use "../base/typography" as *;
+
+// Dark "My role" card that leads the intro accent band, mirroring the
+// dark service line-item (.service-card) so the two read as one unit.
+.role-card {
+  @include body-text;
+  position: relative;
+  padding: var(--space-300);
+  color: var(--color-cool-gray-025);
+  background-color: var(--color-secondary-700);
+  border-radius: var(--border-radius-700);
+  box-shadow: var(--box-shadow-700);
+
+  @include mq(small) {
+    padding: var(--space-200);
+  }
+
+  // Rendered as an <h2> so it matches the Services/Solution/Outcome section
+  // headings; the accent container's white-heading rule doesn't reach it (it's
+  // nested in .role-card), so set white + shadow here for the dark card.
+  &__label {
+    margin-bottom: var(--space-100);
+    color: #fff;
+    text-shadow: var(--text-shadow-700);
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--color-cool-gray-025);
+    text-shadow: var(--text-shadow-700);
+  }
+}

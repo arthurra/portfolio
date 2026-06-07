@@ -1,5 +1,11 @@
 <section class="section section--accent">
   <div class="container">
+    {% if page.role %}
+      <div class="role-card u-mb-400">
+        <h2 class="role-card__label">My role</h2>
+        <p class="role-card__text">{{ page.role }}</p>
+      </div>
+    {% endif %}
     <h2 class="u-mb-300">Services</h2>
     <div class="flex flex--column">
       {% for service in page.services %}

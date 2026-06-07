@@ -1,8 +1,10 @@
 {% if page.outcome %}
-  <section class="section">
+  <section class="section section--accent">
     <div class="container">
-      <h2 class="u-mb-300">Outcome</h2>
-      <p>{{ page.outcome }}</p>
+      <div class="role-card">
+        <h2 class="role-card__label">Outcome</h2>
+        <p>{{ page.outcome }}</p>
+      </div>
     </div>
   </section>
 {% endif %}
