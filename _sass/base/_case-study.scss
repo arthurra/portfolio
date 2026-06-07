@@ -1,0 +1,19 @@
+// Scoped to case-study pages only (the <article class="case-study"> wrapper),
+// so the homepage / service layout — which also uses .section--accent — is
+// never affected.
+.case-study {
+  // A purple accent band uses ~12rem negative top/bottom margins (accent-bg),
+  // so it bleeds into the sections around it. A plain section that directly
+  // follows an accent band would otherwise have its bare heading/text land on
+  // that purple bleed (dark text on purple). Give those sections an opaque
+  // white backing and top clearance so their content always sits on white.
+  //
+  // The solution section is exempt (:not(#solution)): its leading "The problem"
+  // card is itself a white card that intentionally floats over the band edge.
+  .section--accent + .section:not(#solution) {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding-top: calc(var(--space-600) * 2);
+  }
+}

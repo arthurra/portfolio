@@ -1,5 +1,11 @@
 <section id="solution" class="section">
   <div class="container">
+    {% if page.problem %}
+      <div class="card problem-card u-mb-600">
+        <h2 class="u-mb-300">The problem</h2>
+        <p>{{ page.problem }}</p>
+      </div>
+    {% endif %}
     <h2 class="u-mb-300">Solution</h2>
     <div class="solution-card-container">
       {% assign current = site.case-studies | where: "title", page.title %}
