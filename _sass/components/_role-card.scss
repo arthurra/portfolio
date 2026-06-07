@@ -16,10 +16,12 @@
     padding: var(--space-200);
   }
 
+  // Rendered as an <h2> so it matches the Services/Solution/Outcome section
+  // headings; the accent container's white-heading rule doesn't reach it (it's
+  // nested in .role-card), so set white + shadow here for the dark card.
   &__label {
-    @include h6;
-    display: block;
     margin-bottom: var(--space-100);
+    color: #fff;
     text-shadow: var(--text-shadow-700);
   }
 

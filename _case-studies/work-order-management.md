@@ -15,9 +15,6 @@ role: >-
 outcome: >-
   PRESTO replaced paper across all 3 facilities with no parallel run and minimal
   training. The COO called it functional software the team could test.
-quote: >-
-  Functional software we could test.
-quote_attribution: COO, E-Beam Services
 cover_image: /assets/images/case-studies/thumbnails/work-order-management-thumbnail.png
 category: product design
 services:

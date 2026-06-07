@@ -2,7 +2,7 @@
 layout: shared
 ---
 
-<article class="case-study">
+<article>
 
 <!-- Hero Header -->
 
@@ -23,10 +23,6 @@ layout: shared
 <!-- About the Client -->
 
 {% include case-study/testimonial-section.liquid %}
-
-<!-- Real Testimonial (In their words) -->
-
-{% include case-study/real-testimonial-section.liquid %}
 
 <!-- See More -->
 
