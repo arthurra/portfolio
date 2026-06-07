@@ -12,6 +12,7 @@
     top: -50px;
     left: var(--space-300);
     transform: skewY(-20deg);
+    z-index: 2;
     filter: drop-shadow(var(--box-shadow-400));
 
     @include mq(medium) {
