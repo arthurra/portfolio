@@ -258,4 +258,27 @@
       }
     }
   }
+
+  // Skills line item (resume): a category title and its wrapping skill tags,
+  // no illustration or timeline. Reuses the dark service-card look.
+  &--skills {
+    grid-auto-flow: row;
+    grid-template-columns: 6rem 1fr;
+    align-items: start;
+    column-gap: var(--space-200);
+
+    @include mq(medium) {
+      grid-template-columns: 1fr;
+      row-gap: var(--space-100);
+    }
+
+    .service-card__title {
+      padding-top: var(--space-050);
+    }
+
+    .tag-container {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
 }
