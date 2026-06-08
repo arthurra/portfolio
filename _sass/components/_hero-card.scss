@@ -67,4 +67,14 @@
     position: relative;
     border: var(--border-width) var(--border-style) transparent;
   }
+
+  &--image {
+    .card__header {
+      margin-bottom: var(--space-500);
+
+      @include mq(small) {
+        margin-bottom: var(--space-300);
+      }
+    }
+  }
 }

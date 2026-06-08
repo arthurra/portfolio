@@ -4,11 +4,9 @@
   @include card;
 
   &__header {
-    margin-bottom: var(--space-500);
+    margin-bottom: var(--space-200);
 
     @include mq(small) {
-      margin-bottom: var(--space-300);
-
       h1 {
         font-size: calc(1rem + 5.5vw);
       }

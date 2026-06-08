@@ -10,7 +10,7 @@
 .solution-card {
   @include card;
   display: grid;
-  grid-template-rows: minmax(8rem, auto) auto;
+  grid-template-rows: minmax(6rem, auto) auto;
   gap: 0 var(--space-300);
 
   &:nth-of-type(odd) {

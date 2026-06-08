@@ -8,7 +8,7 @@ permalink: /about/
   <div class="container">
 
     <div class="card">
-      <header class="u-mb-500">
+      <header class="card__header">
         <div class="tag-container u-mb-100">
           <div class="tag">Product Designer</div>
         </div>
