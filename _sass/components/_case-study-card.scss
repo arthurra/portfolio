@@ -164,15 +164,16 @@
       @include mq(small) {
         grid-row: auto;
         grid-column: span 2;
-        aspect-ratio: 20/9;
+        aspect-ratio: 20 / 9;
       }
     }
 
     &[data-aspect="wide"] {
       grid-column: span 2;
+      aspect-ratio: 20 / 8;
 
       @include mq(small) {
-        aspect-ratio: 20/9;
+        aspect-ratio: 20 / 9;
       }
     }
 
