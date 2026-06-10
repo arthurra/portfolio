@@ -3,7 +3,7 @@ title: ZeeMee Design Exercise
 description: >-
   A self-directed exercise for ZeeMee's hiring panel. I audited the
   college-admissions app end to end, then rebuilt the moments that matter most
-  as a working, mobile-first app you can click through.
+  as a working, mobile-first app you can click through. <br /> <a href="https://zeemee-design-exercise.vercel.app/" class="button u-mt-100">View the Demo</a>
 problem: >-
   ZeeMee helps students find their people before they arrive on campus, but the
   app it ships hides that warmth. Auditing 72 screens across 12 workflows turned
@@ -22,7 +22,7 @@ outcome: >-
   rebuilt hero patterns, an interactive onboarding flow, a story map, an
   18-slide deck, and a token-driven design system, all at mobile width. It
   stands as proof of how I work, taking an ambiguous brief from discovery to a
-  running front end in days.
+  running front end in days.<br /> <a href="https://zeemee-design-exercise.vercel.app/" class="button u-mt-100">View the Demo</a>
 cover_image: /assets/images/case-studies/thumbnails/zeemee-design-exercise-thumbnail.png
 category: product design
 services:
