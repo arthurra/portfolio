@@ -22,7 +22,7 @@
   align-items: end;
   justify-content: end;
   gap: var(--space-100);
-  aspect-ratio: 10/8;
+  aspect-ratio: 10 / 8;
   padding: var(--space-150);
   background-color: var(--color-secondary-700);
   border-radius: var(--border-radius-700);
@@ -31,7 +31,7 @@
   transition: all var(--transition-duration) var(--transition-timing-function);
 
   @include mq(small) {
-    aspect-ratio: 10/9;
+    aspect-ratio: 10 / 9;
   }
 
   &:hover {
@@ -50,12 +50,19 @@
     }
   }
 
+  &[data-color="violet"] {
+    order: 1;
+
+    @include mq(small) {
+      order: unset;
+    }
+  }
+
   &__title {
     position: relative;
     max-width: 15ch;
-    color: #fff;
+    color: var(--color-text-700);
     text-align: end;
-    text-shadow: var(--text-shadow-400);
     z-index: 2;
 
     @include mq(medium) {
@@ -65,8 +72,9 @@
 
   &__illustration {
     position: absolute;
+    top: 1rem;
     left: calc(var(--space-300) * -1);
-    transition: all 0.5s var(--transition-timing-function);
+    transition: all 0.4s var(--transition-timing-function);
 
     @include mq(medium) {
       scale: 75%;
@@ -76,9 +84,12 @@
 
     @include mq(small) {
       scale: 65%;
-      transform-origin: bottom left;
-      top: -4rem;
-      left: -1rem;
+      transform-origin: top right;
+      top: 1rem;
+      left: -3rem;
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
     }
 
     .case-study-card:hover & {
@@ -86,7 +97,7 @@
       scale: 1.15;
       filter: drop-shadow(0 0.25rem 1.5rem hsla(0, 0%, 0%, 0.1))
         drop-shadow(0 0.25rem 0.5rem hsla(0, 0%, 0%, 0.05));
-      transition: all 1s var(--transition-timing-function);
+      transition: all 0.8s var(--transition-timing-function);
     }
   }
 
@@ -98,7 +109,7 @@
     border: var(--border-width) var(--border-style) var(--color-cool-gray-050);
     border-radius: var(--border-radius-700);
     box-shadow: var(--box-shadow-700);
-    transition: all 1s var(--transition-timing-function);
+    transition: all 0.5s var(--transition-timing-function);
 
     @include mq(medium) {
       scale: 85%;
@@ -115,7 +126,7 @@
 
       @include mq(small) {
         scale: 85%;
-        translate: 16rem calc(var(--space-200) * -1);
+        translate: 65% calc(var(--space-200) * -1);
       }
     }
 
@@ -128,7 +139,7 @@
 
       @include mq(small) {
         scale: 85%;
-        translate: 16rem calc(var(--space-200) * -1);
+        translate: 60% -10%;
       }
     }
 
@@ -140,7 +151,7 @@
     }
 
     .case-study-card:hover & {
-      transition: all 2s var(--transition-timing-function);
+      transition: all 1s var(--transition-timing-function);
       rotate: 25deg;
       scale: 1.1;
       border-color: #fff;
@@ -158,26 +169,26 @@
   &--large {
     aspect-ratio: unset;
 
+    @include mq(small) {
+      aspect-ratio: 5 / 2.1;
+    }
+
     &[data-aspect="tall"] {
       grid-row: span 2;
 
       @include mq(small) {
         grid-row: auto;
         grid-column: span 2;
-        aspect-ratio: 20 / 9;
       }
     }
 
     &[data-aspect="wide"] {
       grid-column: span 2;
-      aspect-ratio: 20 / 8;
-
-      @include mq(small) {
-        aspect-ratio: 20 / 9;
-      }
     }
 
     .case-study-card__title {
+      color: #fff;
+
       @include mq(small) {
         max-width: 15ch;
       }

@@ -49,7 +49,7 @@ testimonial: >-
   find roommates, and join their campus community before day one.
 cite: ZeeMee
 icon: "\U0001F393"
-color: orange
+color: red
 tags:
   - name: EdTech
 visible: true
