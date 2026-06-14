@@ -7,7 +7,7 @@
     <h3 class="u-mb-300">Keep Reading</h3>
     <div class="case-study-card-container case-study-card-container--see-more">
       {% assign cs-list = site.case-studies | where: "size", "small" | where: "category", page.category | where: "visible", true %}
-      {% assign cs-list = cs-list | where_exp: "item", "item.url != page.url" | sample: 3 %}
+      {% assign cs-list = cs-list | where_exp: "item", "item.url != page.url" | sample: 4 %}
       {% for case-study in cs-list %}
         {% include service/case-study-card.liquid %}
       {% endfor %}

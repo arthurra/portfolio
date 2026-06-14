@@ -59,7 +59,7 @@
     @include mq(medium) {
       scale: 66%;
       right: calc(var(--space-400) * -1);
-      top: var(--space-700);
+      top: 12rem;
     }
   }
 

@@ -53,11 +53,14 @@
   &__quote {
     margin-left: calc(var(--space-800) + var(--space-300));
 
+    @include mq(medium) {
+      font-size: var(--fa-400);
+      font-weight: 400;
+    }
+
     @include mq(small) {
       margin-left: 0;
       padding-top: var(--space-100);
-      font-size: var(--fa-400);
-      font-weight: 400;
     }
   }
 
