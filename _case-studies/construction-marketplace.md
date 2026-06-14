@@ -41,12 +41,12 @@ services:
 testimonial: >-
   Empowering building designers and contractors to easily compare, specify and
   purchase products by connecting them with local suppliers
-cite: 'Configure, Inc.'
+cite: "Configure, Inc."
 icon: "\U0001F6D2"
 color: yellow
 tags:
   - name: E-commerce
-visible: true
+visible: false
 size: large
 aspect: tall
 solutions:
@@ -113,6 +113,3 @@ solutions:
       components.
     media: /assets/images/case-studies/construction-marketplace-style-guide.png
 ---
-
-
-
