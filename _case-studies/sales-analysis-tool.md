@@ -31,9 +31,9 @@ services:
 testimonial: >-
   Providing comprehensive pharmaceutical services to skilled nursing, assisted
   living and other chronic care institutions across the United States
-cite: 'Omnicare, a CVS Health company'
+cite: "Omnicare, a CVS Health company"
 icon: "\U0001F9EE"
-color: orange
+color: red
 tags:
   - name: Accounting
 visible: true
@@ -69,15 +69,7 @@ solutions:
       When you need to dive into the data, you can drill down to the value for
       every data field in the system. However, we reduced the need for manual
       entry by providing shortcuts to quickly copy data from one row to another
-      or by duplicating a data template. 
+      or by duplicating a data template.
     media: /assets/images/case-studies/sales-analysis-pricing-contract-terms.png
 illustration: /assets/images/case-studies/illustrations/sales-analysis-tool-illustration.svg
 ---
-
-
-
-
-
-
-
-

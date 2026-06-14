@@ -27,15 +27,15 @@ services:
   - name: Web Development
     timeline: 12 months
     tags:
-      - name: 'HTML (ERB, HBS)'
+      - name: "HTML (ERB, HBS)"
       - name: CSS (Sass)
 testimonial: >-
   Making products that improve our world, our lives, our businesses, and our
   everyday wellbeing by modifying polymers and other materials using electron
   beam technology
-cite: 'E-BEAM Services, Inc'
+cite: "E-BEAM Services, Inc"
 icon: "\U0001F4E6"
-color: red
+color: blue
 tags:
   - name: Manufacturing
 visible: true
@@ -89,7 +89,7 @@ solutions:
       Technicians used to flip through manuals to calibrate machines properly
       for different processes throughout the day. By digitizing the
       specifications, we can deliver real-time product-specific data to the
-      techs. 
+      techs.
     media: /assets/images/case-studies/work-order-products.png
   - title: work order production summary
     description: >-
@@ -100,15 +100,3 @@ solutions:
 illustration: >-
   /assets/images/case-studies/illustrations/work-order-management-illustration.svg
 ---
-
-
-
-
-
-
-
-
-
-
-
-
