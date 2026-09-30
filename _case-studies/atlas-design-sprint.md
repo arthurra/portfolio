@@ -41,7 +41,8 @@ color: orange
 tags:
   - name: Construction
 visible: true
-size: small
+size: large
+aspect: tall
 solutions:
   - title: user story map
     description: >-

@@ -57,7 +57,7 @@ testimonial: >-
   through the Council's programs for older adults.
 cite: Council on Aging of Southwest Ohio
 icon: "\U0001F3E1"
-color: green
+color: blue
 tags:
   - name: Healthcare
 visible: true
