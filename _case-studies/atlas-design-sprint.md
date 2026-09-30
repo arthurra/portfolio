@@ -42,6 +42,7 @@ tags:
   - name: Construction
 visible: true
 size: small
+grid_order: 8
 solutions:
   - title: user story map
     description: >-

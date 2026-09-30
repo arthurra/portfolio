@@ -7,9 +7,13 @@
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-250);
   grid-auto-flow: dense;
+  // Every row matches the small cards' height, so a row made only of large
+  // cards (no small card to set the height) doesn't collapse.
+  grid-auto-rows: 1fr;
 
   @include mq(small) {
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
   }
 }
 

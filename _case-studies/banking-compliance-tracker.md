@@ -40,7 +40,7 @@ icon: "\U0001F4CB"
 color: violet
 tags:
   - name: Finance
-visible: true
+visible: false
 size: large
 aspect: wide
 solutions:

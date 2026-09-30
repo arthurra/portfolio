@@ -34,6 +34,7 @@ tags:
   - name: Aviation
   - name: <i class="fa-solid fa-trophy-star"></i> Competition Winner
 size: featured
+grid_order: 5
 visible: true
 solutions:
   - title: fly mode

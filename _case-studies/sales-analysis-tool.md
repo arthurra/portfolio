@@ -38,6 +38,7 @@ tags:
   - name: Accounting
 visible: true
 size: small
+grid_order: 1
 solutions:
   - title: Pricing List
     description: >-
