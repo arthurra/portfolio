@@ -62,6 +62,7 @@ tags:
   - name: Healthcare
 visible: true
 size: large
+grid_order: 9
 aspect: wide
 solutions:
   - title: generated wireframes

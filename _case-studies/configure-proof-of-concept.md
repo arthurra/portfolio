@@ -45,6 +45,7 @@ tags:
   - name: Construction
 visible: true
 size: large
+grid_order: 3
 aspect: tall
 solutions:
   - title: project workspace

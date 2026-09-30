@@ -39,7 +39,9 @@ color: blue
 tags:
   - name: Manufacturing
 visible: true
-size: small
+size: large
+grid_order: 4
+aspect: wide
 solutions:
   - title: jobs list
     description: >-

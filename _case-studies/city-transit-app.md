@@ -30,6 +30,7 @@ icon: "\U0001F6A6"
 color: blue
 visible: true
 size: small
+grid_order: 7
 solutions:
   - title: city transit dashboard
     description: >-

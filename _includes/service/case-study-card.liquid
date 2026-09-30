@@ -4,7 +4,8 @@
   href="{{case-study.url}}"
   class="case-study-card case-study-card--{{case-study.size}}"
   data-color="{{case-study.color}}"
-  {% if case-study.aspect %}data-aspect="{{case-study.aspect}}"{% endif %}>
+  {% if case-study.aspect %}data-aspect="{{case-study.aspect}}"{% endif %}
+  {% if case-study.grid_order %}style="order: {{ case-study.grid_order }}"{% endif %}>
   {% if case-study.size == "small" %}
     <img
       src="../assets/images/case-studies/illustrations/{{ file-name }}-illustration.svg"
@@ -13,7 +14,7 @@
       class="case-study-card__illustration" />
   {% else %}
     <img
-      src="{{ case-study.cover_image }}"
+      src="{{ case-study.card_image | default: case-study.cover_image }}"
       alt="{{ case-study.title }}"
       class="case-study-card__thumbnail" />
   {% endif %}

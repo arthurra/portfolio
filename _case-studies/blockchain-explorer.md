@@ -41,6 +41,7 @@ tags:
   - name: Technology
 visible: true
 size: small
+grid_order: 6
 solutions:
   - title: Blockchain Summary
     description: >-
